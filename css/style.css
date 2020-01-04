@@ -55,3 +55,25 @@ ul.filter-list {
 .f-12{
     font-size: 12px !important
 }
+ul.green-checks-list li {
+    margin-bottom: .75rem;
+}
+ul.green-checks-list .h4, ul.green-checks-list h4 {
+    display: inline-block;
+    vertical-align: top;
+    margin-bottom: 0;
+    padding-left: 1rem;
+    line-height: 1.75rem;
+}
+.material-icons svg, .material-icons-fake svg {
+    width: 1.5em;
+    height: 1.5em;
+}
+.material-icons svg, .material-icons-fake svg path{
+  fill:#2fb173
+}
+
+.complete-coverage-list  li{
+  margin-bottom: .5rem;
+  color: #4d5bed
+}
