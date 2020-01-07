@@ -1,0 +1,954 @@
+﻿<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="css\vendor\bootstrap.min.css">
+
+  <!-- Vendor/Plugins CSS -->
+  <link rel="stylesheet" href="css\vendor\fontawesome-all.min.css">
+  <link rel="stylesheet" href="css\vendor\swiper.min.css">
+
+
+  <link rel="stylesheet" href="css\main.css">
+  <link rel="stylesheet" href="./css/style.css">
+  <title>legitquest | Home page</title>
+
+  <link rel="apple-touch-icon" sizes="57x57" href="images\favicon\apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="images\favicon\apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="images\favicon\apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="images\favicon\apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="images\favicon\apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="images\favicon\apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="images\favicon\apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="images\favicon\apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="images\favicon\apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="images\favicon\android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="images\favicon\favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="images\favicon\favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="images\favicon\favicon-16x16.png">
+  <link rel="manifest" href="images\favicon\manifest.json">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-TileImage" content="images/favicon/ms-icon-144x144.png">
+  <meta name="theme-color" content="#ffffff">
+
+</head>
+
+<body>
+  <header class="header">
+
+    <nav class="navbar navbar-expand-lg">
+      <div class="container position-relative">
+
+        <a class="navbar-brand" href="index.html">
+          <img src="./images/lq-logo.png" alt="legitquest"></a>
+        <button class="navbar-toggler border-0" type="button" data-toggle="offcanvas">
+          <i class="navbar-toggler__bar navbar-toggler__bar--top"></i>
+          <i class="navbar-toggler__bar navbar-toggler__bar--middle"></i>
+          <i class="navbar-toggler__bar navbar-toggler__bar--bottom"></i>
+        </button> <!-- Navbar Toggle Button -->
+
+        <div class="offcanvas-collapse ml-auto" id="navbarsExampleDefault">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+
+            <li class="nav-item nav--has-sub-menu" data-toggle="hover">
+              <a class="nav-link" href="#" data-toggle="dropdown">Sections</a>
+
+              <ul class="nav-sub-menu dropdown-menu rounded-lg shadow">
+                <li class="nav-item">
+                  <a href="sections.html" class="nav-link">All sections</a>
+                </li>
+                <li class="nav-item nav--has-sub-menu sub-menu--on-right" data-toggle="hover">
+                  <a href="sections.html#section-headers" class="nav-link" data-toggle="dropdown">Headers</a>
+                  <ul class="nav-sub-menu dropdown-menu rounded-lg shadow">
+                    <li class="nav-item">
+                      <a href="sections.html#header-1" class="nav-link">Header 1</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="sections.html#header-2" class="nav-link">Header 2</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="sections.html#header-3" class="nav-link">Header 3</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="sections.html#header-4" class="nav-link">Header 4</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="sections.html#header-5" class="nav-link">Header 5</a>
+                    </li>
+                  </ul>
+                </li>
+
+              </ul>
+            </li> <!-- Fluxo Dropdown -->
+            <li class="nav-item nav--has-sub-menu nav--dropdown-menu-right" data-toggle="hover">
+              <a class="nav-link" href="#" data-toggle="dropdown">Docs</a>
+
+              <ul class="nav-sub-menu list-group list-group-flush dropdown-menu dropdown-menu-right rounded-lg shadow">
+                <li class="nav-item">
+                  <a href="../documentation/index.html" class="nav-link list-group-item list-group-item-action">
+                    <div class="media align-items-center">
+                      <figure class="icon mb-0">
+                        <img src="images\icn_fluxo_influencer.svg" alt="Documentation" class="feature-icon">
+                      </figure>
+
+                      <div class="ml-2">
+                        <p class="mb-0"><strong>Documentation</strong></p>
+                        <small>Customizing and building.</small>
+                      </div>
+                    </div>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="#0" class="nav-link list-group-item list-group-item-action">
+                    <div class="media align-items-center">
+                      <figure class="icon mb-0">
+                        <img src="images\icn_fluxo_customer-support.svg" alt="Customer Support" class="feature-icon">
+                      </figure>
+
+                      <div class="ml-2">
+                        <p class="mb-0"><strong>Get Support</strong></p>
+                        <small>Talk to real-human support</small>
+                      </div>
+                    </div>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="../documentation/changelog.html" class="nav-link list-group-item list-group-item-action">
+                    <div class="media align-items-center">
+                      <figure class="icon mb-0">
+                        <img src="images\icn_fluxo_stacks.svg" alt="Changelog" class="feature-icon">
+                      </figure>
+
+                      <div class="ml-2">
+                        <p class="mb-0"><strong>Changelog</strong> <span class="badge badge-primary badge-pill ml-1">v1.0</span></p>
+                        <small>Keep track of changes.</small>
+                      </div>
+                    </div>
+                  </a>
+                </li>
+              </ul>
+            </li> <!-- Fluxo List-Group Dropdown -->
+            <li class="nav-item nav-item--btn">
+              <a href="#" class="btn btn-primary btn-sm btn--has-shadow mt-3 mt-lg-0">Sign Up</a>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+    </nav> <!-- END Navbar -->
+
+  </header>
+
+  <main class="main">
+
+    <section class="section section-hero main-banner py-0 gradient-light--lean-right">
+      <div class="container">
+        <figure class="figure h-100 pattern-svg">
+          <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1170px" height="348px">
+            <path fill-rule="evenodd" fill="rgb(35, 23, 123)" d="M-0.011,116.317 L8.682,113.988 L11.011,122.681 L2.318,125.011 L-0.011,116.317 Z"></path>
+            <path fill-rule="evenodd" fill="rgb(35, 23, 123)" d="M463.014,336.868 L474.131,331.013 L479.986,342.131 L468.868,347.984 L463.014,336.868 Z"></path>
+            <path fill-rule="evenodd" fill="rgb(93, 203, 250)" d="M610.564,-0.012 L623.995,8.556 L615.429,21.987 L601.997,13.419 L610.564,-0.012 Z"></path>
+            <path fill-rule="evenodd" fill="rgb(35, 23, 123)" d="M1123.000,78.000 C1127.418,78.000 1131.000,81.582 1131.000,86.000 C1131.000,90.418 1127.418,94.000 1123.000,94.000 C1118.582,94.000 1115.000,90.418 1115.000,86.000 C1115.000,81.582 1118.582,78.000 1123.000,78.000 Z"></path>
+            <path fill-rule="evenodd" fill="rgb(35, 23, 123)" d="M1088.000,288.000 C1090.761,288.000 1093.000,290.239 1093.000,293.000 C1093.000,295.761 1090.761,298.000 1088.000,298.000 C1085.239,298.000 1083.000,295.761 1083.000,293.000 C1083.000,290.239 1085.239,288.000 1088.000,288.000 Z"></path>
+            <path fill-rule="evenodd" fill="rgb(93, 203, 250)" d="M910.000,172.000 C912.761,172.000 915.000,174.238 915.000,177.000 C915.000,179.761 912.761,182.000 910.000,182.000 C907.238,182.000 905.000,179.761 905.000,177.000 C905.000,174.238 907.238,172.000 910.000,172.000 Z"></path>
+            <path fill-rule="evenodd" fill="rgb(93, 203, 250)" d="M57.000,317.000 C59.209,317.000 61.000,318.791 61.000,321.000 C61.000,323.209 59.209,325.000 57.000,325.000 C54.791,325.000 53.000,323.209 53.000,321.000 C53.000,318.791 54.791,317.000 57.000,317.000 Z"></path>
+
+            <path fill-rule="evenodd" fill="rgb(74, 92, 246)" d="M861.131,312.447 L853.879,325.370 L846.314,312.267 L861.131,312.447 Z"></path>
+          </svg>
+        </figure> <!-- Highlight SVG Background -->
+
+        <div class="row vh-100">
+
+          <div class="col-lg-12 align-self-center text-center">
+
+            <h1 class="mb-3 font-weight-bold">Obtain better litigation outcomes.</h1>
+
+            <p class="lead mb-5 mx-auto">Search millions of lawsuits, track your cases on any device, and analyze outcomes for competitive advantage.</p>
+
+            <div class="input-group mw-50 search_engine_form  mx-auto">
+              <input type="text" class="form-control bordered-input" placeholder="Search by title, case number, issue, ...">
+                <div class="input-group-append">
+                    <button class=" btn btn-primary">All Court</button>
+                </div>
+            </div>
+
+          </div>
+
+
+        </div>
+      </div>
+    </section> <!-- END Section Hero -->
+
+    <section class="section section-main-features gradient-light--upright">
+      <figure class="figure highlight-background highlight-background--lean-left">
+        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1439px" height="480px">
+          <defs>
+            <lineargradient id="PSgrad_1" x1="42.262%" x2="0%" y1="90.631%" y2="0%">
+              <stop offset="28%" stop-color="rgb(245,246,252)" stop-opacity="1"></stop>
+              <stop offset="100%" stop-color="rgb(255,255,255)" stop-opacity="1"></stop>
+            </lineargradient>
+
+          </defs>
+          <path fill-rule="evenodd" fill="rgb(255, 255, 255)" d="M863.247,-271.203 L-345.788,-427.818 L760.770,642.200 L1969.805,798.815 L863.247,-271.203 Z"></path>
+          <path fill="url(#PSgrad_1)" d="M863.247,-271.203 L-345.788,-427.818 L760.770,642.200 L1969.805,798.815 L863.247,-271.203 Z"></path>
+        </svg>
+      </figure> <!-- Highlight SVG Background -->
+
+      <div class="container">
+        <div class="row">
+
+          <div class="col-md-8 offset-md-2 col-lg-6 offset-lg-3 text-center">
+            <h2 class="section__title mb-6">Smarter legal research</h2>
+          </div>
+
+          <div class="main-features__list col-md-12">
+            <div class="row">
+
+              <div class="col-md-4">
+                <div class="main-feature text-center mb-md-0">
+                  <div class="icon icon--rounded bg-primary">
+                    <img src="images\icn_fluxo_influencer.svg" alt="Feature Icon" class="feature-icon">
+                  </div>
+
+                  <h5 class="main-feature__title">
+                    Influencer
+                  </h5>
+
+                  <p class="main-feature__content px-4 px-md-0 px-xl-4">
+                    Sed ut perspiciatis unde omnis iste natus error is simply dummy text of the printing and typesetting industry.
+                  </p>
+                </div> <!-- Main Feature -->
+              </div>
+
+              <div class="col-md-4">
+                <div class="main-feature text-center mb-md-0">
+                  <div class="icon icon--rounded bg-primary">
+                    <img src="images\icn_fluxo_chart.svg" alt="Feature Icon" class="feature-icon">
+                  </div>
+
+                  <h5 class="main-feature__title">
+                    Roi
+                  </h5>
+
+                  <p class="main-feature__content px-4 px-md-0 px-xl-4">
+                    Sed ut perspiciatis unde omnis iste natus error is simply dummy text of the printing and typesetting industry.
+                  </p>
+                </div> <!-- Main Feature -->
+              </div>
+
+              <div class="col-md-4">
+                <div class="main-feature text-center mb-0">
+                  <div class="icon icon--rounded bg-primary">
+                    <img src="images\icn_fluxo_cloud.svg" alt="Feature Icon" class="feature-icon">
+                  </div>
+
+                  <h5 class="main-feature__title">
+                    Database
+                  </h5>
+
+                  <p class="main-feature__content px-4 px-md-0 px-xl-4">
+                    Sed ut perspiciatis unde omnis iste natus error is simply dummy text of the printing and typesetting industry.
+                  </p>
+                </div> <!-- Main Feature -->
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section> <!-- END Section Main Feature -->
+
+    <section class="section section-block-feature gradient-light--lean-left">
+      <figure class="figure highlight-background highlight-background--lean-left">
+        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1439px" height="480px">
+          <defs>
+            <lineargradient id="PSgrad_2" x1="42.262%" x2="0%" y1="90.631%" y2="0%">
+              <stop offset="28%" stop-color="rgb(245,246,252)" stop-opacity="1"></stop>
+              <stop offset="100%" stop-color="rgb(255,255,255)" stop-opacity="1"></stop>
+            </lineargradient>
+
+          </defs>
+          <path fill-rule="evenodd" fill="rgb(255, 255, 255)" d="M863.247,-271.203 L-345.788,-427.818 L760.770,642.200 L1969.805,798.815 L863.247,-271.203 Z"></path>
+          <path fill="url(#PSgrad_2)" d="M863.247,-271.203 L-345.788,-427.818 L760.770,642.200 L1969.805,798.815 L863.247,-271.203 Z"></path>
+        </svg>
+      </figure> <!-- Highlight SVG Background -->
+
+
+      <div class="container">
+        <div class="row">
+
+          <div class="col-md-7 order-md-2 mb-5 mb-md-0">
+            <img src="images\image-block-feature-1.png" srcset="images\image-block-feature-1@2x.png 2x" alt="Feature" class="img-fluid mx-auto d-block">
+          </div>
+
+          <div class="col-md-5 order-md-1 text-center text-md-left">
+            <div class="icon icon--rounded bg-primary mb-4">
+              <img src="images\icn_fluxo_stacks.svg" alt="Feature Icon" class="feature-icon">
+            </div>
+
+            <h2 class="mt-2 mb-4">Coverage
+ Comprehensive database</h2>
+
+            <p class="mb-5">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to
+              make a type
+              specimen book.</p>
+
+            <a href="#0" class="text-link link--right-icon text-uppercase">Lean more <i class="link__icon fa fa-chevron-right"></i></a>
+
+          </div>
+
+        </div>
+      </div>
+    </section> <!-- END Section Block Feature -->
+
+    <section class="section section-block-feature gradient-light--lean-left">
+      <figure class="figure highlight-background highlight-background--lean-right">
+        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1291px" height="480px">
+          <defs>
+            <lineargradient id="PSgrad_3" x1="0%" x2="0%" y1="100%" y2="0%">
+              <stop offset="28%" stop-color="rgb(244,245,250)" stop-opacity="1"></stop>
+              <stop offset="100%" stop-color="rgb(252,253,255)" stop-opacity="1"></stop>
+            </lineargradient>
+
+          </defs>
+          <path fill-rule="evenodd" opacity="0.1" fill="rgb(0, 0, 0)" d="M480.084,0.001 L1290.991,0.001 L810.906,831.000 L-0.000,831.000 L480.084,0.001 Z"></path>
+          <path fill="url(#PSgrad_3)" d="M480.084,0.001 L1290.991,0.001 L810.906,831.000 L-0.000,831.000 L480.084,0.001 Z"></path>
+        </svg>
+      </figure> <!-- Highlight SVG Background -->
+
+      <div class="container">
+        <div class="row">
+
+          <div class="col-md-7 mb-5 mb-md-0">
+            <img src="images\image-block-feature-2.png" srcset="images\image-block-feature-2@2x.png 2x" alt="Feature" class="img-fluid mx-auto d-block">
+          </div>
+
+          <div class="col-md-5  text-center text-md-left">
+            <div class="icon icon--rounded bg-primary mb-4">
+              <img src="images\icn_fluxo_chart.svg" alt="Feature Icon" class="feature-icon">
+            </div>
+
+            <h2 class="mt-2 mb-4">Industry first iDRAF</h2>
+
+            <p class="mb-5">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to
+              make a type
+              specimen book.</p>
+
+            <a href="#0" class="text-link link--right-icon text-uppercase">Lean more <i class="link__icon fa fa-chevron-right"></i></a>
+
+          </div>
+
+        </div>
+      </div>
+    </section> <!-- END Section Block Feature -->
+
+    <section class="section section-block-feature gradient-light--upright">
+      <figure class="figure highlight-background highlight-background--lean-left">
+        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1439px" height="480px">
+          <defs>
+            <lineargradient id="PSgrad_4" x1="42.262%" x2="0%" y1="90.631%" y2="0%">
+              <stop offset="28%" stop-color="rgb(245,246,252)" stop-opacity="1"></stop>
+              <stop offset="100%" stop-color="rgb(255,255,255)" stop-opacity="1"></stop>
+            </lineargradient>
+
+          </defs>
+          <path fill-rule="evenodd" fill="rgb(255, 255, 255)" d="M863.247,-271.203 L-345.788,-427.818 L760.770,642.200 L1969.805,798.815 L863.247,-271.203 Z"></path>
+          <path fill="url(#PSgrad_4)" d="M863.247,-271.203 L-345.788,-427.818 L760.770,642.200 L1969.805,798.815 L863.247,-271.203 Z"></path>
+        </svg>
+      </figure> <!-- Highlight SVG Background -->
+
+      <div class="container">
+        <div class="row">
+
+          <div class="col-md-7 order-md-2 mb-5 mb-md-0">
+            <img src="images\image-block-feature-3.png" srcset="images\image-block-feature-3@2x.png 2x" alt="Feature" class="img-fluid mx-auto d-block">
+          </div>
+
+          <div class="col-md-5 order-md-1 text-center text-md-left">
+            <div class="icon icon--rounded bg-primary mb-4">
+              <img src="images\icn_fluxo_users.svg" alt="Feature Icon" class="feature-icon">
+            </div>
+
+            <h2 class="mt-2 mb-4">Judgment Analytics</h2>
+
+            <p class="mb-5">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to
+              make a type
+              specimen book.</p>
+
+            <a href="#0" class="text-link link--right-icon text-uppercase">Lean more <i class="link__icon fa fa-chevron-right"></i></a>
+
+          </div>
+
+        </div>
+      </div>
+    </section> <!-- END Section Block Feature -->
+
+
+    <div class="sections__wrapper">
+
+
+        <div id="blog-2">
+          <section class="section section-posts gradient-light--upright">
+            <div class="col-md-8 offset-md-2 col-lg-6 offset-lg-3 text-center">
+            <h2 class="section__title mb-6">Latest Legal News</h2>
+          </div>
+            <div class="container">
+              <div class="row row-grid justify-content-center">
+
+                <div class="col-lg-12">
+
+                  <div class="row">
+
+                    <div class="posts__wrapper col-lg-8 mb-5 mb-lg-0">
+                      <div class="row">
+                        <div class="col-md-6 mb-5">
+                          <div class="post card h-100 p-0 border-0 shadow-sm">
+                            <img class="card-img-top" src="images\stocks\blog-thumbnail1.jpg" srcset="images\stocks\blog-thumbnail1@2x.jpg 2x" alt="Post Thumbnail">
+                            <div class="card-body">
+                              <p class="card-text mb-2"><small class="text-muted">April 16, 2019</small></p>
+                              <a href="blog-single-post.html" class="h4 card-title d-block mb-4">How to Grow Your Business with Social Media Marketing</a>
+
+                              <p class="card-text">Suspendisse ultrices erat dapibus pulvinar molestie interdum..</p>
+                            </div>
+
+                            <div class="card-footer">
+                              <div class="d-inline-block mr-3">
+                                <img class="rounded-circle" src="images\avatars\avatar_72_1.png" srcset="images\avatars\avatar_72_1@2x.png 2x" alt="Avatar">
+                              </div>
+
+                              <div class="d-inline-block">
+                                <a href="#0"><span class="text-muted">By Mollie Schmidt</span></a>
+                              </div>
+                            </div>
+                          </div> <!-- Card for a Post/Artile -->
+                        </div>
+
+                        <div class="col-md-6 mb-5">
+                          <div class="post card h-100 p-0 border-0 shadow-sm">
+                            <img class="card-img-top" src="images\stocks\blog-thumbnail2.jpg" srcset="images\stocks\blog-thumbnail2@2x.jpg 2x" alt="Post Thumbnail">
+                            <div class="card-body">
+                              <p class="card-text mb-2"><small class="text-muted">April 14, 2019</small></p>
+                              <a href="blog-single-post.html" class="h4 card-title d-block mb-4">Twitter Stats for 2019 Has Been Revealed</a>
+
+                              <p class="card-text">Suspendisse ultrices erat dapibus pulvinar molestie interdum..</p>
+                            </div>
+
+                            <div class="card-footer">
+                              <div class="d-inline-block mr-3">
+                                <img class="rounded-circle" src="images\avatars\avatar_72_1.png" srcset="images\avatars\avatar_72_1@2x.png 2x" alt="Avatar">
+                              </div>
+
+                              <div class="d-inline-block">
+                                <a href="#0"><span class="text-muted">By Mollie Schmidt</span></a>
+                              </div>
+                            </div>
+                          </div> <!-- Card for a Post/Artile -->
+                        </div>
+
+                        <div class="col-md-6 mb-5">
+                          <div class="post card h-100 p-0 border-0 shadow-sm">
+                            <img class="card-img-top" src="images\stocks\blog-thumbnail3.jpg" srcset="images\stocks\blog-thumbnail3@2x.jpg 2x" alt="Post Thumbnail">
+                            <div class="card-body">
+                              <p class="card-text mb-2"><small class="text-muted">April 07, 2019</small></p>
+                              <a href="blog-single-post.html" class="h4 card-title d-block mb-4">Social Sales Girls Outsource Technical Task</a>
+
+                              <p class="card-text">Suspendisse ultrices erat dapibus pulvinar molestie interdum..</p>
+                            </div>
+
+                            <div class="card-footer">
+                              <div class="d-inline-block mr-3">
+                                <img class="rounded-circle" src="images\avatars\avatar_72_1.png" srcset="images\avatars\avatar_72_1@2x.png 2x" alt="Avatar">
+                              </div>
+
+                              <div class="d-inline-block">
+                                <a href="#0"><span class="text-muted">By Mollie Schmidt</span></a>
+                              </div>
+                            </div>
+                          </div> <!-- Card for a Post/Artile -->
+                        </div>
+
+                        <div class="col-md-6 mb-5">
+                          <div class="post card h-100 p-0 border-0 shadow-sm">
+                            <img class="card-img-top" src="images\stocks\blog-thumbnail4.jpg" srcset="images\stocks\blog-thumbnail4@2x.jpg 2x" alt="Post Thumbnail">
+                            <div class="card-body">
+                              <p class="card-text mb-2"><small class="text-muted">March 31, 2019</small></p>
+                              <a href="blog-single-post.html" class="h4 card-title d-block mb-4">Google’s Relevance to Social Media Basics</a>
+
+                              <p class="card-text">Suspendisse ultrices erat dapibus pulvinar molestie interdum..</p>
+                            </div>
+
+                            <div class="card-footer">
+                              <div class="d-inline-block mr-3">
+                                <img class="rounded-circle" src="images\avatars\avatar_72_1.png" srcset="images\avatars\avatar_72_1@2x.png 2x" alt="Avatar">
+                              </div>
+
+                              <div class="d-inline-block">
+                                <a href="#0"><span class="text-muted">By Mollie Schmidt</span></a>
+                              </div>
+                            </div>
+                          </div> <!-- Card for a Post/Artile -->
+                        </div>
+
+                        <div class="col-md-6 mb-5">
+                          <div class="post card h-100 p-0 border-0 shadow-sm">
+                            <img class="card-img-top" src="images\stocks\blog-thumbnail5.jpg" srcset="images\stocks\blog-thumbnail5@2x.jpg 2x" alt="Post Thumbnail">
+                            <div class="card-body">
+                              <p class="card-text mb-2"><small class="text-muted">March 20, 2019</small></p>
+                              <a href="blog-single-post.html" class="h4 card-title d-block mb-4">Fluxo 101: Optimize IGTV for Your Business</a>
+
+                              <p class="card-text">Suspendisse ultrices erat dapibus pulvinar molestie interdum..</p>
+                            </div>
+
+                            <div class="card-footer">
+                              <div class="d-inline-block mr-3">
+                                <img class="rounded-circle" src="images\avatars\avatar_72_1.png" srcset="images\avatars\avatar_72_1@2x.png 2x" alt="Avatar">
+                              </div>
+
+                              <div class="d-inline-block">
+                                <a href="#0"><span class="text-muted">By Mollie Schmidt</span></a>
+                              </div>
+                            </div>
+                          </div> <!-- Card for a Post/Artile -->
+                        </div>
+
+                        <div class="col-md-6 mb-5">
+                          <div class="post card h-100 p-0 border-0 shadow-sm">
+                            <img class="card-img-top" src="images\stocks\blog-thumbnail6.jpg" srcset="images\stocks\blog-thumbnail6@2x.jpg 2x" alt="Post Thumbnail">
+                            <div class="card-body">
+                              <p class="card-text mb-2"><small class="text-muted">March 16, 2019</small></p>
+                              <a href="blog-single-post.html" class="h4 card-title d-block mb-4">Top 5 Best Social Media Marketing Blogs</a>
+
+                              <p class="card-text">Suspendisse ultrices erat dapibus pulvinar molestie interdum..</p>
+                            </div>
+
+                            <div class="card-footer">
+                              <div class="d-inline-block mr-3">
+                                <img class="rounded-circle" src="images\avatars\avatar_72_1.png" srcset="images\avatars\avatar_72_1@2x.png 2x" alt="Avatar">
+                              </div>
+
+                              <div class="d-inline-block">
+                                <a href="#0"><span class="text-muted">By Mollie Schmidt</span></a>
+                              </div>
+                            </div>
+                          </div> <!-- Card for a Post/Artile -->
+                        </div>
+
+                      </div> <!-- inner nested row -->
+                    </div> <!-- END Posts Wrapper -->
+
+                    <aside class="sidebar col-lg-4">
+                      <section class="widget widget-subscribe mb-4 rounded-lg shadow-sm">
+                        <h2 class="widget-title mb-3 text-uppercase">Become a Member</h2>
+
+                        <p>Receive our newsletter to stay on top of the latest posts.</p>
+
+                        <form class="subscribe-form mt-3" novalidate="true">
+                          <div class="input-group mb-2">
+                            <input type="email" class="form-control" id="email" placeholder="Email address" name="EMAIL">
+                          </div>
+                          <button type="submit" class="btn btn-primary w-100">Subscribe</button>
+                        </form>
+                      </section> <!-- Widget Section -->
+
+                      <section class="widget widget-popular-posts mb-4 rounded-lg shadow-sm">
+                        <h2 class="widget-title mb-3 text-uppercase">Popular Posts</h2>
+
+                        <ul class="popular-posts__list list-style--none mt-4 mb-0">
+                          <li class="mb-3">
+                            <a class="d-flex" href="#0">
+                              <div class="d-inline-block mr-3">
+                                <img class="rounded-sm" src="https://source.unsplash.com/UAvYasdkzq8/40x40" srcset="https://source.unsplash.com/UAvYasdkzq8/80x80/" alt="Thumbnail">
+                              </div>
+
+                              <span class="h5">Best times to post on social media for 2019</span>
+                            </a>
+                          </li>
+
+                          <li class="mb-3">
+                            <a class="d-flex" href="#0">
+                              <div class="d-inline-block mr-3">
+                                <img class="rounded-sm" src="https://source.unsplash.com/hr6TLCga-W0/40x40" srcset="https://source.unsplash.com/hr6TLCga-W0/80x80/" alt="Thumbnail">
+                              </div>
+
+                              <span class="h5">How to regram post on Instagram</span>
+                            </a>
+                          </li>
+
+                          <li class="mb-3">
+                            <a class="d-flex" href="#0">
+                              <div class="d-inline-block mr-3">
+                                <img class="rounded-sm" src="https://source.unsplash.com/yTwXpLO5HAA/40x40" srcset="https://source.unsplash.com/yTwXpLO5HAA/80x80/" alt="Thumbnail">
+                              </div>
+
+                              <span class="h5">How to define actionable social media ROI for your business</span>
+                            </a>
+                          </li>
+
+                          <li class="mb-0">
+                            <a class="d-flex" href="#0">
+                              <div class="d-inline-block mr-3">
+                                <img class="rounded-sm" src="https://source.unsplash.com/Uo2ZXh4XOLY/40x40" srcset="https://source.unsplash.com/Uo2ZXh4XOLY/80x80/" alt="Thumbnail">
+                              </div>
+
+                              <span class="h5">8 Standout Social Media Marketing Examples</span>
+                            </a>
+                          </li>
+                        </ul>
+                      </section> <!-- Widget Section -->
+                    </aside> <!-- END Sidebar -->
+
+                  </div> <!-- Nested row -->
+                </div>
+
+                <nav class="mt-4" aria-label="Page navigation">
+                  <ul class="pagination justify-content-center">
+                    <li class="page-item disabled">
+                      <a class="page-link" href="#" aria-label="Previous">
+                        <small><i class="fas fa-chevron-left"></i></small>
+                      </a>
+                    </li>
+                    <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                    <li class="page-item"><a class="page-link" href="#">2</a></li>
+                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                    <li class="page-item disabled"><a class="page-link" href="#">...</a></li>
+                    <li class="page-item"><a class="page-link" href="#">17</a></li>
+                    <li class="page-item">
+                      <a class="page-link" href="#" aria-label="Next">
+                        <small><i class="fas fa-chevron-right"></i></small>
+                      </a>
+                    </li>
+                  </ul>
+                </nav>
+
+              </div>
+            </div>
+          </section> <!-- END Section Posts -->
+        </div> <!-- END Blog 2 -->
+      </div>
+
+    <section class="section section-testimonials gradient-light--lean-left">
+      <figure class="figure highlight-background highlight-background--lean-left">
+        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1439px" height="480px">
+          <defs>
+            <lineargradient id="PSgrad_5" x1="42.262%" x2="0%" y1="90.631%" y2="0%">
+              <stop offset="28%" stop-color="rgb(245,246,252)" stop-opacity="1"></stop>
+              <stop offset="100%" stop-color="rgb(255,255,255)" stop-opacity="1"></stop>
+            </lineargradient>
+
+          </defs>
+          <path fill-rule="evenodd" fill="rgb(255, 255, 255)" d="M863.247,-271.203 L-345.788,-427.818 L760.770,642.200 L1969.805,798.815 L863.247,-271.203 Z"></path>
+          <path fill="url(#PSgrad_5)" d="M863.247,-271.203 L-345.788,-427.818 L760.770,642.200 L1969.805,798.815 L863.247,-271.203 Z"></path>
+        </svg>
+      </figure> <!-- Highlight SVG Background -->
+
+      <div class="container">
+        <div class="row">
+
+          <div class="col-md-5 text-center text-md-left">
+            <div class="icon icon--rounded bg-primary mb-4">
+              <img src="images\icn_fluxo_quote.svg" alt="Feature Icon" class="feature-icon">
+            </div>
+
+            <h2 class="mt-2 mb-5 mb-md-0">Here’s What Our Clients Have To Say</h2>
+
+          </div>
+
+        </div>
+
+        <div class="row">
+          <div class="col">
+
+            <div class="swiper-container pt-5 pb-6">
+
+              <div class="swiper-wrapper">
+
+                <div class="swiper-slide testimony__card p-3">
+
+                  <blockquote class="blockquote shadow">
+                    <span class="rating text-warning d-block mb-4">
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                    </span>
+
+                    <p class="mb-4">Finally, a Bootstrap template that suit my company.</p>
+
+                    <footer class="blockquote-footer d-flex align-items-center">
+                      <div class="testimony__avatar d-inline-block mr-3">
+                        <img class="rounded-circle" src="images\avatars\avatar_55_4.png" srcset="images\avatars\avatar_55_4@2x.png 2x" alt="Avatar">
+                      </div>
+
+                      <div class="testimony__info d-inline-block">
+
+                        <span class="info-name d-block">Beulah Baird</span>
+                        <span class="info-company d-block">CEO, Some Company</span>
+                      </div>
+
+                    </footer>
+                  </blockquote>
+
+                </div>
+
+                <div class="swiper-slide testimony__card p-3">
+
+                  <blockquote class="blockquote shadow">
+                    <span class="rating text-warning d-block mb-4">
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                    </span>
+
+                    <p class="mb-4">I've never seen a template that impressed me immediately.</p>
+
+                    <footer class="blockquote-footer d-flex align-items-center">
+                      <div class="testimony__avatar d-inline-block mr-3">
+                        <img class="rounded-circle" src="images\avatars\avatar_55_2.png" srcset="images\avatars\avatar_55_2@2x.png 2x" alt="Avatar">
+                      </div>
+
+                      <div class="testimony__info d-inline-block">
+
+                        <span class="info-name d-block">Carl Anderson</span>
+                        <span class="info-company d-block">CEO, Some Company</span>
+                      </div>
+
+                    </footer>
+                  </blockquote>
+
+                </div>
+
+                <div class="swiper-slide testimony__card p-3">
+
+                  <blockquote class="blockquote shadow">
+                    <span class="rating text-warning d-block mb-4">
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                    </span>
+
+                    <p class="mb-4">Fluxo does really amazing, my developers are grateful with it.</p>
+
+                    <footer class="blockquote-footer d-flex align-items-center">
+                      <div class="testimony__avatar d-inline-block mr-3">
+                        <img class="rounded-circle" src="images\avatars\avatar_55_3.png" srcset="images\avatars\avatar_55_3@2x.png 2x" alt="Avatar">
+                      </div>
+
+                      <div class="testimony__info d-inline-block">
+
+                        <span class="info-name d-block">Amanda Turner</span>
+                        <span class="info-company d-block">CEO, Some Company</span>
+                      </div>
+
+                    </footer>
+                  </blockquote>
+
+                </div>
+
+                <div class="swiper-slide testimony__card p-3">
+
+                  <blockquote class="blockquote shadow">
+                    <span class="rating text-warning d-block mb-4">
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                    </span>
+
+                    <p class="mb-4">I couldn't have done it without the team from Fluxo.</p>
+
+                    <footer class="blockquote-footer d-flex align-items-center">
+                      <div class="testimony__avatar d-inline-block mr-3">
+                        <img class="rounded-circle" src="images\avatars\avatar_55_1.png" srcset="images\avatars\avatar_55_1@2x.png 2x" alt="Avatar">
+                      </div>
+
+                      <div class="testimony__info d-inline-block">
+
+                        <span class="info-name d-block">Jacob Lorenssen</span>
+                        <span class="info-company d-block">CEO, Some Company</span>
+                      </div>
+
+                    </footer>
+                  </blockquote>
+
+                </div>
+
+              </div> <!-- End Swiper Wrapper -->
+
+              <!-- Swiper pagination: -->
+              <div class="swiper-pagination"></div>
+
+              <!-- Swiper arrow buttons: -->
+              <div class="swiper-button-prev rounded"></div>
+              <div class="swiper-button-next rounded"></div>
+
+            </div> <!-- End Swiper Container -->
+
+          </div>
+        </div>
+      </div>
+    </section> <!-- END Section Testimonials -->
+
+
+
+    <section class="section section-subscribe gradient-light--upright">
+      <figure class="figure pattern-svg">
+        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1306px" height="225px">
+          <path fill-rule="evenodd" fill="rgb(35, 23, 123)" d="M-0.011,9.318 L8.682,6.988 L11.011,15.682 L2.318,18.011 L-0.011,9.318 Z"></path>
+          <path fill-rule="evenodd" fill="rgb(35, 23, 123)" d="M607.694,164.319 L612.680,161.693 L615.306,166.680 L610.320,169.305 L607.694,164.319 Z"></path>
+          <path fill-rule="evenodd" fill="rgb(93, 203, 250)" d="M667.343,205.646 L679.152,213.179 L671.620,224.988 L659.810,217.456 L667.343,205.646 Z"></path>
+          <path fill-rule="evenodd" fill="rgb(93, 203, 250)" d="M915.839,-0.008 L924.997,5.833 L919.156,14.991 L909.998,9.150 L915.839,-0.008 Z"></path>
+          <path fill-rule="evenodd" fill="rgb(35, 23, 123)" d="M989.000,93.000 C993.418,93.000 997.000,96.582 997.000,101.000 C997.000,105.418 993.418,109.000 989.000,109.000 C984.582,109.000 981.000,105.418 981.000,101.000 C981.000,96.582 984.582,93.000 989.000,93.000 Z"></path>
+          <path fill-rule="evenodd" fill="rgb(35, 23, 123)" d="M1165.000,8.000 C1167.761,8.000 1170.000,10.238 1170.000,13.000 C1170.000,15.761 1167.761,18.000 1165.000,18.000 C1162.239,18.000 1160.000,15.761 1160.000,13.000 C1160.000,10.238 1162.239,8.000 1165.000,8.000 Z"></path>
+          <path fill-rule="evenodd" fill="rgb(93, 203, 250)" d="M1303.500,118.000 C1304.881,118.000 1306.000,119.119 1306.000,120.500 C1306.000,121.880 1304.881,123.000 1303.500,123.000 C1302.119,123.000 1301.000,121.880 1301.000,120.500 C1301.000,119.119 1302.119,118.000 1303.500,118.000 Z"></path>
+          <path fill-rule="evenodd" fill="rgb(93, 203, 250)" d="M61.000,112.000 C62.657,112.000 64.000,113.343 64.000,115.000 C64.000,116.657 62.657,118.000 61.000,118.000 C59.343,118.000 58.000,116.657 58.000,115.000 C58.000,113.343 59.343,112.000 61.000,112.000 Z"></path>
+          <path fill-rule="evenodd" fill="rgb(74, 92, 246)" d="M265.500,-0.000 C271.299,-0.000 276.000,4.701 276.000,10.500 C276.000,16.299 271.299,21.000 265.500,21.000 C259.701,21.000 255.000,16.299 255.000,10.500 C255.000,4.701 259.701,-0.000 265.500,-0.000 Z"></path>
+          <path fill-rule="evenodd" fill="rgb(35, 23, 123)" d="M185.500,131.000 C187.985,131.000 190.000,133.015 190.000,135.500 C190.000,137.985 187.985,140.000 185.500,140.000 C183.015,140.000 181.000,137.985 181.000,135.500 C181.000,133.015 183.015,131.000 185.500,131.000 Z"></path>
+        </svg>
+      </figure> <!-- Pattern SVG Background -->
+
+      <div class="container">
+        <div class="row row-grid justify-content-center">
+
+          <div class="col-md-8 col-lg-7 col-xl-6 text-center">
+            <h2 class="section__title mb-4">Start Using Legitquest Now</h2>
+
+            <p>Try Legitquest and see the difference</p>
+
+            <form class="subscribe-form form-inline mt-5">
+              <div class="input-group mr-sm-3 mb-2">
+                <input type="email" class="form-control" id="email" placeholder="Email address">
+              </div>
+              <button type="submit" class="btn btn-primary btn--has-shadow mb-2">Get Started Now</button>
+            </form>
+          </div>
+
+        </div>
+      </div>
+    </section> <!-- END Section Subscribe -->
+
+  </main>
+
+
+  <footer class="footer background--dark">
+    <div class="container">
+      <div class="row">
+
+        <div class="cta-block__wrapper col">
+          <div class="cta-block gradient-brand-color py-5">
+            <div class="row">
+              <div class="col-10 offset-1 d-md-flex justify-content-between align-items-center">
+                <div class="cta__contet color--white">
+                  <h2 class="color--white">Priced to suit your business</h2>
+                  <p>Simple plans, no contract, no setup and hidden fees</p>
+                </div>
+
+                <div class="cta__button">
+                  <a href="#0" class="btn btn-secondary">View Pricing Plans</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div> <!-- CTA Block Wrapper -->
+
+        <div class="footer-content col-12 d-md-flex justify-content-between align-items-center">
+          <div class="footer__brand">
+            <a class="footer-logo mb-0" href="index.html">
+              <img src="./images/lq-logo-dark.png" alt="legitquest">
+            </a>
+          </div>
+
+          <div class="footer__menu">
+            <ul class="footer-nav nav">
+              <li class="nav-item">
+                <a class="nav-link" href="pricing.html">Pricing</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="about.html">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="blog-full-width.html">Blog</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html">Contact</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="login.html">Login</a>
+              </li>
+              <li class="nav-item nav-item--btn">
+                <a href="signup.html" class="btn btn-primary btn-sm btn--has-shadow mt-3 mt-md-0">Sign up</a>
+              </li>
+            </ul>
+          </div>
+        </div> <!-- Footer Content -->
+
+        <div class="col-12">
+          <div class="footer-copyright-column d-md-flex justify-content-between align-items-center">
+            <div class="copyright">
+              <p>©2019 - legitquest. All rights reserved.</p>
+            </div>
+
+            <ul class="social-icons ml-auto mb-0">
+              <li><a href="#0"><i class="fab fa-facebook-f"></i></a></li>
+              <li><a href="#0"><i class="fab fa-twitter"></i></a></li>
+              <li><a href="#0"><i class="fab fa-instagram"></i></a></li>
+              <li><a href="#0"><i class="fab fa-youtube"></i></a></li>
+              <li><a href="#0"><i class="fab fa-pinterest-p"></i></a></li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </footer> <!-- END Footer -->
+
+  <div class="alert-notifications-wrapper">
+
+    <div id="subscribe-success-notification" class="alert alert-validation alert-success alert-dismissible fade" role="alert">
+      Thank you for subscribing! Please check your inbox to opt-in.
+      <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+      </button>
+    </div> <!-- Subscribe Success -->
+
+    <div id="subscribe-error-notification" class="alert alert-validation alert-danger alert-dismissible fade" role="alert">
+      Oh no, error happened! Please check the email address and/or try again.
+      <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+      </button>
+    </div> <!-- Subscribe Error -->
+
+  </div> <!-- END Alert Notifications Wrapper -->
+
+  <!-- Global Required JS -->
+  <script src="js\vendor\jquery-3.3.1.min.js"></script>
+  <script src="js\vendor\popper.min.js"></script>
+  <script src="js\vendor\bootstrap.min.js"></script>
+
+  <!-- Vendor/Plugins JS -->
+  <script src="js\vendor\swiper.min.js"></script>
+  <script src="js\vendor\jquery.ajaxchimp.min.js"></script>
+
+  <!-- Vendor/Plugins JS Init -->
+  <script src="js\init\wb.swiper-init.js"></script>
+  <script src="js\init\wb.ajaxchimp-init.js"></script>
+
+  <!-- Fluxo Template JS -->
+  <script src="js\min\main-min.js"></script>
+</body>
+
+</html>
