@@ -173,11 +173,19 @@
 
             <p class="lead mb-5 mx-auto">Search millions of lawsuits, track your cases on any device, and analyze outcomes for competitive advantage.</p>
 
-            <div class="input-group mw-50 search_engine_form  mx-auto">
-              <input type="text" class="form-control bordered-input" placeholder="Search by title, case number, issue, ...">
-                <div class="input-group-append">
-                    <button class=" btn btn-primary">All Court</button>
+            <div class=" search-engine-form  mx-auto d-flex position-relative">
+              <div class="search-engine-inner bg-primary d-flex align-items-center w-100">
+                <input type="text" class="form-control" placeholder="Search by title, case number, issue, ...">
+                <div class="search-btn-holder bg-white">
+                  <a href="#" class="d-block pr-3 "><i class="fa fa-search" aria-hidden="true"></i></a>
                 </div>
+              </div>
+              <div class="selected-court d-flex align-items-center">
+                <input type="text" class="form-control border-0 p-0" placeholder="Select a court ...">
+                <button type="button" class="btn btn-link ml-auto text-white">
+                  <i class="fa fa-university " aria-hidden="true"></i> All Courts
+                </button>
+              </div>
             </div>
 
           </div>

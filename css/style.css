@@ -81,7 +81,7 @@ ul.green-checks-list .h4, ul.green-checks-list h4 {
 .section-hero p.lead{
   max-width: 800px
 }
-.section-hero .search_engine_form{
+.section-hero .search-engine-form{
   max-width: 900px
 }
 
@@ -92,4 +92,37 @@ ul.green-checks-list .h4, ul.green-checks-list h4 {
 }
 .bordered-input{
   border-color: #4d5bed !important;
+}
+.selected-court{
+position: absolute;
+right: 0px;
+left: calc(100% - 200px);
+text-align: right;
+}
+.selected-court .form-control{
+      width: 0px;
+}
+.search-engine-inner{
+  border-radius: 3rem;
+  overflow: hidden;
+}
+.search-engine-inner .form-control {
+    width: calc(100% - 215px);
+    border-radius: 3rem 0px 0px 3rem;
+    border-width: 2px;
+    border-right: 0px;
+    border-color: #4d5bed;
+}
+.search-engine-inner .search-btn-holder {
+    border-radius: 0rem 4rem 4rem 0rem;
+    border-width: 2px;
+    border-left: 0px;
+    border-color: #4d5bed;
+    border-style: solid;
+    display: grid;
+    place-content: center;
+    align-self: stretch;
+}
+.search-engine-form input.form-control:focus{
+  box-shadow: none !important
 }
