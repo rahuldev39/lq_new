@@ -12,10 +12,11 @@
   <!-- Vendor/Plugins CSS -->
   <link rel="stylesheet" href="css\vendor\fontawesome-all.min.css">
   <link rel="stylesheet" href="css\vendor\swiper.min.css">
-
+  <link rel="stylesheet" href="./css/vendor/jquery.tree-multiselect.css">
 
   <link rel="stylesheet" href="css\main.css">
   <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/searchbar.css">
   <title>legitquest | Home page</title>
 
   <link rel="apple-touch-icon" sizes="57x57" href="images\favicon\apple-icon-57x57.png">
@@ -149,7 +150,7 @@
 
   <main class="main">
 
-    <section class="section section-hero main-banner py-0 gradient-light--lean-right">
+    <section class="section-hero main-banner py-0 gradient-light--lean-right">
       <div class="container">
         <figure class="figure h-100 pattern-svg">
           <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1170px" height="348px">
@@ -173,18 +174,123 @@
 
             <p class="lead mb-5 mx-auto">Search millions of lawsuits, track your cases on any device, and analyze outcomes for competitive advantage.</p>
 
-            <div class=" search-engine-form  mx-auto d-flex position-relative">
-              <div class="search-engine-inner bg-primary d-flex align-items-center w-100">
-                <input type="text" class="form-control" placeholder="Search by title, case number, issue, ...">
-                <div class="search-btn-holder bg-white">
-                  <a href="#" class="d-block pr-3 "><i class="fa fa-search" aria-hidden="true"></i></a>
+            <div class=" search-engine-form  mx-auto">
+              <div class="search-filed-box">
+                <div class="search-field">
+                  <input type="text" class="form-control border-0 search-input" placeholder="Search Cases, Statutes and Regulations">
+                  <div class="form-control court-search-input"></div>
+                  <div class="search-btn">
+                    <a href="#"><i class="fa fa-search" aria-hidden="true"></i></a>
+                  </div>
+                  <div class="court-dropdown-box">
+                    <select id="test-select-3" class="tree-multiselect-box" multiple="multiple">
+                      <option value="baz1" >Supreme Court Of India</option>
+                      <option value="quux1" data-section="High Court">HCTNMDU</option>
+                      <option value="quux2" data-section="High Court">HCAP</option>
+                      <option value="quux3" data-section="High Court">HCA</option>
+                      <option value="quux4" data-section="High Court">HCWBCAL-APP</option>
+                      <option value="quux1" data-section="High Court">HCCG</option>
+                      <option value="quux2" data-section="High Court">HCDL</option>
+                      <option value="quux3" data-section="High Court">HCGJ</option>
+                      <option value="quux4" data-section="High Court">HCHP</option>
+                      <option value="quux4" data-section="High Court">HCJK</option>
+                      <option value="quux4" data-section="High Court">HCJH</option>
+                      <option value="quux4" data-section="High Court">HCUPAB</option>
+                      <option value="quux4" data-section="High Court">HCMH</option>
+                      <option value="quux4" data-section="High Court">HCWB</option>
+
+                     <option value="quux4" data-section="High Court">HCTN</option>
+                     <option value="quux4" data-section="High Court">HCBR</option>
+                     <option value="quux4" data-section="High Court">HCKA</option>
+                     <option value="quux4" data-section="High Court">HCKADH</option>
+
+                     <option value="quux4" data-section="High Court">HCKAGU</option>
+                     <option value="quux4" data-section="High Court">HCKAKB</option>
+                     <option value="quux4" data-section="High Court">HCKL</option>
+                     <option value="quux4" data-section="High Court">HCMP</option>
+
+                     <option value="quux4" data-section="High Court">HCMPGW</option>
+                     <option value="quux4" data-section="High Court">HCMPIND</option>
+                     <option value="quux4" data-section="High Court">HCMN</option>
+                     <option value="quux4" data-section="High Court">HCML</option>
+
+                     <option value="quux4" data-section="High Court">HCOR</option>
+                     <option value="quux4" data-section="High Court">HCPBHR</option>
+                     <option value="quux4" data-section="High Court">HCRJ</option>
+                     <option value="quux4" data-section="High Court">HCRJJP</option>
+
+                     <option value="quux4" data-section="Other">HCPBHR</option>
+                     <option value="quux4" data-section="Other">HCRJ</option>
+                     <option value="quux4" data-section="Other">HCRJJP</option>
+
+                    </select>
+                  </div>
                 </div>
-              </div>
-              <div class="selected-court d-flex align-items-center">
-                <input type="text" class="form-control border-0 p-0" placeholder="Select a court ...">
-                <button type="button" class="btn btn-link ml-auto text-white">
-                  <i class="fa fa-university " aria-hidden="true"></i> All Courts
-                </button>
+                <div class="cort-btn">
+                  <button class="btn btn-link text-white"><i class="fa fa-university " aria-hidden="true"></i> All Courts</button>
+                </div>
+
+                <div class="search-helper card p-0 position-absolute text-left">
+                  <div class="card-body">
+                    <div class="exampleblock">
+                      <h5 class="mb-0">Search Engine Cheat Sheet</h5>
+                      <p><small>Quick examples below to get you started.</small> </p>
+                    </div>
+
+                    <div class="exampleblock first">
+            					<h4 class="text-muted">Basic Search</h4>
+            					<ul class="list-unstyled mb-3">
+            					<li class="d-flex mb-1" data-powertip="No need to get fancy, just type what you're looking for.">
+            						<div class="key">Plain English</div> <a href="#">personal injury</a></li>
+            					<li class="d-flex mb-1" data-powertip="Use AND and OR to include keywords. Default is to use AND.">
+            						<div class="key">Boolean</div><a href="#">(richard or dick) and cheney</a></li>
+            					<li class="d-flex mb-1" data-powertip="Quotes find a specific phrase">
+            						<div class="key">Phrases</div><a href="#">"patent infringement"</a></li>
+            					<li class="d-flex mb-1" data-powertip="When you use a hyphen, we search: the two word parts separately, the hyphenated word, and the two word parts joined as a single word.">
+            						<div class="key">Hyphenate</div><a href="#">anti-inflammatory</a></li>
+            					</ul>
+            			</div>
+
+                  <div class="exampleblock second">
+            					<h4 class="text-muted">Filters</h4>
+            					<ul class="list-unstyled mb-3">
+
+            					<!-- <li data-powertip="We support over a dozen search filters. Read the documentation link below to learn more.">
+            						<div class='key'>By Court</div><a href='/search/?q=court%3A%22New+York%22'>court:"New York"</a></li> -->
+            					<li class="d-flex mb-1" data-powertip="We support over a dozen search filters. Read the documentation link below to learn more.">
+            						<div class="key">By Judge</div><a href="#">judge:Posner</a></li>
+            					<li class="d-flex mb-1" data-powertip="We support over a dozen search filters. Read the documentation link below to learn more.">
+            						<div class="key">Opinions</div><a href="#">is:opinion</a></li>
+
+            					<li class="d-flex mb-1" data-powertip="We support over a dozen search filters. Read the documentation link below to learn more.">
+            						<div class="key">By Party</div><a href="#">party:panasonic</a></li>
+            					<li class="d-flex mb-1" data-powertip="We support over a dozen search filters. Read the documentation link below to learn more.">
+            						<div class="key">By Date</div><a href="#">from:1/20/2012 to:2015</a></li>
+            					</ul>
+            			</div>
+
+                  <div class="exampleblock third">
+          					<h4 class="text-muted">Advanced</h4>
+          					<ul class="list-unstyled mb-3">
+          					<li class="d-flex mb-1" data-powertip="Match the beginning of a word with an exclamation mark.">
+          						<div class="key">Word Endings</div><a href="#">personal injur!</a></li>
+          					<li class="d-flex mb-1" data-powertip="Find cases with specific money amounts simply by specifying the amount range. Specify exact dollars ($1250-4200) or use abbreviations ($100k-1B).">
+          						<div class="key">Dollar Amount</div><a href="#">verdict $100k-$5M</a></li>
+          					<li class="d-flex mb-1" data-powertip="The &quot;w/&quot; search operator (which stands for &quot;within&quot;) helps find nearby words. The example query finds documents with the word &quot;claim&quot; within 3 words of the word &quot;construction&quot;.">
+          						<div class="key">Nearby Words</div><a href="#">claim w/3 construction</a></li>
+          					<li class="d-flex mb-1" data-powertip="Easily combine queries together using the within operator, &quot;and&quot;, and &quot;or&quot;.">
+          						<div class="key">Combinations</div><a href="#">(grant or deny) w/4 copyright</a></li>
+          					</ul>
+          			</div>
+
+                <hr>
+                <div class="text-center">
+                  <a href="#" class="d-block"> <strong>Full Search Documentation</strong> </a>
+                  <small>Learn all of our search options.</small>
+                </div>
+                  </div>
+
+                </div>
               </div>
             </div>
 
@@ -954,9 +1060,66 @@
   <!-- Vendor/Plugins JS Init -->
   <script src="js\init\wb.swiper-init.js"></script>
   <script src="js\init\wb.ajaxchimp-init.js"></script>
-
+  <script src="./js/vendor/jquery.tree-multiselect.js"></script>
   <!-- Fluxo Template JS -->
   <script src="js\min\main-min.js"></script>
+
+  <script type='text/javascript'>
+    $(function() {
+      $('.cort-btn .btn ').on('click', function(e) {
+        $(this).parent().prev().addClass('open-dropdown');
+        $(this).parent().addClass('btn-expand');
+        e.stopPropagation();
+
+      });
+
+      $('.sidebar-toggle ').on('click', function(e) {
+        $('.search-result-section').toggleClass('open-sidebar');
+      });
+
+      $('.section .title').on('click', function() {
+
+        $(this).parent().siblings(".section").not(".collapsed").addClass("collapsed");
+
+      });
+
+      $(".auxiliary").append("<div class='done_btn'>Done</div>");
+
+      $(".done_btn").on('click', function() {
+        $('.search-field').removeClass('open-dropdown');
+        $('.cort-btn').removeClass('btn-expand');
+      });
+
+    });
+
+    $(".search-field").click(function(e) {
+      e.stopPropagation();
+    });
+
+    $(document).click(function() {
+      $('.search-field').removeClass('open-dropdown');
+      $('.cort-btn').removeClass('btn-expand');
+    });
+  </script>
+
+  <script type="text/javascript">
+  var tree3 = $("#test-select-3").treeMultiselect({
+    enableSelectAll: true,
+    allowBatchSelection: true,
+    searchable: true,
+    startCollapsed: true,
+  });
+  </script>
+  <script type="text/javascript">
+      $('.search-field  .search-input').focusin(function (e) {
+        $('.search-helper').fadeIn();
+        e.stopPropagation();
+      });
+      $('.search-field  .search-input').focusout(function (e) {
+        $('.search-helper').fadeOut();
+        e.stopPropagation();
+      });
+  </script>
 </body>
 
 </html>
