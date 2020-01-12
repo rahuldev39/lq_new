@@ -90,3 +90,34 @@
 .search-helper .exampleblock ul li div.key{
   min-width: 120px
 }
+.search-field .setting-btn {
+    position: absolute;
+    right: 0;
+    font-size: 20px;
+    opacity: 0;
+    transition: all ease-in-out 300ms;
+}
+.search-field .search-input:focus ~ .setting-btn, .search-field:hover .setting-btn{
+    opacity: .6;
+    right: 55px;
+}
+.search-field .setting-btn:hover {
+  opacity: 1 !important
+}
+.query_builder label{
+  min-width: 150px;
+  font-size: .9rem
+}
+.query_builder .form-control{
+  font-size: .9rem;
+}
+.query_builder {
+    top: 100%;
+    left: 20px;
+    display: none;
+}
+@media (min-width: 768px ){
+  .query_builder {
+    width: 650px;
+}
+}
