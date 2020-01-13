@@ -84,14 +84,15 @@ div.tree-multiselect .collapsed div.title {
     div.tree-multiselect div.title > * {
       display: inline-block; }
       div.tree-multiselect div.title > span.collapse-section {
-       margin: 0 3px;
-       width: 8px;
-       position: absolute;
-       right: 12px;
-       font-size: 21px;
-       color: #4d5bed;
-       font-weight: 600;
-   }
+      margin: 0 3px;
+      width: 8px;
+      position: absolute;
+      right: 20px;
+      font-size: 29px;
+      color: #4d5bed;
+      font-weight: 600;
+      line-height: 24px;
+  }
       div.tree-multiselect div.title > span.collapse-section:after {
         content: "-"; }
     div.tree-multiselect div.title:hover {
@@ -138,7 +139,7 @@ div.tree-multiselect .auxiliary input.search {
     display: table-cell;
     width: 100%;
     position: absolute;
-    top: -36px;
+    top: -50px;
     height: 31px;
     outline: none;
     left: 0px;

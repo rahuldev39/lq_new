@@ -1,3 +1,12 @@
+.search-field:not(.open-dropdown) .search-input {
+    box-shadow: 0px 0px 0px 2px #f5f6fb inset;
+}
+.section-hero .search-engine-form{
+  max-width: 1080px
+}
+.search-engine-form input.form-control:focus{
+  box-shadow: none !important
+}
 .open-dropdown .court-search-input {
     width: 100%;
     opacity: 1
@@ -23,10 +32,9 @@
     width: 0;
     opacity: 0;
     transition: all ease-in-out 300ms;
-    border: 3px solid #ed7e1f
+    box-shadow: 0px 0px 0px 2px #4d5bed inset !important;
 }
 .court-dropdown-box {
-    min-height: 0;
     background-color: white;
     position: absolute;
     left: 60px;
@@ -34,10 +42,9 @@
     opacity: 0;
     transition: all ease-in-out 100ms;
     display: none;
-    top: 40px;
+    top: 100%;
 }
 .open-dropdown .court-dropdown-box {
-    min-height: 40px;
     opacity: 1;
     box-shadow: 0px 4px 3px #e2e3ef;
     display: block;
@@ -63,18 +70,21 @@
 .search-filed-box {
     display: flex;
     background-color: rgb(77, 91, 237);
-    border-radius: 28px;
+    border-radius: 4rem;
     position: relative;
     z-index: 1;
 }
 .search-field .form-control {
     border-radius: 40px;
-    border-width: 2px;
-    border-color: #4d5bed;
+    font-size: 1.1rem;
+}
+.search-field ::placeholder{
+  color: #8d8d8f !important
 }
 .open-dropdown div.tree-multiselect .auxiliary input.search {
-    height: 40px;
+    height: 44px;
     box-shadow: none !important;
+    font-size: 1.1rem;
 }
 .search-field input.form-control:focus {
     box-shadow: 0px 0px 0px 2px #4d5bed inset !important;
@@ -95,7 +105,7 @@
     right: 0;
     font-size: 20px;
     opacity: 0;
-    transition: all ease-in-out 300ms;
+    transition: all ease-in-out 800ms;
 }
 .search-field .search-input:focus ~ .setting-btn, .search-field:hover .setting-btn{
     opacity: .6;
@@ -112,7 +122,7 @@
   font-size: .9rem;
 }
 .query_builder {
-    top: 100%;
+    top: calc(100% - 2px);
     left: 20px;
     display: none;
 }

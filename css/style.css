@@ -77,14 +77,9 @@ ul.green-checks-list .h4, ul.green-checks-list h4 {
   margin-bottom: .5rem;
   color: #4d5bed
 }
-
 .section-hero p.lead{
   max-width: 800px
 }
-.section-hero .search-engine-form{
-  max-width: 900px
-}
-
 .main-banner{
   background-image: url(./../images/banner1.png);
   background-size: cover;
@@ -92,8 +87,4 @@ ul.green-checks-list .h4, ul.green-checks-list h4 {
 }
 .bordered-input{
   border-color: #4d5bed !important;
-}
-
-.search-engine-form input.form-control:focus{
-  box-shadow: none !important
 }
