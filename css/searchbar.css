@@ -131,3 +131,15 @@
     width: 650px;
 }
 }
+
+.search-bar-sm .open-dropdown div.tree-multiselect .auxiliary input.search {
+    height: 35px;
+    box-shadow: none !important;
+    font-size: 1.1rem;
+    top: -39px;
+}
+@media (max-width: 768px ){
+  .cort-btn {
+    display: none;
+}
+}

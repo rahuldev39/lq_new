@@ -88,3 +88,16 @@ ul.green-checks-list .h4, ul.green-checks-list h4 {
 .bordered-input{
   border-color: #4d5bed !important;
 }
+.sidebar.filter-sidebar{
+  top: 0%
+}
+.navbar-dark .navbar-nav .nav-sub-menu .nav-link {
+        color: #4f5464;
+}
+.navbar-sm .nav-link {
+    padding-top: 1.7rem;
+    padding-bottom: 1.7rem;
+}
+.navbar-sm .navbar-nav > .nav-item {
+    margin-left: 1.5rem;
+}
