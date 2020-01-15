@@ -134,8 +134,6 @@ ul.green-checks-list .h4, ul.green-checks-list h4 {
 .collapsed .arrow {
     transform: rotate(-90deg);
 }
-
-
 .filter-sidebar label{
       font-weight: 600;
 }
@@ -163,4 +161,7 @@ ul.green-checks-list .h4, ul.green-checks-list h4 {
 }
 .search-top-bar{
   border-bottom: 1px solid #4d5bed29;
+}
+.search-top-bar .search-bar .form-control{
+  width: 180px
 }
