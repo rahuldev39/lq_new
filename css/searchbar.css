@@ -131,7 +131,10 @@
     width: 650px;
 }
 }
-
+.search-bar-sm
+{
+  max-width: 800px;
+}
 .search-bar-sm .open-dropdown div.tree-multiselect .auxiliary input.search {
     height: 35px;
     box-shadow: none !important;
