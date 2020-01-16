@@ -128,14 +128,14 @@ ul.green-checks-list .h4, ul.green-checks-list h4 {
     border-left: 1px solid #4d5bed59;
     padding-left: 4px;
 }
-.arrow {
+.arrow-triangle {
     width: 0;
     height: 0;
     border-left: 4pt solid transparent;
     border-right: 4pt solid transparent;
     border-top: 8pt solid #4d5bed;
 }
-.collapsed .arrow {
+.collapsed .arrow-triangle {
     transform: rotate(-90deg);
 }
 .filter-sidebar label{
@@ -174,4 +174,35 @@ ul.green-checks-list .h4, ul.green-checks-list h4 {
 }
 .posts__categories-list>li.post-category>a:hover{
   box-shadow: inset 0px -2px 0 0 #ed7e1f;
+}
+.main-detail-content p {
+    font-size: 1.2rem;
+    font-weight: 300;
+    line-height: 1.9rem;
+}
+.judgment-detail-header h1{
+  font-family: 'PT Serif', serif;
+}
+.btn-xs {
+    padding: .2rem .8rem;
+    font-size: .9rem;
+}
+.dot-separator {
+    display: inline-block;
+    height: 6px;
+    width: 6px;
+    vertical-align: middle;
+    border-radius: 50%;
+}
+.sticky-toolbar .btn {
+    font-size: 1.2rem;
+    color: #101f41;
+    margin-bottom: 5px
+}
+.sticky-toolbar .btn:hover {
+    color: #4d5bed;
+}
+.sticky-toolbar{
+  position: sticky;
+  top: 0px
 }
