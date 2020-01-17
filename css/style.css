@@ -176,13 +176,11 @@ ul.green-checks-list .h4, ul.green-checks-list h4 {
   box-shadow: inset 0px -2px 0 0 #ed7e1f;
 }
 .main-detail-content p {
-    font-size: 1.2rem;
-    font-weight: 300;
+    font-size: 1.1rem;
+    font-weight: 300 !important;
     line-height: 1.9rem;
 }
-.judgment-detail-header h1{
-  font-family: 'PT Serif', serif;
-}
+
 .btn-xs {
     padding: .2rem .8rem;
     font-size: .9rem;
@@ -195,14 +193,47 @@ ul.green-checks-list .h4, ul.green-checks-list h4 {
     border-radius: 50%;
 }
 .sticky-toolbar .btn {
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     color: #101f41;
-    margin-bottom: 5px
+    margin-bottom: 5px;
+    line-height: initial;
 }
 .sticky-toolbar .btn:hover {
     color: #4d5bed;
 }
-.sticky-toolbar{
+.sticky-toolbar {
+    position: sticky;
+    top: 30px;
+}
+.list-slider{
   position: sticky;
-  top: 0px
+  top: 0px;
+  z-index: 1;
+
+}
+.judgment-info{
+  font-size: .88rem;
+}
+.judgment-info label{
+
+}
+.font-semibold{
+  font-weight: 500 !important
+}
+.judgment-detail-header h2 {
+    font-family: 'Lato', sans-serif;
+    font-weight: 600;
+    color: #3a48e2 !important;
+}
+.text-secondary{
+  color: #ed7e1f !important;
+}
+.main-detail-content a {
+    border-bottom: 2px solid #4d5bed;
+    color: #4f5464;
+    font-weight: 300;
+}
+.main-detail-content a:hover {
+    background-color: #4d5bed;
+    color: white;
 }

@@ -8,7 +8,8 @@
 
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="css\vendor\bootstrap.min.css">
-  <link href="https://fonts.googleapis.com/css?family=PT+Serif:400,400i,700,700i&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,400i,700,700i,900,900i&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.lineicons.com/1.0.1/LineIcons.min.css">
   <!-- Vendor/Plugins CSS -->
   <link rel="stylesheet" href="css\vendor\fontawesome-all.min.css">
   <link rel="stylesheet" href="./css/vendor/jquery-listslider.css">
@@ -147,11 +148,11 @@
     <div class="px-4">
       <div class="">
         <ul class="text-slider-list mb-0">
-            <li><a href="#" class="shadow-sm--on-hover">Arguments of petitioner</a></li>
-            <li><a href="#" class="shadow-sm--on-hover">reasoning</a></li>
-            <li><a href="#" class="shadow-sm--on-hover">statute</a></li>
-            <li><a href="#" class="shadow-sm--on-hover">issue</a></li>
-            <li><a href="#" class="shadow-sm--on-hover">reasoning</a></li>
+            <li><a href="#" class="shadow-sm--on-hover">Issue</a></li>
+            <li><a href="#" class="shadow-sm--on-hover">Reasoning</a></li>
+            <li><a href="#" class="shadow-sm--on-hover">Argument of P</a></li>
+            <li><a href="#" class="shadow-sm--on-hover">Argument of R</a></li>
+            <li><a href="#" class="shadow-sm--on-hover">Decision</a></li>
             <li><a href="#" class="shadow-sm--on-hover">Arguments of petitioner</a></li>
             <li><a href="#" class="shadow-sm--on-hover">reasoning</a></li>
             <li><a href="#" class="shadow-sm--on-hover">statute</a></li>
@@ -170,38 +171,38 @@
 
   <main class="main">
     <section class="section section-hero py-0">
-      <div class="container">
-
-
-        <div class="container-sm d-flex ">
-
-          <div class="sticky-toolbar btn-toolbar align-self-start mt-7 pt-7 mr-4" role="toolbar">
-            <div class="btn-group-vertical btn-group-sm">
-              <button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="right" title="Facebook">
-                <i class="fab fa-facebook-f"></i>
-              </button>
-              <button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="right" title="Twitter">
-                <i class="fab fa-twitter"></i>
-              </button>
-              <button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="right" title="Linkedin">
-                <i class="fab fa-linkedin-in"></i>
-              </button>
-              <button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="right" title="Mail">
-                <i class="fas fa-envelope"></i>
-              </button>
-              <button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="right" title="Note">
-                <i class="fas fa-edit"></i>
-              </button>
-              <button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="right" title="Print">
-              <i class="fas fa-print"></i>
-              </button>
-            </div>
+      <div class="container d-flex">
+        <div class="sticky-toolbar btn-toolbar align-self-start mt-6 pt-6 mr-4 pb-4" role="toolbar">
+          <div class="btn-group-vertical btn-group-sm">
+            <button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="right" title="Facebook">
+              <i class="lni-facebook"></i>
+            </button>
+            <button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="right" title="Twitter">
+              <i class="lni-twitter"></i>
+            </button>
+            <button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="right" title="Linkedin">
+              <i class="lni-linkedin"></i>
+            </button>
+            <button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="right" title="Mail">
+              <i class="lni-envelope"></i>
+            </button>
+            <button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="right" title="Note">
+              <i class="lni-pencil-alt"></i>
+            </button>
+            <button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="right" title="Print">
+            <i class="lni-printer"></i>
+            </button>
           </div>
+        </div>
+
+        <div class="container-sm  ">
+
+
 
           <div class="flex-fill">
             <div class="d-flex align-items-center py-4">
-              <a href="#"><small class="fas fa-angle-left"></small> Back</a>
-              <span class="dot-separator bg-primary mx-2"></span>
+              <a href="#" class="text-secondary"><small class="fas fa-angle-left"></small> Back</a>
+              <span class="dot-separator bg-secondary mx-2"></span>
               <span class="mb-0"> Supreme Court of India</span>
               <div class="ml-auto">
                 <button type="button" class="btn btn-outline-primary btn-xs">Report a Problem</button>
@@ -209,25 +210,65 @@
               </div>
             </div>
             <div class="judgment-detail-header">
-              <h1 class="mb-2 font-weight-bold ">Chief regional mangaer united india insurance company limited v. Siraj uddin khan</h1>
-              <p class="mb-4">Civil Appeal Nos.7763 of 2004 - 7764 of 2004 | 02-12-2004</p>
-            </div>
-            <hr>
-            <div class="igraph">
-              <img src="./images/igraph.png" alt="">
+              <h2 class="mb-3">Chief regional mangaer united india insurance company limited v. Siraj uddin khan</h2>
+              <p class="mb-4 text-primary font-semibold">Civil Appeal Nos.7763 of 2004 - 7764 of 2004 | 02-12-2004</p>
             </div>
 
-            <div class="main-detail-content">
+            <div class="judgment-info py-2">
+              <div class="row ">
+                <div class="col-md-6">
+                  <div class="d-flex mb-1">
+                    <label class="text-primary mr-3 font-weight-bold">Bench</label>
+                    <div class="text-dark">
+                      <span class="">Arijit Pasayat</span>,
+                      <span class="">Ruma Pal</span>,
+                      <span class="">C.K. Thakker</span>,
+                    </div>
+                  </div>
+                  <div class="d-flex mb-1">
+                    <label class="text-primary mr-3 font-weight-bold">Advocates</label>
+                    <div class="text-dark">
+                      <span class=""><strong>Appellant</strong> -Shekhar Naphade</span>,
+                      <span class=""><strong>Respondent</strong> -S. Vani, B. Sunita Rao, Sushil Kumar Pathak</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="d-flex mb-1">
+                    <label class="text-primary mr-3 font-weight-bold">Citation</label>
+                    <div class="text-dark">
+                      <span class="text-nowrap">2005 (2) SCC 22</span>,
+                      <span class=" text-nowrap">2004 (10) Scale 153</span>,
+                      <span class="text-nowrap">2005 AIR(SC) 534</span>,
+                    </div>
+                  </div>
+                  <div class="d-flex mb-1">
+                    <label class="text-primary mr-3 font-weight-bold">Status</label>
+                    <div class="text-dark">
+                      <span class="text-nowrap">Disposed</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <hr>
+            <div class="igraph mt-4">
+              <img src="./images/igraph.png" alt="">
+            </div>
+            <hr>
+
+            <div class="main-detail-content mt-4">
               <p><strong>Dr. B.S. Chauhan, J.</strong><br><br>1. This appeal has been preferred against the impugned judgment and decree dated 1.12.2009 in Regular Second Appeal No.2299 of 2009, passed by the High Court of Punjab &amp; Haryana
-                at Chandigarh, affirming the judgment and decree dated 16.9.2008, passed by the Additional District Judge, Amritsar in Civil Appeal No.122 of 14.6.2006 as well as the judgment and decree dated 23.5.2006, passed by the Civil
-                Judge (Sr. Division) Amritsar in Civil Suit No.275 of 2004, wherein and whereunder the courts have dismissed the suit of the appellant for grant of retiral benefits for not being Government servant.<br><br>2. Facts and circumstances
+                at Chandigarh, affirming the judgment and decree dated 16.9.2008, passed by the Additional District Judge, Amritsar in Civil Appeal No.122 of 14.6.2006 as well as the judgment and decree dated <a href="#"> 23.5.2006</a>, passed by the Civil
+                Judge (Sr. Division) <a href="#">Amritsar in Civil Suit No.275 of 2004</a>, wherein and whereunder the courts have dismissed the suit of the appellant for grant of retiral benefits for not being Government servant.<br><br>2. Facts and circumstances
                 giving rise to this appeal are as under:</p>
               <blockquote>
-                <p><span id="selectedfacts-1" tabindex="1">A. That the appellant had worked in the Army as Truck driver from 26.10.1962 to 10.1.1968. He was subsequently employed as a truck driver in the Fish Farmers Development Agency from 16.7.1980 to 20.5.1998. After being declared surplus, he was absorbed in the Animal Husbandry, Fisheries and Dairy Development, Punjab on 1.6.1998 and stood superannuated on 31.3.2002.<br><br><span id="selectedissue-1" tabindex="1">B. The appellant instituted Civil Suit No.275 of 2004 claiming retrial benefits in view of letter dated 20.4.1998 issued by the Govt. of Punjab which provided for regularisation of ad hoc employees by absorbing them against the departmental posts. The said suit was dismissed vide judgment and decree dated 23.5.2006.</span><br><br>C.
-                  Aggrieved, the appellant preferred Civil Appeal No.122 of 2006. It was also dismissed vide judgment and decree dated 16.9.2008.<br><br>D. Aggrieved, the appellant preferred the Regular Second Appeal which has been dismissed
+                <p><span id="selectedfacts-1" tabindex="1">A. That the appellant had worked in the Army as Truck driver from 26.10.1962 to 10.1.1968. He was subsequently employed as a truck driver in the <a href="#">Fish Farmers Development Agency from 16.7.1980 to 20.5.1998</a>. After being declared surplus, he was absorbed in the Animal Husbandry, Fisheries and Dairy Development, Punjab on 1.6.1998 and stood superannuated on 31.3.2002.<br><br><span id="selectedissue-1" tabindex="1">B. The appellant instituted Civil Suit <a href="#">No.275 of 2004</a>  claiming retrial benefits in view of letter dated 20.4.1998 issued by the Govt. of Punjab which provided for regularisation of ad hoc employees by absorbing them against the departmental posts. The said suit was dismissed vide judgment and decree dated 23.5.2006.</span><br><br>C.
+                  Aggrieved, the appellant preferred Civil <a href="#">Appeal No.122 of 2006</a>. It was also dismissed vide judgment and decree dated 16.9.2008.<br><br>D. Aggrieved, the appellant preferred the Regular Second Appeal which has been dismissed
                   vide impugned judgment and decree</span>.</p>
               </blockquote>
-              <p><br>Hence, this appeal.<br><br>3. <span id="selectedargofpetitioner-1" tabindex="1">Shri D.K. Garg, learned counsel appearing for the appellant has submitted that as the appellant had been absorbed in the Fish Farmers Development Agency, he is entitled to take the benefit of entire service rendered in various places. Thus, the courts below committed an error in refusing the relief of pension and other retrial benefits. The appellant had been given a hostile discrimination while a similarly situated person, namely, Charanjit Lal got a decree from the Civil Court, Gurdaspur on 16.9.1996 in Suit No.4 of 1992. Thus, the appeal deserves to be allowed.</span><br><br>
+              <p><br>Hence, this appeal.<br><br>3. <span id="selectedargofpetitioner-1" tabindex="1">Shri D.K. Garg, learned counsel appearing for the appellant has submitted that as the appellant had been absorbed in the <a href="#">Fish Farmers Development Agency</a>, he is entitled to take the benefit of entire service rendered in various places. Thus, the courts below committed an error in refusing the relief of pension and other retrial benefits. The appellant had been given a hostile discrimination while a similarly situated person, namely, Charanjit Lal got a decree from the Civil Court, Gurdaspur on <a href="#">16.9.1996 in Suit No.4 of 1992</a> . Thus, the appeal deserves to be allowed.</span><br><br>
                 <span id="selectedargofresponder-1" tabindex="1">4. Per contra, Shri Jagjit Singh Chhabra, learned counsel appearing for the State has opposed the appeal contending that the Fish Farmers Development Agency is a society registered under the Societies Registration Act, 1860
                   (hereinafter referred to as Act 1860). If a civil court had granted the relief by mistake or the plaintiff therein succeeded in getting a collusive decree, which is contrary to law, its benefit cannot be extended to other
                   similarly situated persons for the reason that Article 14 of the Constitution is not meant to perpetuate an illegality. Thus, the appeal is liable to be dismissed.</span><br><br>5. We have considered

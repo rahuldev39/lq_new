@@ -67,6 +67,7 @@
 }
 .listslider-wrapper {
     padding: .8rem 0;
+    margin: 0 auto;
 }
 
 .listslider{
@@ -89,15 +90,18 @@ ul.listslider li {
 ul.listslider li a {
     display: block;
     padding: 5px 20px;
-    border: 1px solid #dadbe6;
+    border: 1px solid #cfcfd0;
     border-radius: 22px;
     color: #4f5464;
+    background-color: white;
 }
 .list-slider {
-    border-top: 1px solid #ebecef;
+    border-top: 1px solid #e6e9f1;
+    border-bottom: 1px solid #dfe3ea;
+    background-color: #f8f8f9 !important;
 }
 ul.listslider li a:hover {
-    background-color: #4d5bed14;
+    background-color: #fffffff2;
     border-color: #4d5bed;
     color: #4d5bed;
 }
