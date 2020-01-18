@@ -237,3 +237,7 @@ ul.green-checks-list .h4, ul.green-checks-list h4 {
     background-color: #4d5bed;
     color: white;
 }
+.about-section{
+  background-image: url(./../images/shutterstock_259210829.png);
+  background-size: cover;
+}
