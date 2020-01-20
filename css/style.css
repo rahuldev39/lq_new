@@ -287,3 +287,25 @@ ul.green-checks-list .h4, ul.green-checks-list h4 {
     font-size: .9rem;
     opacity: .9;
 }
+.login-bg{
+  background-image: url(./../images/login-bg.jpg);
+  background-size: cover;
+  position: relative;
+}
+.login-bg::after{
+  position: absolute;
+  content: ""
+}
+label {
+    font-weight: 500;
+    font-size: .8rem;
+    margin-bottom: .3rem;
+}
+.custom-control-input:checked~.custom-control-label::before {
+    color: #fff;
+    border-color: #4d5bed;
+    background-color: #4d5bed;
+}
+.login-main hr {
+    border-top: 1px solid rgba(0, 0, 0, 0.05) !important;
+}
