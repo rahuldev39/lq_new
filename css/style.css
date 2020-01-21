@@ -327,12 +327,11 @@ font-size: .9rem
 .main-detail-content ::selection{
   background: rgba(77, 91, 237, 0.2);
 }
-
 .judgment-detail-header.sticky-head-show .position-fixed {
-    top: 3.7rem;
+    top: 3.6rem;
     display: block !important;
     z-index: 1;
-    min-width: 800px;
+    width: 100%;
 }
 .preminum-tag {
     border-right: 1px solid #d2d2d2;

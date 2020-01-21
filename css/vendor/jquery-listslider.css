@@ -92,9 +92,10 @@ ul.listslider li a {
     padding: 4px 18px;
     border: 1px solid #cfcfd0;
     border-radius: 22px;
-    color: #4f5464;
+    color: #484848;
     background-color: white;
     font-size: .9rem;
+    font-weight: 500;
 }
 .list-slider {
     border-top: 1px solid  rgb(210, 210, 210);
