@@ -309,3 +309,9 @@ label {
 .login-main hr {
     border-top: 1px solid rgba(0, 0, 0, 0.05) !important;
 }
+table{
+  font-size: .94rem
+}
+.dt-buttons .btn {
+    font-size: .8rem;
+}
