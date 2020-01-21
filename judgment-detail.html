@@ -8,7 +8,7 @@
 
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="css\vendor\bootstrap.min.css">
-  <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,400i,700,700i,900,900i&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Gelasio:400,400i,500,500i,600,600i,700,700i&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdn.lineicons.com/1.0.1/LineIcons.min.css">
   <!-- Vendor/Plugins CSS -->
   <link rel="stylesheet" href="css\vendor\fontawesome-all.min.css">
@@ -144,7 +144,10 @@
     </nav> <!-- END Navbar -->
   </header>
 
-  <div class="list-slider shadow-sm">
+  <div class="list-slider shadow-sm bg-white">
+    <div class="preminum-tag d-flex align-items-center position-absolute h-100 px-2" data-toggle="tooltip" data-placement="right" title="Premium Feature">
+      <i class="fas fa-gem"></i>
+    </div>
     <div class="px-4">
       <div class="">
         <ul class="text-slider-list mb-0">
@@ -153,25 +156,32 @@
             <li><a href="#" class="shadow-sm--on-hover">Argument of P</a></li>
             <li><a href="#" class="shadow-sm--on-hover">Argument of R</a></li>
             <li><a href="#" class="shadow-sm--on-hover">Decision</a></li>
-            <li><a href="#" class="shadow-sm--on-hover">Arguments of petitioner</a></li>
-            <li><a href="#" class="shadow-sm--on-hover">reasoning</a></li>
-            <li><a href="#" class="shadow-sm--on-hover">statute</a></li>
-            <li><a href="#" class="shadow-sm--on-hover">issue</a></li>
-            <li><a href="#" class="shadow-sm--on-hover">reasoning</a></li>
-            <li><a href="#" class="shadow-sm--on-hover">Arguments of petitioner</a></li>
-            <li><a href="#" class="shadow-sm--on-hover">reasoning</a></li>
-            <li><a href="#" class="shadow-sm--on-hover">statute</a></li>
-            <li><a href="#" class="shadow-sm--on-hover">issue</a></li>
-            <li><a href="#" class="shadow-sm--on-hover">reasoning</a></li>
+            <li><a href="#" class="shadow-sm--on-hover">Facts</a></li>
+            <li><a href="#" class="shadow-sm--on-hover">Reasoning</a></li>
+            <li><a href="#" class="shadow-sm--on-hover">Acts</a></li>
         </ul>
       </div>
 
     </div>
+
   </div>
 
   <main class="main">
-    <section class="section section-hero py-0">
+    <section class="section section-hero py-0 gradient-light--lean-right">
       <div class="container d-flex">
+        <figure class="figure highlight-background highlight-background--lean-right">
+          <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1291px" height="480px">
+            <defs>
+              <linearGradient id="PSgrad_0" x1="0%" x2="0%" y1="100%" y2="0%">
+                <stop offset="28%" stop-color="rgb(244,245,250)" stop-opacity="1"></stop>
+                <stop offset="100%" stop-color="rgb(252,253,255)" stop-opacity="1"></stop>
+              </linearGradient>
+
+            </defs>
+            <path fill-rule="evenodd" opacity="0.1" fill="rgb(0, 0, 0)" d="M480.084,0.001 L1290.991,0.001 L810.906,831.000 L-0.000,831.000 L480.084,0.001 Z"></path>
+            <path fill="url(#PSgrad_0)" d="M480.084,0.001 L1290.991,0.001 L810.906,831.000 L-0.000,831.000 L480.084,0.001 Z"></path>
+          </svg>
+        </figure>
         <div class="sticky-toolbar btn-toolbar align-self-start mt-6 pt-6 mr-4 pb-4" role="toolbar">
           <div class="btn-group-vertical btn-group-sm">
             <button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="right" title="Facebook">
@@ -195,7 +205,7 @@
           </div>
         </div>
 
-        <div class="container-sm  ">
+        <div class="container-sm  position-relative">
 
 
 
@@ -209,9 +219,19 @@
                 <button type="button" class="btn btn-outline-secondary btn-xs"><i class="far fa-bookmark"></i> Bookmark</button>
               </div>
             </div>
-            <div class="judgment-detail-header">
-              <h2 class="mb-3">Chief regional mangaer united india insurance company limited v. Siraj uddin khan</h2>
-              <p class="mb-4 text-primary font-semibold">Civil Appeal Nos.7763 of 2004 - 7764 of 2004 | 02-12-2004</p>
+            <div class="judgment-detail-header text-center">
+              <h1 class="mb-3 font-weight-bold">Rajendra Kumar
+                <br>
+                v.
+                <br>
+                Gopal Krishna
+              </h1>
+              <p class="mb-5 font-semibold">Civil Appeal Nos.7763 of 2004 - 7764 of 2004 | 02-12-2004</p>
+              <div class="position-fixed d-none text-white bg-dark p-2 container-sm">
+                <h6 class="d-inline text-white mr-2">Rajendra Kumar v. Gopal Krishna</h6>
+                <span class="dot-separator bg-white mx-2"></span>
+                <small class="font-weight-light">Appeal Nos.7763 of 2004 - 7764 of 2004</small>
+              </div>
             </div>
 
             <div class="judgment-info py-2">
@@ -382,6 +402,13 @@
 
   </div> <!-- END Alert Notifications Wrapper -->
 
+<div class="dropdown-menu popup-tag shadow" aria-labelledby="dropdownMenuButton">
+  <a class="dropdown-item py-2" href="#">Copy with Citation</a>
+  <a class="dropdown-item py-2" href="#">Copy as Parenthetical Citation</a>
+  <a class="dropdown-item py-2" href="#"><span class="dot-separator bg-warning mx-2"></span> Highlight</a>
+  <div class="dropdown-divider"></div>
+  <a class="dropdown-item py-2" href="#"><i class="fas fa-cog"></i> Citation Format</a>
+</div>
   <!-- Global Required JS -->
   <script src="js\vendor\jquery-3.3.1.min.js"></script>
   <script src="js\vendor\popper.min.js"></script>
@@ -406,6 +433,45 @@
       $(function () {
     $('[data-toggle="tooltip"]').tooltip()
     })
+  </script>
+
+  <script>
+  function getSelected() {
+    if(window.getSelection) { return window.getSelection(); }
+    else if(document.getSelection) { return document.getSelection(); }
+    else {
+      var selection = document.selection && document.selection.createRange();
+    if(selection.text) { return selection.text; }
+      return false;
+    }
+    return false;
+    }
+/* create sniffer */
+$(document).ready(function() {
+$('.main-detail-content').mouseup(function(event) {
+  var selection = getSelected();
+      selection = $.trim(selection);
+      if(selection != ''){
+      $(".popup-tag").css("display","block");
+      $(".popup-tag").css("top",event.pageY);
+      $(".popup-tag").css("left",event.pageX);
+      }else{
+      $(".popup-tag").css("display","none");
+      }
+});
+});
+  </script>
+
+  <script type="text/javascript">
+    var stickyTop = $('.judgment-info').offset().top;
+
+    $(window).on( 'scroll', function(){
+          if ($(window).scrollTop() >= stickyTop) {
+              $('.judgment-detail-header').addClass('sticky-head-show')
+          } else {
+              $('.judgment-detail-header').removeClass('sticky-head-show')
+          }
+      });
   </script>
 
 </body>

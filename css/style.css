@@ -214,16 +214,15 @@ ul.green-checks-list .h4, ul.green-checks-list h4 {
 .judgment-info{
   font-size: .88rem;
 }
-.judgment-info label{
-
+.judgment-info label {
+    min-width: 67px;
 }
 .font-semibold{
   font-weight: 500 !important
 }
-.judgment-detail-header h2 {
-    font-family: 'Lato', sans-serif;
-    font-weight: 600;
-    color: #3a48e2 !important;
+.judgment-detail-header h1 {
+    font-family: 'Gelasio', serif;
+    font-size: 3.2rem
 }
 .text-secondary{
   color: #ed7e1f !important;
@@ -314,4 +313,32 @@ table{
 }
 .dt-buttons .btn {
     font-size: .8rem;
+}
+.popup-tag{
+position:absolute;
+display:none;
+
+font-size: .9rem
+}
+.popup-tag .dot-separator{
+  height: 12px;
+    width: 12px;
+}
+.main-detail-content ::selection{
+  background: rgba(77, 91, 237, 0.2);
+}
+
+.judgment-detail-header.sticky-head-show .position-fixed {
+    top: 3.7rem;
+    display: block !important;
+    z-index: 1;
+    min-width: 800px;
+}
+.preminum-tag {
+    border-right: 1px solid #d2d2d2;
+}
+.preminum-tag i {
+    color: #ed7e1f;
+    cursor: pointer;
+    font-size: 25px;
 }

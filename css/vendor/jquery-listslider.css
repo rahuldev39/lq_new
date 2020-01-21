@@ -89,16 +89,16 @@ ul.listslider li {
 }
 ul.listslider li a {
     display: block;
-    padding: 5px 20px;
+    padding: 4px 18px;
     border: 1px solid #cfcfd0;
     border-radius: 22px;
     color: #4f5464;
     background-color: white;
+    font-size: .9rem;
 }
 .list-slider {
-    border-top: 1px solid #e6e9f1;
-    border-bottom: 1px solid #dfe3ea;
-    background-color: #f8f8f9 !important;
+    border-top: 1px solid  rgb(210, 210, 210);
+    border-bottom: 1px solid  rgb(210, 210, 210);
 }
 ul.listslider li a:hover {
     background-color: #fffffff2;
