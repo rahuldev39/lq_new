@@ -190,7 +190,7 @@ ul.green-checks-list .h4, ul.green-checks-list h4 {
 }
 .sticky-toolbar {
     position: sticky;
-    top: 30px;
+    top: 55px;
 }
 .list-slider{
   position: sticky;
@@ -201,9 +201,7 @@ ul.green-checks-list .h4, ul.green-checks-list h4 {
 .judgment-info{
   font-size: .88rem;
 }
-.judgment-info label {
-    min-width: 67px;
-}
+
 .font-semibold{
   font-weight: 500 !important
 }
@@ -321,12 +319,11 @@ font-size: .9rem
     width: 100%;
 }
 .preminum-tag {
-    border-right: 1px solid #d2d2d2;
 }
 .preminum-tag i {
     color: #ed7e1f;
     cursor: pointer;
-    font-size: 25px;
+    font-size: 22px;
 }
 .filter-within-search .form-control:focus{
   box-shadow: none !important;
@@ -339,4 +336,13 @@ font-size: .9rem
 }
 .more-btn {
     font-size: .8rem !important;
+}
+.judgment-top-tabs ul li a {
+    font-size: .8rem;
+    padding: .4rem .4rem !important;
+}
+.back-to-result a, .judgment-top-tabs select {
+    background-color: #4d5bed14 !important;
+    font-size: .8rem;
+    color: #101f41d6;
 }

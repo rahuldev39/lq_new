@@ -66,7 +66,7 @@
     left: 0;
 }
 .listslider-wrapper {
-    padding: .8rem 0;
+    padding: .7rem 0;
     margin: 0 auto;
 }
 
@@ -89,7 +89,7 @@ ul.listslider li {
 }
 ul.listslider li a {
     display: block;
-    padding: 4px 18px;
+    padding: 3px 12px;
     border: 1px solid #cfcfd0;
     border-radius: 22px;
     color: #484848;
@@ -98,8 +98,8 @@ ul.listslider li a {
     font-weight: 500;
 }
 .list-slider {
-    border-top: 1px solid  rgb(210, 210, 210);
-    border-bottom: 1px solid  rgb(210, 210, 210);
+    border-top: 1px solid rgb(234, 234, 234);
+    border-bottom: 1px solid rgb(210, 210, 210);
 }
 ul.listslider li a:hover {
     background-color: #fffffff2;
