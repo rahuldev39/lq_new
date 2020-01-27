@@ -69,8 +69,6 @@ ul.green-checks-list .h4, ul.green-checks-list h4 {
   max-width: 800px
 }
 .main-banner{
-  background-image: url(./../images/banner1.png);
-  background-size: cover;
 
 }
 .bordered-input{
@@ -87,7 +85,7 @@ ul.green-checks-list .h4, ul.green-checks-list h4 {
     padding-bottom: 1.7rem;
 }
 .navbar-sm .navbar-nav > .nav-item {
-    margin-left: 1.5rem;
+    margin-left: 1.4rem;
 }
 .filter-sidebar .widget {
     min-height: 100vh;
@@ -345,4 +343,28 @@ font-size: .9rem
     background-color: #4d5bed14 !important;
     font-size: .8rem;
     color: #101f41d6;
+}
+.main-quote-section .rating {
+    font-size: 2.2rem;
+}
+.main-quote-section p {
+    font-size: 1.5rem;
+    font-weight: 300;
+    font-family: 'Gelasio';
+}
+.separator{
+  height: 2px;
+}
+.main-quote-section .separator{
+  min-width: 50px
+}
+.testimony__card p {
+    font-size: 1.4rem;
+    color: #101f41;
+    font-family: 'Gelasio';
+}
+.mark, mark {
+    background-color: #de8c1163;
+    padding: 2px 5px;
+    margin: -3px -5px;
 }

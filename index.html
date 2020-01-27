@@ -11,6 +11,7 @@
 
   <!-- Vendor/Plugins CSS -->
   <link rel="stylesheet" href="css\vendor\fontawesome-all.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Gelasio:400,400i,500,500i,600,600i,700,700i&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css\vendor\swiper.min.css">
   <link rel="stylesheet" href="./css/vendor/jquery.tree-multiselect.css">
 
@@ -42,104 +43,59 @@
 <body>
   <header class="header">
 
-    <nav class="navbar navbar-expand-lg">
-      <div class="container position-relative">
+    <nav class="navbar navbar-expand-lg navbar-sm ">
+      <div class="container-fluid position-relative">
 
         <a class="navbar-brand" href="index.html">
-          <img src="./images/lq-logo.png" alt="legitquest"></a>
+          <img src="./images/lq-logo.png" alt="legitquest" class="mr-5"></a>
         <button class="navbar-toggler border-0" type="button" data-toggle="offcanvas">
           <i class="navbar-toggler__bar navbar-toggler__bar--top"></i>
           <i class="navbar-toggler__bar navbar-toggler__bar--middle"></i>
           <i class="navbar-toggler__bar navbar-toggler__bar--bottom"></i>
         </button> <!-- Navbar Toggle Button -->
 
-        <div class="offcanvas-collapse ml-auto" id="navbarsExampleDefault">
+        <div class="offcanvas-collapse">
           <ul class="navbar-nav">
-            <li class="nav-item">
+            <li class="nav-item active">
               <a class="nav-link" href="./index.html">Home</a>
             </li>
 
+            <li class="nav-item">
+              <a class="nav-link" href="./about.html">About us</a>
+            </li>
+
             <li class="nav-item nav--has-sub-menu" data-toggle="hover">
-              <a class="nav-link" href="#" data-toggle="dropdown">Sections</a>
+              <a class="nav-link" href="#" data-toggle="dropdown">Products</a>
 
               <ul class="nav-sub-menu dropdown-menu rounded-lg shadow">
                 <li class="nav-item">
-                  <a href="./about.html" class="nav-link">About Us</a>
+                  <a href="#" class="nav-link">Research</a>
                 </li>
                 <li class="nav-item">
-                  <a href="./coverage.html" class="nav-link">Coverage</a>
+                  <a href="#" class="nav-link">Services</a>
                 </li>
                 <li class="nav-item">
-                  <a href="./team.html" class="nav-link">Team</a>
-                </li>
-                <li class="nav-item nav--has-sub-menu sub-menu--on-right" data-toggle="hover">
-                  <a href="sections.html#section-headers" class="nav-link" data-toggle="dropdown">Headers</a>
-                  <ul class="nav-sub-menu dropdown-menu rounded-lg shadow">
-                    <li class="nav-item">
-                      <a href="sections.html#header-2" class="nav-link">Header 2</a>
-                    </li>
-                    <li class="nav-item">
-                      <a href="sections.html#header-3" class="nav-link">Header 3</a>
-                    </li>
-                    <li class="nav-item">
-                      <a href="sections.html#header-4" class="nav-link">Header 4</a>
-                    </li>
-                    <li class="nav-item">
-                      <a href="sections.html#header-5" class="nav-link">Header 5</a>
-                    </li>
-                  </ul>
-                </li>
-
-              </ul>
-            </li> <!-- Fluxo Dropdown -->
-            <li class="nav-item nav--has-sub-menu nav--dropdown-menu-right" data-toggle="hover">
-              <a class="nav-link" href="#" data-toggle="dropdown">Docs</a>
-
-              <ul class="nav-sub-menu list-group list-group-flush dropdown-menu dropdown-menu-right rounded-lg shadow">
-                <li class="nav-item">
-                  <a href="../documentation/index.html" class="nav-link list-group-item list-group-item-action">
-                    <div class="media align-items-center">
-                      <figure class="icon mb-0">
-                        <img src="images\icn_fluxo_influencer.svg" alt="Documentation" class="feature-icon">
-                      </figure>
-
-                      <div class="ml-2">
-                        <p class="mb-0"><strong>Documentation</strong></p>
-                        <small>Customizing and building.</small>
-                      </div>
-                    </div>
-                  </a>
-                </li>
-                <li class="nav-item">
-                  <a href="#0" class="nav-link list-group-item list-group-item-action">
-                    <div class="media align-items-center">
-                      <figure class="icon mb-0">
-                        <img src="images\icn_fluxo_customer-support.svg" alt="Customer Support" class="feature-icon">
-                      </figure>
-
-                      <div class="ml-2">
-                        <p class="mb-0"><strong>Get Support</strong></p>
-                        <small>Talk to real-human support</small>
-                      </div>
-                    </div>
-                  </a>
-                </li>
-                <li class="nav-item">
-                  <a href="../documentation/changelog.html" class="nav-link list-group-item list-group-item-action">
-                    <div class="media align-items-center">
-                      <figure class="icon mb-0">
-                        <img src="images\icn_fluxo_stacks.svg" alt="Changelog" class="feature-icon">
-                      </figure>
-
-                      <div class="ml-2">
-                        <p class="mb-0"><strong>Changelog</strong> <span class="badge badge-primary badge-pill ml-1">v1.0</span></p>
-                        <small>Keep track of changes.</small>
-                      </div>
-                    </div>
-                  </a>
+                  <a href="#" class="nav-link">Publish</a>
                 </li>
               </ul>
-            </li> <!-- Fluxo List-Group Dropdown -->
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="#">Features</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="#">Team</a>
+            </li>
+
+          </ul>
+        </div>
+
+        <div class="offcanvas-collapse ml-auto">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="./index.html">Sign In</a>
+            </li>
             <li class="nav-item nav-item--btn">
               <a href="./login.html" class="btn btn-primary btn-sm btn--has-shadow mt-3 mt-lg-0">Sign Up</a>
             </li>
@@ -155,6 +111,19 @@
 
     <section class="section-hero main-banner py-0 gradient-light--lean-right">
       <div class="container">
+        <figure class="figure highlight-background highlight-background--lean-right">
+          <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1291px" height="480px">
+            <defs>
+              <linearGradient id="PSgrad_0" x1="0%" x2="0%" y1="100%" y2="0%">
+                <stop offset="28%" stop-color="rgb(244,245,250)" stop-opacity="1"></stop>
+                <stop offset="100%" stop-color="rgb(252,253,255)" stop-opacity="1"></stop>
+              </linearGradient>
+
+            </defs>
+            <path fill-rule="evenodd" opacity="0.1" fill="rgb(0, 0, 0)" d="M480.084,0.001 L1290.991,0.001 L810.906,831.000 L-0.000,831.000 L480.084,0.001 Z"></path>
+            <path fill="url(#PSgrad_0)" d="M480.084,0.001 L1290.991,0.001 L810.906,831.000 L-0.000,831.000 L480.084,0.001 Z"></path>
+          </svg>
+        </figure>
         <figure class="figure h-100 pattern-svg">
           <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1170px" height="348px">
             <path fill-rule="evenodd" fill="rgb(35, 23, 123)" d="M-0.011,116.317 L8.682,113.988 L11.011,122.681 L2.318,125.011 L-0.011,116.317 Z"></path>
@@ -173,9 +142,9 @@
 
           <div class="col-lg-12 align-self-center text-center">
 
-            <h1 class="mb-3 font-weight-bold">Obtain better litigation outcomes.</h1>
+            <h1 class="mb-3 font-weight-bold">Fastest Legal Research</h1>
 
-            <p class="lead mb-5 mx-auto">Search millions of lawsuits, track your cases on any device, and analyze outcomes for competitive advantage.</p>
+            <p class="lead mb-5 mx-auto text-dark">A true replacement for other paid legal databases. Hednotes are passe, iDRAF is the new judgment insight medium of 2020.</p>
 
             <div class="search-engine-form  mx-auto">
               <div class="search-filed-box">
@@ -469,80 +438,28 @@
       </div>
     </section> <!-- END Section Hero -->
 
-    <section class="section section-main-features gradient-light--upright">
-      <figure class="figure highlight-background highlight-background--lean-left">
-        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1439px" height="480px">
-          <defs>
-            <lineargradient id="PSgrad_1" x1="42.262%" x2="0%" y1="90.631%" y2="0%">
-              <stop offset="28%" stop-color="rgb(245,246,252)" stop-opacity="1"></stop>
-              <stop offset="100%" stop-color="rgb(255,255,255)" stop-opacity="1"></stop>
-            </lineargradient>
-
-          </defs>
-          <path fill-rule="evenodd" fill="rgb(255, 255, 255)" d="M863.247,-271.203 L-345.788,-427.818 L760.770,642.200 L1969.805,798.815 L863.247,-271.203 Z"></path>
-          <path fill="url(#PSgrad_1)" d="M863.247,-271.203 L-345.788,-427.818 L760.770,642.200 L1969.805,798.815 L863.247,-271.203 Z"></path>
-        </svg>
-      </figure> <!-- Highlight SVG Background -->
-
+    <section class="section main-quote-section bg-white">
       <div class="container">
         <div class="row">
 
-          <div class="col-md-8 offset-md-2 col-lg-6 offset-lg-3 text-center">
-            <h2 class="section__title mb-6">Smarter legal research</h2>
+          <div class="col-md-8 offset-md-2 col-lg-12 offset-lg-0 text-center">
+            <span class="rating text-warning d-block mb-4">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </span>
+            <h2 class="section__title mb-4">World’s First 1-click judgment evaluation system</h2>
           </div>
 
-          <div class="main-features__list col-md-12">
-            <div class="row">
 
-              <div class="col-md-4">
-                <div class="main-feature text-center mb-md-0">
-                  <div class="icon icon--rounded bg-primary">
-                    <img src="images\icn_fluxo_influencer.svg" alt="Feature Icon" class="feature-icon">
-                  </div>
+          <div class="main-features__list col-md-12 text-center">
 
-                  <h5 class="main-feature__title">
-                    Influencer
-                  </h5>
-
-                  <p class="main-feature__content px-4 px-md-0 px-xl-4">
-                    Sed ut perspiciatis unde omnis iste natus error is simply dummy text of the printing and typesetting industry.
-                  </p>
-                </div> <!-- Main Feature -->
-              </div>
-
-              <div class="col-md-4">
-                <div class="main-feature text-center mb-md-0">
-                  <div class="icon icon--rounded bg-primary">
-                    <img src="images\icn_fluxo_chart.svg" alt="Feature Icon" class="feature-icon">
-                  </div>
-
-                  <h5 class="main-feature__title">
-                    Roi
-                  </h5>
-
-                  <p class="main-feature__content px-4 px-md-0 px-xl-4">
-                    Sed ut perspiciatis unde omnis iste natus error is simply dummy text of the printing and typesetting industry.
-                  </p>
-                </div> <!-- Main Feature -->
-              </div>
-
-              <div class="col-md-4">
-                <div class="main-feature text-center mb-0">
-                  <div class="icon icon--rounded bg-primary">
-                    <img src="images\icn_fluxo_cloud.svg" alt="Feature Icon" class="feature-icon">
-                  </div>
-
-                  <h5 class="main-feature__title">
-                    Database
-                  </h5>
-
-                  <p class="main-feature__content px-4 px-md-0 px-xl-4">
-                    Sed ut perspiciatis unde omnis iste natus error is simply dummy text of the printing and typesetting industry.
-                  </p>
-                </div> <!-- Main Feature -->
-              </div>
-
-            </div>
+            <p class="text-dark mt-2">"Legitquest’s <span class="mark"> iDRAF is the best thing I ever used</span> for my research"</p>
+            <div class="separator bg-primary d-inline-block my-4"></div>
+            <h4 class="font-weight-bold text-uppercase">Jhone Doe </h4>
+            <span>Solo practiotiner</span>
           </div>
 
         </div>
@@ -550,129 +467,93 @@
     </section> <!-- END Section Main Feature -->
 
     <section class="section section-block-feature gradient-light--lean-left">
-      <figure class="figure highlight-background highlight-background--lean-left">
-        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1439px" height="480px">
-          <defs>
-            <lineargradient id="PSgrad_2" x1="42.262%" x2="0%" y1="90.631%" y2="0%">
-              <stop offset="28%" stop-color="rgb(245,246,252)" stop-opacity="1"></stop>
-              <stop offset="100%" stop-color="rgb(255,255,255)" stop-opacity="1"></stop>
-            </lineargradient>
-
-          </defs>
-          <path fill-rule="evenodd" fill="rgb(255, 255, 255)" d="M863.247,-271.203 L-345.788,-427.818 L760.770,642.200 L1969.805,798.815 L863.247,-271.203 Z"></path>
-          <path fill="url(#PSgrad_2)" d="M863.247,-271.203 L-345.788,-427.818 L760.770,642.200 L1969.805,798.815 L863.247,-271.203 Z"></path>
-        </svg>
-      </figure> <!-- Highlight SVG Background -->
-
 
       <div class="container">
         <div class="row">
-
-          <div class="col-md-7 order-md-2 mb-5 mb-md-0">
-            <img src="images\image-block-feature-1.png" srcset="images\image-block-feature-1@2x.png 2x" alt="Feature" class="img-fluid mx-auto d-block">
+          <div class="col-md-12 text-center">
+              <h2 class="section__title mb-6 font-weight-bold">Efficient. Relevant. Intuitive</h2>
           </div>
+        </div>
 
-          <div class="col-md-5 order-md-1 text-center text-md-left">
-            <div class="icon icon--rounded bg-primary mb-4">
-              <img src="images\icn_fluxo_stacks.svg" alt="Feature Icon" class="feature-icon">
+        <div class="mb-8">
+          <div class="row">
+            <div class="col-md-5 ml-auto order-md-2 text-center text-md-left">
+              <div class="icon icon--rounded bg-primary mb-4">
+                <img src="images\icn_fluxo_stacks.svg" alt="Feature Icon" class="feature-icon">
+              </div>
+
+              <h2 class="mt-2 mb-4">Intuitive search engine to save time</h2>
+
+              <p class="mb-5">Utilize the intuitive design of LQ’s Search bar, to
+get all the Search options in one place, at the click of a button</p>
+
+              <a href="#0" class="text-link link--right-icon text-uppercase">Lean more <i class="link__icon fa fa-chevron-right"></i></a>
+
+            </div>
+            <div class="col-md-6 order-md-1 mb-5 mb-md-0">
+              <div class="px-3">
+                  <img src="./images/searchbar.png" alt="Feature" class="img-fluid mx-auto d-block">
+              </div>
+
             </div>
 
-            <h2 class="mt-2 mb-4">Coverage
- Comprehensive database</h2>
 
-            <p class="mb-5">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to
-              make a type
-              specimen book.</p>
-
-            <a href="#0" class="text-link link--right-icon text-uppercase">Lean more <i class="link__icon fa fa-chevron-right"></i></a>
 
           </div>
-
         </div>
-      </div>
-    </section> <!-- END Section Block Feature -->
 
-    <section class="section section-block-feature gradient-light--lean-left">
-      <figure class="figure highlight-background highlight-background--lean-right">
-        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1291px" height="480px">
-          <defs>
-            <lineargradient id="PSgrad_3" x1="0%" x2="0%" y1="100%" y2="0%">
-              <stop offset="28%" stop-color="rgb(244,245,250)" stop-opacity="1"></stop>
-              <stop offset="100%" stop-color="rgb(252,253,255)" stop-opacity="1"></stop>
-            </lineargradient>
+        <div class="mb-8">
+          <div class="row">
+            <div class="col-md-5 mr-auto  text-center text-md-left">
+              <div class="icon icon--rounded bg-primary mb-4">
+                <img src="images\icn_fluxo_chart.svg" alt="Feature Icon" class="feature-icon">
+              </div>
 
-          </defs>
-          <path fill-rule="evenodd" opacity="0.1" fill="rgb(0, 0, 0)" d="M480.084,0.001 L1290.991,0.001 L810.906,831.000 L-0.000,831.000 L480.084,0.001 Z"></path>
-          <path fill="url(#PSgrad_3)" d="M480.084,0.001 L1290.991,0.001 L810.906,831.000 L-0.000,831.000 L480.084,0.001 Z"></path>
-        </svg>
-      </figure> <!-- Highlight SVG Background -->
+              <h2 class="mt-2 mb-4">Research efficiency which comes with 1-click</h2>
 
-      <div class="container">
-        <div class="row">
+              <p class="mb-5">Our 1-click judgment insight system- iDRAF has
+helped thousands f lawyers save precious time by
+gaining useful insights quickly.</p>
 
-          <div class="col-md-7 mb-5 mb-md-0">
-            <img src="images\image-block-feature-2.png" srcset="images\image-block-feature-2@2x.png 2x" alt="Feature" class="img-fluid mx-auto d-block">
-          </div>
-
-          <div class="col-md-5  text-center text-md-left">
-            <div class="icon icon--rounded bg-primary mb-4">
-              <img src="images\icn_fluxo_chart.svg" alt="Feature Icon" class="feature-icon">
+              <a href="#0" class="text-link link--right-icon text-uppercase">Lean more <i class="link__icon fa fa-chevron-right"></i></a>
             </div>
 
-            <h2 class="mt-2 mb-4">Industry first iDRAF</h2>
-
-            <p class="mb-5">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to
-              make a type
-              specimen book.</p>
-
-            <a href="#0" class="text-link link--right-icon text-uppercase">Lean more <i class="link__icon fa fa-chevron-right"></i></a>
-
-          </div>
-
-        </div>
-      </div>
-    </section> <!-- END Section Block Feature -->
-
-    <section class="section section-block-feature gradient-light--upright">
-      <figure class="figure highlight-background highlight-background--lean-left">
-        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1439px" height="480px">
-          <defs>
-            <lineargradient id="PSgrad_4" x1="42.262%" x2="0%" y1="90.631%" y2="0%">
-              <stop offset="28%" stop-color="rgb(245,246,252)" stop-opacity="1"></stop>
-              <stop offset="100%" stop-color="rgb(255,255,255)" stop-opacity="1"></stop>
-            </lineargradient>
-
-          </defs>
-          <path fill-rule="evenodd" fill="rgb(255, 255, 255)" d="M863.247,-271.203 L-345.788,-427.818 L760.770,642.200 L1969.805,798.815 L863.247,-271.203 Z"></path>
-          <path fill="url(#PSgrad_4)" d="M863.247,-271.203 L-345.788,-427.818 L760.770,642.200 L1969.805,798.815 L863.247,-271.203 Z"></path>
-        </svg>
-      </figure> <!-- Highlight SVG Background -->
-
-      <div class="container">
-        <div class="row">
-
-          <div class="col-md-7 order-md-2 mb-5 mb-md-0">
-            <img src="images\image-block-feature-3.png" srcset="images\image-block-feature-3@2x.png 2x" alt="Feature" class="img-fluid mx-auto d-block">
-          </div>
-
-          <div class="col-md-5 order-md-1 text-center text-md-left">
-            <div class="icon icon--rounded bg-primary mb-4">
-              <img src="images\icn_fluxo_users.svg" alt="Feature Icon" class="feature-icon">
+            <div class="col-md-6 mb-5 mb-md-0">
+              <div class="px-3">
+              <img src="./images/idraf.png"  alt="Feature" class="img-fluid mx-auto d-block">
             </div>
-
-            <h2 class="mt-2 mb-4">Judgment Analytics</h2>
-
-            <p class="mb-5">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to
-              make a type
-              specimen book.</p>
-
-            <a href="#0" class="text-link link--right-icon text-uppercase">Lean more <i class="link__icon fa fa-chevron-right"></i></a>
-
           </div>
-
+          </div>
         </div>
+
+        <div class="mb-0">
+          <div class="row">
+            <div class="col-md-6 order-md-1 mb-5 mb-md-0">
+              <div class="px-3">
+                  <img src="./images/search-results.png"  alt="Feature" class="img-fluid mx-auto d-block">
+              </div>
+
+            </div>
+            <div class="col-md-5 ml-auto order-md-2 text-center text-md-left">
+              <div class="icon icon--rounded bg-primary mb-4">
+                <img src="images\icn_fluxo_users.svg" alt="Feature Icon" class="feature-icon">
+              </div>
+              <h2 class="mt-2 mb-4">Results which are relevant to your keyword search</h2>
+              <p class="mb-5">At LegitQuest research we are constantly refining our search
+algorithm by use of latest in AI and Machine learning to
+provide most relevant search results</p>
+              <a href="#0" class="text-link link--right-icon text-uppercase">Lean more <i class="link__icon fa fa-chevron-right"></i></a>
+            </div>
+          </div>
+        </div>
+
+
       </div>
+
     </section> <!-- END Section Block Feature -->
+
+
+
 
 
     <div class="sections__wrapper">
@@ -681,237 +562,167 @@
         <div id="blog-2">
           <section class="section section-posts gradient-light--upright">
             <div class="col-md-8 offset-md-2 col-lg-6 offset-lg-3 text-center">
-            <h2 class="section__title mb-6">Latest Legal News</h2>
+            <h2 class="section__title mb-5 font-weight-bold">Most Popular News Stories</h2>
           </div>
             <div class="container">
-              <div class="row row-grid justify-content-center">
+              <div class="swiper-container pt-5 pb-6">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide p-3">
+                      <div class="post card h-100 p-0 border-0 shadow-sm">
 
-                <div class="col-lg-12">
+                        <div class="card-body">
+                          <p class="card-text mb-2"><small class="text-muted">April 16, 2019</small></p>
+                          <a href="blog-single-post.html" class="h4 card-title d-block mb-4">How to Grow Your Business with Social Media Marketing</a>
 
-                  <div class="row">
-
-                    <div class="posts__wrapper col-lg-8 mb-5 mb-lg-0">
-                      <div class="row">
-                        <div class="col-md-6 mb-5">
-                          <div class="post card h-100 p-0 border-0 shadow-sm">
-                            <img class="card-img-top" src="images\stocks\blog-thumbnail1.jpg" srcset="images\stocks\blog-thumbnail1@2x.jpg 2x" alt="Post Thumbnail">
-                            <div class="card-body">
-                              <p class="card-text mb-2"><small class="text-muted">April 16, 2019</small></p>
-                              <a href="blog-single-post.html" class="h4 card-title d-block mb-4">How to Grow Your Business with Social Media Marketing</a>
-
-                              <p class="card-text">Suspendisse ultrices erat dapibus pulvinar molestie interdum..</p>
-                            </div>
-
-                            <div class="card-footer">
-                              <div class="d-inline-block mr-3">
-                                <img class="rounded-circle" src="images\avatars\avatar_72_1.png" srcset="images\avatars\avatar_72_1@2x.png 2x" alt="Avatar">
-                              </div>
-
-                              <div class="d-inline-block">
-                                <a href="#0"><span class="text-muted">By Mollie Schmidt</span></a>
-                              </div>
-                            </div>
-                          </div> <!-- Card for a Post/Artile -->
+                          <p class="card-text">Suspendisse ultrices erat dapibus pulvinar molestie interdum..</p>
                         </div>
 
-                        <div class="col-md-6 mb-5">
-                          <div class="post card h-100 p-0 border-0 shadow-sm">
-                            <img class="card-img-top" src="images\stocks\blog-thumbnail2.jpg" srcset="images\stocks\blog-thumbnail2@2x.jpg 2x" alt="Post Thumbnail">
-                            <div class="card-body">
-                              <p class="card-text mb-2"><small class="text-muted">April 14, 2019</small></p>
-                              <a href="blog-single-post.html" class="h4 card-title d-block mb-4">Twitter Stats for 2019 Has Been Revealed</a>
-
-                              <p class="card-text">Suspendisse ultrices erat dapibus pulvinar molestie interdum..</p>
-                            </div>
-
-                            <div class="card-footer">
-                              <div class="d-inline-block mr-3">
-                                <img class="rounded-circle" src="images\avatars\avatar_72_1.png" srcset="images\avatars\avatar_72_1@2x.png 2x" alt="Avatar">
-                              </div>
-
-                              <div class="d-inline-block">
-                                <a href="#0"><span class="text-muted">By Mollie Schmidt</span></a>
-                              </div>
-                            </div>
-                          </div> <!-- Card for a Post/Artile -->
-                        </div>
-
-                        <div class="col-md-6 mb-5">
-                          <div class="post card h-100 p-0 border-0 shadow-sm">
-                            <img class="card-img-top" src="images\stocks\blog-thumbnail3.jpg" srcset="images\stocks\blog-thumbnail3@2x.jpg 2x" alt="Post Thumbnail">
-                            <div class="card-body">
-                              <p class="card-text mb-2"><small class="text-muted">April 07, 2019</small></p>
-                              <a href="blog-single-post.html" class="h4 card-title d-block mb-4">Social Sales Girls Outsource Technical Task</a>
-
-                              <p class="card-text">Suspendisse ultrices erat dapibus pulvinar molestie interdum..</p>
-                            </div>
-
-                            <div class="card-footer">
-                              <div class="d-inline-block mr-3">
-                                <img class="rounded-circle" src="images\avatars\avatar_72_1.png" srcset="images\avatars\avatar_72_1@2x.png 2x" alt="Avatar">
-                              </div>
-
-                              <div class="d-inline-block">
-                                <a href="#0"><span class="text-muted">By Mollie Schmidt</span></a>
-                              </div>
-                            </div>
-                          </div> <!-- Card for a Post/Artile -->
-                        </div>
-
-                        <div class="col-md-6 mb-5">
-                          <div class="post card h-100 p-0 border-0 shadow-sm">
-                            <img class="card-img-top" src="images\stocks\blog-thumbnail4.jpg" srcset="images\stocks\blog-thumbnail4@2x.jpg 2x" alt="Post Thumbnail">
-                            <div class="card-body">
-                              <p class="card-text mb-2"><small class="text-muted">March 31, 2019</small></p>
-                              <a href="blog-single-post.html" class="h4 card-title d-block mb-4">Google’s Relevance to Social Media Basics</a>
-
-                              <p class="card-text">Suspendisse ultrices erat dapibus pulvinar molestie interdum..</p>
-                            </div>
-
-                            <div class="card-footer">
-                              <div class="d-inline-block mr-3">
-                                <img class="rounded-circle" src="images\avatars\avatar_72_1.png" srcset="images\avatars\avatar_72_1@2x.png 2x" alt="Avatar">
-                              </div>
-
-                              <div class="d-inline-block">
-                                <a href="#0"><span class="text-muted">By Mollie Schmidt</span></a>
-                              </div>
-                            </div>
-                          </div> <!-- Card for a Post/Artile -->
-                        </div>
-
-                        <div class="col-md-6 mb-5">
-                          <div class="post card h-100 p-0 border-0 shadow-sm">
-                            <img class="card-img-top" src="images\stocks\blog-thumbnail5.jpg" srcset="images\stocks\blog-thumbnail5@2x.jpg 2x" alt="Post Thumbnail">
-                            <div class="card-body">
-                              <p class="card-text mb-2"><small class="text-muted">March 20, 2019</small></p>
-                              <a href="blog-single-post.html" class="h4 card-title d-block mb-4">Fluxo 101: Optimize IGTV for Your Business</a>
-
-                              <p class="card-text">Suspendisse ultrices erat dapibus pulvinar molestie interdum..</p>
-                            </div>
-
-                            <div class="card-footer">
-                              <div class="d-inline-block mr-3">
-                                <img class="rounded-circle" src="images\avatars\avatar_72_1.png" srcset="images\avatars\avatar_72_1@2x.png 2x" alt="Avatar">
-                              </div>
-
-                              <div class="d-inline-block">
-                                <a href="#0"><span class="text-muted">By Mollie Schmidt</span></a>
-                              </div>
-                            </div>
-                          </div> <!-- Card for a Post/Artile -->
-                        </div>
-
-                        <div class="col-md-6 mb-5">
-                          <div class="post card h-100 p-0 border-0 shadow-sm">
-                            <img class="card-img-top" src="images\stocks\blog-thumbnail6.jpg" srcset="images\stocks\blog-thumbnail6@2x.jpg 2x" alt="Post Thumbnail">
-                            <div class="card-body">
-                              <p class="card-text mb-2"><small class="text-muted">March 16, 2019</small></p>
-                              <a href="blog-single-post.html" class="h4 card-title d-block mb-4">Top 5 Best Social Media Marketing Blogs</a>
-
-                              <p class="card-text">Suspendisse ultrices erat dapibus pulvinar molestie interdum..</p>
-                            </div>
-
-                            <div class="card-footer">
-                              <div class="d-inline-block mr-3">
-                                <img class="rounded-circle" src="images\avatars\avatar_72_1.png" srcset="images\avatars\avatar_72_1@2x.png 2x" alt="Avatar">
-                              </div>
-
-                              <div class="d-inline-block">
-                                <a href="#0"><span class="text-muted">By Mollie Schmidt</span></a>
-                              </div>
-                            </div>
-                          </div> <!-- Card for a Post/Artile -->
-                        </div>
-
-                      </div> <!-- inner nested row -->
-                    </div> <!-- END Posts Wrapper -->
-
-                    <aside class="sidebar col-lg-4">
-                      <section class="widget widget-subscribe mb-4 rounded-lg shadow-sm">
-                        <h2 class="widget-title mb-3 text-uppercase">Become a Member</h2>
-
-                        <p>Receive our newsletter to stay on top of the latest posts.</p>
-
-                        <form class="subscribe-form mt-3" novalidate="true">
-                          <div class="input-group mb-2">
-                            <input type="email" class="form-control" id="email" placeholder="Email address" name="EMAIL">
+                        <div class="card-footer">
+                          <div class="d-inline-block mr-3">
+                            <img class="rounded-circle" src="images\avatars\avatar_72_1.png" srcset="images\avatars\avatar_72_1@2x.png 2x" alt="Avatar">
                           </div>
-                          <button type="submit" class="btn btn-primary w-100">Subscribe</button>
-                        </form>
-                      </section> <!-- Widget Section -->
 
-                      <section class="widget widget-popular-posts mb-4 rounded-lg shadow-sm">
-                        <h2 class="widget-title mb-3 text-uppercase">Popular Posts</h2>
+                          <div class="d-inline-block">
+                            <a href="#0"><span class="text-muted">By Mollie Schmidt</span></a>
+                          </div>
+                        </div>
+                      </div> <!-- Card for a Post/Artile -->
+                    </div>
 
-                        <ul class="popular-posts__list list-style--none mt-4 mb-0">
-                          <li class="mb-3">
-                            <a class="d-flex" href="#0">
-                              <div class="d-inline-block mr-3">
-                                <img class="rounded-sm" src="https://source.unsplash.com/UAvYasdkzq8/40x40" srcset="https://source.unsplash.com/UAvYasdkzq8/80x80/" alt="Thumbnail">
-                              </div>
 
-                              <span class="h5">Best times to post on social media for 2019</span>
-                            </a>
-                          </li>
 
-                          <li class="mb-3">
-                            <a class="d-flex" href="#0">
-                              <div class="d-inline-block mr-3">
-                                <img class="rounded-sm" src="https://source.unsplash.com/hr6TLCga-W0/40x40" srcset="https://source.unsplash.com/hr6TLCga-W0/80x80/" alt="Thumbnail">
-                              </div>
+                    <div class="swiper-slide p-3">
+                      <div class="post card h-100 p-0 border-0 shadow-sm">
 
-                              <span class="h5">How to regram post on Instagram</span>
-                            </a>
-                          </li>
+                        <div class="card-body">
+                          <p class="card-text mb-2"><small class="text-muted">April 14, 2019</small></p>
+                          <a href="blog-single-post.html" class="h4 card-title d-block mb-4">Twitter Stats for 2019 Has Been Revealed</a>
 
-                          <li class="mb-3">
-                            <a class="d-flex" href="#0">
-                              <div class="d-inline-block mr-3">
-                                <img class="rounded-sm" src="https://source.unsplash.com/yTwXpLO5HAA/40x40" srcset="https://source.unsplash.com/yTwXpLO5HAA/80x80/" alt="Thumbnail">
-                              </div>
+                          <p class="card-text">Suspendisse ultrices erat dapibus pulvinar molestie interdum..</p>
+                        </div>
 
-                              <span class="h5">How to define actionable social media ROI for your business</span>
-                            </a>
-                          </li>
+                        <div class="card-footer">
+                          <div class="d-inline-block mr-3">
+                            <img class="rounded-circle" src="images\avatars\avatar_72_1.png" srcset="images\avatars\avatar_72_1@2x.png 2x" alt="Avatar">
+                          </div>
 
-                          <li class="mb-0">
-                            <a class="d-flex" href="#0">
-                              <div class="d-inline-block mr-3">
-                                <img class="rounded-sm" src="https://source.unsplash.com/Uo2ZXh4XOLY/40x40" srcset="https://source.unsplash.com/Uo2ZXh4XOLY/80x80/" alt="Thumbnail">
-                              </div>
+                          <div class="d-inline-block">
+                            <a href="#0"><span class="text-muted">By Mollie Schmidt</span></a>
+                          </div>
+                        </div>
+                      </div> <!-- Card for a Post/Artile -->
+                    </div>
 
-                              <span class="h5">8 Standout Social Media Marketing Examples</span>
-                            </a>
-                          </li>
-                        </ul>
-                      </section> <!-- Widget Section -->
-                    </aside> <!-- END Sidebar -->
 
-                  </div> <!-- Nested row -->
-                </div>
+                    <div class="swiper-slide  p-3">
+                      <div class="post card h-100 p-0 border-0 shadow-sm">
 
-                <nav class="mt-4" aria-label="Page navigation">
-                  <ul class="pagination justify-content-center">
-                    <li class="page-item disabled">
-                      <a class="page-link" href="#" aria-label="Previous">
-                        <small><i class="fas fa-chevron-left"></i></small>
-                      </a>
-                    </li>
-                    <li class="page-item active"><a class="page-link" href="#">1</a></li>
-                    <li class="page-item"><a class="page-link" href="#">2</a></li>
-                    <li class="page-item"><a class="page-link" href="#">3</a></li>
-                    <li class="page-item disabled"><a class="page-link" href="#">...</a></li>
-                    <li class="page-item"><a class="page-link" href="#">17</a></li>
-                    <li class="page-item">
-                      <a class="page-link" href="#" aria-label="Next">
-                        <small><i class="fas fa-chevron-right"></i></small>
-                      </a>
-                    </li>
-                  </ul>
-                </nav>
+                        <div class="card-body">
+                          <p class="card-text mb-2"><small class="text-muted">April 07, 2019</small></p>
+                          <a href="blog-single-post.html" class="h4 card-title d-block mb-4">Social Sales Girls Outsource Technical Task</a>
 
+                          <p class="card-text">Suspendisse ultrices erat dapibus pulvinar molestie interdum..</p>
+                        </div>
+
+                        <div class="card-footer">
+                          <div class="d-inline-block mr-3">
+                            <img class="rounded-circle" src="images\avatars\avatar_72_1.png" srcset="images\avatars\avatar_72_1@2x.png 2x" alt="Avatar">
+                          </div>
+
+                          <div class="d-inline-block">
+                            <a href="#0"><span class="text-muted">By Mollie Schmidt</span></a>
+                          </div>
+                        </div>
+                      </div> <!-- Card for a Post/Artile -->
+                    </div>
+
+
+                    <div class="swiper-slide  p-3">
+                      <div class="post card h-100 p-0 border-0 shadow-sm">
+
+                        <div class="card-body">
+                          <p class="card-text mb-2"><small class="text-muted">March 31, 2019</small></p>
+                          <a href="blog-single-post.html" class="h4 card-title d-block mb-4">Google’s Relevance to Social Media Basics</a>
+
+                          <p class="card-text">Suspendisse ultrices erat dapibus pulvinar molestie interdum..</p>
+                        </div>
+
+                        <div class="card-footer">
+                          <div class="d-inline-block mr-3">
+                            <img class="rounded-circle" src="images\avatars\avatar_72_1.png" srcset="images\avatars\avatar_72_1@2x.png 2x" alt="Avatar">
+                          </div>
+
+                          <div class="d-inline-block">
+                            <a href="#0"><span class="text-muted">By Mollie Schmidt</span></a>
+                          </div>
+                        </div>
+                      </div> <!-- Card for a Post/Artile -->
+                    </div>
+
+
+                    <div class="swiper-slide  p-3">
+                      <div class="post card h-100 p-0 border-0 shadow-sm">
+
+                        <div class="card-body">
+                          <p class="card-text mb-2"><small class="text-muted">March 20, 2019</small></p>
+                          <a href="blog-single-post.html" class="h4 card-title d-block mb-4">Fluxo 101: Optimize IGTV for Your Business</a>
+
+                          <p class="card-text">Suspendisse ultrices erat dapibus pulvinar molestie interdum..</p>
+                        </div>
+
+                        <div class="card-footer">
+                          <div class="d-inline-block mr-3">
+                            <img class="rounded-circle" src="images\avatars\avatar_72_1.png" srcset="images\avatars\avatar_72_1@2x.png 2x" alt="Avatar">
+                          </div>
+
+                          <div class="d-inline-block">
+                            <a href="#0"><span class="text-muted">By Mollie Schmidt</span></a>
+                          </div>
+                        </div>
+                      </div> <!-- Card for a Post/Artile -->
+                    </div>
+
+
+                    <div class="swiper-slide  p-3">
+                      <div class="post card h-100 p-0 border-0 shadow-sm">
+
+                        <div class="card-body">
+                          <p class="card-text mb-2"><small class="text-muted">March 16, 2019</small></p>
+                          <a href="blog-single-post.html" class="h4 card-title d-block mb-4">Top 5 Best Social Media Marketing Blogs</a>
+
+                          <p class="card-text">Suspendisse ultrices erat dapibus pulvinar molestie interdum..</p>
+                        </div>
+
+                        <div class="card-footer">
+                          <div class="d-inline-block mr-3">
+                            <img class="rounded-circle" src="images\avatars\avatar_72_1.png" srcset="images\avatars\avatar_72_1@2x.png 2x" alt="Avatar">
+                          </div>
+
+                          <div class="d-inline-block">
+                            <a href="#0"><span class="text-muted">By Mollie Schmidt</span></a>
+                          </div>
+                        </div>
+                      </div> <!-- Card for a Post/Artile -->
+                    </div>
+
+
+                </div><!-- End Swiper Wrapper -->
+
+                <!-- Swiper pagination: -->
+                <div class="swiper-pagination"></div>
+
+                <!-- Swiper arrow buttons: -->
+                <div class="swiper-button-prev rounded"></div>
+                <div class="swiper-button-next rounded"></div>
               </div>
+
+
+              <div class="row">
+
+
+
+
+              </div> <!-- inner nested row -->
             </div>
           </section> <!-- END Section Posts -->
         </div> <!-- END Blog 2 -->
@@ -933,152 +744,82 @@
       </figure> <!-- Highlight SVG Background -->
 
       <div class="container">
-        <div class="row">
 
+        <div class="row">
           <div class="col-md-5 text-center text-md-left">
             <div class="icon icon--rounded bg-primary mb-4">
               <img src="images\icn_fluxo_quote.svg" alt="Feature Icon" class="feature-icon">
             </div>
 
-            <h2 class="mt-2 mb-5 mb-md-0">Here’s What Our Clients Have To Say</h2>
+            <h2 class="mt-2 mb-5 mb-md-0 font-weight-bold">Over 200 firms and Universities are
+using Legitquest to power their legal
+research</h2>
 
           </div>
+          <div class="col-md-6 ml-auto">
 
-        </div>
+            <div class="testimony__card p-3">
 
-        <div class="row">
-          <div class="col">
+              <blockquote class="blockquote">
 
-            <div class="swiper-container pt-5 pb-6">
 
-              <div class="swiper-wrapper">
+                <p class="mb-2">"Lorem ipsum dolor sit amet,  consectetur adipiscing elit.  <span class="mark">Proin malesuada felis nec bibendum ullamcorper.</span> "</p>
 
-                <div class="swiper-slide testimony__card p-3">
+                <footer class="blockquote-footer d-flex align-items-center">
 
-                  <blockquote class="blockquote shadow">
-                    <span class="rating text-warning d-block mb-4">
-                      <i class="fas fa-star"></i>
-                      <i class="fas fa-star"></i>
-                      <i class="fas fa-star"></i>
-                      <i class="fas fa-star"></i>
-                      <i class="fas fa-star"></i>
-                    </span>
 
-                    <p class="mb-4">Finally, a Bootstrap template that suit my company.</p>
+                  <div class="testimony__info d-inline-block">
 
-                    <footer class="blockquote-footer d-flex align-items-center">
-                      <div class="testimony__avatar d-inline-block mr-3">
-                        <img class="rounded-circle" src="images\avatars\avatar_55_4.png" srcset="images\avatars\avatar_55_4@2x.png 2x" alt="Avatar">
-                      </div>
+                    <span class="info-name d-block">Beulah Baird</span>
+                    <span class="info-company d-block">CEO, Some Company</span>
+                  </div>
 
-                      <div class="testimony__info d-inline-block">
+                </footer>
+              </blockquote>
 
-                        <span class="info-name d-block">Beulah Baird</span>
-                        <span class="info-company d-block">CEO, Some Company</span>
-                      </div>
+            </div>
 
-                    </footer>
-                  </blockquote>
+            <div class="testimony__card p-3">
 
-                </div>
+              <blockquote class="blockquote">
 
-                <div class="swiper-slide testimony__card p-3">
 
-                  <blockquote class="blockquote shadow">
-                    <span class="rating text-warning d-block mb-4">
-                      <i class="fas fa-star"></i>
-                      <i class="fas fa-star"></i>
-                      <i class="fas fa-star"></i>
-                      <i class="fas fa-star"></i>
-                      <i class="fas fa-star"></i>
-                    </span>
+                <p class="mb-2">"Duis placerat felis diam, ut tincidunt dui maximus quis. Etiam hendrerit felis tellus, <span class="mark">at congue nisi tincidunt vel. Morbi justo lectus, aliquet et mattis eget, dictum ut dui. Mauris rutrum dapibus ante ac consectetur.</span> "</p>
 
-                    <p class="mb-4">I've never seen a template that impressed me immediately.</p>
+                <footer class="blockquote-footer d-flex align-items-center">
 
-                    <footer class="blockquote-footer d-flex align-items-center">
-                      <div class="testimony__avatar d-inline-block mr-3">
-                        <img class="rounded-circle" src="images\avatars\avatar_55_2.png" srcset="images\avatars\avatar_55_2@2x.png 2x" alt="Avatar">
-                      </div>
 
-                      <div class="testimony__info d-inline-block">
+                  <div class="testimony__info d-inline-block">
 
-                        <span class="info-name d-block">Carl Anderson</span>
-                        <span class="info-company d-block">CEO, Some Company</span>
-                      </div>
+                    <span class="info-name d-block">Carl Anderson</span>
+                    <span class="info-company d-block">CEO, Some Company</span>
+                  </div>
 
-                    </footer>
-                  </blockquote>
+                </footer>
+              </blockquote>
 
-                </div>
+            </div>
 
-                <div class="swiper-slide testimony__card p-3">
+            <div class="testimony__card p-3">
 
-                  <blockquote class="blockquote shadow">
-                    <span class="rating text-warning d-block mb-4">
-                      <i class="fas fa-star"></i>
-                      <i class="fas fa-star"></i>
-                      <i class="fas fa-star"></i>
-                      <i class="fas fa-star"></i>
-                      <i class="fas fa-star"></i>
-                    </span>
+              <blockquote class="blockquote ">
 
-                    <p class="mb-4">Fluxo does really amazing, my developers are grateful with it.</p>
 
-                    <footer class="blockquote-footer d-flex align-items-center">
-                      <div class="testimony__avatar d-inline-block mr-3">
-                        <img class="rounded-circle" src="images\avatars\avatar_55_3.png" srcset="images\avatars\avatar_55_3@2x.png 2x" alt="Avatar">
-                      </div>
+                <p class="mb-2">"<span class="mark">Sed sodales laoreet est dignissim dignissim. </span>Mauris fermentum eget turpis ac lacinia."</p>
 
-                      <div class="testimony__info d-inline-block">
+                <footer class="blockquote-footer d-flex align-items-center">
 
-                        <span class="info-name d-block">Amanda Turner</span>
-                        <span class="info-company d-block">CEO, Some Company</span>
-                      </div>
+                  <div class="testimony__info d-inline-block">
 
-                    </footer>
-                  </blockquote>
+                    <span class="info-name d-block">Amanda Turner</span>
+                    <span class="info-company d-block">CEO, Some Company</span>
+                  </div>
 
-                </div>
+                </footer>
+              </blockquote>
 
-                <div class="swiper-slide testimony__card p-3">
+            </div>
 
-                  <blockquote class="blockquote shadow">
-                    <span class="rating text-warning d-block mb-4">
-                      <i class="fas fa-star"></i>
-                      <i class="fas fa-star"></i>
-                      <i class="fas fa-star"></i>
-                      <i class="fas fa-star"></i>
-                      <i class="fas fa-star"></i>
-                    </span>
-
-                    <p class="mb-4">I couldn't have done it without the team from Fluxo.</p>
-
-                    <footer class="blockquote-footer d-flex align-items-center">
-                      <div class="testimony__avatar d-inline-block mr-3">
-                        <img class="rounded-circle" src="images\avatars\avatar_55_1.png" srcset="images\avatars\avatar_55_1@2x.png 2x" alt="Avatar">
-                      </div>
-
-                      <div class="testimony__info d-inline-block">
-
-                        <span class="info-name d-block">Jacob Lorenssen</span>
-                        <span class="info-company d-block">CEO, Some Company</span>
-                      </div>
-
-                    </footer>
-                  </blockquote>
-
-                </div>
-
-              </div> <!-- End Swiper Wrapper -->
-
-              <!-- Swiper pagination: -->
-              <div class="swiper-pagination"></div>
-
-              <!-- Swiper arrow buttons: -->
-              <div class="swiper-button-prev rounded"></div>
-              <div class="swiper-button-next rounded"></div>
-
-            </div> <!-- End Swiper Container -->
 
           </div>
         </div>

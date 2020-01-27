@@ -1,5 +1,5 @@
 .search-field:not(.open-dropdown) .search-input {
-    box-shadow: 0px 0px 0px 2px #f5f6fb inset;
+    box-shadow: 0px 0px 0px 2px #dbdee8 inset;
 }
 .section-hero .search-engine-form{
   max-width: 1080px
