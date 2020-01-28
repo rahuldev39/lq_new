@@ -1,6 +1,7 @@
 .text-dark {
     color: #101f41!important;
 }
+
 .navbar-nav .nav-item{
   position: relative;
 }
@@ -373,4 +374,31 @@ font-size: .9rem
 }
 .main-banner h1{
   font-size: 3.2rem
+}
+.pricing__card .card-header{
+
+}
+.pricing__feature-list li {
+    margin-bottom: 1.3rem;
+    position: relative;
+    padding-left: 35px;
+}
+.pricing__feature-list li::before {
+    content: '\E94C';
+    font-family: lineicons!important;
+    position: absolute;
+    left: 0px;
+}
+.pricing__tag{
+  min-height: 160px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.annual-month-toggle {
+    width: 90%;
+    max-width: 540px;
+}
+.annual-month-toggle .btn{
+    border-radius: 4rem
 }
