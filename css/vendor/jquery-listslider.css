@@ -69,7 +69,6 @@
     padding: .7rem 0;
     margin: 0 auto;
 }
-
 .listslider{
 
 }
@@ -89,12 +88,12 @@ ul.listslider li {
 }
 ul.listslider li a {
     display: block;
-    padding: 3px 12px;
+    padding: 1px 12px;
     border: 1px solid #cfcfd0;
     border-radius: 22px;
     color: #484848;
     background-color: white;
-    font-size: .9rem;
+    font-size: .85rem;
     font-weight: 500;
 }
 .list-slider {

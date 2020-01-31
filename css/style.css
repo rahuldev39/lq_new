@@ -343,7 +343,7 @@ font-size: .9rem
 }
 .judgment-top-tabs ul li a {
     font-size: .8rem;
-    padding: .7rem .4rem !important;
+    padding: .4rem .4rem !important;
 }
 .back-to-result a, .judgment-top-tabs select {
     background-color: #4d5bed14 !important;
@@ -405,6 +405,10 @@ font-size: .9rem
 .annual-month-toggle .btn{
     border-radius: 4rem
 }
-.btn-toolbar-top .btn{
-  font-size: 1.3rem
+.btn-toolbar-top .btn {
+    font-size: 1.15rem;
+    line-height: 1rem;
+}
+.judgment-top-tabs {
+    border-top: 1px solid #f1f1f1;
 }
