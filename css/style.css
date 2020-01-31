@@ -1,7 +1,9 @@
 .text-dark {
     color: #101f41!important;
 }
-
+.nav--has-sub-menu >.nav-sub-menu{
+  border-top: 5px solid #4d5bed !important;
+}
 .navbar-nav .nav-item{
   position: relative;
 }
@@ -341,7 +343,7 @@ font-size: .9rem
 }
 .judgment-top-tabs ul li a {
     font-size: .8rem;
-    padding: .4rem .4rem !important;
+    padding: .7rem .4rem !important;
 }
 .back-to-result a, .judgment-top-tabs select {
     background-color: #4d5bed14 !important;
@@ -356,8 +358,9 @@ font-size: .9rem
     font-weight: 300;
     font-family: 'Gelasio';
 }
-.separator{
-  height: 2px;
+.separator {
+    height: 2px;
+    width: 50px;
 }
 .main-quote-section .separator{
   min-width: 50px
@@ -401,4 +404,7 @@ font-size: .9rem
 }
 .annual-month-toggle .btn{
     border-radius: 4rem
+}
+.btn-toolbar-top .btn{
+  font-size: 1.3rem
 }
