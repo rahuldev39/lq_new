@@ -61,8 +61,16 @@
               <a class="nav-link" href="./index.html">Home</a>
             </li>
 
-            <li class="nav-item">
-              <a class="nav-link" href="./about.html">About us</a>
+            <li class="nav-item nav--has-sub-menu" data-toggle="hover">
+              <a class="nav-link" href="#" data-toggle="dropdown">About</a>
+              <ul class="nav-sub-menu dropdown-menu rounded-lg shadow">
+                <li class="nav-item">
+                  <a href="./about.html" class="nav-link">About Legitquest</a>
+                </li>
+                <li class="nav-item">
+                  <a href="./team.html" class="nav-link">Our Team</a>
+                </li>
+              </ul>
             </li>
 
             <li class="nav-item nav--has-sub-menu" data-toggle="hover">
@@ -82,26 +90,21 @@
             </li>
 
             <li class="nav-item">
-              <a class="nav-link" href="#">Features</a>
+              <a class="nav-link" href="./careers.html">Career</a>
             </li>
-
-            <li class="nav-item">
-              <a class="nav-link" href="#">Team</a>
-            </li>
-
           </ul>
           <ul class="navbar-nav ml-auto align-items-lg-center">
             <li class="nav-item nav-item--btn">
-              <a href="#" class="btn btn-primary btn-sm btn--has-shadow mt-3 mt-lg-0">Book a services</a>
+              <a href="#" class="btn btn-outline-primary btn-sm btn--has-shadow mt-3 mt-lg-0">Book a services</a>
             </li>
             <li class="nav-item nav-item--btn">
-              <a href="#" class="btn btn-primary btn-sm btn--has-shadow mt-3 mt-lg-0">LQ Publish</a>
+              <a href="#" class="btn btn-outline-primary btn-sm btn--has-shadow mt-3 mt-lg-0">LQ Publish</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link text-primary" href="./index.html">Sign In</a>
+              <a class="nav-link text-primary" href="./login.html">Sign In</a>
             </li>
             <li class="nav-item nav-item--btn">
-              <a href="./login.html" class="btn btn-primary btn-sm btn--has-shadow mt-3 mt-lg-0">Sign Up</a>
+              <a href="./pricing.html" class="btn btn-primary btn-sm btn--has-shadow mt-3 mt-lg-0">Sign Up</a>
             </li>
           </ul>
         </div>
@@ -112,23 +115,8 @@
 
   <main class="main">
 
-    <section class="section-hero main-banner py-0 gradient-light--lean-right">
+    <section class="section-hero main-banner py-0 bg-gray">
       <div class="container">
-        <figure class="figure highlight-background highlight-background--lean-right">
-          <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1291px" height="480px">
-            <defs>
-              <linearGradient id="PSgrad_0" x1="0%" x2="0%" y1="100%" y2="0%">
-                <stop offset="28%" stop-color="rgb(244,245,250)" stop-opacity="1"></stop>
-                <stop offset="100%" stop-color="rgb(252,253,255)" stop-opacity="1"></stop>
-              </linearGradient>
-
-            </defs>
-            <path fill-rule="evenodd" opacity="0.1" fill="rgb(0, 0, 0)" d="M480.084,0.001 L1290.991,0.001 L810.906,831.000 L-0.000,831.000 L480.084,0.001 Z"></path>
-            <path fill="url(#PSgrad_0)" d="M480.084,0.001 L1290.991,0.001 L810.906,831.000 L-0.000,831.000 L480.084,0.001 Z"></path>
-          </svg>
-        </figure>
-
-
         <div class="row vh-100">
 
           <div class="col-lg-12 align-self-center text-center">
@@ -458,7 +446,7 @@
       </div>
     </section> <!-- END Section Main Feature -->
 
-    <section class="section section-block-feature gradient-light--lean-left">
+    <section class="section section-block-feature bg-gray">
 
       <div class="container">
         <div class="row">
@@ -549,136 +537,120 @@ provide most relevant search results</p>
 
 
     <div class="sections__wrapper">
-
-
-        <div id="blog-2">
-          <section class="section section-posts gradient-light--upright">
-            <div class="col-md-8 offset-md-2 col-lg-6 offset-lg-3 text-center">
-            <h2 class="section__title mb-5 font-weight-bold">Most comprehensive, accurate
+      <section class="section section-posts bg-white news-section">
+        <div class="col-md-8 offset-md-2 col-lg-6 offset-lg-3 text-center">
+        <h2 class="section__title mb-5 font-weight-bold">Most comprehensive, accurate
 and current database</h2>
-          </div>
-            <div class="container">
+      </div>
+        <div class="container">
 
 
 
-              <div class="row">
+          <div class="row">
 
-                <div class="col-md-4 p-3">
-                  <div class="post card h-100 p-0 border-0 shadow-sm">
+            <div class="col-md-4 p-3">
+              <div class="post card h-100 p-0 border-0 shadow-sm">
 
-                    <div class="card-body">
+                <div class="card-body">
 
-                      <a href="blog-single-post.html" class="h4 mb-0 card-title d-block font-weight-bold">Supreme Court</a>
-                      <div class="separator bg-primary d-inline-block my-2"></div>
-                      <p class="card-text">All Supreme Court judgments
+                  <a href="blog-single-post.html" class="h4 mb-0 card-title d-block font-weight-bold">Supreme Court</a>
+                  <div class="separator bg-primary d-inline-block my-2"></div>
+                  <p class="card-text">All Supreme Court judgments
 from 1050 onwards till yesterday</p>
-                    </div>
-
-                  </div> <!-- Card for a Post/Artile -->
                 </div>
 
+              </div> <!-- Card for a Post/Artile -->
+            </div>
 
 
-                <div class="col-md-4 p-3">
-                  <div class="post card h-100 p-0 border-0 shadow-sm">
 
-                    <div class="card-body">
+            <div class="col-md-4 p-3">
+              <div class="post card h-100 p-0 border-0 shadow-sm">
 
-                      <a href="blog-single-post.html" class="h4 mb-0 card-title d-block  font-weight-bold">High Courts</a>
-                      <div class="separator bg-primary d-inline-block my-2"></div>
-                      <p class="card-text">All the High courts of India
+                <div class="card-body">
+
+                  <a href="blog-single-post.html" class="h4 mb-0 card-title d-block  font-weight-bold">High Courts</a>
+                  <div class="separator bg-primary d-inline-block my-2"></div>
+                  <p class="card-text">All the High courts of India
 covered by our database.
 Judgments updated everyday</p>
-                    </div>
-
-
-                  </div> <!-- Card for a Post/Artile -->
                 </div>
 
 
-                <div class="col-md-4  p-3">
-                  <div class="post card h-100 p-0 border-0 shadow-sm">
+              </div> <!-- Card for a Post/Artile -->
+            </div>
 
-                    <div class="card-body">
 
-                      <a href="blog-single-post.html" class="h4 mb-0 card-title d-block  font-weight-bold">Tribunals</a>
-                      <div class="separator bg-primary d-inline-block my-2"></div>
-                      <p class="card-text">All tribunals of India covered on
+            <div class="col-md-4  p-3">
+              <div class="post card h-100 p-0 border-0 shadow-sm">
+
+                <div class="card-body">
+
+                  <a href="blog-single-post.html" class="h4 mb-0 card-title d-block  font-weight-bold">Tribunals</a>
+                  <div class="separator bg-primary d-inline-block my-2"></div>
+                  <p class="card-text">All tribunals of India covered on
 a regular basis. Weekly update
 of tribunal database with new
 judgments</p>
-                    </div>
-
-                  </div> <!-- Card for a Post/Artile -->
                 </div>
 
+              </div> <!-- Card for a Post/Artile -->
+            </div>
 
-                <div class="col-md-4  p-3">
-                  <div class="post card h-100 p-0 border-0 shadow-sm">
 
-                    <div class="card-body">
+            <div class="col-md-4  p-3">
+              <div class="post card h-100 p-0 border-0 shadow-sm">
 
-                      <a href="blog-single-post.html" class="h4 mb-0 card-title d-block  font-weight-bold">Acts</a>
-                      <div class="separator bg-primary d-inline-block my-2"></div>
-                      <p class="card-text">All central and state Bare acts
+                <div class="card-body">
+
+                  <a href="blog-single-post.html" class="h4 mb-0 card-title d-block  font-weight-bold">Acts</a>
+                  <div class="separator bg-primary d-inline-block my-2"></div>
+                  <p class="card-text">All central and state Bare acts
 available on our plaform</p>
-                    </div>
-
-                  </div> <!-- Card for a Post/Artile -->
                 </div>
 
+              </div> <!-- Card for a Post/Artile -->
+            </div>
 
-                <div class="col-md-4  p-3">
-                  <div class="post card h-100 p-0 border-0 shadow-sm">
 
-                    <div class="card-body">
+            <div class="col-md-4  p-3">
+              <div class="post card h-100 p-0 border-0 shadow-sm">
 
-                      <a href="blog-single-post.html" class="h4 mb-0 card-title d-block font-weight-bold">Orders</a>
-                      <div class="separator bg-primary d-inline-block my-2"></div>
-                      <p class="card-text">All central and state Bare acts
+                <div class="card-body">
+
+                  <a href="blog-single-post.html" class="h4 mb-0 card-title d-block font-weight-bold">Orders</a>
+                  <div class="separator bg-primary d-inline-block my-2"></div>
+                  <p class="card-text">All central and state Bare acts
 available on our platform</p>
-                    </div>
-
-                  </div> <!-- Card for a Post/Artile -->
                 </div>
 
+              </div> <!-- Card for a Post/Artile -->
+            </div>
 
-                <div class="col-md-4  p-3">
-                  <div class="post card h-100 p-0 border-0 shadow-sm">
 
-                    <div class="card-body">
+            <div class="col-md-4  p-3">
+              <div class="post card h-100 p-0 border-0 shadow-sm">
 
-                      <a href="blog-single-post.html" class="h4 mb-0 card-title d-block font-weight-bold">Articles</a>
-                      <div class="separator bg-primary d-inline-block my-2"></div>
-                      <p class="card-text">Through the Publish offering, latest articles
+                <div class="card-body">
+
+                  <a href="blog-single-post.html" class="h4 mb-0 card-title d-block font-weight-bold">Articles</a>
+                  <div class="separator bg-primary d-inline-block my-2"></div>
+                  <p class="card-text">Through the Publish offering, latest articles
 and opinions related to legal research are
 available for secondary source research</p>
-                    </div>
-
-                  </div> <!-- Card for a Post/Artile -->
                 </div>
 
-
-              </div> <!-- inner nested row -->
+              </div> <!-- Card for a Post/Artile -->
             </div>
-          </section> <!-- END Section Posts -->
-        </div> <!-- END Blog 2 -->
+
+
+          </div> <!-- inner nested row -->
+        </div>
+      </section> <!-- END Section Posts -->
       </div>
 
-    <section class="section section-testimonials gradient-light--lean-left">
-      <figure class="figure highlight-background highlight-background--lean-left">
-        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1439px" height="480px">
-          <defs>
-            <lineargradient id="PSgrad_5" x1="42.262%" x2="0%" y1="90.631%" y2="0%">
-              <stop offset="28%" stop-color="rgb(245,246,252)" stop-opacity="1"></stop>
-              <stop offset="100%" stop-color="rgb(255,255,255)" stop-opacity="1"></stop>
-            </lineargradient>
+    <section class="section section-testimonials bg-gray">
 
-          </defs>
-          <path fill-rule="evenodd" fill="rgb(255, 255, 255)" d="M863.247,-271.203 L-345.788,-427.818 L760.770,642.200 L1969.805,798.815 L863.247,-271.203 Z"></path>
-          <path fill="url(#PSgrad_5)" d="M863.247,-271.203 L-345.788,-427.818 L760.770,642.200 L1969.805,798.815 L863.247,-271.203 Z"></path>
-        </svg>
-      </figure> <!-- Highlight SVG Background -->
 
       <div class="container">
 
@@ -765,7 +737,7 @@ research</h2>
 
 
 
-    <section class="section section-subscribe gradient-light--upright">
+    <section class="section section-subscribe">
       <figure class="figure pattern-svg">
         <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1306px" height="225px">
           <path fill-rule="evenodd" fill="rgb(35, 23, 123)" d="M-0.011,9.318 L8.682,6.988 L11.011,15.682 L2.318,18.011 L-0.011,9.318 Z"></path>
@@ -818,7 +790,7 @@ research</h2>
                 </div>
 
                 <div class="cta__button">
-                  <a href="#0" class="btn btn-secondary">View Pricing Plans</a>
+                  <a href="./pricing.html" class="btn btn-secondary">View Pricing Plans</a>
                 </div>
               </div>
             </div>
@@ -907,7 +879,7 @@ research</h2>
   <script src="js\init\wb.swiper-init.js"></script>
   <script src="js\init\wb.ajaxchimp-init.js"></script>
   <script src="./js/vendor/jquery.tree-multiselect.js"></script>
-  <!-- Fluxo Template JS -->
+  <!-- Template JS -->
   <script src="js\min\main-min.js"></script>
   <script src="./js/searchbar.js"></script>
 

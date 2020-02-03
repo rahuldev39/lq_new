@@ -1,3 +1,4 @@
+
 .text-dark {
     color: #101f41!important;
 }
@@ -225,10 +226,7 @@ ul.green-checks-list .h4, ul.green-checks-list h4 {
     background-color: #4d5bed;
     color: white;
 }
-.about-section{
-  background-image: url(./../images/shutterstock_259210829.png);
-  background-size: cover;
-}
+
 .team-pane .thumbnail {
     text-align: center;
     text-decoration: none;
@@ -411,4 +409,38 @@ font-size: .9rem
 }
 .judgment-top-tabs {
     border-top: 1px solid #f1f1f1;
+}
+.bg-gray{
+  background-color: #F1F5FA
+}
+.news-section .card.post {
+    border: 1px solid #e0e0e0 !important;
+    box-shadow: 4px 4px 0px 2px #c8cdf7 !important;
+}
+.job-detail h6 {
+    margin-bottom: 1rem;
+    font-weight: 600;
+    font-size: 1rem;
+}
+.arrow-list{
+  list-style-type: none;
+}
+.arrow-list li {
+    position: relative;
+    padding-left: 19px;
+    font-size: .92rem;
+    line-height: 1.4rem;
+    margin-bottom: .8rem;
+}
+.arrow-list li::after {
+    content: "\f105";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    color: #4d5bed;
+}
+.job-list__wrapper .btn-link:focus{
+  text-decoration: none;
 }
