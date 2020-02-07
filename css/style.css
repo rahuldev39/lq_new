@@ -444,3 +444,36 @@ font-size: .9rem
 .job-list__wrapper .btn-link:focus{
   text-decoration: none;
 }
+.publish-section .card-side-to-side__image {
+    min-height: 100%;
+    object-fit: cover;
+    object-position: center;
+    min-width: 100%;
+}
+.featured-post img.card-img-top{
+  max-height: 350px
+}
+.columns-section ul.popular-posts__list li img{
+  height: 40px;
+  width: 40px;
+  object-fit: cover;
+  object-position: center;
+}
+.publish-section .post .social-icons a{
+  font-size: .95rem
+}
+.publish-section .post .social-icons a:hover {
+    color: #4d5bed;
+}
+.publish-section .post .social-icons li{
+  margin-left: .9rem;
+  margin-bottom: 0px
+}
+.post-image-container .post-tag {
+    bottom: 0px;
+    right: 0px;
+    z-index: 100;
+    background-color: #0d2050bf;
+    font-size: .9rem;
+    color: white;
+}
