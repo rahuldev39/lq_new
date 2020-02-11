@@ -507,3 +507,62 @@ font-size: .9rem
     font-size: .9rem;
     color: white;
 }
+
+.user-thumb span {
+    display: inline-block;
+    color: white;
+    background-color: #020202;
+    padding: .4rem .7rem;
+    font-size: .79rem;
+}
+.position-absolute {
+    position: absolute!important;
+    left: 0px;
+    bottom: 40px;
+}
+
+.plan-block {
+    border-left: 5px dotted #eaeef3;
+    height: 100%;
+}
+.f-14{
+  font-size: 14px
+}
+.b-b {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.b-r {
+    border-right: 1px solid rgba(0, 0, 0, 0.1);
+}
+.el-tablo.centered {
+    text-align: center;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.el-tablo .value {
+    font-size: 2.43rem;
+    font-weight: 500;
+    letter-spacing: 1px;
+    line-height: 1.2;
+    display: inline-block;
+    vertical-align: middle;
+}
+.el-tablo .label {
+    display: block;
+    font-size: .63rem;
+    text-transform: uppercase;
+    color: rgba(0, 0, 0, 0.4);
+    letter-spacing: 1px;
+}
+.profile-links ul li a {
+    display: block;
+    font-size: 14px;
+    border-bottom: 1px solid #e5e5e5;
+    color: #3e4b5a;
+    font-weight: 500;
+    padding: .7rem 0rem;
+}
+.profile-links ul li:last-child a{
+  border-bottom: 0px
+}
