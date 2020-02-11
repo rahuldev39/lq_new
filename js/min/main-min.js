@@ -32,3 +32,17 @@ $(function() {
 //    })
 //  })
 });
+
+
+
+// sticky navigation
+
+$(window).scroll(function() {
+var scroll = $(window).scrollTop();
+
+if (scroll >= 70) {
+    $(".header-sticky").addClass("position-sticky");
+} else {
+    $(".header-sticky").removeClass("position-sticky");
+}
+});

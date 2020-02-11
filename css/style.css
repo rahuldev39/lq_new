@@ -2,6 +2,18 @@
 .text-dark {
     color: #101f41!important;
 }
+.nav-item.active > .nav-link{
+  color: #4d5bed !important;
+}
+.header.position-sticky{
+  top: 0px;
+  z-index: 100
+}
+.header.position-sticky .navbar{
+  background-color: white;
+  box-shadow: 0 .75rem .75rem 0.0375rem rgba(132,138,163,0.1) !important;
+
+}
 .nav--has-sub-menu >.nav-sub-menu{
   border-top: 5px solid #4d5bed !important;
 }
@@ -226,19 +238,25 @@ ul.green-checks-list .h4, ul.green-checks-list h4 {
     background-color: #4d5bed;
     color: white;
 }
-
 .team-pane .thumbnail {
-    text-align: center;
     text-decoration: none;
     color: #1e2023;
     -webkit-transition: all 0.25s ease;
     transition: all 0.25s ease;
     display: block;
-    width: calc(25% - 30px);
+    width: calc(33% - 30px);
     margin: 15px;
     margin-bottom: 30px;
     border-radius: 6px;
     overflow: hidden;
+}
+.team-pane .thumbnail .thumb-inner {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+.team-pane .thumbnail .thumb-inner .caption{
+  margin-left: 1rem
 }
 .team-pane .team-block{
   max-width: 900px;
@@ -261,17 +279,29 @@ ul.green-checks-list .h4, ul.green-checks-list h4 {
 .tab-item .btn-link:not(.active):hover{
   opacity: 1
 }
-.member-container img{
-  filter: grayscale(100%);
-  transition: all 300ms ease-in-out;
-  cursor: pointer;
+.member-container img {
+    filter: grayscale(100%);
+    transition: all 300ms ease-in-out;
+    cursor: pointer;
+    height: 100px;
+    width: 100px !important;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: center;
 }
 .thumb-inner:hover .member-container img{
   filter: grayscale(0%);
 }
 .linkedin-btn {
-    font-size: .9rem;
     opacity: .9;
+    font-size: 1.5rem;
+    position: absolute;
+    left: 85px;
+    bottom: 0px;
+}
+.linkedin-btn i{
+  background-color: white;
+    line-height: 21px;
 }
 .login-bg{
   background-image: url(./../images/login-bg.jpg);

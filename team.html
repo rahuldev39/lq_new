@@ -24,7 +24,7 @@
 </head>
 
 <body>
-  <header class="header">
+  <header class="header header-sticky">
 
     <nav class="navbar navbar-expand-lg navbar-sm ">
       <div class="container-fluid position-relative">
@@ -39,18 +39,24 @@
 
         <div class="offcanvas-collapse d-lg-flex flex-fill align-items-center">
           <ul class="navbar-nav">
-            <li class="nav-item active">
+            <li class="nav-item ">
               <a class="nav-link" href="./index.html">Home</a>
             </li>
 
-            <li class="nav-item nav--has-sub-menu" data-toggle="hover">
-              <a class="nav-link" href="#" data-toggle="dropdown">About</a>
+            <li class="nav-item nav--has-sub-menu active" data-toggle="hover">
+              <a class="nav-link" href="#" data-toggle="dropdown">Company</a>
               <ul class="nav-sub-menu dropdown-menu rounded-lg shadow">
-                <li class="nav-item">
+                <li class="nav-item ">
                   <a href="./about.html" class="nav-link">About Legitquest</a>
                 </li>
-                <li class="nav-item">
+                <li class="nav-item active">
                   <a href="./team.html" class="nav-link">Our Team</a>
+                </li>
+                <li class="nav-item">
+                  <a href="./careers.html" class="nav-link">Career</a>
+                </li>
+                <li class="nav-item">
+                  <a href="./contact.html" class="nav-link">Contact US</a>
                 </li>
               </ul>
             </li>
@@ -63,22 +69,36 @@
                   <a href="#" class="nav-link">Research</a>
                 </li>
                 <li class="nav-item">
-                  <a href="#" class="nav-link">Services</a>
+                  <a href="#" class="nav-link">Publish</a>
                 </li>
                 <li class="nav-item">
-                  <a href="#" class="nav-link">Publish</a>
+                  <a href="#" class="nav-link">Top Judgement</a>
+                </li>
+              </ul>
+            </li>
+
+            <li class="nav-item nav--has-sub-menu" data-toggle="hover">
+              <a class="nav-link" href="#" data-toggle="dropdown">Services</a>
+
+              <ul class="nav-sub-menu dropdown-menu rounded-lg shadow">
+                <li class="nav-item">
+                  <a href="#" class="nav-link">Typing</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="nav-link">Translation</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="nav-link">Filling</a>
                 </li>
               </ul>
             </li>
 
             <li class="nav-item">
-              <a class="nav-link" href="./careers.html">Career</a>
+              <a class="nav-link" href="./pricing.html">Pricing </a>
             </li>
           </ul>
           <ul class="navbar-nav ml-auto align-items-lg-center">
-            <li class="nav-item nav-item--btn">
-              <a href="#" class="btn btn-outline-primary btn-sm btn--has-shadow mt-3 mt-lg-0">Book a services</a>
-            </li>
+
             <li class="nav-item nav-item--btn">
               <a href="#" class="btn btn-outline-primary btn-sm btn--has-shadow mt-3 mt-lg-0">LQ Publish</a>
             </li>
@@ -148,21 +168,21 @@
 
     </div>
 
-    <section id="sectionTeam" class="section section-team bg-gray py-6">
+    <section id="sectionTeam" class="section section-team bg-white py-6">
       <div class="container">
 
         <div class="tab-content" id="myTabContent">
           <div class="tab-pane team-pane fade show active" id="tab1" role="tabpanel" aria-labelledby="tab1">
             <div class="team-block">
               <div class="element-wrapper center">
-                <h3 class="element-header mb-4 text-center font-weight-bold">
+                <h3 class="element-header mb-5 font-weight-bold">
                   Management team
                 </h3>
               </div>
 
-              <div class="d-flex flex-wrap justify-content-center">
+              <div class="d-flex flex-wrap ">
 
-                <div class="thumbnail bg-white shadow-sm text-center">
+                <div class="thumbnail">
                   <div class="thumb-inner">
                     <div class="liner-box">
                       <div class="member-container">
@@ -172,18 +192,18 @@
                     </div>
 
 
-                    <div class="caption py-3">
+                    <div class="caption">
                       <strong>Karan Kalia</strong>
                       <p class="mb-2">Founder & CEO</p>
                       <a href="https://www.linkedin.com/in/karan-kalia-0476202b/" class="linkedin-btn d-block">
-                        Linked <i class="fab fa-linkedin"></i>
+                        <i class="fab fa-linkedin"></i>
                       </a>
 
                     </div>
                   </div>
                 </div>
 
-                <div class="thumbnail bg-white shadow-sm text-center">
+                <div class="thumbnail">
                   <div class="thumb-inner">
                     <div class="liner-box">
                       <div class="member-container">
@@ -193,18 +213,18 @@
                     </div>
 
 
-                    <div class="caption py-3">
+                    <div class="caption">
                       <strong>Himanshu Puri</strong>
                       <p class="mb-2">Co-Founder & CBO</p>
                       <a href="https://www.linkedin.com/in/dr-himanshu-puri-ph-d-618a725b/" class="linkedin-btn d-block">
-                        Linked <i class="fab fa-linkedin"></i>
+                        <i class="fab fa-linkedin"></i>
                       </a>
 
                     </div>
                   </div>
                 </div>
 
-                <div class="thumbnail bg-white shadow-sm text-center">
+                <div class="thumbnail">
                   <div class="thumb-inner">
                     <div class="liner-box">
                       <div class="member-container">
@@ -214,12 +234,12 @@
                     </div>
 
 
-                    <div class="caption py-3">
+                    <div class="caption">
                       <strong>Rohit Shukla</strong>
                       <p class="mb-2">Co-Founder & CTO</p>
 
                       <a href="https://www.linkedin.com/in/rohitshukla1/" class="linkedin-btn d-block">
-                        Linked <i class="fab fa-linkedin"></i>
+                        <i class="fab fa-linkedin"></i>
                       </a>
                     </div>
                   </div>
@@ -227,7 +247,7 @@
 
 
 
-                <div class="thumbnail bg-white shadow-sm text-center">
+                <div class="thumbnail">
                   <div class="thumb-inner">
                     <div class="liner-box">
                       <div class="member-container">
@@ -237,11 +257,11 @@
 
                     </div>
 
-                    <div class="caption py-3">
+                    <div class="caption">
                       <strong>Sanjiv Sharma</strong>
                       <p class="mb-2">HEAD - GLOBAL AFFAIRS</p>
                       <a href="https://www.linkedin.com/in/sanjiv-sharma-02347b10/" class="linkedin-btn d-block">
-                        Linked <i class="fab fa-linkedin"></i>
+                        <i class="fab fa-linkedin"></i>
                       </a>
 
                     </div>
@@ -262,14 +282,14 @@
             <div class="team-block">
               <div class="element-wrapper center">
 
-                <h3 class="element-header mb-4 text-center font-weight-bold">
+                <h3 class="element-header mb-5 font-weight-bold">
                   Research & Development
                 </h3>
               </div>
               <div class="d-flex flex-wrap">
 
 
-                <div class="thumbnail bg-white shadow-sm text-center">
+                <div class="thumbnail">
                   <div class="thumb-inner">
                     <div class="liner-box">
                       <div class="member-container">
@@ -280,10 +300,10 @@
                     </div>
 
 
-                    <div class="caption py-3">
+                    <div class="caption">
                       <strong>Shruti Pandey</strong>
                       <a href="https://www.linkedin.com/in/shruti-pandey-b9021a63/" class="linkedin-btn d-block">
-                        Linked <i class="fab fa-linkedin"></i>
+                        <i class="fab fa-linkedin"></i>
                       </a>
 
 
@@ -291,7 +311,7 @@
                   </div>
                 </div>
 
-                <div class="thumbnail bg-white shadow-sm text-center">
+                <div class="thumbnail">
                   <div class="thumb-inner">
                     <div class="liner-box">
                       <div class="member-container">
@@ -301,10 +321,10 @@
                       </div>
                     </div>
 
-                    <div class="caption py-3">
+                    <div class="caption">
                       <strong>Ambika Prasad Jena</strong>
                       <a href="https://www.linkedin.com/in/ambika-jena-691b275a/" class="linkedin-btn d-block">
-                        Linked <i class="fab fa-linkedin"></i>
+                        <i class="fab fa-linkedin"></i>
                       </a>
 
 
@@ -312,7 +332,7 @@
                   </div>
                 </div>
 
-                <div class="thumbnail bg-white shadow-sm text-center">
+                <div class="thumbnail">
                   <div class="thumb-inner">
                     <div class="liner-box">
                       <div class="member-container">
@@ -323,10 +343,10 @@
                     </div>
 
 
-                    <div class="caption py-3">
+                    <div class="caption">
                       <strong>Jaisis Srikrishna Das</strong>
                       <a href="https://www.linkedin.com/in/jaisis-srikrishna-das-30909b5a/" class="linkedin-btn d-block">
-                        Linked <i class="fab fa-linkedin"></i>
+                        <i class="fab fa-linkedin"></i>
                       </a>
 
 
@@ -334,7 +354,7 @@
                   </div>
                 </div>
 
-                <div class="thumbnail bg-white shadow-sm text-center">
+                <div class="thumbnail">
                   <div class="thumb-inner">
                     <div class="liner-box">
                       <div class="member-container">
@@ -345,10 +365,10 @@
                     </div>
 
 
-                    <div class="caption py-3">
+                    <div class="caption">
                       <strong>Smuti Sudha</strong>
                       <a href="https://www.linkedin.com/in/smuti-sudha-a55257166/" class="linkedin-btn d-block">
-                        Linked <i class="fab fa-linkedin"></i>
+                        <i class="fab fa-linkedin"></i>
                       </a>
 
 
@@ -356,13 +376,7 @@
                   </div>
                 </div>
 
-
-              </div>
-
-
-              <div class="d-flex flex-wrap">
-
-                <div class="thumbnail bg-white shadow-sm text-center">
+                <div class="thumbnail">
                   <div class="thumb-inner">
                     <div class="liner-box">
                       <div class="member-container">
@@ -372,16 +386,16 @@
                     </div>
 
 
-                    <div class="caption py-3">
+                    <div class="caption">
                       <strong>Jaydip Pati </strong>
                       <a href="https://www.linkedin.com/in/jaydip-pati-34567068/" class="linkedin-btn d-block">
-                        Linked <i class="fab fa-linkedin"></i>
+                        <i class="fab fa-linkedin"></i>
                       </a>
                     </div>
                   </div>
                 </div>
 
-                <div class="thumbnail bg-white shadow-sm text-center">
+                <div class="thumbnail">
                   <div class="thumb-inner">
                     <div class="liner-box">
                       <div class="member-container">
@@ -392,17 +406,25 @@
                     </div>
 
 
-                    <div class="caption py-3">
+                    <div class="caption">
                       <strong>Geeta Gupta</strong>
                       <a href="https://www.linkedin.com/in/geeta-gupta-00a593119/" class="linkedin-btn d-block">
-                        Linked <i class="fab fa-linkedin"></i>
+                        <i class="fab fa-linkedin"></i>
                       </a>
                     </div>
                   </div>
                 </div>
 
 
-                <div class="thumbnail bg-white shadow-sm text-center">
+              </div>
+
+
+              <div class="d-flex flex-wrap">
+
+
+
+
+                <div class="thumbnail">
                   <div class="thumb-inner">
                     <div class="liner-box">
                       <div class="member-container">
@@ -413,17 +435,17 @@
                     </div>
 
 
-                    <div class="caption py-3">
+                    <div class="caption">
                       <strong>Akshita bhatia</strong>
                       <a href="https://www.linkedin.com/in/akshita-bhatia-2735a7136/" class="linkedin-btn d-block">
-                        Linked <i class="fab fa-linkedin"></i>
+                        <i class="fab fa-linkedin"></i>
                       </a>
 
                     </div>
                   </div>
                 </div>
 
-                <div class="thumbnail bg-white shadow-sm text-center">
+                <div class="thumbnail">
                   <div class="thumb-inner">
                     <div class="liner-box">
                       <div class="member-container">
@@ -434,10 +456,10 @@
                     </div>
 
 
-                    <div class="caption py-3">
+                    <div class="caption">
                       <strong>Sonali Shrivastava</strong>
                       <a href="https://www.linkedin.com/in/sonali-shrivastava-aa543053/" class="linkedin-btn d-block">
-                        Linked <i class="fab fa-linkedin"></i>
+                        <i class="fab fa-linkedin"></i>
                       </a>
 
                     </div>
@@ -457,18 +479,18 @@
             <div class="team-block">
               <div class="element-wrapper center">
 
-                <h3 class="element-header mb-4 text-center font-weight-bold">
+                <h3 class="element-header mb-5 font-weight-bold">
                   Technology
                 </h3>
               </div>
 
 
-              <div class="d-flex flex-wrap justify-content-center">
+              <div class="d-flex flex-wrap ">
 
 
 
 
-                <div class="thumbnail bg-white shadow-sm text-center">
+                <div class="thumbnail">
                   <div class="thumb-inner">
                     <div class="liner-box">
                       <div class="member-container">
@@ -479,10 +501,10 @@
                     </div>
 
 
-                    <div class="caption py-3">
+                    <div class="caption">
                       <strong>Ankit Patidar</strong>
                       <a href="https://www.linkedin.com/in/ankit-patidar-38540216a/" class="linkedin-btn d-block">
-                        Linked <i class="fab fa-linkedin"></i>
+                        <i class="fab fa-linkedin"></i>
                       </a>
                     </div>
                   </div>
@@ -490,7 +512,7 @@
 
 
 
-                <div class="thumbnail bg-white shadow-sm text-center">
+                <div class="thumbnail">
                   <div class="thumb-inner">
                     <div class="liner-box">
                       <div class="member-container">
@@ -501,16 +523,16 @@
                     </div>
 
 
-                    <div class="caption py-3">
+                    <div class="caption">
                       <strong>Yogesh Chauhan </strong>
                       <a href="https://www.linkedin.com/in/yogesh-chauhan-99302a143/" class="linkedin-btn d-block">
-                        Linked <i class="fab fa-linkedin"></i>
+                        <i class="fab fa-linkedin"></i>
                       </a>
                     </div>
                   </div>
                 </div>
 
-                <div class="thumbnail bg-white shadow-sm text-center">
+                <div class="thumbnail">
                   <div class="thumb-inner">
                     <div class="liner-box">
                       <div class="member-container">
@@ -521,10 +543,10 @@
                     </div>
 
 
-                    <div class="caption py-3">
+                    <div class="caption">
                       <strong>Ramesh</strong>
                       <a href="https://www.linkedin.com/in/ramesh-kumar-69169a35/" class="linkedin-btn d-block">
-                        Linked <i class="fab fa-linkedin"></i>
+                        <i class="fab fa-linkedin"></i>
                       </a>
                     </div>
                   </div>
@@ -539,16 +561,16 @@
             <div class="team-block">
               <div class="element-wrapper center">
 
-                <h3 class="element-header mb-4 text-center font-weight-bold">
+                <h3 class="element-header mb-5 font-weight-bold">
                   Human Resources
                 </h3>
               </div>
 
 
 
-              <div class="d-flex flex-wrap justify-content-center">
+              <div class="d-flex flex-wrap ">
 
-                <div class="thumbnail bg-white shadow-sm text-center">
+                <div class="thumbnail">
                   <div class="thumb-inner">
                     <div class="liner-box">
                       <div class="member-container">
@@ -559,10 +581,10 @@
                     </div>
 
 
-                    <div class="caption py-3">
+                    <div class="caption">
                       <strong>Jeenia Vig </strong>
                       <a href="https://www.linkedin.com/in/jeenia-vig-832772136/" class="linkedin-btn d-block">
-                        Linked <i class="fab fa-linkedin"></i>
+                        <i class="fab fa-linkedin"></i>
                       </a>
 
                     </div>
@@ -577,16 +599,16 @@
             <div class="team-block">
               <div class="element-wrapper center">
 
-                <h3 class="element-header mb-4 text-center font-weight-bold">
+                <h3 class="element-header mb-5 font-weight-bold">
                   Sales & Marketing
                 </h3>
               </div>
 
 
 
-              <div class="d-flex flex-wrap justify-content-center">
+              <div class="d-flex flex-wrap">
 
-                <div class="thumbnail bg-white shadow-sm text-center">
+                <div class="thumbnail">
                   <div class="thumb-inner">
                     <div class="liner-box">
                       <div class="member-container">
@@ -597,17 +619,17 @@
                     </div>
 
 
-                    <div class="caption py-3">
+                    <div class="caption">
                       <strong>Niranjan Jadhav</strong>
                       <a href="https://www.linkedin.com/in/niranjan-jadhav-17790550/" class="linkedin-btn d-block">
-                        Linked <i class="fab fa-linkedin"></i>
+                        <i class="fab fa-linkedin"></i>
                       </a>
 
                     </div>
                   </div>
                 </div>
 
-                <div class="thumbnail bg-white shadow-sm text-center">
+                <div class="thumbnail">
                   <div class="thumb-inner">
                     <div class="liner-box">
                       <div class="member-container">
@@ -618,17 +640,17 @@
                     </div>
 
 
-                    <div class="caption py-3">
+                    <div class="caption">
                       <strong>Kallol Pal</strong>
                       <a href="https://www.linkedin.com/in/kallol-pal-73053743/" class="linkedin-btn d-block">
-                        Linked <i class="fab fa-linkedin"></i>
+                        <i class="fab fa-linkedin"></i>
                       </a>
 
                     </div>
                   </div>
                 </div>
 
-                <div class="thumbnail bg-white shadow-sm text-center">
+                <div class="thumbnail">
                   <div class="thumb-inner">
                     <div class="liner-box">
                       <div class="member-container">
@@ -639,17 +661,17 @@
                     </div>
 
 
-                    <div class="caption py-3">
+                    <div class="caption">
                       <strong>Kunal Bandiwadekar</strong>
                       <a href="https://www.linkedin.com/in/kunal-bandiwadekar-5b419427/" class="linkedin-btn d-block">
-                        Linked <i class="fab fa-linkedin"></i>
+                        <i class="fab fa-linkedin"></i>
                       </a>
 
                     </div>
                   </div>
                 </div>
 
-                <div class="thumbnail bg-white shadow-sm text-center">
+                <div class="thumbnail">
                   <div class="thumb-inner">
                     <div class="liner-box">
                       <div class="member-container">
@@ -660,21 +682,17 @@
                     </div>
 
 
-                    <div class="caption py-3">
+                    <div class="caption">
                       <strong>Arun Yadav</strong>
                       <a href="https://www.linkedin.com/in/arun-yadav-24454653" class="linkedin-btn d-block">
-                        Linked <i class="fab fa-linkedin"></i>
+                        <i class="fab fa-linkedin"></i>
                       </a>
 
                     </div>
                   </div>
                 </div>
 
-              </div>
-
-              <div class="d-flex flex-wrap justify-content-center">
-
-                <div class="thumbnail bg-white shadow-sm text-center">
+                <div class="thumbnail">
                   <div class="thumb-inner">
                     <div class="liner-box">
                       <div class="member-container">
@@ -685,19 +703,18 @@
                     </div>
 
 
-                    <div class="caption py-3">
+                    <div class="caption">
                       <strong>Santosh Choubey</strong>
                       <a href="https://www.linkedin.com/in/santosh-choubey-69310b28/" class="linkedin-btn d-block">
-                        Linked <i class="fab fa-linkedin"></i>
+                        <i class="fab fa-linkedin"></i>
                       </a>
 
                     </div>
                   </div>
                 </div>
 
-
-
               </div>
+
             </div>
 
             <hr class="my-5">
@@ -706,16 +723,16 @@
             <div class="team-block">
               <div class="element-wrapper center">
 
-                <h3 class="element-header mb-4 text-center font-weight-bold">
+                <h3 class="element-header mb-5 font-weight-bold">
                   Office Help/ Lifeline
                 </h3>
               </div>
 
 
 
-              <div class="d-flex flex-wrap justify-content-center">
+              <div class="d-flex flex-wrap">
 
-                <div class="thumbnail bg-white shadow-sm text-center">
+                <div class="thumbnail">
                   <div class="thumb-inner">
                     <div class="liner-box">
                       <div class="member-container">
@@ -726,7 +743,7 @@
                     </div>
 
 
-                    <div class="caption py-3">
+                    <div class="caption">
                       <strong>Nitin</strong>
 
 
@@ -742,7 +759,7 @@
             <div class="team-block">
               <div class="d-flex flex-wrap ">
 
-                <div class="thumbnail bg-white shadow-sm text-center" style="border: 0px;">
+                <div class="thumbnail" style="border: 0px;">
                   <div class="thumb-inner">
                     <div class="liner-box">
                       <div class="member-container">
@@ -752,16 +769,16 @@
                     </div>
 
 
-                    <div class="caption py-3">
+                    <div class="caption">
                       <strong>Shri Ram Jethmalani</strong>
                       <a href="https://www.linkedin.com/in/ram-jethmalani-a3424b146/" class="linkedin-btn d-block">
-                        Linked <i class="fab fa-linkedin"></i>
+                        <i class="fab fa-linkedin"></i>
                       </a>
                     </div>
                   </div>
                 </div>
 
-                <div class="thumbnail bg-white shadow-sm text-center" style="border: 0px;">
+                <div class="thumbnail" style="border: 0px;">
                   <div class="thumb-inner">
                     <div class="liner-box">
                       <div class="member-container">
@@ -770,16 +787,16 @@
                       </div>
 
                     </div>
-                    <div class="caption py-3">
+                    <div class="caption">
                       <strong class="staffName">Nikilesh Ramachandran</strong>
                       <a href="https://www.linkedin.com/in/nikilesh-ramachandran-b112ab2/" class="linkedin-btn d-block">
-                        Linked <i class="fab fa-linkedin"></i>
+                        <i class="fab fa-linkedin"></i>
                       </a>
                     </div>
                   </div>
                 </div>
 
-                <div class="thumbnail bg-white shadow-sm text-center" style="border: 0px;">
+                <div class="thumbnail" style="border: 0px;">
                   <div class="thumb-inner">
                     <div class="liner-box">
                       <div class="member-container">
@@ -788,17 +805,17 @@
                       </div>
                     </div>
 
-                    <div class="caption py-3">
+                    <div class="caption">
                       <strong>Hitesh Oberoi</strong>
                       <a href="https://www.linkedin.com/in/hitesh-oberoi-490260/" class="linkedin-btn d-block">
-                        Linked <i class="fab fa-linkedin"></i>
+                        <i class="fab fa-linkedin"></i>
                       </a>
                     </div>
                   </div>
                 </div>
 
 
-                <div class="thumbnail bg-white shadow-sm text-center" style="border: 0px;">
+                <div class="thumbnail" style="border: 0px;">
                   <div class="thumb-inner">
                     <div class="liner-box">
                       <div class="member-container">
@@ -807,17 +824,17 @@
                       </div>
                     </div>
 
-                    <div class="caption py-3">
+                    <div class="caption">
                       <strong>PH Parikh</strong>
                       <a href="#" class="linkedin-btn d-block">
-                        Linked <i class="fab fa-linkedin"></i>
+                        <i class="fab fa-linkedin"></i>
                       </a>
                     </div>
                   </div>
                 </div>
 
 
-                <div class="thumbnail bg-white shadow-sm text-center" style="border: 0px;">
+                <div class="thumbnail" style="border: 0px;">
                   <div class="thumb-inner">
                     <div class="liner-box">
                       <div class="member-container">
@@ -826,16 +843,16 @@
                       </div>
                     </div>
 
-                    <div class="caption py-3">
+                    <div class="caption">
                       <strong>Amar Kumar Pandey</strong>
                       <a href="https://www.linkedin.com/in/amar-kumar-pandey-ips-ph-d-8b5b3018/?originalSubdomain=in" class="linkedin-btn d-block">
-                        Linked <i class="fab fa-linkedin"></i>
+                        <i class="fab fa-linkedin"></i>
                       </a>
                     </div>
                   </div>
                 </div>
 
-                <div class="thumbnail bg-white shadow-sm text-center" style="border: 0px;">
+                <div class="thumbnail" style="border: 0px;">
                   <div class="thumb-inner">
                     <div class="liner-box">
                       <div class="member-container">
@@ -844,10 +861,10 @@
                       </div>
                     </div>
 
-                    <div class="caption py-3">
+                    <div class="caption">
                       <strong>Mr. R Venkatramani</strong>
                       <a href="https://www.symlaw.edu.in/our-people/honorary-faculty/182" class="linkedin-btn d-block">
-                        Linked <i class="fab fa-linkedin"></i>
+                        <i class="fab fa-linkedin"></i>
                       </a>
                     </div>
                   </div>
@@ -861,7 +878,7 @@
           <div class="tab-pane team-pane fade" id="tab3" role="tabpanel" aria-labelledby="tab3">
             <div class="team-block">
               <div class="d-flex flex-wrap">
-                <div class="thumbnail bg-white shadow-sm text-center" style="border: 0px;">
+                <div class="thumbnail" style="border: 0px;">
                   <div class="thumb-inner">
                     <div class="liner-box">
                       <div class="member-container">
@@ -871,10 +888,10 @@
                     </div>
 
 
-                    <div class="caption py-3">
+                    <div class="caption">
                       <strong>Philipp Scheibenpflug</strong>
                       <a href="https://www.linkedin.com/in/dr-philipp-scheibenpflug-160469105/" class="linkedin-btn d-block">
-                        Linked <i class="fab fa-linkedin"></i>
+                        <i class="fab fa-linkedin"></i>
                       </a>
                     </div>
                   </div>
@@ -882,7 +899,7 @@
 
 
 
-                <div class="thumbnail bg-white shadow-sm text-center" style="border: 0px;">
+                <div class="thumbnail" style="border: 0px;">
                   <div class="thumb-inner">
                     <div class="liner-box">
                       <div class="member-container">
@@ -891,10 +908,10 @@
                       </div>
                     </div>
 
-                    <div class="caption py-3">
+                    <div class="caption">
                       <strong>Alonso Sandoval</strong>
                       <a href="https://www.linkedin.com/in/alonsosandoval/" class="linkedin-btn d-block">
-                        Linked <i class="fab fa-linkedin"></i>
+                        <i class="fab fa-linkedin"></i>
                       </a>
 
                     </div>
@@ -903,7 +920,7 @@
 
 
 
-                <div class="thumbnail bg-white shadow-sm text-center" style="border: 0px;">
+                <div class="thumbnail" style="border: 0px;">
                   <div class="thumb-inner">
                     <div class="liner-box">
                       <div class="member-container">
@@ -913,10 +930,10 @@
                     </div>
 
 
-                    <div class="caption py-3">
+                    <div class="caption">
                       <strong>Sebastian Risso</strong>
                       <a href="https://www.linkedin.com/in/sebasti%C3%A1n-risso-a3753b57/" class="linkedin-btn d-block">
-                        Linked <i class="fab fa-linkedin"></i>
+                        <i class="fab fa-linkedin"></i>
                       </a>
                     </div>
                   </div>
@@ -924,7 +941,7 @@
 
 
 
-                <div class="thumbnail bg-white shadow-sm text-center" style="border: 0px;">
+                <div class="thumbnail" style="border: 0px;">
                   <div class="thumb-inner">
                     <div class="liner-box">
                       <div class="member-container">
@@ -934,18 +951,16 @@
                     </div>
 
 
-                    <div class="caption py-3">
+                    <div class="caption">
                       <strong>Valentina Lipatnikova</strong>
                       <a href="https://www.linkedin.com/in/valentinalipatnikova/" class="linkedin-btn d-block">
-                        Linked <i class="fab fa-linkedin"></i>
+                        <i class="fab fa-linkedin"></i>
                       </a>
                     </div>
                   </div>
                 </div>
-              </div>
 
-              <div class="d-flex flex-wrap">
-                <div class="thumbnail bg-white shadow-sm text-center" style="border: 0px;">
+                <div class="thumbnail" style="border: 0px;">
                   <div class="thumb-inner">
                     <div class="liner-box">
                       <div class="member-container">
@@ -955,10 +970,10 @@
                     </div>
 
 
-                    <div class="caption py-3">
+                    <div class="caption">
                       <strong>Vincenzo Dell’Osso</strong>
                       <a href="https://www.linkedin.com/in/vincenzodellosso/" class="linkedin-btn d-block">
-                        Linked <i class="fab fa-linkedin"></i>
+                        <i class="fab fa-linkedin"></i>
                       </a>
                     </div>
                   </div>
@@ -966,7 +981,7 @@
 
 
 
-                <div class="thumbnail bg-white shadow-sm text-center" style="border: 0px;">
+                <div class="thumbnail" style="border: 0px;">
                   <div class="thumb-inner">
                     <div class="liner-box">
                       <div class="member-container">
@@ -976,10 +991,10 @@
                     </div>
 
 
-                    <div class="caption py-3">
+                    <div class="caption">
                       <strong>Valerio Severo Marotta</strong>
                       <a href="https://www.linkedin.com/in/valerio-severo-marotta-9a6188aa/" class="linkedin-btn d-block">
-                        Linked <i class="fab fa-linkedin"></i>
+                        <i class="fab fa-linkedin"></i>
                       </a>
 
 
@@ -989,7 +1004,7 @@
 
 
 
-                <div class="thumbnail bg-white shadow-sm text-center" style="border: 0px;">
+                <div class="thumbnail" style="border: 0px;">
                   <div class="thumb-inner">
                     <div class="liner-box">
                       <div class="member-container">
@@ -999,10 +1014,10 @@
                     </div>
 
 
-                    <div class="caption py-3">
+                    <div class="caption">
                       <strong>Matthew Humphreys</strong>
                       <a href="https://www.linkedin.com/in/matthew-humphreys-9bb70b91" class="linkedin-btn d-block">
-                        Linked <i class="fab fa-linkedin"></i>
+                        <i class="fab fa-linkedin"></i>
                       </a>
 
 
@@ -1010,7 +1025,7 @@
                   </div>
                 </div>
 
-                <div class="thumbnail bg-white shadow-sm text-center" style="border: 0px;">
+                <div class="thumbnail" style="border: 0px;">
                   <div class="thumb-inner">
                     <div class="liner-box">
                       <div class="member-container">
@@ -1020,10 +1035,10 @@
                     </div>
 
 
-                    <div class="caption py-3">
+                    <div class="caption">
                       <strong>Aleksandra M. Dziki</strong>
                       <a href="https://www.linkedin.com/in/aleksandradziki/" class="linkedin-btn d-block">
-                        Linked <i class="fab fa-linkedin"></i>
+                        <i class="fab fa-linkedin"></i>
                       </a>
 
 
@@ -1032,6 +1047,7 @@
                 </div>
 
               </div>
+
 
             </div>
           </div>
@@ -1042,7 +1058,7 @@
 
 
 
-                <div class="thumbnail bg-white shadow-sm text-center" style="border: 0px;">
+                <div class="thumbnail" style="border: 0px;">
                   <div class="thumb-inner">
                     <div class="liner-box">
                       <div class="member-container">
@@ -1050,16 +1066,16 @@
 
                       </div>
                     </div>
-                    <div class="caption py-3">
+                    <div class="caption">
                       <strong class="staffName">Sheetal bafana</strong>
                       <a href="https://www.linkedin.com/in/sheetal-bafna-msc-comp-security-5718b448/" class="linkedin-btn d-block">
-                        Linked <i class="fab fa-linkedin"></i>
+                        <i class="fab fa-linkedin"></i>
                       </a>
                     </div>
                   </div>
                 </div>
 
-                <div class="thumbnail bg-white shadow-sm text-center" style="border: 0px;">
+                <div class="thumbnail" style="border: 0px;">
                   <div class="thumb-inner">
                     <div class="liner-box">
                       <div class="member-container">
@@ -1067,16 +1083,16 @@
 
                       </div>
                     </div>
-                    <div class="caption py-3">
+                    <div class="caption">
                       <strong>Rahul Gupta</strong>
                       <a href="https://www.linkedin.com/in/rgprod/" class="linkedin-btn d-block">
-                        Linked <i class="fab fa-linkedin"></i>
+                        <i class="fab fa-linkedin"></i>
                       </a>
                     </div>
                   </div>
                 </div>
 
-                <div class="thumbnail bg-white shadow-sm text-center" style="border: 0px;">
+                <div class="thumbnail" style="border: 0px;">
                   <div class="thumb-inner">
                     <div class="liner-box">
                       <div class="member-container">
@@ -1084,10 +1100,10 @@
 
                       </div>
                     </div>
-                    <div class="caption py-3">
+                    <div class="caption">
                       <strong>Vivek Narayan Sharma</strong>
                       <a href="http://linkedin.com/in/viveknarayan" class="linkedin-btn d-block">
-                        Linked <i class="fab fa-linkedin"></i>
+                        <i class="fab fa-linkedin"></i>
                       </a>
                     </div>
                   </div>
@@ -1103,7 +1119,7 @@
             <div class="team-block">
 
               <div class="d-flex flex-wrap">
-                <div class="thumbnail bg-white shadow-sm text-center" style="border: 0px;">
+                <div class="thumbnail" style="border: 0px;">
                   <div class="thumb-inner">
                     <div class="liner-box">
                       <div class="member-container">
@@ -1111,10 +1127,10 @@
 
                       </div>
                     </div>
-                    <div class="caption py-3">
+                    <div class="caption">
                       <strong class="staffName">Abhijeet Kashyap</strong>
                       <a href="https://www.linkedin.com/in/abhijeet-kashyap-6a10b9165 " class="linkedin-btn d-block">
-                        Linked <i class="fab fa-linkedin"></i>
+                        <i class="fab fa-linkedin"></i>
                       </a>
                     </div>
                   </div>
@@ -1124,7 +1140,7 @@
                 </div>
 
 
-                <div class="thumbnail bg-white shadow-sm text-center" style="border: 0px;">
+                <div class="thumbnail" style="border: 0px;">
                   <div class="thumb-inner">
                     <div class="liner-box">
                       <div class="member-container">
@@ -1132,10 +1148,10 @@
 
                       </div>
                     </div>
-                    <div class="caption py-3">
+                    <div class="caption">
                       <strong class="staffName">Achin Sharma</strong>
                       <a href="https://www.linkedin.com/in/achin-sharma-7a57541b/" class="linkedin-btn d-block">
-                        Linked <i class="fab fa-linkedin"></i>
+                        <i class="fab fa-linkedin"></i>
                       </a>
                     </div>
                   </div>
@@ -1144,7 +1160,7 @@
 
                 </div>
 
-                <div class="thumbnail bg-white shadow-sm text-center" style="border: 0px;">
+                <div class="thumbnail" style="border: 0px;">
                   <div class="thumb-inner">
                     <div class="liner-box">
                       <div class="member-container">
@@ -1152,10 +1168,10 @@
 
                       </div>
                     </div>
-                    <div class="caption py-3">
+                    <div class="caption">
                       <strong class="staffName">Aniket Garg</strong>
                       <a href="https://www.linkedin.com/in/aniket-garg-81bb72177" class="linkedin-btn d-block">
-                        Linked <i class="fab fa-linkedin"></i>
+                        <i class="fab fa-linkedin"></i>
                       </a>
                     </div>
                   </div>
@@ -1164,7 +1180,7 @@
 
                 </div>
 
-                <div class="thumbnail bg-white shadow-sm text-center" style="border: 0px;">
+                <div class="thumbnail" style="border: 0px;">
                   <div class="thumb-inner">
                     <div class="liner-box">
                       <div class="member-container">
@@ -1172,10 +1188,10 @@
 
                       </div>
                     </div>
-                    <div class="caption py-3">
+                    <div class="caption">
                       <strong class="staffName">Anirudh Gupta</strong>
                       <a href="https://www.linkedin.com/in/anirudh-gupta-750503176" class="linkedin-btn d-block">
-                        Linked <i class="fab fa-linkedin"></i>
+                        <i class="fab fa-linkedin"></i>
                       </a>
                     </div>
                   </div>
@@ -1184,10 +1200,8 @@
 
                 </div>
 
-              </div>
 
-              <div class="d-flex flex-wrap">
-                <div class="thumbnail bg-white shadow-sm text-center" style="border: 0px;">
+                <div class="thumbnail" style="border: 0px;">
                   <div class="thumb-inner">
                     <div class="liner-box">
                       <div class="member-container">
@@ -1195,10 +1209,10 @@
 
                       </div>
                     </div>
-                    <div class="caption py-3">
+                    <div class="caption">
                       <strong class="staffName">Amol Verma</strong>
                       <a href="http://www.linkedin.com/in/amol-verma-34606117a" class="linkedin-btn d-block">
-                        Linked <i class="fab fa-linkedin"></i>
+                        <i class="fab fa-linkedin"></i>
                       </a>
                     </div>
                   </div>
@@ -1208,7 +1222,7 @@
                 </div>
 
 
-                <div class="thumbnail bg-white shadow-sm text-center" style="border: 0px;">
+                <div class="thumbnail" style="border: 0px;">
                   <div class="thumb-inner">
                     <div class="liner-box">
                       <div class="member-container">
@@ -1216,10 +1230,10 @@
 
                       </div>
                     </div>
-                    <div class="caption py-3">
+                    <div class="caption">
                       <strong class="staffName">Ayush Jain</strong>
                       <a href="https://www.linkedin.com/in/ayush-j-748729128" class="linkedin-btn d-block">
-                        Linked <i class="fab fa-linkedin"></i>
+                        <i class="fab fa-linkedin"></i>
                       </a>
                     </div>
                   </div>
@@ -1228,7 +1242,7 @@
 
                 </div>
 
-                <div class="thumbnail bg-white shadow-sm text-center" style="border: 0px;">
+                <div class="thumbnail" style="border: 0px;">
                   <div class="thumb-inner">
                     <div class="liner-box">
                       <div class="member-container">
@@ -1236,10 +1250,10 @@
 
                       </div>
                     </div>
-                    <div class="caption py-3">
+                    <div class="caption">
                       <strong class="staffName">Charu Bajaj</strong>
                       <a href="https://www.linkedin.com/in/charu-bajaj-032739147" class="linkedin-btn d-block">
-                        Linked <i class="fab fa-linkedin"></i>
+                        <i class="fab fa-linkedin"></i>
                       </a>
                     </div>
                   </div>
@@ -1248,7 +1262,7 @@
 
                 </div>
 
-                <div class="thumbnail bg-white shadow-sm text-center" style="border: 0px;">
+                <div class="thumbnail" style="border: 0px;">
                   <div class="thumb-inner">
                     <div class="liner-box">
                       <div class="member-container">
@@ -1256,10 +1270,10 @@
 
                       </div>
                     </div>
-                    <div class="caption py-3">
+                    <div class="caption">
                       <strong class="staffName">Divyansh Saluja</strong>
                       <a href="https://www.linkedin.com/in/divyansh-saluja-3a455414a" class="linkedin-btn d-block">
-                        Linked <i class="fab fa-linkedin"></i>
+                        <i class="fab fa-linkedin"></i>
                       </a>
                     </div>
                   </div>
@@ -1268,10 +1282,7 @@
 
                 </div>
 
-              </div>
-
-              <div class="d-flex flex-wrap">
-                <div class="thumbnail bg-white shadow-sm text-center" style="border: 0px;">
+                <div class="thumbnail" style="border: 0px;">
                   <div class="thumb-inner">
                     <div class="liner-box">
                       <div class="member-container">
@@ -1279,10 +1290,10 @@
 
                       </div>
                     </div>
-                    <div class="caption py-3">
+                    <div class="caption">
                       <strong class="staffName">Monika Rahar</strong>
                       <a href="https://www.linkedin.com/in/monika-rahar-b77382130" class="linkedin-btn d-block">
-                        Linked <i class="fab fa-linkedin"></i>
+                        <i class="fab fa-linkedin"></i>
                       </a>
                     </div>
                   </div>
@@ -1292,7 +1303,7 @@
                 </div>
 
 
-                <div class="thumbnail bg-white shadow-sm text-center" style="border: 0px;">
+                <div class="thumbnail" style="border: 0px;">
                   <div class="thumb-inner">
                     <div class="liner-box">
                       <div class="member-container">
@@ -1300,10 +1311,10 @@
 
                       </div>
                     </div>
-                    <div class="caption py-3">
+                    <div class="caption">
                       <strong class="staffName">Muneeb Rashid Malik</strong>
                       <a href="https://www.linkedin.com/in/muneeb-rashid-malik-a85876138" class="linkedin-btn d-block">
-                        Linked <i class="fab fa-linkedin"></i>
+                        <i class="fab fa-linkedin"></i>
                       </a>
                     </div>
                   </div>
@@ -1312,7 +1323,7 @@
 
                 </div>
 
-                <div class="thumbnail bg-white shadow-sm text-center" style="border: 0px;">
+                <div class="thumbnail" style="border: 0px;">
                   <div class="thumb-inner">
                     <div class="liner-box">
                       <div class="member-container">
@@ -1320,10 +1331,10 @@
 
                       </div>
                     </div>
-                    <div class="caption py-3">
+                    <div class="caption">
                       <strong class="staffName">Nikita Raj</strong>
                       <a href="https://www.linkedin.com/in/nikita-raj-585372169" class="linkedin-btn d-block">
-                        Linked <i class="fab fa-linkedin"></i>
+                        <i class="fab fa-linkedin"></i>
                       </a>
                     </div>
                   </div>
@@ -1332,7 +1343,7 @@
 
                 </div>
 
-                <div class="thumbnail bg-white shadow-sm text-center" style="border: 0px;">
+                <div class="thumbnail" style="border: 0px;">
                   <div class="thumb-inner">
                     <div class="liner-box">
                       <div class="member-container">
@@ -1340,10 +1351,10 @@
 
                       </div>
                     </div>
-                    <div class="caption py-3">
+                    <div class="caption">
                       <strong class="staffName">Pranjal Pranshu</strong>
                       <a href="https://www.linkedin.com/in/pranjal-pranshu-240675146/" class="linkedin-btn d-block">
-                        Linked <i class="fab fa-linkedin"></i>
+                        <i class="fab fa-linkedin"></i>
                       </a>
                     </div>
                   </div>
@@ -1352,10 +1363,7 @@
 
                 </div>
 
-              </div>
-
-              <div class="d-flex flex-wrap">
-                <div class="thumbnail bg-white shadow-sm text-center" style="border: 0px;">
+                <div class="thumbnail" style="border: 0px;">
                   <div class="thumb-inner">
                     <div class="liner-box">
                       <div class="member-container">
@@ -1363,10 +1371,10 @@
 
                       </div>
                     </div>
-                    <div class="caption py-3">
+                    <div class="caption">
                       <strong class="staffName">Priya Khemchandani</strong>
                       <a href="https://www.linkedin.com/in/priya-khemchandani-a78339153" class="linkedin-btn d-block">
-                        Linked <i class="fab fa-linkedin"></i>
+                        <i class="fab fa-linkedin"></i>
                       </a>
                     </div>
                   </div>
@@ -1376,7 +1384,7 @@
                 </div>
 
 
-                <div class="thumbnail bg-white shadow-sm text-center" style="border: 0px;">
+                <div class="thumbnail" style="border: 0px;">
                   <div class="thumb-inner">
                     <div class="liner-box">
                       <div class="member-container">
@@ -1384,10 +1392,10 @@
 
                       </div>
                     </div>
-                    <div class="caption py-3">
+                    <div class="caption">
                       <strong class="staffName">Pundrikaksh Sharma</strong>
                       <a href="https://www.linkedin.com/in/pundrikaksh-sharma-1b7514112" class="linkedin-btn d-block">
-                        Linked <i class="fab fa-linkedin"></i>
+                        <i class="fab fa-linkedin"></i>
                       </a>
                     </div>
                   </div>
@@ -1396,7 +1404,7 @@
 
                 </div>
 
-                <div class="thumbnail bg-white shadow-sm text-center" style="border: 0px;">
+                <div class="thumbnail" style="border: 0px;">
                   <div class="thumb-inner">
                     <div class="liner-box">
                       <div class="member-container">
@@ -1404,10 +1412,10 @@
 
                       </div>
                     </div>
-                    <div class="caption py-3">
+                    <div class="caption">
                       <strong class="staffName">Rahul Kumar</strong>
                       <a href="https://www.linkedin.com/in/rahul-kumar-sharma-37a6b9171" class="linkedin-btn d-block">
-                        Linked <i class="fab fa-linkedin"></i>
+                        <i class="fab fa-linkedin"></i>
                       </a>
                     </div>
                   </div>
@@ -1416,7 +1424,7 @@
 
                 </div>
 
-                <div class="thumbnail bg-white shadow-sm text-center" style="border: 0px;">
+                <div class="thumbnail" style="border: 0px;">
                   <div class="thumb-inner">
                     <div class="liner-box">
                       <div class="member-container">
@@ -1424,10 +1432,10 @@
 
                       </div>
                     </div>
-                    <div class="caption py-3">
+                    <div class="caption">
                       <strong class="staffName">Rajat Kumar</strong>
                       <a href="https://www.linkedin.com/in/rajat-kumar-0aa512176" class="linkedin-btn d-block">
-                        Linked <i class="fab fa-linkedin"></i>
+                        <i class="fab fa-linkedin"></i>
                       </a>
                     </div>
                   </div>
@@ -1436,10 +1444,7 @@
 
                 </div>
 
-              </div>
-
-              <div class="d-flex flex-wrap">
-                <div class="thumbnail bg-white shadow-sm text-center" style="border: 0px;">
+                <div class="thumbnail" style="border: 0px;">
                   <div class="thumb-inner">
                     <div class="liner-box">
                       <div class="member-container">
@@ -1447,10 +1452,10 @@
 
                       </div>
                     </div>
-                    <div class="caption py-3">
+                    <div class="caption">
                       <strong class="staffName">Sharad Trivedi</strong>
                       <a href="https://www.linkedin.com/in/sharad-t-843302136" class="linkedin-btn d-block">
-                        Linked <i class="fab fa-linkedin"></i>
+                        <i class="fab fa-linkedin"></i>
                       </a>
                     </div>
                   </div>
@@ -1460,7 +1465,7 @@
                 </div>
 
 
-                <div class="thumbnail bg-white shadow-sm text-center" style="border: 0px;">
+                <div class="thumbnail" style="border: 0px;">
                   <div class="thumb-inner">
                     <div class="liner-box">
                       <div class="member-container">
@@ -1468,10 +1473,10 @@
 
                       </div>
                     </div>
-                    <div class="caption py-3">
+                    <div class="caption">
                       <strong class="staffName">Suman Patra</strong>
                       <a href="https://www.linkedin.com/in/suman-patra-4197bb110" class="linkedin-btn d-block">
-                        Linked <i class="fab fa-linkedin"></i>
+                        <i class="fab fa-linkedin"></i>
                       </a>
                     </div>
                   </div>
@@ -1480,7 +1485,7 @@
 
                 </div>
 
-                <div class="thumbnail bg-white shadow-sm text-center" style="border: 0px;">
+                <div class="thumbnail" style="border: 0px;">
                   <div class="thumb-inner">
                     <div class="liner-box">
                       <div class="member-container">
@@ -1488,10 +1493,10 @@
 
                       </div>
                     </div>
-                    <div class="caption py-3">
+                    <div class="caption">
                       <strong class="staffName">Surya Pratap Singh Naruka</strong>
                       <a href="https://www.linkedin.com/in/surya-pratap-singh-naruka-664391145" class="linkedin-btn d-block">
-                        Linked <i class="fab fa-linkedin"></i>
+                        <i class="fab fa-linkedin"></i>
                       </a>
                     </div>
                   </div>
@@ -1500,7 +1505,7 @@
 
                 </div>
 
-                <div class="thumbnail bg-white shadow-sm text-center" style="border: 0px;">
+                <div class="thumbnail" style="border: 0px;">
                   <div class="thumb-inner">
                     <div class="liner-box">
                       <div class="member-container">
@@ -1508,10 +1513,10 @@
 
                       </div>
                     </div>
-                    <div class="caption py-3">
+                    <div class="caption">
                       <strong class="staffName">Utkarsh Sharma</strong>
                       <a href="http://www.linkedin.com/in/utkarshsharmauwsl" class="linkedin-btn d-block">
-                        Linked <i class="fab fa-linkedin"></i>
+                        <i class="fab fa-linkedin"></i>
                       </a>
                     </div>
                   </div>
@@ -1520,11 +1525,7 @@
 
                 </div>
 
-              </div>
-
-
-              <div class="d-flex flex-wrap">
-                <div class="thumbnail bg-white shadow-sm text-center" style="border: 0px;">
+                <div class="thumbnail" style="border: 0px;">
                   <div class="thumb-inner">
                     <div class="liner-box">
                       <div class="member-container">
@@ -1532,10 +1533,10 @@
 
                       </div>
                     </div>
-                    <div class="caption py-3">
+                    <div class="caption">
                       <strong class="staffName">Vaibhav Shahi</strong>
                       <a href="http://linkedin.com/in/vaibhav-shahi-4b215512a" class="linkedin-btn d-block">
-                        Linked <i class="fab fa-linkedin"></i>
+                        <i class="fab fa-linkedin"></i>
                       </a>
                     </div>
                   </div>
@@ -1545,7 +1546,7 @@
                 </div>
 
 
-                <div class="thumbnail bg-white shadow-sm text-center" style="border: 0px;">
+                <div class="thumbnail" style="border: 0px;">
                   <div class="thumb-inner">
                     <div class="liner-box">
                       <div class="member-container">
@@ -1553,10 +1554,10 @@
 
                       </div>
                     </div>
-                    <div class="caption py-3">
+                    <div class="caption">
                       <strong class="staffName">Jharna Saksena</strong>
                       <a href="https://www.linkedin.com/in/jharna-saksena-42ab41142/" class="linkedin-btn d-block">
-                        Linked <i class="fab fa-linkedin"></i>
+                        <i class="fab fa-linkedin"></i>
                       </a>
                     </div>
                   </div>
@@ -1565,7 +1566,7 @@
 
                 </div>
 
-                <div class="thumbnail bg-white shadow-sm text-center" style="border: 0px;">
+                <div class="thumbnail" style="border: 0px;">
                   <div class="thumb-inner">
                     <div class="liner-box">
                       <div class="member-container">
@@ -1573,10 +1574,10 @@
 
                       </div>
                     </div>
-                    <div class="caption py-3">
+                    <div class="caption">
                       <strong class="staffName">Priyanka porwal</strong>
                       <a href="https://www.linkedin.com/in/priyanka-porwal-304a32119/" class="linkedin-btn d-block">
-                        Linked <i class="fab fa-linkedin"></i>
+                        <i class="fab fa-linkedin"></i>
                       </a>
                     </div>
                   </div>
@@ -1585,7 +1586,7 @@
 
                 </div>
 
-                <div class="thumbnail bg-white shadow-sm text-center" style="border: 0px;">
+                <div class="thumbnail" style="border: 0px;">
                   <div class="thumb-inner">
                     <div class="liner-box">
                       <div class="member-container">
@@ -1593,10 +1594,10 @@
 
                       </div>
                     </div>
-                    <div class="caption py-3">
+                    <div class="caption">
                       <strong class="staffName">Manvi Chauhan</strong>
                       <a href="https://www.linkedin.com/in/manvi-chauhan-76835114b" class="linkedin-btn d-block">
-                        Linked <i class="fab fa-linkedin"></i>
+                        <i class="fab fa-linkedin"></i>
                       </a>
                     </div>
                   </div>
@@ -1605,12 +1606,7 @@
 
                 </div>
 
-
-              </div>
-
-
-              <div class="d-flex flex-wrap">
-                <div class="thumbnail bg-white shadow-sm text-center" style="border: 0px;">
+                <div class="thumbnail" style="border: 0px;">
                   <div class="thumb-inner">
                     <div class="liner-box">
                       <div class="member-container">
@@ -1618,10 +1614,10 @@
 
                       </div>
                     </div>
-                    <div class="caption py-3">
+                    <div class="caption">
                       <strong class="staffName">Swarnim Singh</strong>
                       <a href="https://www.linkedin.com/feed/" class="linkedin-btn d-block">
-                        Linked <i class="fab fa-linkedin"></i>
+                        <i class="fab fa-linkedin"></i>
                       </a>
                     </div>
                   </div>
@@ -1631,7 +1627,7 @@
                 </div>
 
 
-                <div class="thumbnail bg-white shadow-sm text-center" style="border: 0px;">
+                <div class="thumbnail" style="border: 0px;">
                   <div class="thumb-inner">
                     <div class="liner-box">
                       <div class="member-container">
@@ -1639,10 +1635,10 @@
 
                       </div>
                     </div>
-                    <div class="caption py-3">
+                    <div class="caption">
                       <strong class="staffName">Lakshya Soni</strong>
                       <a href="https://www.linkedin.com/in/lakshya-soni-353bb017a" class="linkedin-btn d-block">
-                        Linked <i class="fab fa-linkedin"></i>
+                        <i class="fab fa-linkedin"></i>
                       </a>
                     </div>
                   </div>
@@ -1651,7 +1647,7 @@
 
                 </div>
 
-                <div class="thumbnail bg-white shadow-sm text-center" style="border: 0px;">
+                <div class="thumbnail" style="border: 0px;">
                   <div class="thumb-inner">
                     <div class="liner-box">
                       <div class="member-container">
@@ -1659,10 +1655,10 @@
 
                       </div>
                     </div>
-                    <div class="caption py-3">
+                    <div class="caption">
                       <strong class="staffName">Saksham Grover</strong>
                       <a href="https://www.linkedin.com/in/saksham-grover-300198" class="linkedin-btn d-block">
-                        Linked <i class="fab fa-linkedin"></i>
+                        <i class="fab fa-linkedin"></i>
                       </a>
                     </div>
                   </div>
@@ -1671,7 +1667,7 @@
 
                 </div>
 
-                <div class="thumbnail bg-white shadow-sm text-center" style="border: 0px;">
+                <div class="thumbnail" style="border: 0px;">
                   <div class="thumb-inner">
                     <div class="liner-box">
                       <div class="member-container">
@@ -1679,10 +1675,10 @@
 
                       </div>
                     </div>
-                    <div class="caption py-3">
+                    <div class="caption">
                       <strong class="staffName">Akshay Baweja</strong>
                       <a href="https://www.linkedin.com/in/akshay-baweja-b77601153" class="linkedin-btn d-block">
-                        Linked <i class="fab fa-linkedin"></i>
+                        <i class="fab fa-linkedin"></i>
                       </a>
                     </div>
                   </div>
@@ -1690,12 +1686,9 @@
 
 
                 </div>
-              </div>
 
 
-
-              <div class="d-flex flex-wrap">
-                <div class="thumbnail bg-white shadow-sm text-center" style="border: 0px;">
+                <div class="thumbnail" style="border: 0px;">
                   <div class="thumb-inner">
                     <div class="liner-box">
                       <div class="member-container">
@@ -1703,10 +1696,10 @@
 
                       </div>
                     </div>
-                    <div class="caption py-3">
+                    <div class="caption">
                       <strong class="staffName">Anuj Malik</strong>
                       <a href="https://www.linkedin.com/in/iamanujmalik " class="linkedin-btn d-block">
-                        Linked <i class="fab fa-linkedin"></i>
+                        <i class="fab fa-linkedin"></i>
                       </a>
                     </div>
                   </div>
@@ -1716,7 +1709,7 @@
                 </div>
 
 
-                <div class="thumbnail bg-white shadow-sm text-center" style="border: 0px;">
+                <div class="thumbnail" style="border: 0px;">
                   <div class="thumb-inner">
                     <div class="liner-box">
                       <div class="member-container">
@@ -1724,10 +1717,10 @@
 
                       </div>
                     </div>
-                    <div class="caption py-3">
+                    <div class="caption">
                       <strong class="staffName">Abhishek Acharya</strong>
                       <a href="https://www.linkedin.com/in/abhishek-acharya-371a9a72/" class="linkedin-btn d-block">
-                        Linked <i class="fab fa-linkedin"></i>
+                        <i class="fab fa-linkedin"></i>
                       </a>
                     </div>
                   </div>
@@ -1736,7 +1729,7 @@
 
                 </div>
 
-                <div class="thumbnail bg-white shadow-sm text-center" style="border: 0px;">
+                <div class="thumbnail" style="border: 0px;">
                   <div class="thumb-inner">
                     <div class="liner-box">
                       <div class="member-container">
@@ -1744,10 +1737,10 @@
 
                       </div>
                     </div>
-                    <div class="caption py-3">
+                    <div class="caption">
                       <strong class="staffName">Vidushi Verma</strong>
                       <a href="https://www.linkedin.com/in/vidushi-verma-a87a2a151" class="linkedin-btn d-block">
-                        Linked <i class="fab fa-linkedin"></i>
+                        <i class="fab fa-linkedin"></i>
                       </a>
                     </div>
                   </div>
@@ -1756,7 +1749,7 @@
 
                 </div>
 
-                <div class="thumbnail bg-white shadow-sm text-center" style="border: 0px;">
+                <div class="thumbnail" style="border: 0px;">
                   <div class="thumb-inner">
                     <div class="liner-box">
                       <div class="member-container">
@@ -1764,10 +1757,10 @@
 
                       </div>
                     </div>
-                    <div class="caption py-3">
+                    <div class="caption">
                       <strong class="staffName">Kartikeya Joshi</strong>
                       <a href="https://www.linkedin.com/in/kartikey-joshi-688762151" class="linkedin-btn d-block">
-                        Linked <i class="fab fa-linkedin"></i>
+                        <i class="fab fa-linkedin"></i>
                       </a>
                     </div>
                   </div>
@@ -1776,11 +1769,8 @@
 
                 </div>
 
-              </div>
 
-
-              <div class="d-flex flex-wrap">
-                <div class="thumbnail bg-white shadow-sm text-center" style="border: 0px;">
+                <div class="thumbnail" style="border: 0px;">
                   <div class="thumb-inner">
                     <div class="liner-box">
                       <div class="member-container">
@@ -1788,10 +1778,10 @@
 
                       </div>
                     </div>
-                    <div class="caption py-3">
+                    <div class="caption">
                       <strong class="staffName">Prashant Yadav</strong>
                       <a href="https://www.linkedin.com/in/prashant-yadav-b0377b146" class="linkedin-btn d-block">
-                        Linked <i class="fab fa-linkedin"></i>
+                        <i class="fab fa-linkedin"></i>
                       </a>
                     </div>
                   </div>
@@ -1800,7 +1790,7 @@
 
                 </div>
 
-                <div class="thumbnail bg-white shadow-sm text-center" style="border: 0px;">
+                <div class="thumbnail" style="border: 0px;">
                   <div class="thumb-inner">
                     <div class="liner-box">
                       <div class="member-container">
@@ -1808,10 +1798,10 @@
 
                       </div>
                     </div>
-                    <div class="caption py-3">
+                    <div class="caption">
                       <strong class="staffName">Arshpreet Khadial</strong>
                       <a href="#" class="linkedin-btn d-block">
-                        Linked <i class="fab fa-linkedin"></i>
+                        <i class="fab fa-linkedin"></i>
                       </a>
                     </div>
                   </div>
@@ -1820,7 +1810,7 @@
 
                 </div>
 
-                <div class="thumbnail bg-white shadow-sm text-center" style="border: 0px;">
+                <div class="thumbnail" style="border: 0px;">
                   <div class="thumb-inner">
                     <div class="liner-box">
                       <div class="member-container">
@@ -1828,10 +1818,10 @@
 
                       </div>
                     </div>
-                    <div class="caption py-3">
+                    <div class="caption">
                       <strong class="staffName">Basuki Nath Pandey</strong>
                       <a href="https://www.linkedin.com/in/basuki-nath-pandey-3b6b47151" class="linkedin-btn d-block">
-                        Linked <i class="fab fa-linkedin"></i>
+                        <i class="fab fa-linkedin"></i>
                       </a>
                     </div>
                   </div>
@@ -1840,7 +1830,7 @@
 
                 </div>
 
-                <div class="thumbnail bg-white shadow-sm text-center" style="border: 0px;">
+                <div class="thumbnail" style="border: 0px;">
                   <div class="thumb-inner">
                     <div class="liner-box">
                       <div class="member-container">
@@ -1848,10 +1838,10 @@
 
                       </div>
                     </div>
-                    <div class="caption py-3">
+                    <div class="caption">
                       <strong class="staffName">Varnika Taya</strong>
                       <a href="https://www.linkedin.com/in/varnika-taya-8b261aa7/" class="linkedin-btn d-block">
-                        Linked <i class="fab fa-linkedin"></i>
+                        <i class="fab fa-linkedin"></i>
                       </a>
                     </div>
                   </div>
@@ -1859,11 +1849,8 @@
 
 
                 </div>
-              </div>
 
-
-              <div class="d-flex flex-wrap">
-                <div class="thumbnail bg-white shadow-sm text-center" style="border: 0px;">
+                <div class="thumbnail" style="border: 0px;">
                   <div class="thumb-inner">
                     <div class="liner-box">
                       <div class="member-container">
@@ -1871,10 +1858,10 @@
 
                       </div>
                     </div>
-                    <div class="caption py-3">
+                    <div class="caption">
                       <strong class="staffName">Karan Pandey</strong>
                       <a href="https://www.linkedin.com/in/karan-pandey-49965a149" class="linkedin-btn d-block">
-                        Linked <i class="fab fa-linkedin"></i>
+                        <i class="fab fa-linkedin"></i>
                       </a>
                     </div>
                   </div>
@@ -1883,7 +1870,7 @@
 
                 </div>
 
-                <div class="thumbnail bg-white shadow-sm text-center" style="border: 0px;">
+                <div class="thumbnail" style="border: 0px;">
                   <div class="thumb-inner">
                     <div class="liner-box">
                       <div class="member-container">
@@ -1891,10 +1878,10 @@
 
                       </div>
                     </div>
-                    <div class="caption py-3">
+                    <div class="caption">
                       <strong class="staffName">Nitish Choudhary</strong>
                       <a href="#" class="linkedin-btn d-block">
-                        Linked <i class="fab fa-linkedin"></i>
+                        <i class="fab fa-linkedin"></i>
                       </a>
                     </div>
                   </div>
@@ -1903,7 +1890,7 @@
 
                 </div>
 
-                <div class="thumbnail bg-white shadow-sm text-center" style="border: 0px;">
+                <div class="thumbnail" style="border: 0px;">
                   <div class="thumb-inner">
                     <div class="liner-box">
                       <div class="member-container">
@@ -1911,10 +1898,10 @@
 
                       </div>
                     </div>
-                    <div class="caption py-3">
+                    <div class="caption">
                       <strong class="staffName">Mahek Dalmia</strong>
                       <a href="https://www.linkedin.com/in/mahek-dalmia-826476150/" class="linkedin-btn d-block">
-                        Linked <i class="fab fa-linkedin"></i>
+                        <i class="fab fa-linkedin"></i>
                       </a>
                     </div>
                   </div>
@@ -1923,7 +1910,7 @@
 
                 </div>
 
-                <div class="thumbnail bg-white shadow-sm text-center" style="border: 0px;">
+                <div class="thumbnail" style="border: 0px;">
                   <div class="thumb-inner">
                     <div class="liner-box">
                       <div class="member-container">
@@ -1931,10 +1918,10 @@
 
                       </div>
                     </div>
-                    <div class="caption py-3">
+                    <div class="caption">
                       <strong class="staffName">Rahul Gupta</strong>
                       <a href="https://www.linkedin.com/in/rahul-gupta-26535a12b/" class="linkedin-btn d-block">
-                        Linked <i class="fab fa-linkedin"></i>
+                        <i class="fab fa-linkedin"></i>
                       </a>
                     </div>
                   </div>
@@ -1942,11 +1929,8 @@
 
 
                 </div>
-              </div>
 
-
-              <div class="d-flex flex-wrap">
-                <div class="thumbnail bg-white shadow-sm text-center" style="border: 0px;">
+                <div class="thumbnail" style="border: 0px;">
                   <div class="thumb-inner">
                     <div class="liner-box">
                       <div class="member-container">
@@ -1954,10 +1938,10 @@
 
                       </div>
                     </div>
-                    <div class="caption py-3">
+                    <div class="caption">
                       <strong class="staffName">Abhishek Singh</strong>
                       <a href="https://www.linkedin.com/in/abhishek-singh-78300312b/" class="linkedin-btn d-block">
-                        Linked <i class="fab fa-linkedin"></i>
+                        <i class="fab fa-linkedin"></i>
                       </a>
                     </div>
                   </div>
@@ -1966,7 +1950,7 @@
 
                 </div>
 
-                <div class="thumbnail bg-white shadow-sm text-center" style="border: 0px;">
+                <div class="thumbnail" style="border: 0px;">
                   <div class="thumb-inner">
                     <div class="liner-box">
                       <div class="member-container">
@@ -1974,10 +1958,10 @@
 
                       </div>
                     </div>
-                    <div class="caption py-3">
+                    <div class="caption">
                       <strong class="staffName">Ashish Yadav</strong>
                       <a href="https://www.linkedin.com/in/ashishyadav1994/" class="linkedin-btn d-block">
-                        Linked <i class="fab fa-linkedin"></i>
+                        <i class="fab fa-linkedin"></i>
                       </a>
                     </div>
                   </div>
@@ -1986,7 +1970,7 @@
 
                 </div>
 
-                <div class="thumbnail bg-white shadow-sm text-center" style="border: 0px;">
+                <div class="thumbnail" style="border: 0px;">
                   <div class="thumb-inner">
                     <div class="liner-box">
                       <div class="member-container">
@@ -1994,10 +1978,10 @@
 
                       </div>
                     </div>
-                    <div class="caption py-3">
+                    <div class="caption">
                       <strong class="staffName">Hardik Jain</strong>
                       <a href="https://www.linkedin.com/in/hardik-jain-6b444213a/" class="linkedin-btn d-block">
-                        Linked <i class="fab fa-linkedin"></i>
+                        <i class="fab fa-linkedin"></i>
                       </a>
                     </div>
                   </div>
