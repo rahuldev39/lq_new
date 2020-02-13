@@ -569,3 +569,6 @@ width: 8px;
 .profile-links ul li:last-child a{
   border-bottom: 0px
 }
+.table {
+    border-bottom: 1px solid #dee2e6;
+}
