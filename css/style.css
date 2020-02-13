@@ -509,18 +509,21 @@ font-size: .9rem
 }
 
 .user-thumb span {
-    display: inline-block;
-    color: white;
-    background-color: #020202;
-    padding: .4rem .7rem;
-    font-size: .79rem;
 }
-.position-absolute {
+.user-thumb img {
+    max-width: 150px;
+}
+.user-thumb figcaption {
     position: absolute!important;
-    left: 0px;
-    bottom: 40px;
+    right: 16px;
+    top: 13px;
+    border: 1px solid #e2e6ea;
+    border-radius: 10px;
 }
-
+.user-thumb figcaption .dot-separator{
+  height: 8px;
+width: 8px;
+}
 .plan-block {
     border-left: 5px dotted #eaeef3;
     height: 100%;
@@ -541,10 +544,10 @@ font-size: .9rem
     padding-right: 10px;
 }
 .el-tablo .value {
-    font-size: 2.43rem;
-    font-weight: 500;
+    font-size: 2rem;
+    font-weight: 600;
     letter-spacing: 1px;
-    line-height: 1.2;
+    line-height: 1.5;
     display: inline-block;
     vertical-align: middle;
 }
@@ -552,7 +555,7 @@ font-size: .9rem
     display: block;
     font-size: .63rem;
     text-transform: uppercase;
-    color: rgba(0, 0, 0, 0.4);
+    color: rgba(0, 0, 0, 0.88);
     letter-spacing: 1px;
 }
 .profile-links ul li a {

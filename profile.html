@@ -100,10 +100,12 @@
             </li>
           </ul>
           <ul class="navbar-nav ml-auto align-items-lg-center">
-
+            <li class="nav-item nav-item--btn">
+              <a href="#" class="btn btn-outline-primary btn-sm btn--has-shadow mt-3 mt-lg-0">LQ Publish</a>
+            </li>
             <li class="nav-item nav--has-sub-menu" data-toggle="hover">
               <a class="nav-link" href="#" data-toggle="dropdown">
-              <img src="./images/team/ambikaprasad.jpg" class="rounded-circle mr-3" width="25">Ambika Prasad Jena
+              <img src="./images/team/ambikaprasad.jpg" class="rounded-circle mr-3" width="25">Ambika Prasad
               </a>
 
               <ul class="nav-sub-menu dropdown-menu rounded-lg shadow dropdown-menu-right">
@@ -111,10 +113,10 @@
                   <a href="#" class="nav-link">Profile</a>
                 </li>
                 <li class="nav-item">
-                  <a href="#" class="nav-link">Bookmarks</a>
+                  <a href="#" class="nav-link">My Bookmarks</a>
                 </li>
                 <li class="nav-item">
-                  <a href="#" class="nav-link">Notes</a>
+                  <a href="#" class="nav-link">My Notes</a>
                 </li>
                 <li class="nav-item">
                   <a href="#" class="nav-link">Logout</a>
@@ -141,12 +143,12 @@
             <div class="row">
 
               <aside class="sidebar col-lg-3">
-                <section class="user-block">
-                    <figure class="user-thumb position-relative">
-                      <img src="./images/team/ambikaprasad.jpg" alt="" class="rounded w-100">
-                      <figcaption class="position-absolute">
-                        <span class="name bg-primary">Ambika Prasad Jena</span>
-                        <span class="">ambika-prasad@gmail.com</span>
+                <section class="widget rounded-lg shadow-sm user-block mb-4 text-center position-relative">
+                    <figure class="user-thumb  mb-0">
+                      <img src="./images/team/ambikaprasad.jpg" alt="" class="rounded-circle w-100">
+                      <figcaption class="position-absolute d-flex align-items-center px-1">
+                        <span class="dot-separator bg-success mr-1" ></span>
+                        <span class="text-dark f-12">Online</span>
                       </figcaption>
                     </figure>
                 </section>
@@ -154,9 +156,9 @@
                 <section class="widget widget-subscribe mb-4 rounded-lg shadow-sm px-4 pb-4 pt-0">
                   <div class="up-contents">
                               <div class="">
-                                  <div class="row mb-4 text-center">
+                                  <div class="row mb-2 text-center">
                                       <div class="col-sm-6 b-r b-b">
-                                          <div class="el-tablo centered py-4">
+                                          <div class="el-tablo centered py-3">
                                             <a href="#">
                                               <div class="value">25</div>
                                               <div class="label">Notes</div>
@@ -164,7 +166,7 @@
                                           </div>
                                       </div>
                                       <div class="col-sm-6 b-b">
-                                          <div class="el-tablo centered  py-4">
+                                          <div class="el-tablo centered  py-3">
                                             <a href="#">
                                               <div class="value">31</div>
                                               <div class="label">Bookmarks</div>
@@ -175,10 +177,11 @@
 
                                   <div class="profile-links">
                                     <ul class="list-unstyled mb-0">
-                                      <li><a href="#"><i class="lni-user mr-2"></i> Edit Profile</a> </li>
+                                      <li><a href="#"><i class="lni-user mr-2"></i>Profile</a> </li>
                                       <li><a href="#"><i class="lni-lock mr-2"></i> Change password</a></li>
                                       <li><a href="#"><i class="lni-bookmark mr-2"></i> Bookmarks</a></li>
                                       <li><a href="#"><i class="lni-pencil-alt mr-2"></i> Notes</a></li>
+                                      <li><a href="#"><i class="lni-cog mr-2"></i> Settings</a></li>
                                     </ul>
                                   </div>
 
@@ -198,33 +201,30 @@
                       <div class="card-body p-4">
 
                         <a href="#" class="h3 card-title d-block mb-2 font-weight-bold">Ambika Prasad Jena</a>
-
-                        <div class="d-flex mb-3">
+                        <hr>
+                        <div class="d-flex">
                           <p class="card-text mb-0">
                             <small class="text-muted mr-3"><i class="lni-map-marker"></i> Gurgaon, India</small>
-                            <small class="text-muted"><i class="lni-phone-handset"></i> +91 98675434</small>
+                            <small class="text-muted mr-3"><i class="lni-phone-handset"></i> +91 98675434</small>
+                            <small class="text-muted "><i class="lni-envelope"></i> ambika-prasad@gmail.com</small>
                           </p>
 
                         </div>
-                        <p class="card-text">About elementum tincidunt massa, a pulvinar leo ultricies ut. Ut fringilla lectus tellusimp imperdiet molestie est. Dell viverra cursus nibh volutpat at.</p>
+
                       </div>
 
 
                     </div>
                     <div class="col-md-4 col-lg-4">
                       <div class="p-4 plan-block">
-                        <div class="d-flex align-item-center ">
-                          <img src="./images/planning.svg" alt="" width="20">
-                          <h6 class="text-primary ml-2 mb-0 ">Plan selected</h6>
-                        </div>
 
-                        <hr>
+
                         <div class="d-flex">
 
                           <div class="flex-fill">
-                            <h5 class="mb-0">Individual</h5>
-                            <h2 class="mb-0"><small class="f-12">Rs.</small>9000</h2>
-                            <small>Per month billed annually</small>
+                            <h5 class="mb-0 text-primary">Individual</h5>
+                            <h2 class="mb-0"><small>Rs.</small>9,000</h2>
+                            <small>Renew Plan Date: <strong class="text-dark">22 Jan 2021</strong> </small>
                           </div>
                         </div>
 
@@ -389,23 +389,7 @@
     </div>
   </footer> <!-- END Footer -->
 
-  <div class="alert-notifications-wrapper">
 
-    <div id="subscribe-success-notification" class="alert alert-validation alert-success alert-dismissible fade" role="alert">
-      Thank you for subscribing! Please check your inbox to opt-in.
-      <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-        <span aria-hidden="true">&times;</span>
-      </button>
-    </div> <!-- Subscribe Success -->
-
-    <div id="subscribe-error-notification" class="alert alert-validation alert-danger alert-dismissible fade" role="alert">
-      Oh no, error happened! Please check the email address and/or try again.
-      <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-        <span aria-hidden="true">&times;</span>
-      </button>
-    </div> <!-- Subscribe Error -->
-
-  </div> <!-- END Alert Notifications Wrapper -->
 
   <!-- Global Required JS -->
   <script src="js\vendor\jquery-3.3.1.min.js"></script>
