@@ -185,9 +185,9 @@
   </div>
 
   <main class="main">
-    <section class="section section-hero py-0 bg-gray">
-      <div class="container d-flex">
-        <div class="sticky-toolbar btn-toolbar align-self-start mt-6 pt-6 mr-4 pb-4" role="toolbar">
+    <section class="section judgment-section py-0 bg-gray">
+      <div class="container d-flex anim">
+        <div class="sticky-toolbar btn-toolbar align-self-start mt-6 pt-4 mr-4 pb-4" role="toolbar">
           <div class="btn-group-vertical btn-group-sm">
             <button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="right" title="Facebook">
               <i class="lni-facebook"></i>
@@ -201,7 +201,7 @@
             <button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="right" title="Mail">
               <i class="lni-envelope"></i>
             </button>
-            <button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="right" title="Note">
+            <button type="button" class="btn btn-default notes-btn" data-toggle="tooltip" data-placement="right" title="Note">
               <i class="lni-pencil-alt"></i>
             </button>
             <button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="right" title="Print">
@@ -284,6 +284,14 @@
 
 
         </div>
+
+
+        <aside class="notes-section anim shadow ml-4">
+          <div class="p-5">
+            <h1>notes</h1>
+          </div>
+
+        </aside>
 
       </div>
     </section> <!-- END Section Hero -->
@@ -426,7 +434,11 @@ $('.main-detail-content').mouseup(function(event) {
 });
   </script>
 
-
+  <script type="text/javascript">
+    $('.notes-btn').on('click', function() {
+      $('.judgment-section').toggleClass('notes-open');
+    })
+  </script>
 
 </body>
 

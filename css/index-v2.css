@@ -1,0 +1,35 @@
+.main-banner{
+  background-image: url(./../images/photo-of-man-wearing-eyeglasses-3184611.png);
+  background-size: cover;
+}
+.search-bar-sm {
+    max-width: initial;
+}
+.search-filed-box:not(.search-bar-sm) .search-field .form-control {
+    font-size: 1.1rem;
+    height: 46px !important;
+}
+.open-dropdown div.tree-multiselect .auxiliary input.search {
+    height: 37px;
+    box-shadow: none !important;
+    font-size: 1.1rem;
+}
+div.tree-multiselect .auxiliary input.search {
+    padding: 5px;
+    margin: 0;
+    border: 0px;
+    display: table-cell;
+    width: 100%;
+    position: absolute;
+    top: -41px;
+    outline: none;
+    left: 0px;
+}
+.main-banner h2{
+  font-size: 2.9rem;
+}
+.menu-icon {
+    font-size: 2.5rem;
+    color: white !important;
+    line-height: normal;
+}

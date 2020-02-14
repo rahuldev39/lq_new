@@ -207,7 +207,7 @@ ul.green-checks-list .h4, ul.green-checks-list h4 {
 }
 .sticky-toolbar {
     position: sticky;
-    top: 55px;
+    top: 120px;
 }
 .list-slider{
   position: sticky;
@@ -571,4 +571,28 @@ width: 8px;
 }
 .table {
     border-bottom: 1px solid #dee2e6;
+}
+
+.anim{
+  transition: all ease-in-out 300ms
+}
+.notes-open .container{
+  max-width: 100%
+}
+.notes-open .container-sm {
+    margin: initial;
+}
+.notes-section {
+    height: calc(100vh - 76px) ;
+    background-color: white;
+    width: 100%;
+    position: sticky;
+    top: 120px;
+
+}
+
+.judgment-section:not(.notes-open) .notes-section{
+width: 0;
+height: 0px;
+overflow: hidden;
 }
