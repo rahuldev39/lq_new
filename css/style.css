@@ -1,4 +1,6 @@
-
+body{
+  overflow-x: hidden;
+}
 .text-dark {
     color: #101f41!important;
 }
@@ -583,16 +585,18 @@ width: 8px;
     margin: initial;
 }
 .notes-section {
-    height: calc(100vh - 76px) ;
+    height: calc(100vh - 76px);
     background-color: white;
     width: 100%;
     position: sticky;
     top: 120px;
-
+    transform: translateX(1000px);
 }
-
+.notes-open aside.notes-section {
+    transform: translateX(0);
+}
 .judgment-section:not(.notes-open) .notes-section{
 width: 0;
-height: 0px;
 overflow: hidden;
 }
+

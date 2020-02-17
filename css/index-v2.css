@@ -176,3 +176,22 @@ body.menu-open{
 .offcanvas-collapse .navbar-nav>.nav--has-sub-menu>.nav-sub-menu::before {
     display: none;
 }
+
+.carousel-control-next, .carousel-control-prev {
+    color: #101f41;
+    opacity: 1;
+    font-size: 45px;
+    width: 5%;
+    background-color: transparent;
+    border: 0px;
+    padding: 0px;
+  }
+  .carousel-control-next:hover, .carousel-control-prev:hover,
+  .carousel-control-next:focus, .carousel-control-prev:focus
+   {
+    color: #4d5bed;
+  }
+  
+  .carousel-item {
+    transition: transform .3s ease-in-out;
+  }
