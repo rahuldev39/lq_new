@@ -581,21 +581,19 @@ width: 8px;
 .notes-open .container{
   max-width: 100%
 }
-.notes-open .container-sm {
-    margin: initial;
-}
 .notes-section {
-    height: calc(100vh - 76px);
-    background-color: white;
-    width: 100%;
-    position: sticky;
-    top: 120px;
-    transform: translateX(1000px);
+  height: 100vh;
+  background-color: white;
+  width: 100%;
+  position: sticky;
+  top: 0px;
+  transform: translateX(1000px);
+  border-top: 1px solid rgb(234, 234, 234);
 }
 .notes-open aside.notes-section {
     transform: translateX(0);
 }
-.judgment-section:not(.notes-open) .notes-section{
+.judgement-section-wrapper:not(.notes-open) .notes-section{
 width: 0;
 overflow: hidden;
 }
@@ -632,6 +630,7 @@ overflow: hidden;
 }
 .notes-controls {
   border-right: 2px solid #f1f1f1;
+  border-left: 1px solid #eaeaea;
 }
 .richText .richText-toolbar ul li a{
   font-size: 12px;
