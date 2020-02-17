@@ -587,11 +587,14 @@ width: 8px;
   width: 100%;
   position: sticky;
   top: 0px;
-  transform: translateX(1000px);
   border-top: 1px solid rgb(234, 234, 234);
+  transform: rotate(5deg) ;
+  transform-origin: left;
+  opacity: 0;
 }
 .notes-open aside.notes-section {
-    transform: translateX(0);
+    transform: rotate(0deg) ;
+    opacity: 1;
 }
 .judgement-section-wrapper:not(.notes-open) .notes-section{
 width: 0;
