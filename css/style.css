@@ -600,3 +600,54 @@ width: 0;
 overflow: hidden;
 }
 
+.nav-item{
+  margin: 0px;
+}
+.notes-controls .nav-link svg {
+  width: 20px;
+}
+.notes-controls .nav-link{
+  outline: none;
+  border: 0px !important;
+  background-color: transparent;
+  position: relative;
+}
+.notes-controls .nav-link.active::before {
+  content: "";
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  height: 100%;
+  width: 3px;
+  background-color: #4d5bed;
+}
+.notes-controls .nav-link svg:hover, 
+.notes-controls .nav-link.active  svg{
+  fill:#4d5bed
+}
+.notes-controls .nav-item {
+  border-top: 1px solid #ececec;
+  margin-bottom: 0px;
+  margin-right: -2px;
+}
+.notes-controls {
+  border-right: 2px solid #f1f1f1;
+}
+.richText .richText-toolbar ul li a{
+  font-size: 12px;
+}
+.richText .richText-editor {
+  height: 140px;
+  padding: 10px;
+}
+.richText .richText-editor:focus {
+  border-left: #4d5bed solid 2px;
+}
+.notes-list .card:hover {
+  background-color: #4d5bed;
+  color: white;
+  cursor: pointer;
+}
+.notes-list .card:hover h6, .notes-list .card:hover a{
+  color: white !important;
+}

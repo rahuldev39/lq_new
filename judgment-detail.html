@@ -13,6 +13,8 @@
   <!-- Vendor/Plugins CSS -->
   <link rel="stylesheet" href="css\vendor\fontawesome-all.min.css">
   <link rel="stylesheet" href="./css/vendor/jquery-listslider.css">
+  <link rel="stylesheet" href="css\vendor\richtext.min.css">
+
   <link rel="stylesheet" href="css\main.css">
   <link rel="stylesheet" href="./css/style.css">
   <title>legitquest | Listing page</title>
@@ -286,12 +288,220 @@
         </div>
 
 
-        <aside class="notes-section anim shadow ml-4">
-          <div class="p-5">
-            <h1>notes</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+        <aside class="notes-section anim shadow ml-4 d-flex">
+          <div class="notes-controls pt-3">
+            <ul class="nav nav-tabs flex-column">
+              <li class="nav-item" data-toggle="tooltip" data-placement="left" title="Add new notes">
+                <button class="nav-link p-0 border-0 active p-3" data-toggle="tab" data-target="#home">
+                  <svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 512 512" style="&#10;"><path d="m256 512c-141.164062 0-256-114.835938-256-256s114.835938-256 256-256 256 114.835938 256 256-114.835938 256-256 256zm0-480c-123.519531 0-224 100.480469-224 224s100.480469 224 224 224 224-100.480469 224-224-100.480469-224-224-224zm0 0"/><path d="m368 272h-224c-8.832031 0-16-7.167969-16-16s7.167969-16 16-16h224c8.832031 0 16 7.167969 16 16s-7.167969 16-16 16zm0 0"/><path d="m256 384c-8.832031 0-16-7.167969-16-16v-224c0-8.832031 7.167969-16 16-16s16 7.167969 16 16v224c0 8.832031-7.167969 16-16 16zm0 0"/></svg>
+                </button>
+              </li>
+              <li class="nav-item" data-toggle="tooltip" data-placement="left" title="view Notes">
+                <button class="nav-link border-0 p-0 p-3" data-toggle="tab" data-target="#profile" >
+                  <svg  xmlns="http://www.w3.org/2000/svg" id="Layer_1" enable-background="new 0 0 512 512"  viewBox="0 0 512 512"><g><path d="m428.5 53.74h-105.195c-6.884-30.714-34.448-53.74-67.305-53.74s-60.421 23.026-67.305 53.74h-105.195c-31.706 0-57.5 25.717-57.5 57.328v343.604c0 31.611 25.794 57.328 57.5 57.328h295.763c3.968 0 7.774-1.572 10.585-4.372l91.738-91.366c2.826-2.814 4.415-6.639 4.415-10.628v-294.566c-.001-31.611-25.795-57.328-57.501-57.328zm-172.5-23.74c21.482 0 38.959 17.379 38.959 38.74 0 21.362-17.477 38.741-38.959 38.741s-38.959-17.379-38.959-38.741c0-21.361 17.477-38.74 38.959-38.74zm-200 424.673v-343.605c0-15.068 12.336-27.328 27.5-27.328h105.195c6.884 30.715 34.448 53.741 67.305 53.741s60.421-23.026 67.305-53.741h105.195c15.163 0 27.5 12.26 27.5 27.328v279.565h-76.738c-8.284 0-15 6.716-15 15v76.367h-280.762c-15.164 0-27.5-12.259-27.5-27.327zm378.682-34.039-40.42 40.257v-40.257z"/><path d="m121.959 197.439h268.081c8.284 0 15-6.716 15-15s-6.716-15-15-15h-268.081c-8.284 0-15 6.716-15 15s6.716 15 15 15z"/><path d="m121.959 257.439h238.081c8.284 0 15-6.716 15-15s-6.716-15-15-15h-238.081c-8.284 0-15 6.716-15 15s6.716 15 15 15z"/><path d="m121.959 317.439h268.081c8.284 0 15-6.716 15-15s-6.716-15-15-15h-268.081c-8.284 0-15 6.716-15 15s6.716 15 15 15z"/><path d="m300.041 347.439h-178.082c-8.284 0-15 6.716-15 15s6.716 15 15 15h178.081c8.284 0 15-6.716 15-15s-6.715-15-14.999-15z"/></g></svg>
+                </button>
+              </li>
+            </ul>
+          
+          </div>
+          
+          <div class="notes-content flex-fill">
+            <div class="tab-content" id="myTabContent">
+              <div class="tab-pane p-4  fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                <div class="notes-Form">
+                  <div class="form-group">
+    
+                    <input type="text" class="form-control form-control-sm" placeholder="Enter Note Title">
+                  </div>
+                  <div class="form-group sidebar-tabs-link">
+                    <select class="form-control form-control-sm">
+                      <option>Facts</option>
+                      <option>Reasoning</option>
+                      <option>Case Cited</option>
+                      <option>Decision</option>
+                      <option>Issue</option>
+                      <option>Arguments Of Petitioner</option>
+                    </select>
+                  </div>
+                  <div class="form-group">
+                    <textarea name="name" rows="5" cols="80" class="form-control text-editor" placeholder="Enter Discription Here"></textarea>
+                  </div>
+                  <div class="sidebar-action-btn">
+                    <button class="btn btn-dark btn-sm" name="button">Clear</button>
+                    <button class="btn btn-primary btn-sm" name="button">Save</button>
+                    <button class="btn btn-primary btn-sm" name="button">Share</button>
+                  </div>
+  
+                </div>
 
+              </div>
+              <div class="tab-pane p-4  fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                <div class="notes-list" >
+                  <div class="card p-0 mb-2 shadow-sm">
+                    <div class="card-body py-3">
+                      <div class="d-flex">
+                        <div class="flex-fill mr-4">
+                          <h6 class="mb-1 text-primary"> Nesciunt tofu stumptown aliqua</h6>
+                          <small class="d-block">3 days Ago</small>
+                        </div>
+                        <div class="d-flex">
+                          <a href="" class="d-inline-block mr-2" data-toggle="tooltip" data-placement="bottom" title="share">
+                            <i class="lni-share"></i>
+                          </a>
+                          <a href="" class="d-inline-block"  data-toggle="tooltip" data-placement="bottom" title="Delete">
+                            <i class="lni-trash"></i>
+                          </a>
+                        </div>
+                      </div>
+                      
+                    </div>
+                  </div>
+
+                  <div class="card p-0 mb-2 shadow-sm">
+                    <div class="card-body py-3">
+                      <div class="d-flex">
+                        <div class="flex-fill mr-4">
+                          <h6 class="mb-1 text-primary">Mustache cliche tempor, williamsburg carles vegan helvetica</h6>
+                          <small class="d-block">3 days Ago</small>
+                        </div>
+                        <div class="d-flex">
+                          <a href="" class="d-inline-block mr-2" data-toggle="tooltip" data-placement="bottom" title="share">
+                            <i class="lni-share"></i>
+                          </a>
+                          <a href="" class="d-inline-block"  data-toggle="tooltip" data-placement="bottom" title="Delete">
+                            <i class="lni-trash"></i>
+                          </a>
+                        </div>
+                      </div>
+                      
+                    </div>
+                  </div>
+
+                  <div class="card p-0 mb-2 shadow-sm">
+                    <div class="card-body py-3">
+                      <div class="d-flex">
+                        <div class="flex-fill mr-4">
+                          <h6 class="mb-1 text-primary">retro synth master cleanse.</h6>
+                          <small class="d-block">3 days Ago</small>
+                        </div>
+                        <div class="d-flex">
+                          <a href="" class="d-inline-block mr-2" data-toggle="tooltip" data-placement="bottom" title="share">
+                            <i class="lni-share"></i>
+                          </a>
+                          <a href="" class="d-inline-block"  data-toggle="tooltip" data-placement="bottom" title="Delete">
+                            <i class="lni-trash"></i>
+                          </a>
+                        </div>
+                      </div>
+                      
+                    </div>
+                  </div>
+
+                  <div class="card p-0 mb-2 shadow-sm">
+                    <div class="card-body py-3">
+                      <div class="d-flex">
+                        <div class="flex-fill mr-4">
+                          <h6 class="mb-1 text-primary">Mustache cliche tempor, williamsburg carles vegan helvetica</h6>
+                          <small class="d-block">3 days Ago</small>
+                        </div>
+                        <div class="d-flex">
+                          <a href="" class="d-inline-block mr-2" data-toggle="tooltip" data-placement="bottom" title="share">
+                            <i class="lni-share"></i>
+                          </a>
+                          <a href="" class="d-inline-block"  data-toggle="tooltip" data-placement="bottom" title="Delete">
+                            <i class="lni-trash"></i>
+                          </a>
+                        </div>
+                      </div>
+                      
+                    </div>
+                  </div>
+
+                  <div class="card p-0 mb-2 shadow-sm">
+                    <div class="card-body py-3">
+                      <div class="d-flex">
+                        <div class="flex-fill mr-4">
+                          <h6 class="mb-1 text-primary"> Nesciunt tofu stumptown aliqua</h6>
+                          <small class="d-block">3 days Ago</small>
+                        </div>
+                        <div class="d-flex">
+                          <a href="" class="d-inline-block mr-2" data-toggle="tooltip" data-placement="bottom" title="share">
+                            <i class="lni-share"></i>
+                          </a>
+                          <a href="" class="d-inline-block"  data-toggle="tooltip" data-placement="bottom" title="Delete">
+                            <i class="lni-trash"></i>
+                          </a>
+                        </div>
+                      </div>
+                      
+                    </div>
+                  </div>
+
+                  <div class="card p-0 mb-2 shadow-sm">
+                    <div class="card-body py-3">
+                      <div class="d-flex">
+                        <div class="flex-fill mr-4">
+                          <h6 class="mb-1 text-primary">Mustache cliche tempor, williamsburg carles vegan helvetica</h6>
+                          <small class="d-block">3 days Ago</small>
+                        </div>
+                        <div class="d-flex">
+                          <a href="" class="d-inline-block mr-2" data-toggle="tooltip" data-placement="bottom" title="share">
+                            <i class="lni-share"></i>
+                          </a>
+                          <a href="" class="d-inline-block"  data-toggle="tooltip" data-placement="bottom" title="Delete">
+                            <i class="lni-trash"></i>
+                          </a>
+                        </div>
+                      </div>
+                      
+                    </div>
+                  </div>
+
+                  <div class="card p-0 mb-2 shadow-sm">
+                    <div class="card-body py-3">
+                      <div class="d-flex">
+                        <div class="flex-fill mr-4">
+                          <h6 class="mb-1 text-primary">retro synth master cleanse.</h6>
+                          <small class="d-block">3 days Ago</small>
+                        </div>
+                        <div class="d-flex">
+                          <a href="" class="d-inline-block mr-2" data-toggle="tooltip" data-placement="bottom" title="share">
+                            <i class="lni-share"></i>
+                          </a>
+                          <a href="" class="d-inline-block"  data-toggle="tooltip" data-placement="bottom" title="Delete">
+                            <i class="lni-trash"></i>
+                          </a>
+                        </div>
+                      </div>
+                      
+                    </div>
+                  </div>
+
+                  <div class="card p-0 mb-2 shadow-sm">
+                    <div class="card-body py-3">
+                      <div class="d-flex">
+                        <div class="flex-fill mr-4">
+                          <h6 class="mb-1 text-primary">Mustache cliche tempor, williamsburg carles vegan helvetica</h6>
+                          <small class="d-block">3 days Ago</small>
+                        </div>
+                        <div class="d-flex">
+                          <a href="" class="d-inline-block mr-2" data-toggle="tooltip" data-placement="bottom" title="share">
+                            <i class="lni-share"></i>
+                          </a>
+                          <a href="" class="d-inline-block"  data-toggle="tooltip" data-placement="bottom" title="Delete">
+                            <i class="lni-trash"></i>
+                          </a>
+                        </div>
+                      </div>
+                      
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+              
+            </div>
+            
           </div>
 
         </aside>
@@ -392,6 +602,8 @@
   <!-- Vendor/Plugins JS -->
   <script src="js\vendor\jquery.ajaxchimp.min.js"></script>
   <script src="./js/vendor/jquery-listslider.js"></script>
+  <script src="js\vendor\jquery.richtext.min.js"></script>
+  <script src="js\vendor\jquery.slimscroll.min.js"></script>
   <!-- Vendor/Plugins JS Init -->
   <script src="js\init\wb.ajaxchimp-init.js"></script>
 
@@ -406,7 +618,7 @@
 
   <script type="text/javascript">
       $(function () {
-    $('[data-toggle="tooltip"]').tooltip()
+    $('[data-toggle="tooltip"]').tooltip({ trigger: "hover" })
     })
   </script>
 
@@ -441,6 +653,27 @@ $('.main-detail-content').mouseup(function(event) {
     $('.notes-btn').on('click', function() {
       $('.judgment-section').toggleClass('notes-open');
     })
+  </script>
+
+  <script>
+
+  $('.text-editor').richText({
+    imageUpload:false,
+    fileUpload:false,
+    videoEmbed: false,
+    removeStyles: false,
+    code: false,
+  });
+
+  </script>
+
+  <script>
+
+$(function(){
+	$('.notes-content .tab-content').slimScroll({
+    height: '82vh',
+	});
+});
   </script>
 
 </body>
