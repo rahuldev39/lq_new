@@ -581,26 +581,27 @@ width: 8px;
 .notes-open .container{
   max-width: 100%
 }
+.judgement-section-wrapper.notes-open > div{
+  width: calc(100% - 400px) !important
+}
 .notes-section {
   height: 100vh;
   background-color: white;
-  width: 100%;
+  width: 400px;
   position: sticky;
   top: 0px;
   border-top: 1px solid rgb(234, 234, 234);
-  transform: rotate(5deg) ;
   transform-origin: left;
-  opacity: 0;
 }
 .notes-open aside.notes-section {
-    transform: rotate(0deg) ;
-    opacity: 1;
 }
 .judgement-section-wrapper:not(.notes-open) .notes-section{
-width: 0;
 overflow: hidden;
+width: 0px
 }
-
+.notes-content{
+  min-width: 350px
+}
 .nav-item{
   margin: 0px;
 }
@@ -622,7 +623,7 @@ overflow: hidden;
   width: 3px;
   background-color: #4d5bed;
 }
-.notes-controls .nav-link svg:hover, 
+.notes-controls .nav-link svg:hover,
 .notes-controls .nav-link.active  svg{
   fill:#4d5bed
 }
@@ -632,8 +633,9 @@ overflow: hidden;
   margin-right: -2px;
 }
 .notes-controls {
-  border-right: 2px solid #f1f1f1;
-  border-left: 1px solid #eaeaea;
+    border-right: 2px solid #f1f1f1;
+    border-left: 1px solid #eaeaea;
+    background-color: #fafafa;
 }
 .richText .richText-toolbar ul li a{
   font-size: 12px;
@@ -652,4 +654,8 @@ overflow: hidden;
 }
 .notes-list .card:hover h6, .notes-list .card:hover a{
   color: white !important;
+}
+.notes-list .card {
+    border-color: #8a90ce3b;
+    background-color: #adb1e61a;
 }
