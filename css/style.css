@@ -576,31 +576,33 @@ width: 8px;
 }
 
 .anim{
-  transition: all ease-in-out 300ms
+  transition: all ease-in-out 50ms
+}
+
+.notes-section {
+    height: 100vh;
+    background-color: white;
+    width: 380px;
+    position: fixed;
+    top: 0px;
+    right: -400px;
+    border-top: 1px solid rgb(234, 234, 234);
+    z-index: 100;
 }
 .notes-open .container{
   max-width: 100%
 }
-.judgement-section-wrapper.notes-open > div{
-  width: calc(100% - 400px) !important
+.notes-open .notes-section{
+    right: 0px;
 }
-.notes-section {
-  height: 100vh;
-  background-color: white;
-  width: 400px;
-  position: sticky;
-  top: 0px;
-  border-top: 1px solid rgb(234, 234, 234);
-  transform-origin: left;
+.judgment-wrapper{
+  width: 100%
 }
-.notes-open aside.notes-section {
+.notes-open .judgment-wrapper {
+    width: calc(100% - 380px);
 }
-.judgement-section-wrapper:not(.notes-open) .notes-section{
-overflow: hidden;
-width: 0px
-}
-.notes-content{
-  min-width: 350px
+.notes-open .offcanvas-collapse .navbar-nav:first-child{
+  display: none !important
 }
 .nav-item{
   margin: 0px;
@@ -647,15 +649,8 @@ width: 0px
 .richText .richText-editor:focus {
   border-left: #4d5bed solid 2px;
 }
-.notes-list .card:hover {
-  background-color: #4d5bed;
-  color: white;
-  cursor: pointer;
-}
-.notes-list .card:hover h6, .notes-list .card:hover a{
-  color: white !important;
-}
-.notes-list .card {
-    border-color: #8a90ce3b;
-    background-color: #adb1e61a;
+
+.notes-list .card .h6:hover{
+  color: #3646eb !important;
+  text-decoration: underline;
 }
