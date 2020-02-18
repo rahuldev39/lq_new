@@ -222,7 +222,7 @@
                       </div>
                     </div>
                     <div class="apply-btn text-center mt-4">
-                      <button type="button"  class="btn btn-primary">Apply Now</button>
+                      <button type="button"  class="btn btn-primary" data-toggle="modal" data-target="#apply-form">Apply Now</button>
                     </div>
                   </div>
                 </div>
@@ -288,7 +288,7 @@
                       </div>
                     </div>
                     <div class="apply-btn text-center mt-4">
-                      <button type="button"  class="btn btn-primary">Apply Now</button>
+                      <button type="button"  class="btn btn-primary" data-toggle="modal" data-target="#apply-form">Apply Now</button>
                     </div>
                   </div>
                 </div>
@@ -386,7 +386,7 @@
                       </div>
                     </div>
                     <div class="apply-btn text-center mt-4">
-                      <button type="button"  class="btn btn-primary">Apply Now</button>
+                      <button type="button"  class="btn btn-primary" data-toggle="modal" data-target="#apply-form">Apply Now</button>
                     </div>
                   </div>
                 </div>
@@ -458,7 +458,7 @@
                       </div>
                     </div>
                     <div class="apply-btn text-center mt-4">
-                      <button type="button"  class="btn btn-primary">Apply Now</button>
+                      <button type="button"  class="btn btn-primary" data-toggle="modal" data-target="#apply-form">Apply Now</button>
                     </div>
                   </div>
                 </div>
@@ -530,7 +530,7 @@
                       </div>
                     </div>
                     <div class="apply-btn text-center mt-4">
-                      <button type="button"  class="btn btn-primary">Apply Now</button>
+                      <button type="button"  class="btn btn-primary" data-toggle="modal" data-target="#apply-form">Apply Now</button>
                     </div>
                   </div>
                 </div>
@@ -600,7 +600,7 @@
                       </div>
                     </div>
                     <div class="apply-btn text-center mt-4">
-                      <button type="button"  class="btn btn-primary">Apply Now</button>
+                      <button type="button"  class="btn btn-primary" data-toggle="modal" data-target="#apply-form">Apply Now</button>
                     </div>
                   </div>
                 </div>
@@ -665,7 +665,7 @@
                       </div>
                     </div>
                     <div class="apply-btn text-center mt-4">
-                      <button type="button"  class="btn btn-primary">Apply Now</button>
+                      <button type="button"  class="btn btn-primary" data-toggle="modal" data-target="#apply-form">Apply Now</button>
                     </div>
                   </div>
                 </div>
@@ -727,7 +727,7 @@
                       </div>
                     </div>
                     <div class="apply-btn text-center mt-4">
-                      <button type="button"  class="btn btn-primary">Apply Now</button>
+                      <button type="button"  class="btn btn-primary" data-toggle="modal" data-target="#apply-form">Apply Now</button>
                     </div>
                   </div>
                 </div>
@@ -814,6 +814,77 @@
       </div>
     </div>
   </footer> <!-- END Footer -->
+
+  <!-- Modal -->
+<div class="modal fade apply-form" id="apply-form" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title font-weight-bold" id="exampleModalLabel">Send Us Your CV</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="text-center">
+          <small class="text-muted">Position</small>
+          <h3 class="mb-5 font-weight-bold ">
+            R & D Associate/Manager
+          </h3>
+        </div>
+        <div class="form-box">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label>Name&nbsp;<span style="color: red">*</span></label>
+                        <input class="form-control form-control-sm" id="Name" name="Name" type="text" value="" placeholder="Enter full name">
+                        <span style="color: red"><span class="field-validation-valid" data-valmsg-for="Name" data-valmsg-replace="true"></span></span>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label>Email Address&nbsp;<span style="color: red">*</span></label>
+                        <input class="form-control form-control-sm" id="EmailAddress" name="EmailAddress" type="text" value="" placeholder="Enter email id">
+                        <span style="color: red"><span class="field-validation-valid" data-valmsg-for="EmailAddress" data-valmsg-replace="true"></span></span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label>Contact No&nbsp;<span style="color: red">*</span></label>
+                        <input class="form-control form-control-sm" id="ContactNo" name="ContactNo" type="text" value="" placeholder="Enter contact no.">
+                        <span style="color: red"><span class="field-validation-valid" data-valmsg-for="ContactNo" data-valmsg-replace="true"></span></span>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label>LinkedIn Url&nbsp;<span style="color: red">*</span></label>
+                        <input class="form-control form-control-sm" id="LinkedInUrl" name="LinkedInUrl"  type="text" value="" placeholder="Enter linkedin url">
+                        <span style="color: red"><span class="field-validation-valid" data-valmsg-for="LinkedInUrl" data-valmsg-replace="true"></span></span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="form-group">
+                        <label>Resume <small>(.pdf,.doc &amp; .docx only)</small>&nbsp;<span style="color: red">*</span></label>
+                        <input type="file" accept="text/cfg" name="input-file-preview" class="form-control form-control-sm">
+                    </div>
+                </div>
+            </div>
+
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Submit Application</button>
+      </div>
+    </div>
+  </div>
+</div>
 
   <!-- Global Required JS -->
   <script src="js\vendor\jquery-3.3.1.min.js"></script>
