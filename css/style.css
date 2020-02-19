@@ -586,12 +586,9 @@ width: 8px;
     position: fixed;
     top: 0px;
     right: calc(-380px + 50px) ;
-    border-top: 1px solid rgb(234, 234, 234);
     z-index: 100;
 }
-.notes-open .container{
-  max-width: 100%
-}
+
 .notes-open .notes-section{
     right: 0px;
 }
@@ -615,6 +612,15 @@ width: 8px;
     position: relative;
     font-size: 1.4rem;
     line-height: 1rem
+}
+.notes-controls .nav-link:hover{
+  background-color: white;
+}
+.notes-controls .nav-link img{
+  transition: all ease-in 200ms
+}
+.notes-controls .nav-link:hover img{
+  transform: scale(1.1);
 }
 .notes-controls .nav-link.active::before {
   content: "";
@@ -652,7 +658,7 @@ width: 8px;
   text-decoration: underline;
 }
 .notes-content .slimScroll{
-  height: calc(100vh - 4rem) !important
+  height: calc(100vh - 5rem) !important
 
 }
 .add-notes-btn {
@@ -666,4 +672,28 @@ width: 8px;
 }
 .add-notes-btn svg{
   width: 13px
+}
+.bootstrap-select>.dropdown-toggle {
+    padding: 0px;
+    background-color: white;
+    border: 0px;
+}
+.bootstrap-select>.dropdown-toggle:focus,
+.bootstrap-select>.dropdown-toggle:active,
+.show>.btn-light.dropdown-toggle
+{
+  box-shadow: none !important;
+  background-color: white !important;
+  outline: none !important
+}
+.bootstrap-select {
+    display: inline-block !important;
+    width: auto !important;
+}
+.dropdown-item.active, .dropdown-item:active {
+    background-color: #4d5bed;
+}
+
+.bootstrap-select .dropdown-menu li a span.text {
+    font-size: .8rem;
 }
