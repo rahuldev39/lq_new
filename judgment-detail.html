@@ -187,29 +187,6 @@
     <main class="main">
       <section class="section judgment-section py-0 bg-gray">
         <div class="container d-flex anim justify-content-between">
-          <div class="sticky-toolbar btn-toolbar align-self-start mt-6 pt-4 mr-4 pb-4" role="toolbar">
-            <div class="btn-group-vertical btn-group-sm">
-              <button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="right" title="Facebook">
-                <i class="lni-facebook"></i>
-              </button>
-              <button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="right" title="Twitter">
-                <i class="lni-twitter"></i>
-              </button>
-              <button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="right" title="Linkedin">
-                <i class="lni-linkedin"></i>
-              </button>
-              <button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="right" title="Mail">
-                <i class="lni-envelope"></i>
-              </button>
-              <button type="button" class="btn btn-default notes-btn" data-toggle="tooltip" data-placement="right" title="Note">
-                <i class="lni-pencil-alt"></i>
-              </button>
-              <button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="right" title="Print">
-                <i class="lni-printer"></i>
-              </button>
-            </div>
-          </div>
-
           <div class="container-sm  position-relative">
             <div class="flex-fill pt-4 mt-2">
               <div class="judgment-detail-header text-center">
@@ -324,55 +301,59 @@
 
 
   <aside class="notes-section anim shadow d-flex">
-    <div class="notes-controls pt-3">
-      <ul class="nav nav-tabs flex-column">
+    <div class="notes-controls">
+      <ul class="nav nav-tabs flex-column h-100 justify-content-center">
         <li class="nav-item">
-          <button type="button" class="nav-link p-0 border-0 p-3 close-notes">
-            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
-              <g>
-                <g>
-                  <g>
-                    <path d="M256,0C114.844,0,0,114.844,0,256s114.844,256,256,256s256-114.844,256-256S397.156,0,256,0z M256,490.667     C126.604,490.667,21.333,385.396,21.333,256S126.604,21.333,256,21.333S490.667,126.604,490.667,256S385.396,490.667,256,490.667     z"/>
-                    <path d="M359.542,152.458c-4.167-4.167-10.917-4.167-15.083,0L256,240.917l-88.458-88.458c-4.167-4.167-10.917-4.167-15.083,0     c-4.167,4.167-4.167,10.917,0,15.083L240.917,256l-88.458,88.458c-4.167,4.167-4.167,10.917,0,15.083     c2.083,2.083,4.813,3.125,7.542,3.125s5.458-1.042,7.542-3.125L256,271.083l88.458,88.458c2.083,2.083,4.813,3.125,7.542,3.125     c2.729,0,5.458-1.042,7.542-3.125c4.167-4.167,4.167-10.917,0-15.083L271.083,256l88.458-88.458     C363.708,163.375,363.708,156.625,359.542,152.458z"/>
-                  </g>
-                </g>
-              </g>
+          <button type="button" class="nav-link border-0 p-3 py-2" data-toggle="tooltip" data-placement="right" title="" data-original-title="Facebook">
+                <i class="lni-facebook"></i>
+          </button>
+        </li>
+        <li class="nav-item">
+          <button type="button" class="nav-link border-0 p-3 py-2" data-toggle="tooltip" data-placement="right" title="" data-original-title="Twitter">
+            <i class="lni-twitter"></i>
+          </button>
+        </li>
+        <li class="nav-item">
+          <button type="button" class="nav-link border-0 p-3 py-2" data-toggle="tooltip" data-placement="right" title="" data-original-title="Linkedin">
+            <i class="lni-linkedin"></i>
+          </button>
+        </li>
+        <li class="nav-item">
+          <button type="button" class="nav-link border-0 p-3 py-2" data-toggle="tooltip" data-placement="right" title="" data-original-title="Mail">
+            <i class="lni-envelope"></i>
+          </button>
+        </li>
+        <li class="nav-item">
+          <button type="button" class="nav-link border-0 p-3 py-2 notes-btn" data-toggle="tooltip" data-placement="right" title="" data-original-title="Note">
+            <i class="lni-pencil-alt"></i>
+          </button>
+        </li>
+        <li class="nav-item">
+          <button type="button" class="nav-link p-0 border-0 p-3 py-2" data-toggle="tooltip" data-placement="right" title="" data-original-title="Print">
+            <i class="lni-printer"></i>
+          </button>
+        </li>
 
-              </svg>
-          </button>
-        </li>
-        <li class="nav-item" data-toggle="tooltip" data-placement="left" title="Add new notes">
-          <button class="nav-link p-0 border-0  p-3" data-toggle="tab" data-target="#home">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" style="&#10;">
-              <path
-                d="m256 512c-141.164062 0-256-114.835938-256-256s114.835938-256 256-256 256 114.835938 256 256-114.835938 256-256 256zm0-480c-123.519531 0-224 100.480469-224 224s100.480469 224 224 224 224-100.480469 224-224-100.480469-224-224-224zm0 0" />
-              <path d="m368 272h-224c-8.832031 0-16-7.167969-16-16s7.167969-16 16-16h224c8.832031 0 16 7.167969 16 16s-7.167969 16-16 16zm0 0" />
-              <path d="m256 384c-8.832031 0-16-7.167969-16-16v-224c0-8.832031 7.167969-16 16-16s16 7.167969 16 16v224c0 8.832031-7.167969 16-16 16zm0 0" /></svg>
-          </button>
-        </li>
-        <li class="nav-item" data-toggle="tooltip" data-placement="left" title="view Notes">
-          <button class="nav-link border-0 p-0 p-3 active" data-toggle="tab" data-target="#profile">
-            <svg xmlns="http://www.w3.org/2000/svg" id="Layer_1" enable-background="new 0 0 512 512" viewBox="0 0 512 512">
-              <g>
-                <path
-                  d="m428.5 53.74h-105.195c-6.884-30.714-34.448-53.74-67.305-53.74s-60.421 23.026-67.305 53.74h-105.195c-31.706 0-57.5 25.717-57.5 57.328v343.604c0 31.611 25.794 57.328 57.5 57.328h295.763c3.968 0 7.774-1.572 10.585-4.372l91.738-91.366c2.826-2.814 4.415-6.639 4.415-10.628v-294.566c-.001-31.611-25.795-57.328-57.501-57.328zm-172.5-23.74c21.482 0 38.959 17.379 38.959 38.74 0 21.362-17.477 38.741-38.959 38.741s-38.959-17.379-38.959-38.741c0-21.361 17.477-38.74 38.959-38.74zm-200 424.673v-343.605c0-15.068 12.336-27.328 27.5-27.328h105.195c6.884 30.715 34.448 53.741 67.305 53.741s60.421-23.026 67.305-53.741h105.195c15.163 0 27.5 12.26 27.5 27.328v279.565h-76.738c-8.284 0-15 6.716-15 15v76.367h-280.762c-15.164 0-27.5-12.259-27.5-27.327zm378.682-34.039-40.42 40.257v-40.257z" />
-                <path d="m121.959 197.439h268.081c8.284 0 15-6.716 15-15s-6.716-15-15-15h-268.081c-8.284 0-15 6.716-15 15s6.716 15 15 15z" />
-                <path d="m121.959 257.439h238.081c8.284 0 15-6.716 15-15s-6.716-15-15-15h-238.081c-8.284 0-15 6.716-15 15s6.716 15 15 15z" />
-                <path d="m121.959 317.439h268.081c8.284 0 15-6.716 15-15s-6.716-15-15-15h-268.081c-8.284 0-15 6.716-15 15s6.716 15 15 15z" />
-                <path d="m300.041 347.439h-178.082c-8.284 0-15 6.716-15 15s6.716 15 15 15h178.081c8.284 0 15-6.716 15-15s-6.715-15-14.999-15z" />
-              </g>
-            </svg>
-          </button>
-        </li>
       </ul>
 
     </div>
 
     <div class="notes-content flex-fill">
-
       <div class="tab-content" id="myTabContent">
-        <div class="tab-pane p-4  fade " id="home" role="tabpanel" aria-labelledby="home-tab">
-          <div class="notes-Form">
+        <div class="tab-pane  fade " id="note-form" role="tabpanel" aria-labelledby="home-tab">
+          <div class="pt-3 px-4 d-flex align-items-center">
+            <a href="#" class="tab-link mr-auto" data-toggle="tab" data-target="#note-list" role="tab">
+            <svg xmlns="http://www.w3.org/2000/svg" id="Layer" enable-background="new 0 0 64 64" viewBox="0 0 64 64" width="22px"><path d="m54 30h-39.899l15.278-14.552c.8-.762.831-2.028.069-2.828-.761-.799-2.027-.831-2.828-.069l-17.448 16.62c-.755.756-1.172 1.76-1.172 2.829 0 1.068.417 2.073 1.207 2.862l17.414 16.586c.387.369.883.552 1.379.552.528 0 1.056-.208 1.449-.621.762-.8.731-2.065-.069-2.827l-15.342-14.552h39.962c1.104 0 2-.896 2-2s-.896-2-2-2z"/></svg>
+            </a>
+            <a href="#" class="close-notes">
+              <svg width="12px" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1" x="0px" y="0px" viewBox="0 0 512.001 512.001" style="enable-background:new 0 0 512.001 512.001;" xml:space="preserve">
+                  <g><g><path d="M294.111,256.001L504.109,46.003c10.523-10.524,10.523-27.586,0-38.109c-10.524-10.524-27.587-10.524-38.11,0L256,217.892    L46.002,7.894c-10.524-10.524-27.586-10.524-38.109,0s-10.524,27.586,0,38.109l209.998,209.998L7.893,465.999    c-10.524,10.524-10.524,27.586,0,38.109c10.524,10.524,27.586,10.523,38.109,0L256,294.11l209.997,209.998    c10.524,10.524,27.587,10.523,38.11,0c10.523-10.524,10.523-27.586,0-38.109L294.111,256.001z"/>
+                  </g></g>
+              </svg>
+            </a>
+          </div>
+          <hr class="mb-0">
+          <div class="notes-form p-4  slimScroll">
             <div class="form-group">
 
               <input type="text" class="form-control form-control-sm" placeholder="Enter Note Title">
@@ -397,175 +378,197 @@
             </div>
 
           </div>
-
         </div>
-        <div class="tab-pane p-4  fade show active" id="profile" role="tabpanel" aria-labelledby="profile-tab">
-          <div class="notes-list">
-            <div class="card p-0 mb-0 border-0">
-              <div class="card-body p-0">
-                <div class="d-flex">
-                  <div class="flex-fill mr-4">
-                    <a href="#" class="h6 mb-1 text-dark d-block"> Nesciunt tofu stumptown aliqua</a>
-                    <small class="d-block">3 days Ago</small>
-                  </div>
-                  <div class="d-flex  align-items-start">
-                    <a href="" class="d-inline-block mr-2" data-toggle="tooltip" data-placement="bottom" title="share">
-                      <i class="lni-share"></i>
-                    </a>
-                    <a href="" class="d-inline-block" data-toggle="tooltip" data-placement="bottom" title="Delete">
-                      <i class="lni-trash"></i>
-                    </a>
-                  </div>
-                </div>
 
-              </div>
-            </div>
-
-            <hr>
-
-            <div class="card p-0 mb-0 border-0">
-              <div class="card-body p-0">
-                <div class="d-flex">
-                  <div class="flex-fill mr-4">
-                    <a href="#" class="h6 mb-1 text-dark d-block">Mustache cliche tempor, williamsburg carles vegan helvetica</a>
-                    <small class="d-block">3 days Ago</small>
-                  </div>
-                  <div class="d-flex  align-items-start">
-                    <a href="" class="d-inline-block mr-2" data-toggle="tooltip" data-placement="bottom" title="share">
-                      <i class="lni-share"></i>
-                    </a>
-                    <a href="" class="d-inline-block" data-toggle="tooltip" data-placement="bottom" title="Delete">
-                      <i class="lni-trash"></i>
-                    </a>
-                  </div>
-                </div>
-
-              </div>
-            </div>
-
-            <hr>
-
-            <div class="card p-0 mb-0 border-0">
-              <div class="card-body p-0">
-                <div class="d-flex">
-                  <div class="flex-fill mr-4">
-                    <a href="#" class="h6 mb-1 text-dark d-block">retro synth master cleanse.</a>
-                    <small class="d-block">3 days Ago</small>
-                  </div>
-                  <div class="d-flex  align-items-start">
-                    <a href="" class="d-inline-block mr-2" data-toggle="tooltip" data-placement="bottom" title="share">
-                      <i class="lni-share"></i>
-                    </a>
-                    <a href="" class="d-inline-block" data-toggle="tooltip" data-placement="bottom" title="Delete">
-                      <i class="lni-trash"></i>
-                    </a>
-                  </div>
-                </div>
-
-              </div>
-            </div>
-            <hr>
-            <div class="card p-0 mb-0 border-0">
-              <div class="card-body p-0">
-                <div class="d-flex">
-                  <div class="flex-fill mr-4">
-                  <a href="#" class="h6 mb-1 text-dark d-block">Mustache cliche tempor, williamsburg carles vegan helvetica</a>
-                    <small class="d-block">3 days Ago</small>
-                  </div>
-                  <div class="d-flex  align-items-start">
-                    <a href="" class="d-inline-block mr-2" data-toggle="tooltip" data-placement="bottom" title="share">
-                      <i class="lni-share"></i>
-                    </a>
-                    <a href="" class="d-inline-block" data-toggle="tooltip" data-placement="bottom" title="Delete">
-                      <i class="lni-trash"></i>
-                    </a>
-                  </div>
-                </div>
-
-              </div>
-            </div>
-            <hr>
-            <div class="card p-0 mb-0 border-0">
-              <div class="card-body p-0">
-                <div class="d-flex">
-                  <div class="flex-fill mr-4">
-                    <a href="#" class="h6 mb-1 text-dark d-block">Nesciunt tofu stumptown aliqua</a>
-                    <small class="d-block">3 days Ago</small>
-                  </div>
-                  <div class="d-flex  align-items-start">
-                    <a href="" class="d-inline-block mr-2" data-toggle="tooltip" data-placement="bottom" title="share">
-                      <i class="lni-share"></i>
-                    </a>
-                    <a href="" class="d-inline-block" data-toggle="tooltip" data-placement="bottom" title="Delete">
-                      <i class="lni-trash"></i>
-                    </a>
-                  </div>
-                </div>
-
-              </div>
-            </div>
-            <hr>
-            <div class="card p-0 mb-0 border-0">
-              <div class="card-body p-0">
-                <div class="d-flex">
-                  <div class="flex-fill mr-4">
-                    <a href="#" class="h6 mb-1 text-dark d-block">Mustache cliche tempor, williamsburg carles vegan helvetica</a>
-                    <small class="d-block">3 days Ago</small>
-                  </div>
-                  <div class="d-flex  align-items-start">
-                    <a href="" class="d-inline-block mr-2" data-toggle="tooltip" data-placement="bottom" title="share">
-                      <i class="lni-share"></i>
-                    </a>
-                    <a href="" class="d-inline-block" data-toggle="tooltip" data-placement="bottom" title="Delete">
-                      <i class="lni-trash"></i>
-                    </a>
-                  </div>
-                </div>
-
-              </div>
-            </div>
-            <hr>
-            <div class="card p-0 mb-0 border-0">
-              <div class="card-body p-0">
-                <div class="d-flex">
-                  <div class="flex-fill mr-4">
-                    <a href="#" class="h6 mb-1 text-dark d-block">retro synth master cleanse.</a>
-                    <small class="d-block">3 days Ago</small>
-                  </div>
-                  <div class="d-flex  align-items-start">
-                    <a href="" class="d-inline-block mr-2" data-toggle="tooltip" data-placement="bottom" title="share">
-                      <i class="lni-share"></i>
-                    </a>
-                    <a href="" class="d-inline-block" data-toggle="tooltip" data-placement="bottom" title="Delete">
-                      <i class="lni-trash"></i>
-                    </a>
-                  </div>
-                </div>
-
-              </div>
-            </div>
-            <hr>
-            <div class="card p-0 mb-0 border-0">
-              <div class="card-body p-0">
-                <div class="d-flex">
-                  <div class="flex-fill mr-4">
-                    <a href="#" class="h6 mb-1 text-dark d-block">Mustache cliche tempor, williamsburg carles vegan helvetica</a>
-                    <small class="d-block">3 days Ago</small>
-                  </div>
-                  <div class="d-flex align-items-start">
-                    <a href="" class="d-inline-block mr-2" data-toggle="tooltip" data-placement="bottom" title="share">
-                      <i class="lni-share"></i>
-                    </a>
-                    <a href="" class="d-inline-block" data-toggle="tooltip" data-placement="bottom" title="Delete">
-                      <i class="lni-trash"></i>
-                    </a>
-                  </div>
-                </div>
-
-              </div>
-            </div>
-
+        <div class="tab-pane   fade show active" id="note-list" role="tabpanel" aria-labelledby="profile-tab">
+          <div class="pt-3 px-4 d-flex align-items-center">
+            <h4 class="font-weight-bold mr-auto mb-0">My Notes</h4>
+            <a href="#" class="close-notes">
+              <svg width="12px" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1" x="0px" y="0px" viewBox="0 0 512.001 512.001" style="enable-background:new 0 0 512.001 512.001;" xml:space="preserve">
+                  <g><g><path d="M294.111,256.001L504.109,46.003c10.523-10.524,10.523-27.586,0-38.109c-10.524-10.524-27.587-10.524-38.11,0L256,217.892    L46.002,7.894c-10.524-10.524-27.586-10.524-38.109,0s-10.524,27.586,0,38.109l209.998,209.998L7.893,465.999    c-10.524,10.524-10.524,27.586,0,38.109c10.524,10.524,27.586,10.523,38.109,0L256,294.11l209.997,209.998    c10.524,10.524,27.587,10.523,38.11,0c10.523-10.524,10.523-27.586,0-38.109L294.111,256.001z"/>
+                  </g></g>
+              </svg>
+            </a>
           </div>
+          <hr class="mb-0">
+
+          <div class="slimScroll">
+            <div class="text-center mt-3">
+              <button type="button" class="tab-link btn btn-link add-notes-btn py-2 px-4 d-inline-flex align-items-center" data-toggle="tab" data-target="#note-form" role="tab">
+                <svg class="mr-2" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 448 448"><path fill="#3646eb" d="m408 184h-136c-4.417969 0-8-3.582031-8-8v-136c0-22.089844-17.910156-40-40-40s-40 17.910156-40 40v136c0 4.417969-3.582031 8-8 8h-136c-22.089844 0-40 17.910156-40 40s17.910156 40 40 40h136c4.417969 0 8 3.582031 8 8v136c0 22.089844 17.910156 40 40 40s40-17.910156 40-40v-136c0-4.417969 3.582031-8 8-8h136c22.089844 0 40-17.910156 40-40s-17.910156-40-40-40zm0 0"/></svg>
+                    Add a Notes
+              </button>
+            </div>
+
+            <div class="notes-list p-4 ">
+              <div class="card p-0 mb-0 border-0">
+                <div class="card-body p-0">
+                  <div class="d-flex">
+                    <div class="flex-fill mr-4">
+                      <a href="#" class="h6 mb-1 text-dark d-block"> Nesciunt tofu stumptown aliqua</a>
+                      <small class="d-block">3 days Ago</small>
+                    </div>
+                    <div class="d-flex  align-items-start">
+                      <a href="" class="d-inline-block mr-2" data-toggle="tooltip" data-placement="bottom" title="share">
+                        <i class="lni-share"></i>
+                      </a>
+                      <a href="" class="d-inline-block" data-toggle="tooltip" data-placement="bottom" title="Delete">
+                        <i class="lni-trash"></i>
+                      </a>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+
+              <hr>
+
+              <div class="card p-0 mb-0 border-0">
+                <div class="card-body p-0">
+                  <div class="d-flex">
+                    <div class="flex-fill mr-4">
+                      <a href="#" class="h6 mb-1 text-dark d-block">Mustache cliche tempor, williamsburg carles vegan helvetica</a>
+                      <small class="d-block">3 days Ago</small>
+                    </div>
+                    <div class="d-flex  align-items-start">
+                      <a href="" class="d-inline-block mr-2" data-toggle="tooltip" data-placement="bottom" title="share">
+                        <i class="lni-share"></i>
+                      </a>
+                      <a href="" class="d-inline-block" data-toggle="tooltip" data-placement="bottom" title="Delete">
+                        <i class="lni-trash"></i>
+                      </a>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+
+              <hr>
+
+              <div class="card p-0 mb-0 border-0">
+                <div class="card-body p-0">
+                  <div class="d-flex">
+                    <div class="flex-fill mr-4">
+                      <a href="#" class="h6 mb-1 text-dark d-block">retro synth master cleanse.</a>
+                      <small class="d-block">3 days Ago</small>
+                    </div>
+                    <div class="d-flex  align-items-start">
+                      <a href="" class="d-inline-block mr-2" data-toggle="tooltip" data-placement="bottom" title="share">
+                        <i class="lni-share"></i>
+                      </a>
+                      <a href="" class="d-inline-block" data-toggle="tooltip" data-placement="bottom" title="Delete">
+                        <i class="lni-trash"></i>
+                      </a>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+              <hr>
+              <div class="card p-0 mb-0 border-0">
+                <div class="card-body p-0">
+                  <div class="d-flex">
+                    <div class="flex-fill mr-4">
+                    <a href="#" class="h6 mb-1 text-dark d-block">Mustache cliche tempor, williamsburg carles vegan helvetica</a>
+                      <small class="d-block">3 days Ago</small>
+                    </div>
+                    <div class="d-flex  align-items-start">
+                      <a href="" class="d-inline-block mr-2" data-toggle="tooltip" data-placement="bottom" title="share">
+                        <i class="lni-share"></i>
+                      </a>
+                      <a href="" class="d-inline-block" data-toggle="tooltip" data-placement="bottom" title="Delete">
+                        <i class="lni-trash"></i>
+                      </a>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+              <hr>
+              <div class="card p-0 mb-0 border-0">
+                <div class="card-body p-0">
+                  <div class="d-flex">
+                    <div class="flex-fill mr-4">
+                      <a href="#" class="h6 mb-1 text-dark d-block">Nesciunt tofu stumptown aliqua</a>
+                      <small class="d-block">3 days Ago</small>
+                    </div>
+                    <div class="d-flex  align-items-start">
+                      <a href="" class="d-inline-block mr-2" data-toggle="tooltip" data-placement="bottom" title="share">
+                        <i class="lni-share"></i>
+                      </a>
+                      <a href="" class="d-inline-block" data-toggle="tooltip" data-placement="bottom" title="Delete">
+                        <i class="lni-trash"></i>
+                      </a>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+              <hr>
+              <div class="card p-0 mb-0 border-0">
+                <div class="card-body p-0">
+                  <div class="d-flex">
+                    <div class="flex-fill mr-4">
+                      <a href="#" class="h6 mb-1 text-dark d-block">Mustache cliche tempor, williamsburg carles vegan helvetica</a>
+                      <small class="d-block">3 days Ago</small>
+                    </div>
+                    <div class="d-flex  align-items-start">
+                      <a href="" class="d-inline-block mr-2" data-toggle="tooltip" data-placement="bottom" title="share">
+                        <i class="lni-share"></i>
+                      </a>
+                      <a href="" class="d-inline-block" data-toggle="tooltip" data-placement="bottom" title="Delete">
+                        <i class="lni-trash"></i>
+                      </a>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+              <hr>
+              <div class="card p-0 mb-0 border-0">
+                <div class="card-body p-0">
+                  <div class="d-flex">
+                    <div class="flex-fill mr-4">
+                      <a href="#" class="h6 mb-1 text-dark d-block">retro synth master cleanse.</a>
+                      <small class="d-block">3 days Ago</small>
+                    </div>
+                    <div class="d-flex  align-items-start">
+                      <a href="" class="d-inline-block mr-2" data-toggle="tooltip" data-placement="bottom" title="share">
+                        <i class="lni-share"></i>
+                      </a>
+                      <a href="" class="d-inline-block" data-toggle="tooltip" data-placement="bottom" title="Delete">
+                        <i class="lni-trash"></i>
+                      </a>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+              <hr>
+              <div class="card p-0 mb-0 border-0">
+                <div class="card-body p-0">
+                  <div class="d-flex">
+                    <div class="flex-fill mr-4">
+                      <a href="#" class="h6 mb-1 text-dark d-block">Mustache cliche tempor, williamsburg carles vegan helvetica</a>
+                      <small class="d-block">3 days Ago</small>
+                    </div>
+                    <div class="d-flex align-items-start">
+                      <a href="" class="d-inline-block mr-2" data-toggle="tooltip" data-placement="bottom" title="share">
+                        <i class="lni-share"></i>
+                      </a>
+                      <a href="" class="d-inline-block" data-toggle="tooltip" data-placement="bottom" title="Delete">
+                        <i class="lni-trash"></i>
+                      </a>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+
         </div>
 
       </div>
@@ -685,10 +688,16 @@
 
   <script>
     $(function() {
-      $('.notes-content .tab-content').slimScroll({
-        height: '100vh',
+      $('.notes-content .slimScroll').slimScroll({
+        height: '',
       });
     });
+  </script>
+
+  <script type="text/javascript">
+    $('.tab-link').on('click', function() {
+      $(this).removeClass('active')
+    })
   </script>
 
 </body>
