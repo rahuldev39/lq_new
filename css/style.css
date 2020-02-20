@@ -372,8 +372,8 @@ font-size: .9rem
     font-size: .8rem !important;
 }
 .judgment-top-tabs ul li a {
-    font-size: .8rem;
-    padding: .4rem .4rem !important;
+    font-size: .9rem;
+    padding: .5rem .4rem !important;
 }
 .back-to-result a, .judgment-top-tabs select {
     background-color: #4d5bed14 !important;
@@ -439,9 +439,7 @@ font-size: .9rem
     font-size: 1.15rem;
     line-height: 1rem;
 }
-.judgment-top-tabs {
-    border-top: 1px solid #f1f1f1;
-}
+
 .bg-gray{
   background-color: #F1F5FA
 }
@@ -703,4 +701,25 @@ width: 8px;
   transform: translateX(-50%) !important;
     margin-left: 50%;
     top: 100% !important;
+}
+.judgment-section .sidebar {
+    min-height: 100vh;
+    top: 78px;
+    background: linear-gradient(to right, #f1f5fa , #e8eff7);
+}
+.judgment-section .sidebar ul{
+  min-width: 200px
+}
+.judgment-section .sidebar ul li a {
+    color: #101f41;
+    font-size: .88rem;
+    padding: .4rem 1.2rem;
+    display: block;
+    font-weight: 600;
+    margin-right: 20px;
+    border-radius: 0px 20px 20px 0px;
+}
+.judgment-section .sidebar ul li a:hover,
+.judgment-section .sidebar ul li a.active {
+    background: linear-gradient(to right, #f1f5fa , #cad5e2);
 }
