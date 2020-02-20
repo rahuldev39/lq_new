@@ -585,7 +585,7 @@ width: 8px;
     width: 380px;
     position: fixed;
     top: 0px;
-    right: calc(-380px + 50px) ;
+    right: calc(-380px + 57px) ;
     z-index: 100;
 }
 
@@ -593,7 +593,7 @@ width: 8px;
     right: 0px;
 }
 .judgment-wrapper{
-  width: calc(100% - 50px);
+  width: calc(100% - 57px);
 }
 .notes-open .judgment-wrapper {
     width: calc(100% - 380px);
@@ -604,17 +604,17 @@ width: 8px;
 .nav-item{
   margin: 0px;
 }
-
 .notes-controls .nav-link {
     outline: none;
     border: 0px !important;
     background-color: transparent;
-    position: relative;
-    font-size: 1.4rem;
-    line-height: 1rem
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
 }
-.notes-controls .nav-link:hover{
-  background-color: white;
+
+.notes-controls .nav-link:hover,.notes-controls .nav-link.active{
+    background-color: #8287b530;
 }
 .notes-controls .nav-link img{
   transition: all ease-in 200ms
@@ -623,19 +623,22 @@ width: 8px;
   transform: scale(1.1);
 }
 .notes-controls .nav-link.active::before {
-  content: "";
-  position: absolute;
-  left: 0px;
-  top: 0px;
-  height: 100%;
-  width: 3px;
-  background-color: #4d5bed;
+    content: "";
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    height: 74%;
+    width: 3px;
+    background-color: #4d5bed;
+    transform: translateY(-50%);
+    margin-top: 50%;
+    border-radius: 4px 0px 0px 4px;
 }
 
 .notes-controls .nav-item {
-  border-top: 1px solid #ececec;
   margin-bottom: 0px;
   margin-right: -2px;
+  position: relative;
 }
 .notes-controls {
     border-right: 2px solid #f1f1f1;
@@ -646,7 +649,7 @@ width: 8px;
   font-size: 12px;
 }
 .richText .richText-editor {
-  height: 140px;
+  height: 180px;
   padding: 10px;
 }
 .richText .richText-editor:focus {
@@ -688,7 +691,6 @@ width: 8px;
 }
 .bootstrap-select {
     display: inline-block !important;
-    width: auto !important;
 }
 .dropdown-item.active, .dropdown-item:active {
     background-color: #4d5bed;
@@ -696,4 +698,9 @@ width: 8px;
 
 .bootstrap-select .dropdown-menu li a span.text {
     font-size: .8rem;
+}
+.dropdown-center .bootstrap-select > .dropdown-menu{
+  transform: translateX(-50%) !important;
+    margin-left: 50%;
+    top: 100% !important;
 }
