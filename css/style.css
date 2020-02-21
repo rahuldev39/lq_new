@@ -357,7 +357,6 @@ font-size: .9rem
 .preminum-tag i {
     color: #ed7e1f;
     cursor: pointer;
-    font-size: 22px;
 }
 .filter-within-search .form-control:focus{
   box-shadow: none !important;
@@ -705,21 +704,41 @@ width: 8px;
 .judgment-section .sidebar {
     min-height: 100vh;
     top: 78px;
-    background: linear-gradient(to right, #f1f5fa , #e8eff7);
+    background-color: #ffffff;
+    border-right: 1px solid #d2d2d2;
 }
-.judgment-section .sidebar ul{
-  min-width: 200px
+.judgment-section .sidebar ul {
+    min-width: 142px;
 }
-.judgment-section .sidebar ul li a {
+.judgment-section .sidebar ul li a.idraf-link {
     color: #101f41;
-    font-size: .88rem;
-    padding: .4rem 1.2rem;
+    font-size: .8rem;
+    padding: .5rem 1rem;
     display: block;
     font-weight: 600;
-    margin-right: 20px;
-    border-radius: 0px 20px 20px 0px;
+    margin: 0px 10px;
+    border-bottom: 1px solid #f3f0f0;
+    text-align: right;
 }
-.judgment-section .sidebar ul li a:hover,
-.judgment-section .sidebar ul li a.active {
-    background: linear-gradient(to right, #f1f5fa , #cad5e2);
+.judgment-section .sidebar ul li{
+  position: relative;
+}
+.judgment-section .sidebar ul li a.idraf-link:hover::after,
+.judgment-section .sidebar ul li a.idraf-link.active::after {
+    content: "";
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    height: 100%;
+    width: 3px;
+    background-color: #101f41;
+    border-radius: 4px 0px 0px 4px;
+}
+.updown-links a {
+    line-height: 1rem;
+    font-size: 1rem;
+    margin: 6px 0px;
+}
+.updown-links a:hover{
+  opacity: .7
 }

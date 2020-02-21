@@ -164,24 +164,36 @@
     </div>
 
     <main class="main">
-      <section class="section judgment-section py-0 bg-gray">
+      <section class="section judgment-section py-0 bg-light">
         <div class="d-flex anim justify-content-between">
 
           <div class="sidebar widget p-0">
             <ul class="list-unstyled mb-0">
-              <li class="preminum-tag d-flex align-items-center px-3 pt-3">
-                <i class="fas fa-gem"></i> <span class="h4 font-weight-bold mx-2 mb-0">iDraf</span> <small>Preminum</small>
+              <li class="preminum-tag d-flex align-items-center justify-content-between px-3 py-1">
+                <div class="d-flex align-items-center">
+                  <i class="fas fa-gem"></i>
+                  <span class="h4 font-weight-bold mx-2 mb-0">iDraf</span>
+
+                </div>
+                <div class="updown-links">
+                  <a class="d-block" href="#">
+                    <i class="fa fa-chevron-up" aria-hidden="true"></i>
+                  </a>
+                  <a class="d-block" href="#">
+                    <i class="fa fa-chevron-down" aria-hidden="true"></i>
+                  </a>
+                </div>
               </li>
-              <hr>
-              <li><a href="#1" class="">Issue</a></li>
-              <li><a href="#2" class="">Reasoning</a></li>
-              <li><a href="#3" class="">Argument of P</a></li>
-              <li><a href="#4" class="">Argument of R</a></li>
-              <li><a href="#5" class="">Decision</a></li>
-              <li><a href="#6" class="">Facts</a></li>
-              <li><a href="#7" class="">Reasoning</a></li>
-              <li><a href="#8" class="">Acts</a></li>
-              <li><a href="#9" class="">Case cited</a></li>
+              <hr class="mt-0">
+              <li><a href="#1" class="idraf-link">Issue</a></li>
+              <li><a href="#2" class="idraf-link">Reasoning</a></li>
+              <li><a href="#3" class="idraf-link">Argument of P</a></li>
+              <li><a href="#4" class="idraf-link">Argument of R</a></li>
+              <li><a href="#5" class="idraf-link">Decision</a></li>
+              <li><a href="#6" class="idraf-link">Facts</a></li>
+              <li><a href="#7" class="idraf-link">Reasoning</a></li>
+              <li><a href="#8" class="idraf-link">Acts</a></li>
+              <li><a href="#9" class="idraf-link">Case cited</a></li>
             </ul>
           </div>
 
@@ -315,6 +327,9 @@
           <button type="button" class="nav-link border-0 p-0" data-toggle="tooltip" data-placement="right" title="" data-original-title="Linkedin">
             <img src="./images/linkedin.svg" alt="" width="18">
           </button>
+        </li>
+        <li>
+          <hr>
         </li>
         <li class="nav-item px-2 py-2">
           <button type="button" class="nav-link border-0 p-0" data-toggle="tooltip" data-placement="right" title="" data-original-title="Mail">
@@ -705,8 +720,8 @@
   </script>
 
   <script type="text/javascript">
-    $('.judgment-section .sidebar ul li a').on('click', function() {
-      $('.judgment-section .sidebar ul li a').removeClass('active');
+    $('.judgment-section .sidebar ul li a.idraf-link').on('click', function() {
+      $('.judgment-section .sidebar ul li a.idraf-link').removeClass('active');
       $(this).addClass('active');
     })
   </script>
