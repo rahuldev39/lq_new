@@ -746,3 +746,6 @@ width: 8px;
     border-top: 1px solid rgb(226, 226, 226);
     border-bottom: 1px solid rgb(216, 216, 216) !important;
 }
+.bg-offwhite {
+    background-color: #f5f5f587;
+}
