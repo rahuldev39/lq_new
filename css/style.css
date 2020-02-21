@@ -640,7 +640,7 @@ width: 8px;
 .notes-controls {
     border-right: 2px solid #f1f1f1;
     border-left: 1px solid #d2d2d2;
-    background-color: #fafafa;
+    background-color: #f1f1f1;
 }
 .richText .richText-toolbar ul li a{
   font-size: 12px;
@@ -704,7 +704,7 @@ width: 8px;
 .judgment-section .sidebar {
     min-height: 100vh;
     top: 78px;
-    background-color: #ffffff;
+    background-color: #f1f1f1;
     border-right: 1px solid #d2d2d2;
 }
 .judgment-section .sidebar ul {
