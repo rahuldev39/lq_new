@@ -633,14 +633,10 @@ width: 8px;
 }
 
 .notes-controls .nav-item {
-  margin-bottom: 0px;
-  margin-right: -2px;
   position: relative;
 }
 .notes-controls {
-    border-right: 2px solid #f1f1f1;
     border-left: 1px solid #d2d2d2;
-    background-color: #f1f1f1;
 }
 .richText .richText-toolbar ul li a{
   font-size: 12px;
@@ -713,26 +709,19 @@ width: 8px;
 .judgment-section .sidebar ul li a.idraf-link {
     color: #101f41;
     font-size: .8rem;
-    padding: .5rem 1rem;
+    padding: .5rem 1.3rem;
     display: block;
     font-weight: 600;
-    margin: 0px 10px;
-    border-bottom: 1px solid #f3f0f0;
-    text-align: right;
+    margin-right:15px;
 }
 .judgment-section .sidebar ul li{
   position: relative;
 }
-.judgment-section .sidebar ul li a.idraf-link:hover::after,
-.judgment-section .sidebar ul li a.idraf-link.active::after {
-    content: "";
-    position: absolute;
-    right: 0px;
-    top: 0px;
-    height: 100%;
-    width: 3px;
-    background-color: #101f41;
-    border-radius: 4px 0px 0px 4px;
+.judgment-section .sidebar ul li a.idraf-link:hover,
+.judgment-section .sidebar ul li a.idraf-link.active {
+    background-color: #ffffff;
+    border-radius: 0px 40px 40px 0px;
+    box-shadow: 0px 0px 0px 1px #d8d8d8;
 }
 .updown-links a {
     line-height: 1rem;
@@ -742,9 +731,12 @@ width: 8px;
 .updown-links a:hover{
   opacity: .7
 }
-.list-slider {
+.judgement-topbar {
     border-top: 1px solid rgb(226, 226, 226);
     border-bottom: 1px solid rgb(216, 216, 216) !important;
+    position: sticky;
+    top: 0px;
+    z-index: 1;
 }
 .bg-offwhite {
     background-color: #f5f5f587;
