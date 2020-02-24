@@ -745,3 +745,19 @@ width: 8px;
 .request-form-wrappper .contact-form__wrapper{
   padding: 3rem !important
 }
+.alert-success {
+    color: #ffffff;
+    background-color: #27ae60f2;
+    font-size: .93rem;
+}
+.alert-validation{
+  padding-top: 1.7rem !important;
+  padding-bottom: 1.7rem !important;
+  border: 0px !important;
+  border-radius: 0px;
+  text-align: center;
+}
+.alert-dismissible .close{
+  padding-top: 1.7rem !important;
+  padding-bottom: 1.7rem !important;
+}
