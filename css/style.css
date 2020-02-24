@@ -741,3 +741,7 @@ width: 8px;
 .bg-offwhite {
     background-color: #f5f5f587;
 }
+.request-form-wrappper .contact-info__wrapper,
+.request-form-wrappper .contact-form__wrapper{
+  padding: 3rem !important
+}
