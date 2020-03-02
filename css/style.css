@@ -808,3 +808,9 @@ filter:progid:DXImageTransform.Microsoft.Blur(PixelRadius='4');
 ol li{
   margin-bottom: .9rem
 }
+
+.section-faq #faq-accordion .card-body {
+    padding: 2rem !important;
+    line-height: 1.6rem;
+    font-size: .97rem;
+}
