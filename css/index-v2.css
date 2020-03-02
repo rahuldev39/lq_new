@@ -150,7 +150,7 @@ body.menu-open{
 .sidebar-nav .nav-item .dropdown-menu {
     width: 100%;
     border-radius: 0px;
-    background: linear-gradient(to right, #0b1a44, #0c1e50);
+    background: linear-gradient(to right, #0f245b, #11255d);
     transform: none !important;
     border: 0px;
     float: none;
@@ -193,4 +193,7 @@ filter:progid:DXImageTransform.Microsoft.Blur(PixelRadius='4');
 }
 .sidebar-menu .slimScroll {
     height: calc(100vh - 73px) !important;
+}
+.sidebar-menu .nav--has-sub-menu.show > .nav-link {
+    background-color: #0b1b46;
 }
