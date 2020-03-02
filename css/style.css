@@ -802,3 +802,9 @@ filter:progid:DXImageTransform.Microsoft.Blur(PixelRadius='4');
 .modal-backdrop {
     background-color: #050a38;
 }
+.teams-container{
+  line-height: 1.5rem
+}
+ol li{
+  margin-bottom: .9rem
+}
