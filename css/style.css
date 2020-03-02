@@ -814,3 +814,9 @@ ol li{
     line-height: 1.6rem;
     font-size: .97rem;
 }
+.section-faq .card-header .btn:focus{
+  text-decoration: none
+}
+.section-faq .card-header .btn:not(.collapsed) i{
+  transform: rotate(-180deg);
+}
