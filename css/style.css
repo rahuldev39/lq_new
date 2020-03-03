@@ -820,3 +820,11 @@ ol li{
 .section-faq .card-header .btn:not(.collapsed) i{
   transform: rotate(-180deg);
 }
+.search-box input[type="text"]:focus{
+  outline: none !important;
+  box-shadow: none !important
+}
+.search-box .search-icon {
+    font-size: 23px;
+    color: #a0a7b7;
+}
