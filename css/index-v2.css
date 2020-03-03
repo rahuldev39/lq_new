@@ -160,6 +160,9 @@ body.menu-open{
     padding: .4rem 2rem !important;
     font-weight: 200;
 }
+.sidebar-nav .nav-item .dropdown-menu .nav-link:hover {
+    background-color: #4d5bed26;
+}
 .menu-open .main-wrapper
 {
   -webkit-filter: blur(4px);
