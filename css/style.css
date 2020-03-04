@@ -858,3 +858,11 @@ ol li{
     align-items: center;
     justify-content: center;
 }
+.footer-content p, .footer-content a {
+    font-weight: 300;
+    line-height: 1.44rem;
+    font-size: .95rem;
+}
+.features-column {
+  margin-bottom: 2rem
+}
