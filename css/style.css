@@ -828,3 +828,33 @@ ol li{
     font-size: 23px;
     color: #a0a7b7;
 }
+.print-item figcaption {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0px;
+    top: 0px;
+    background-color: #0d205082;
+    color: white;
+    display: grid;
+    place-content: center;
+    opacity: 0;
+    transform: scale(0);
+    transition: all ease-in-out 300ms
+}
+.print-item:hover figcaption{
+  opacity: 1;
+  transform: scale(1);
+}
+.print-item figcaption i{
+  font-size: 1.9rem
+}
+.print-item figcaption span {
+    height: 60px;
+    width: 60px;
+    border: 2px solid #fffdfd;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

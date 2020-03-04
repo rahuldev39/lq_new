@@ -134,7 +134,7 @@
           </div>
 
           <div class="btn-group btn-toolbar-top btn-group-sm">
-            <button type="button" class="btn btn-default py-0" data-toggle="tooltip" data-placement="left" title="Bookmark">
+            <button type="button" class="btn btn-default py-0 bookmark-btn" data-toggle="tooltip" data-placement="left" title="Bookmark">
               <i class="lni-bookmark"></i>
             </button>
             <button type="button" class="btn btn-default py-0" data-toggle="tooltip" data-placement="left" title="Night Mode">
@@ -340,8 +340,8 @@
               <img src="./images/agenda.svg" alt="" width="18">
             </button>
           </li>
-          <li class="nav-item px-2 py-2">
-            <button type="button" class="nav-link p-0 border-0 p-0" data-toggle="tooltip" data-placement="right" title="" data-original-title="Print">
+          <li class="nav-item px-2 py-2" data-toggle="tooltip" data-placement="right" title="" data-original-title="Print">
+            <button type="button" class="nav-link p-0 border-0 p-0" data-toggle="modal" data-target="#print-modal">
               <img src="./images/printer.svg" alt="" width="18">
             </button>
           </li>
@@ -598,8 +598,8 @@
 
   <div class="alert-notifications-wrapper">
 
-    <div id="subscribe-success-notification" class="alert alert-validation alert-success alert-dismissible fade" role="alert">
-      Thank you for subscribing! Please check your inbox to opt-in.
+    <div id="success-notification" class="alert alert-validation alert-success alert-dismissible fade" role="alert">
+      <span class="notification-text">Thank you for subscribing! Please check your inbox to opt-in.</span>
       <button type="button" class="close" data-dismiss="alert" aria-label="Close">
         <span aria-hidden="true">&times;</span>
       </button>
@@ -662,6 +662,51 @@
         <button type="button" class="btn btn-secondary btn-sm" data-dismiss="modal">Close</button>
         <button type="button" class="btn btn-primary btn-sm">Send</button>
       </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="modal fade print-modal" id="print-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered " role="document">
+    <div class="modal-content">
+      <div class="modal-header bg-gray">
+        <h5 class="modal-title font-weight-bold" id="exampleModalLabel">Print Judgment</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+
+      <div class="modal-body bg-gray">
+
+        <div class="row">
+          <div class="col-sm-6 text-center">
+            <h6 class="font-weight-bold mb-3">In One Column</h6>
+            <a href="#" class="print-item d-block position-relative">
+            <figure class="p-4 bg-white mb-4 rounded ">
+              <img src="./images/onecolumn.png" alt="" class="d-block w-100  shadow-sm">
+              <figcaption>
+                <span class="mb-2"><i class='lni lni-printer'></i></span>
+              </figcaption>
+            </figure>
+            </a>
+          </div>
+          <div class="col-sm-6 text-center">
+            <h6 class="font-weight-bold mb-3">In Two Column</h6>
+            <a href="#" class="print-item d-block position-relative">
+            <figure class="p-4 bg-white mb-4 rounded shadow-sm ">
+              <img src="./images/twocolumn.png" alt="" class="d-block w-100">
+              <figcaption>
+                <span class="mb-2"><i class='lni lni-printer'></i></span>
+              </figcaption>
+            </figure>
+            </a>
+          </div>
+        </div>
+
+
+      </div>
+
     </div>
   </div>
 </div>
@@ -772,6 +817,13 @@
     $('.judgment-section .sidebar ul li a.idraf-link').on('click', function() {
       $('.judgment-section .sidebar ul li a.idraf-link').removeClass('active');
       $(this).addClass('active');
+    })
+  </script>
+
+  <script type="text/javascript">
+    $('.bookmark-btn').on('click', function() {
+      $('#success-notification').addClass('show');
+      $('#success-notification span.notification-text').text('Bookmar added successfully! Please check your inbox to opt-in.')
     })
   </script>
 
