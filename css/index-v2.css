@@ -202,7 +202,6 @@ filter:progid:DXImageTransform.Microsoft.Blur(PixelRadius='4');
 }
 .sidebar-menu .nav-item.active > .nav-link {
     color: #ffffff !important;
-    background-color: #4d5bed;
 }
 .nav--has-sub-menu.show .dropdown-menu{
   display: block;
