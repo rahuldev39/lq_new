@@ -50,7 +50,7 @@
           <a class="nav-link py-3" href="./index.html">Home</a>
         </li>
         <li class="nav-item nav--has-sub-menu ">
-          <a class="nav-link py-3" href="#" data-toggle="dropdown">Company</a>
+          <a class="nav-link py-3" href="#">Company</a>
           <ul class="dropdown-menu position-static py-3">
             <li class="nav-item">
               <a href="./about.html" class="nav-link py-3">About Legitquest</a>
@@ -68,7 +68,7 @@
         </li>
 
         <li class="nav-item nav--has-sub-menu" >
-          <a class="nav-link py-3" href="#" data-toggle="dropdown">Products</a>
+          <a class="nav-link py-3" href="#">Products</a>
 
           <ul class="dropdown-menu position-static py-3">
             <li class="nav-item">
@@ -84,7 +84,7 @@
         </li>
 
         <li class="nav-item nav--has-sub-menu" >
-          <a class="nav-link py-3" href="#" data-toggle="dropdown">Services</a>
+          <a class="nav-link py-3" href="#">Services</a>
 
           <ul class="dropdown-menu  position-static py-3">
             <li class="nav-item">
@@ -1117,7 +1117,8 @@
 
   <script type="text/javascript">
     $('.sidebar-nav .nav-link').on('click', function() {
-
+      $(this).parent('.nav-item.nav--has-sub-menu').siblings().removeClass('show');
+      $(this).parent('.nav-item.nav--has-sub-menu').toggleClass('show')
     })
   </script>
 
