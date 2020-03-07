@@ -1,0 +1,55 @@
+@media (max-width:992px)  {
+  aside.filter-sidebar {
+    position: absolute;
+    width: 330px;
+    z-index: 1;
+    margin-top: 44px;
+    height:calc(100% - 44px);
+    left: -330px;
+    transition: all ease-in-out 150ms;
+}
+aside.filter-sidebar.show{
+  left: 0px
+}
+}
+@media (max-width:768px){
+  .notes-controls .notes{
+    display: none;
+  }
+  .judgment-section .sidebar{
+    margin-left: -142px;
+  }
+  .back-to-result{
+    display: none;
+  }
+  .judgment-detail-header h1 {
+      font-size: 2.8rem;
+  }
+}
+
+@media (max-width:480px){
+  .judgment-detail-header h1 {
+    font-size: 2rem;
+}
+  .navbar .search-filed-box{
+    display: none;
+  }
+  .judgement-topbar small {
+    display: block;
+  }
+  .judgement-topbar .dot-separator{
+    display: none;
+  }
+  .judgment-detail-header h1 {
+    font-size: 2rem;
+}
+.dropdown-menu.popup-tag {
+  display: none !important;
+}
+.filter-text{
+  display: none;
+}
+.posts__categories-list>li.post-category {
+    margin-right: .3rem;
+}
+}

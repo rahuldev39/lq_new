@@ -582,15 +582,15 @@ width: 8px;
     width: 380px;
     position: fixed;
     top: 0px;
-    right: calc(-380px + 57px) ;
+    right: calc(-380px + 3.4rem);
     z-index: 100;
-}
+}}
 
 .notes-open .notes-section{
     right: 0px;
 }
-.judgment-wrapper{
-  width: calc(100% - 57px);
+.judgment-wrapper {
+    width: calc(100% - 3.4rem);
 }
 .notes-open .judgment-wrapper {
     width: calc(100% - 380px);
@@ -865,4 +865,7 @@ ol li{
 }
 .features-column {
   margin-bottom: 2rem
+}
+.search-listing-section {
+    border-top: 1px solid #e3e5fc;
 }

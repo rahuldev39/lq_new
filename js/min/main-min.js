@@ -40,7 +40,7 @@ $(function() {
 $(window).scroll(function() {
 var scroll = $(window).scrollTop();
 
-if (scroll >= 70) {
+if (scroll >= 1) {
     $(".header-sticky").addClass("position-sticky");
 } else {
     $(".header-sticky").removeClass("position-sticky");
