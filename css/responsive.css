@@ -32,6 +32,10 @@ aside.filter-sidebar.show{
 .navbar-nav .dropdown-menu .nav-link{
   font-size: .88rem;
 }
+.tab-topnav .btn{
+  padding-left: 1rem;
+  padding-right: 1rem
+}
 }
 @media (max-width:768px){
   .notes-controls .notes{
@@ -63,9 +67,15 @@ aside.filter-sidebar.show{
     width: 100%;
     padding-bottom: 3.4rem;
 }
+.team-pane .thumbnail {
+    width: calc(50% - 30px);
 }
-
-
+.tab-topnav .btn{
+  font-size: .9rem;
+  padding-left: .9rem;
+  padding-right: .9rem
+}
+}
 
 @media (max-width:480px){
   .judgment-detail-header h1 {
@@ -91,5 +101,8 @@ aside.filter-sidebar.show{
 }
 .posts__categories-list>li.post-category {
     margin-right: .3rem;
+}
+.team-pane .thumbnail {
+    width: calc(100% - 30px);
 }
 }
