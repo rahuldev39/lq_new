@@ -185,6 +185,7 @@ ul.green-checks-list .h4, ul.green-checks-list h4 {
     font-size: 1.1rem;
     font-weight: 300 !important;
     line-height: 1.9rem;
+    color: #101f41;
 }
 
 .btn-xs {
@@ -637,6 +638,10 @@ width: 8px;
 }
 .notes-controls {
     border-left: 1px solid #d2d2d2;
+    border-right: 1px solid #d2d2d2;
+}
+.notes-content{
+    box-shadow: -2px 0px 2px #d4d1d1d4;
 }
 .richText .richText-toolbar ul li a{
   font-size: 12px;
@@ -695,9 +700,13 @@ width: 8px;
 }
 .judgment-section .sidebar {
     min-height: 100vh;
-    top: 78px;
-    background-color: #f1f1f1;
-    border-right: 1px solid #d2d2d2;
+    top: 0px;
+    box-shadow: 2px 0px 4px #cccaca24;
+    min-width: 250px;
+    border-top: 1px solid #e2e2e2;
+    border-right: 1px solid #d8d8d899;
+    position: sticky;
+    height: max-content;
 }
 .judgment-section .sidebar ul {
     min-width: 142px;
@@ -708,21 +717,29 @@ width: 8px;
     padding: .5rem 1.3rem;
     display: block;
     font-weight: 600;
-    margin-right:15px;
+    margin-right: 15px;
+    margin-bottom: .4rem;
 }
 .judgment-section .sidebar ul li{
   position: relative;
 }
-.judgment-section .sidebar ul li a.idraf-link:hover,
-.judgment-section .sidebar ul li a.idraf-link.active {
+.judgment-section .sidebar ul li a.idraf-link:hover, .judgment-section .sidebar ul li a.idraf-link.active {
     background-color: #ffffff;
     border-radius: 0px 40px 40px 0px;
-    box-shadow: 0px 0px 0px 1px #d8d8d8;
+    box-shadow: 0px 0px 0px 1px #cecdcd;
+    color: #0a1429;
 }
 .updown-links a {
-    line-height: 1rem;
-    font-size: 1rem;
-    margin: 6px 0px;
+    font-size: .7rem;
+    padding: 1px 5px;
+    border: 1px solid #d8d8d8;
+    border-radius: 3px;
+    margin-left: 4px;
+    margin-top: .24rem;
+    margin-bottom: .24rem;
+}
+.updown-links a i {
+    color: #101f41;
 }
 .updown-links a:hover{
   opacity: .7
@@ -868,4 +885,14 @@ ol li{
 }
 .search-listing-section {
     border-top: 1px solid #e3e5fc;
+}
+.idraf-link img{
+  width: 25px;
+  margin-right: 1rem
+}
+.notes-open .sidebar{
+  margin-left: -250px
+}
+.notes-open .back-to-result, .notes-open .judgement-topbar .btn-toolbar-top{
+  display: none
 }
