@@ -175,16 +175,17 @@ ul.green-checks-list .h4, ul.green-checks-list h4 {
 .search-top-bar .search-bar .form-control{
   width: 180px
 }
-.detailed-text{
-  font-size: 0.9375rem
+.detailed-text {
+    font-size: 0.84rem;
+    line-height: 1.3rem;
 }
 .posts__categories-list>li.post-category>a:hover{
   box-shadow: inset 0px -2px 0 0 #ed7e1f;
 }
 .main-detail-content p {
-    font-size: 1.25rem;
+    font-size: 1.03rem;
     font-weight: 300 !important;
-    line-height: 2.5rem;
+    line-height: 2.1rem;
     color: #101f41;
     font-family: 'Gelasio';
 }
