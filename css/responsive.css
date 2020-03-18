@@ -1,5 +1,10 @@
-@media (max-width:1024px){
-
+@media (max-width:1280px){
+  .notes-open .sidebar{
+    margin-left: -250px
+  }
+  .notes-open .back-to-result, .notes-open .judgement-topbar .btn-toolbar-top{
+    display: none
+  }
 }
 
 @media (max-width:992px)  {

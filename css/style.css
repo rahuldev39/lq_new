@@ -182,10 +182,11 @@ ul.green-checks-list .h4, ul.green-checks-list h4 {
   box-shadow: inset 0px -2px 0 0 #ed7e1f;
 }
 .main-detail-content p {
-    font-size: 1.1rem;
+    font-size: 1.25rem;
     font-weight: 300 !important;
-    line-height: 1.9rem;
+    line-height: 2.5rem;
     color: #101f41;
+    font-family: 'Gelasio';
 }
 
 .btn-xs {
@@ -235,7 +236,7 @@ ul.green-checks-list .h4, ul.green-checks-list h4 {
 .main-detail-content a {
     border-bottom: 2px solid #4d5bed;
     color: #4f5464;
-    font-weight: 300;
+    font-family: 'Gelasio';
 }
 .main-detail-content a:hover {
     background-color: #4d5bed;
@@ -640,8 +641,8 @@ width: 8px;
     border-left: 1px solid #d2d2d2;
     border-right: 1px solid #d2d2d2;
 }
-.notes-content{
-    box-shadow: -2px 0px 2px #d4d1d1d4;
+.notes-content {
+    box-shadow: -2px 0px 4px #bfbfbfdb;
 }
 .richText .richText-toolbar ul li a{
   font-size: 12px;
@@ -680,7 +681,7 @@ width: 8px;
 .show>.btn-light.dropdown-toggle
 {
   box-shadow: none !important;
-  background-color: white !important;
+
   outline: none !important
 }
 .bootstrap-select {
@@ -712,13 +713,13 @@ width: 8px;
     min-width: 142px;
 }
 .judgment-section .sidebar ul li a.idraf-link {
-    color: #101f41;
-    font-size: .8rem;
-    padding: .5rem 1.3rem;
+    font-size: .9rem;
+    padding: .38rem 1.3rem;
     display: block;
-    font-weight: 600;
+    font-weight: 500;
     margin-right: 15px;
     margin-bottom: .4rem;
+    color: #202124;
 }
 .judgment-section .sidebar ul li{
   position: relative;
@@ -726,8 +727,11 @@ width: 8px;
 .judgment-section .sidebar ul li a.idraf-link:hover, .judgment-section .sidebar ul li a.idraf-link.active {
     background-color: #ffffff;
     border-radius: 0px 40px 40px 0px;
-    box-shadow: 0px 0px 0px 1px #cecdcd;
+    box-shadow: 0px 0px 0px 1px #b7b5b5;
+}
+.judgment-section .sidebar ul li a.idraf-link.active {
     color: #0a1429;
+    font-weight: 700;
 }
 .updown-links a {
     font-size: .7rem;
@@ -887,12 +891,11 @@ ol li{
     border-top: 1px solid #e3e5fc;
 }
 .idraf-link img{
-  width: 25px;
+  width: 20px;
   margin-right: 1rem
 }
-.notes-open .sidebar{
-  margin-left: -250px
-}
-.notes-open .back-to-result, .notes-open .judgement-topbar .btn-toolbar-top{
-  display: none
+
+.richText {
+    background-color: #ffffff;
+    border: #d0d0d0 solid 1px;
 }
