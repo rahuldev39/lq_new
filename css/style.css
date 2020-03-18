@@ -904,3 +904,9 @@ ol li{
     background-color: #ffffff;
     border: #d0d0d0 solid 1px;
 }
+.judgment-section .tab-pane{
+  min-height: 100vh
+}
+.citedin-content .block p {
+    font-size: .9rem;
+}
