@@ -1,6 +1,6 @@
 @media (max-width:1280px){
   .notes-open .sidebar{
-    margin-left: -250px
+    margin-left: -270px
   }
   .notes-open .back-to-result, .notes-open .judgement-topbar .btn-toolbar-top{
     display: none
