@@ -413,16 +413,23 @@ font-size: .9rem
 .pricing__card .card-header{
 
 }
+.pricing__feature-list {
+    margin-bottom: 0rem !important;
+    padding-left: 16px;
+}
 .pricing__feature-list li {
-    margin-bottom: 1.3rem;
+    margin-bottom: .4rem;
     position: relative;
-    padding-left: 35px;
+    padding-left: 16px;
+    font-size: .84rem;
 }
 .pricing__feature-list li::before {
     content: '\E94C';
     font-family: lineicons!important;
     position: absolute;
     left: 0px;
+    font-size: .7rem;
+    top: 1px;
 }
 .pricing__tag{
   min-height: 160px;
@@ -912,4 +919,31 @@ ol li{
 }
 .close-idraf .sidebar{
   margin-left: -270px
+}
+
+@media (min-width:992px){
+.search-feature-list{
+  min-height: 130px;
+}
+}
+
+.center-plan-card {
+    background-color: #2939e900;
+    border: 1px solid #2939e9;
+}
+.pricing__wrapper{
+  max-width: 1100px;
+}
+.pricing__card .card-body h5 img{
+  width: 18px;
+  margin-right: .7rem
+}
+.pricing__card .card-body h5 {
+    margin-bottom: .7rem;
+    font-size: .9rem !important;
+    color: #363f54;
+}
+.currency-icon {
+    font-size: 2rem;
+    color: #101f41;
 }
