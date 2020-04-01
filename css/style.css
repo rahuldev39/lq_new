@@ -947,3 +947,25 @@ ol li{
     font-size: 2rem;
     color: #101f41;
 }
+.nav-rounded-btn {
+    height: 32px;
+    width: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.nav--has-sub-menu a.hide-arrow::after{
+  display: none;
+}
+.support-dropdown{
+  min-width: 300px;
+}
+.support-dropdown .nav-link{
+  font-size: .9rem
+}
+.support-dropdown .nav-link:hover {
+    background-color: #f7f7f7;
+}
+.support-dropdown small{
+  font-size: 72%;
+}

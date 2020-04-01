@@ -36,7 +36,7 @@
           <div class="container-fluid position-relative">
 
             <a class="navbar-brand" href="index.html">
-              <img src="./images/lq-logo.png" alt="legitquest" class="mr-5"></a>
+              <img src="./images/lq-logo.png" alt="legitquest" class="mr-3"></a>
             <button class="navbar-toggler border-0" type="button" data-toggle="offcanvas">
               <i class="navbar-toggler__bar navbar-toggler__bar--top"></i>
               <i class="navbar-toggler__bar navbar-toggler__bar--middle"></i>
@@ -105,14 +105,68 @@
               </ul>
               <ul class="navbar-nav ml-auto align-items-lg-center">
 
-                <li class="nav-item nav-item--btn">
-                  <a href="#" class="btn btn-outline-primary btn-sm btn--has-shadow mt-3 mt-lg-0">LQ Publish</a>
+                <li class="nav-item nav--has-sub-menu align-self-stretch d-flex align-items-center" data-toggle="hover">
+                  <a href="#" class="btn btn-dark btn-sm p-0  mt-3 mt-lg-0 rounded-circle nav-rounded-btn hide-arrow" data-toggle="dropdown">
+                    <img src="./images/support.svg" alt="" width="18">
+                  </a>
+                  <ul class="nav-sub-menu dropdown-menu rounded-lg shadow dropdown-menu-right support-dropdown py-0">
+                    <li class="p-3 bg-offwhite ">
+                      <h5 class="font-weight-bold mb-3">Get Support</h5>
+                      <small class="d-block text-muted mb-1"><strong >Support hours</strong></small>
+                      <div class="d-flex">
+                        <small class="text-muted">M-F, 7AM - 11PM WT</small>
+                        <small class="text-muted ml-auto">Sa-Su, 7AM - 5PM WT</small>
+                      </div>
+
+                    </li>
+                    <li class="dropdown-divider mt-0 mb-3"></li>
+                    <li class="nav-item">
+                      <a href="./bookmark.html " class="nav-link my-2 text-primary d-flex align-items-center">
+                        Live Chat
+                        <img src="./images/comment.svg" alt="" width="18" class="ml-auto">
+                      </a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="./notes.html" class="nav-link my-2 text-primary d-flex align-items-center">
+                        Email
+                        <img src="./images/mail.svg" alt="" width="18" class="ml-auto">
+                      </a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="./index.html" class="nav-link my-2 text-primary d-flex align-items-center">
+                        +91-9844447777
+                        <img src="./images/phone.svg" alt="" width="18" class="ml-auto">
+                      </a>
+                    </li>
+                    <li class="dropdown-divider mt-3"></li>
+                    <li class="nav-item mb-3">
+                      <a href="./index.html" class="nav-link text-primary d-flex align-items-center">
+                        Help Aricle
+                        <img src="./images/book.svg" alt="" width="18" class="ml-auto">
+                      </a>
+                    </li>
+                  </ul>
                 </li>
-                <li class="nav-item">
-                  <a class="nav-link text-primary" href="./login.html">Sign In</a>
-                </li>
-                <li class="nav-item nav-item--btn">
-                  <a href="./pricing.html" class="btn btn-primary btn-sm btn--has-shadow mt-3 mt-lg-0">Sign Up</a>
+
+                <li class="nav-item nav--has-sub-menu ml-2" data-toggle="hover">
+                  <a class="nav-link" href="#" data-toggle="dropdown">
+                  <img src="./images/team/ambikaprasad.jpg" class="rounded-circle mr-3" width="25">Ambika Prasad
+                  </a>
+
+                  <ul class="nav-sub-menu dropdown-menu rounded-lg shadow dropdown-menu-right">
+                    <li class="nav-item">
+                      <a href="./profile.html" class="nav-link">Profile</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="./bookmark.html" class="nav-link">My Bookmarks</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="./notes.html" class="nav-link">My Notes</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="./index.html" class="nav-link">Logout</a>
+                    </li>
+                  </ul>
                 </li>
               </ul>
             </div>
