@@ -969,3 +969,23 @@ ol li{
 .support-dropdown small{
   font-size: 72%;
 }
+.case-popup {
+    transition: all 300ms ease-in-out;
+    height: 0;
+    overflow: hidden;
+    opacity: 0;
+    background-color: #ffffff;
+    display: none;
+    border-radius: 6px;
+}
+.case-popup.active {
+    height: auto;
+    opacity: 1;
+    margin-top: 10px;
+    display: block;
+}
+.judges-list .badge {
+    border: 1px solid #1a284a;
+    line-height: 1rem;
+    font-weight: 500 !important;
+}
