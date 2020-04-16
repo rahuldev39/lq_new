@@ -1123,4 +1123,7 @@ ol li{
 .search-field .section-input {
     flex-basis: 300px;
 }
+.lq-search #select-dropdown {
+    right: 0px;
+}
 /*#########-----Search v2 css End----##########*/
