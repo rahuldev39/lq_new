@@ -267,7 +267,7 @@
                       <a class="active judgement-tab" href="#0" data-toggle="tab" data-target="#judgement" role="tab">Judgement</a>
                     </li>
                     <li class="post-category">
-                      <a class="" href="#0" data-toggle="tab" data-target="#citedin" role="tab">Cited in</a>
+                      <a class=" citation-tab" href="#0" data-toggle="tab" data-target="#citedin" role="tab">Cited in</a>
                     </li>
                     <li class="post-category">
                       <a class="" href="#0" data-toggle="tab" data-target="#advocate" role="tab">Advocates</a>
@@ -369,6 +369,23 @@
 
 
                 <div id="citedin" class="flex-fill pt-4 mt-2 tab-pane fade"  role="tabpanel">
+
+                    <div class="citation-graph">
+                      <img src="./images/igraph.png" alt="">
+                    </div>
+
+                    <ul class="nav nav-tabs posts__categories-list justify-content-start  flex-row mb-4" role="tablist">
+                    <li class="post-category nav-item  ">
+                      <a class="active" href="#0" data-toggle="tab"  role="tab" aria-selected="false">Supreme Court</a>
+                    </li>
+                    <li class="post-category">
+                      <a class="" href="#0" data-toggle="tab"  role="tab" aria-selected="true">High Court</a>
+                    </li>
+                    <li class="post-category">
+                      <a class="" href="#0" data-toggle="tab"  role="tab">Tribunal</a>
+                    </li>
+                  </ul>
+
                   <div class="citedin-content pb-5">
 
                   <div class="block d-md-flex align-items-center">
@@ -381,9 +398,7 @@
                           vitae in itaque...</p>
                       </div>
                     </div>
-                    <div class="graph">
-                      <img src="./images/citation-graph.png" alt="">
-                    </div>
+
                   </div>
 
                   <hr class="my-4">
@@ -398,9 +413,7 @@
                           vitae in itaque...</p>
                       </div>
                     </div>
-                    <div class="graph">
-                      <img src="./images/citation-graph.png" alt="">
-                    </div>
+
                   </div>
 
                   <hr class="my-4">
@@ -415,9 +428,7 @@
                           vitae in itaque...</p>
                       </div>
                     </div>
-                    <div class="graph">
-                      <img src="./images/citation-graph.png" alt="">
-                    </div>
+
                   </div>
 
                   <hr class="my-4">
@@ -432,9 +443,7 @@
                           vitae in itaque...</p>
                       </div>
                     </div>
-                    <div class="graph">
-                      <img src="./images/citation-graph.png" alt="">
-                    </div>
+
                   </div>
                 </div>
                 </div>
@@ -1048,6 +1057,11 @@
     $(".judgment-top-tabs li a").click(function() {
       if($(this).hasClass('judgement-tab')){
           $('body').removeClass('close-idraf');
+          $('body').removeClass('open-citation');
+      }
+      else if ($(this).hasClass('citation-tab')) {
+        $('body').addClass('open-citation');
+        $('body').removeClass('close-idraf');
       }
     else {
       $('body').addClass('close-idraf');

@@ -989,7 +989,10 @@ ol li{
     line-height: 1rem;
     font-weight: 500 !important;
 }
-
+.open-citation .sidebar ul li{
+    opacity: .3;
+    pointer-events: none
+}
 
 /*#########-----Search v2 css start----##########*/
 
