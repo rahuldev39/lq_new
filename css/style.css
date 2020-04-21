@@ -249,19 +249,16 @@ ul.green-checks-list .h4, ul.green-checks-list h4 {
     -webkit-transition: all 0.25s ease;
     transition: all 0.25s ease;
     display: block;
-    width: calc(33% - 30px);
-    margin: 15px;
+    width: calc(25% - 20px);
+    margin: 15px 10px;
     margin-bottom: 30px;
-    border-radius: 6px;
     overflow: hidden;
 }
 .team-pane .thumbnail .thumb-inner {
-    display: flex;
-    align-items: center;
     position: relative;
 }
-.team-pane .thumbnail .thumb-inner .caption{
-  margin-left: 1rem
+.team-pane .thumbnail .thumb-inner .caption {
+    margin-top: 1rem;
 }
 .team-pane .team-block{
   max-width: 900px;
@@ -285,24 +282,40 @@ ul.green-checks-list .h4, ul.green-checks-list h4 {
   opacity: 1
 }
 .member-container img {
-    filter: grayscale(100%);
+    filter: grayscale(100%) brightness(80%);
     transition: all 300ms ease-in-out;
     cursor: pointer;
-    height: 100px;
-    width: 100px !important;
-    border-radius: 50%;
     object-fit: cover;
     object-position: center;
+    min-height: 300px;
 }
 .thumb-inner:hover .member-container img{
   filter: grayscale(0%);
 }
+.thumb-inner .overlay {
+    position: absolute;
+    z-index: 1;
+    height: 100%;
+    width: 100%;
+    background-color: #0d2050d4;
+    padding: 10px;
+    font-size: 13px;
+    line-height: 19px;
+    display: flex;
+    align-items: flex-end;
+    opacity: 0;
+    transition: all ease-in-out 300ms;
+}
+.thumb-inner .liner-box:hover .overlay{
+  opacity: 1
+}
+.thumb-inner .overlay p {
+    font-weight: 300;
+    color: #eaeefb;
+}
 .linkedin-btn {
     opacity: .9;
-    font-size: 1.5rem;
-    position: absolute;
-    left: 85px;
-    bottom: 0px;
+    font-size: 1.3rem;
 }
 .linkedin-btn i{
   background-color: white;
