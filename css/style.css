@@ -287,7 +287,7 @@ ul.green-checks-list .h4, ul.green-checks-list h4 {
     cursor: pointer;
     object-fit: cover;
     object-position: center;
-    min-height: 300px;
+    height: 300px;
 }
 .thumb-inner:hover .member-container img{
   filter: grayscale(0%);
@@ -316,6 +316,7 @@ ul.green-checks-list .h4, ul.green-checks-list h4 {
 .linkedin-btn {
     opacity: .9;
     font-size: 1.3rem;
+    margin-right: 1rem;
 }
 .linkedin-btn i{
   background-color: white;
