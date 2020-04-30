@@ -182,7 +182,7 @@ ul.green-checks-list .h4, ul.green-checks-list h4 {
 .posts__categories-list>li.post-category>a:hover{
   box-shadow: inset 0px -2px 0 0 #ed7e1f;
 }
-.main-detail-content p {
+.main-detail-content {
     font-size: 1.04rem;
     font-weight: 300 !important;
     line-height: 2.2rem;
