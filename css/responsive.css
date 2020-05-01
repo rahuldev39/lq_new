@@ -18,14 +18,14 @@
     margin-left: -180px
   }
   aside.filter-sidebar {
-    position: absolute;
-    width: 330px;
-    z-index: 1;
-    margin-top: 44px;
-    height:calc(100% - 44px);
-    left: -330px;
-    transition: all ease-in-out 150ms;
-}
+      position: absolute;
+      width: 330px;
+      z-index: 1;
+      margin-top: 30px;
+      height: calc(100% - 44px);
+      left: -330px;
+      transition: all ease-in-out 150ms;
+  }
 aside.filter-sidebar.show{
   left: 0px
 }

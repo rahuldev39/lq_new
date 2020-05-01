@@ -15,6 +15,9 @@
   <link rel="stylesheet" href="./css/vendor/jquery.tree-multiselect.css">
   <link rel="stylesheet" href="./css/vendor/daterangepicker.css">
 
+  <link rel="stylesheet" href="./css/vendor/owl.carousel.min.css">
+  <link rel="stylesheet" href="./css/vendor/owl.theme.default.min.css">
+
   <link rel="stylesheet" href="css\main.css">
   <link rel="stylesheet" href="./css/style.css">
   <link rel="stylesheet" href="./css/searchbar.css">
@@ -365,19 +368,18 @@
       <div class="row no-gutters position-relative">
         <div class="posts__wrapper col-lg-9 mb-5 mb-lg-0 order-lg-2 bg-gray">
           <div class="search-top-bar mb-0 bg-white">
-            <div class=" px-4 ">
-              <nav class="d-flex align-items-center flex-column flex-md-row">
-                <ul class="navbar-nav posts__categories-list mr-auto flex-row">
-                  <li class="post-category filter-togle d-block d-lg-none"><a class="" href="#0"><i class="fas fa-filter mr-1"></i> <span class="filter-text">Filter</span> </a></li>
-                  <li class="post-category  active"><a href="#0">Judgment</a></li>
-                  <li class="post-category"><a href="#0">Acts</a></li>
-                  <li class="post-category"><a href="#0">Orders</a></li>
-                    <li class="post-category"><a href="#0">Procedure</a></li>
-                </ul>
-
-
-              </nav>
-            </div>
+            <div class="text-center filter-togle d-block d-lg-none"><a class="" href="#0"><i class="fas fa-filter mr-1"></i> <span class="filter-text">Show Filter</span> </a></div>
+            <nav class="">
+              <div class="listing-tabs owl-carousel list-unstyled mb-0">
+                <div class=""><a class="active" href="#0">Judgment</a></div>
+                <div class=""><a href="#0">Treaties</a></div>
+                <div class=""><a href="#0">Constitution Assembly Debates</a></div>
+                <div class=""><a href="#0">Bills in Parliaments</a></div>
+                <div class=""><a href="#0">Reports of commissions and comimittees</a></div>
+                <div class=""><a href="#0">Law commissions Reports</a></div>
+                <div class=""><a href="#0">Notifications</a></div>
+              </div>
+            </nav>
 
           </div>
 
@@ -1105,6 +1107,7 @@
   <script src="js\vendor\jquery.ajaxchimp.min.js"></script>
   <script src="./js/vendor/jquery.tree-multiselect.js"></script>
   <script src="./js/vendor/daterangepicker.js"></script>
+  <script src="./js/vendor/owl.carousel.min.js"></script>
 
   <!-- Vendor/Plugins JS Init -->
   <script src="js\init\wb.ajaxchimp-init.js"></script>
@@ -1168,6 +1171,22 @@ $(function() {
  });
 
  });
+</script>
+
+<script type="text/javascript">
+    $(document).ready(function(){
+    $(".owl-carousel").owlCarousel({
+    autoWidth:true,
+    loop:false,
+    margin:10,
+    merge:true,
+    nav: true,
+    dots:false
+    });
+
+    $( ".owl-prev").html('<i class="fa fa-chevron-left"></i>');
+ $( ".owl-next").html('<i class="fa fa-chevron-right"></i>');
+    });
 </script>
 </body>
 

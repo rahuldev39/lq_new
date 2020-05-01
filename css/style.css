@@ -182,7 +182,7 @@ ul.green-checks-list .h4, ul.green-checks-list h4 {
 .posts__categories-list>li.post-category>a:hover{
   box-shadow: inset 0px -2px 0 0 #ed7e1f;
 }
-.main-detail-content {
+.main-detail-content{
     font-size: 1.04rem;
     font-weight: 300 !important;
     line-height: 2.2rem;
@@ -1144,3 +1144,52 @@ ol li{
     right: 0px;
 }
 /*#########-----Search v2 css End----##########*/
+.listing-tabs {
+    padding: 15px 24px;
+    position: relative;
+}
+.listing-tabs .owl-item a {
+    font-size: 13px;
+    border: 1px solid #4d5bed;
+    padding: 4px 12px;
+    display: block;
+    border-radius: 50px;
+    color: #4d5bed;
+}
+.listing-tabs .owl-item a.active {
+    color: #ffffff !important;
+    background-color: #4d5bed !important;
+}
+.listing-tabs .owl-item a:hover {
+    background-color: #e7e8fc8a;
+}
+.listing-tabs .owl-nav{
+  position: absolute;
+    left: 0px;
+    top: 0px;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+}
+.listing-tabs .owl-nav button {
+    position: absolute;
+    font-size: 16px !important;
+    top: 50%;
+    color: #4d5bed !important;
+    transform: translateY(-50%);
+    outline: none;
+}
+.listing-tabs .owl-nav button.disabled{
+  opacity: .2;
+  display: none;
+}
+.listing-tabs .owl-nav button.owl-prev{
+  left:6px
+}
+.listing-tabs .owl-nav button.owl-next {
+    right: 6px;
+}
+.filter-togle{
+  border-bottom: 1px solid #e2e4fb;
+    padding: 4px 0px;
+}
