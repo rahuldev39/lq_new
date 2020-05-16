@@ -32,403 +32,765 @@
 </head>
 
 <body>
-  <header class="header header-sticky">
+  <div class="modal-blur">
+    <header class="header header-sticky">
 
-    <nav class="navbar navbar-expand-lg  position-static navbar-sm shadow">
-      <div class="container-fluid position-relative px-4">
+      <nav class="navbar navbar-expand-lg  position-static navbar-sm shadow">
+        <div class="container-fluid position-relative px-4">
 
-        <a class="navbar-brand mr-4" href="index.html">
-          <img class="" src="./images/lq-logo-m.png" alt="legitquest" width="45px"></a>
+          <a class="navbar-brand mr-4" href="index.html">
+            <img class="" src="./images/lq-logo-m.png" alt="legitquest" width="45px"></a>
 
 
-          <div class="search-filed-box search-bar-sm mx-4  mx-md-5 mx-lg-5 flex-fill">
-            <div class="search-field">
-              <input type="text" class="form-control border-0 search-input h-auto py-2" placeholder="Search by title, case number, issue, ...">
-              <div class="form-control border-0 court-search-input  h-auto py-2">rtrt</div>
-              <div class="search-btn">
-                <a href="#"><i class="fa fa-search" aria-hidden="true"></i></a>
-              </div>
-              <div class="setting-btn">
-                <a href="#"><i class="fa fa-cog" aria-hidden="true"></i></a>
-              </div>
-              <div class="court-dropdown-box">
-                <select id="test-select-3" class="tree-multiselect-box" multiple="multiple">
-                  <option value="baz1" >Supreme Court Of India</option>
-                  <option value="quux1" data-section="High Court">HCTNMDU</option>
-                  <option value="quux2" data-section="High Court">HCAP</option>
-                  <option value="quux3" data-section="High Court">HCA</option>
-                  <option value="quux4" data-section="High Court">HCWBCAL-APP</option>
-                  <option value="quux1" data-section="High Court">HCCG</option>
-                  <option value="quux2" data-section="High Court">HCDL</option>
-                  <option value="quux3" data-section="High Court">HCGJ</option>
-                  <option value="quux4" data-section="High Court">HCHP</option>
-                  <option value="quux4" data-section="High Court">HCJK</option>
-                  <option value="quux4" data-section="High Court">HCJH</option>
-                  <option value="quux4" data-section="High Court">HCUPAB</option>
-                  <option value="quux4" data-section="High Court">HCMH</option>
-                  <option value="quux4" data-section="High Court">HCWB</option>
+            <div class="search-filed-box lq-search bg-white  d-flex align-items-center search-bar-sm   flex-fill">
 
-                 <option value="quux4" data-section="High Court">HCTN</option>
-                 <option value="quux4" data-section="High Court">HCBR</option>
-                 <option value="quux4" data-section="High Court">HCKA</option>
-                 <option value="quux4" data-section="High Court">HCKADH</option>
+              <div class="position-relative flex-fill search-controls-containers">
+                <div id="free-text-box" class="search-field flex-fill show">
+                  <input id="basics" class="form-control search-input" placeholder="Search by title, case number, issue, ..." >
+                  <div class="search-dropdown p-3">
+                    <ul class="list-unstyled" >
+                        <li class="search-help-section-header text-muted">
+                            <div  class=""><small class="text-uppercase">Search techniques</small></div>
+                        </li>
+                        <li class="mb-2"><a class="row">
+                          <strong class="col-2 col-tag">(+)</strong>
+                          <small class="col-10 col-desc">
+                            <span  >Find documents containing all connected terms</span>
+                            <em  class="detail">personal + injury</em>
+                          </small></a>
+                        </li>
+                        <li class="mb-2"><a class="row">
+                          <strong class="col-2 col-tag">(-)</strong>
+                          <small class="col-10 col-desc">
+                            <span  >Excludes documents</span>
+                            <em  class="detail">personal - injury
+                              <small>finds documents with the word “personal” without  “injury”</small>
+                            </em>
+                          </small></a>
+                        </li>
+                        <li class="mb-2"><a class="row">
+                          <strong class="col-2 col-tag">w/#</strong>
+                          <small class="col-10 col-desc">
+                            <span >Find documents which have terms within a given proximity of each other.</span>
+                            <em  class="detail">personal w/5 injury
+                            <small>finds documents with “personal” within five words of “injury”</small>
 
-                 <option value="quux4" data-section="High Court">HCKAGU</option>
-                 <option value="quux4" data-section="High Court">HCKAKB</option>
-                 <option value="quux4" data-section="High Court">HCKL</option>
-                 <option value="quux4" data-section="High Court">HCMP</option>
+                            </em>
+                          </small>
+                        </a></li>
+                        <li class="mb-2"><a class="row">
+                          <strong class="col-2 col-tag">!</strong>
+                          <small class="col-10 col-desc">
+                            <span  >Stemming finds all words containing the root word</span>
+                            <em  class="detail">juris!
+                            <small>finds documents containing “jurisdiction”, “jurisprudence”, “juristic”, etc.</small>
 
-                 <option value="quux4" data-section="High Court">HCMPGW</option>
-                 <option value="quux4" data-section="High Court">HCMPIND</option>
-                 <option value="quux4" data-section="High Court">HCMN</option>
-                 <option value="quux4" data-section="High Court">HCML</option>
+                            </em>
+                          </small>
+                        </a></li>
+                        <li class="mb-2"><a class="row">
+                          <strong class="col-2 col-tag">*</strong>
+                          <small class="col-10 col-desc">
+                            <span  >Find similar words with variations on single characters</span>
+                            <em  class="detail">wom*n
+                            <small>find documents containing either “woman” or “women”</small>
 
-                 <option value="quux4" data-section="High Court">HCOR</option>
-                 <option value="quux4" data-section="High Court">HCPBHR</option>
-                 <option value="quux4" data-section="High Court">HCRJ</option>
-                 <option value="quux4" data-section="High Court">HCRJJP</option>
+                            </em>
+                          </small></a></li>
 
-                 <option value="quux4" data-section="Other">HCPBHR</option>
-                 <option value="quux4" data-section="Other">HCRJ</option>
-                 <option value="quux4" data-section="Other">HCRJJP</option>
-
-                </select>
-              </div>
-            </div>
-            <div class="cort-btn">
-              <button class="btn btn-link text-white h-100 py-2">
-                <i class="fa fa-university "></i> All Courts
-              </button>
-            </div>
-
-            <div class="search-helper card p-0 position-absolute text-left shadow">
-              <div class="card-body">
-                <div class="exampleblock">
-                  <h5 class="mb-0">Search Engine Cheat Sheet</h5>
-                  <p><small>Quick examples below to get you started.</small> </p>
+                        <li class="mb-2"><a class="row">
+                          <strong class="col-2 col-tag">Filter Within</strong>
+                          <small class="col-10 col-desc">
+                            <span  >Any number of filter within the result</span>
+                            <em class="detail"></em>
+                          </small></a></li>
+                        <li class="mb-2"><a class="row">
+                          <strong class="col-2 col-tag">" "</strong>
+                          <small class="col-10 col-desc">
+                            <span  >Quote for the same phrase search</span>
+                            <em class="detail">"stop payment"; "non compliance of mandatory provisions"</em>
+                          </small></a></li>
+                        </ul>
+                  </div>
                 </div>
+                <div id="citation-box" class="search-field flex-fill">
+                  <input class="form-control journal-input search-input" placeholder="Search through Citation">
+                  <div class="search-dropdown p-3">
 
-                <div class="exampleblock first">
-                  <h4 class="text-muted">Basic Search</h4>
-                  <ul class="list-unstyled mb-3">
-                  <li class="d-flex mb-1" data-powertip="No need to get fancy, just type what you're looking for.">
-                    <div class="key">Plain English</div> <a href="#">personal injury</a></li>
-                  <li class="d-flex mb-1" data-powertip="Use AND and OR to include keywords. Default is to use AND.">
-                    <div class="key">Boolean</div><a href="#">(richard or dick) and cheney</a></li>
-                  <li class="d-flex mb-1" data-powertip="Quotes find a specific phrase">
-                    <div class="key">Phrases</div><a href="#">"patent infringement"</a></li>
-                  <li class="d-flex mb-1" data-powertip="When you use a hyphen, we search: the two word parts separately, the hyphenated word, and the two word parts joined as a single word.">
-                    <div class="key">Hyphenate</div><a href="#">anti-inflammatory</a></li>
-                  </ul>
+                      <div class="citation-list-container">
+                        <h4 class="text-center">Please enter your Citation in this format </h4>
+                        <div class="row">
+                          <div class="col-md-3 col-sm-6">
+                            <div class="citation-list">
+                              <ul class="list-unstyled">
+                                <li>
+                                  <strong>Supreme Court</strong>
+                                </li>
+                                <li>
+                                <span>AIR 1950 SC 1</span>
+                                </li>
+                                <li>
+                                <span>[1950 ] 1 SCR 64</span>
+                                </li><li>
+                                <span>JT 1986 (1) SC 178</span>
+                                </li>
+                                <li>
+                                <span>1981 (3) SCALE 1831</span>
+                                </li>
+                                <li>
+                                <span>(1970 ) 3 SCC 368</span>
+                                </li>
+                              </ul>
+                            </div>
+                            <div class="citation-list">
+                              <ul class="list-unstyled">
+                                <li>
+                                  <strong>Patna</strong>
+                                </li>
+                                <li>
+                                <span>AIR 2000 Pat 331</span>
+                                </li>
+                                <li>
+                                <span>2000 (3) BLJR 2184</span>
+                                </li><li>
+                                <span>2000 (3)PLJR 241</span>
+                                </li>
+
+                              </ul>
+                            </div>
+                          </div>
+                          <div class="col-md-3 col-sm-6">
+                            <div class="citation-list">
+                              <ul class="list-unstyled">
+                                <li>
+                                  <strong>Delhi</strong>
+                                </li>
+                                <li>
+                                <span>1993 IVAD (Delhi ) 838</span>
+                                </li>
+                                <li>
+                                <span>AIR 1967 Delhi 65</span>
+                                </li><li>
+                                <span>3(1967 ) DLT 299</span>
+                                </li>
+                                <li>
+                                <span>1981 (2) DRJ 184</span>
+                                </li>
+                              </ul>
+                            </div>
+                            <div class="citation-list">
+                              <ul class="list-unstyled">
+                                <li>
+                                  <strong>Punjab & Haryana</strong>
+                                </li>
+                                <li>
+                                <span>AIR 2014 P&H 139</span>
+                                </li>
+                                <li>
+                                <span>56 PLR 12 (1954 )</span>
+                                </li>
+
+                              </ul>
+                            </div>
+                          </div>
+                          <div class="col-md-3 col-sm-6">
+                            <div class="citation-list">
+                              <ul class="list-unstyled">
+                                <li>
+                                  <strong>Maharashtra</strong>
+                                </li>
+                                <li>
+                                <span>1997 (3) ALLMR 688</span>
+                                </li>
+                                <li>
+                                <span>AIR 1950 Bom 378</span>
+                                </li><li>
+                                <span>1982 (1) BomCR 236</span>
+                                </li>
+                                <li>
+                                <span>1981 (2) DRJ 184</span>
+                                </li>
+                                <li>
+                                <span>1963 MhLJ 503</span>
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                          <div class="col-md-3 col-sm-6">
+                            <div class="citation-list">
+                              <ul class="list-unstyled">
+                                <li>
+                                  <strong>Calcutta</strong>
+                                </li>
+                                <li>
+                                <span>AIR 1950 Cal 573</span>
+                                </li>
+                                <li>
+                                <span>(1950 ) 1 CALLT 341 (HC )</span>
+                                </li><li>
+                                <span>2010 (1) CHN 237</span>
+                                </li>
+                                <li>
+                                <span>1971 (1) CLJ 314</span>
+                                </li>
+                                <li>
+                                <span>54 CWN 189</span>
+                                </li>
+                                <li>
+                                <span>(1952) ILR 2 Cal 352</span>
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                  </div>
+                </div>
+                <div id="judge-box" class="search-field flex-fill">
+                  <input class="form-control search-input" placeholder="Judge name">
+                </div>
+                <div id="party-box" class="search-field flex-fill">
+                  <input class="form-control search-input" placeholder="petitioner/respondent">
+                </div>
+                <div id="act-box" class="search-field flex-fill">
+                  <input class="form-control search-input" placeholder="Act Name">
+                  <input class="form-control section-input search-input" placeholder="Section">
+                </div>
+                <div id="act-search-box" class="search-field flex-fill">
+                  <input class="form-control search-input" placeholder="Search bare Act">
+                </div>
+                <div class="search-btn">
+                  <a href="#"><i class="fa fa-search" aria-hidden="true"></i></a>
+                </div>
               </div>
+              <div class="search-select">
+                <button class="btn btn-primary select-btn px-3 " data-toggle="collapse" href="#select-dropdown" role="button" aria-expanded="false" aria-controls="select-dropdown">
+                  All
+                </button>
+                <div class="collapse" id="select-dropdown">
+                  <div class="card card-body p-3">
+                    <div class="select-block mb-4">
+                      <strong class="d-block mb-2">Case Law</strong>
+                      <ul class="m-0 p-0 list-unstyled">
+                        <li class="mb-1">
+                          <div class="select-radio">
+                            <div class="select-radio-inner">
+                              <span>Free text search</span>
+                              <label class="mb-0">
+                                <input class="d-none" type="radio" name="search-radio" value="free-text-box" checked>
+                                <span>All</span>
+                              </label>
+                            </div>
 
-              <div class="exampleblock second">
-                  <h4 class="text-muted">Filters</h4>
-                  <ul class="list-unstyled mb-3">
+                          </div>
+                        </li>
+                        <li class="mb-1">
+                          <div class="select-radio">
+                            <div class="select-radio-inner">
+                              <span>Name-Year-Vol-Page</span>
+                              <label class="mb-0">
+                                <input  class="d-none" type="radio" name="search-radio" value="citation-box">
+                                <span>Citation</span>
+                              </label>
+                            </div>
 
-                  <!-- <li data-powertip="We support over a dozen search filters. Read the documentation link below to learn more.">
-                    <div class='key'>By Court</div><a href='/search/?q=court%3A%22New+York%22'>court:"New York"</a></li> -->
-                  <li class="d-flex mb-1" data-powertip="We support over a dozen search filters. Read the documentation link below to learn more.">
-                    <div class="key">By Judge</div><a href="#">judge:Posner</a></li>
-                  <li class="d-flex mb-1" data-powertip="We support over a dozen search filters. Read the documentation link below to learn more.">
-                    <div class="key">Opinions</div><a href="#">is:opinion</a></li>
+                          </div>
+                        </li>
+                        <li class="mb-1">
+                          <div class="select-radio">
+                            <div class="select-radio-inner">
+                                <span>Last name – first name</span>
+                                <label class="mb-0">
+                                  <input class="d-none" type="radio" name="search-radio" value="judge-box">
+                                  <span>Judge Name</span>
+                                </label>
+                            </div>
+                          </div>
+                        </li>
+                        <li class="mb-1">
+                          <div class="select-radio">
+                            <div class="select-radio-inner">
+                              <span>Petitioner - respondent</span>
+                              <label class="mb-0">
+                                <input class="d-none" type="radio" name="search-radio" value="party-box">
+                                <span>Party Name</span>
+                              </label>
+                            </div>
+                          </div>
+                        </li>
+                        <li class="mb-1">
+                          <div class="select-radio">
+                            <div class="select-radio-inner">
+                              <span>Act name- Section</span>
+                              <label class="mb-0">
+                                <input class="d-none" type="radio" name="search-radio" value="act-box">
+                                <span>Act Name</span>
+                              </label>
+                            </div>
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
 
-                  <li class="d-flex mb-1" data-powertip="We support over a dozen search filters. Read the documentation link below to learn more.">
-                    <div class="key">By Party</div><a href="#">party:panasonic</a></li>
-                  <li class="d-flex mb-1" data-powertip="We support over a dozen search filters. Read the documentation link below to learn more.">
-                    <div class="key">By Date</div><a href="#">from:1/20/2012 to:2015</a></li>
-                  </ul>
+                    <div class="select-block">
+                      <strong class="d-block mb-2">Bare Act Search</strong>
+                      <ul class="m-0 p-0 list-unstyled">
+                        <li>
+                          <div class="select-radio">
+                            <div class="select-radio-inner">
+                              <span>Search bare Act</span>
+                              <label>
+                                <input class="d-none" type="radio" name="search-radio" value="act-search-box">
+                                <span>Act Name</span>
+                              </label>
+                            </div>
+
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+
+                </div>
               </div>
+            </div>
+          <button class="navbar-toggler border-0" type="button" data-toggle="offcanvas">
+            <i class="navbar-toggler__bar navbar-toggler__bar--top"></i>
+            <i class="navbar-toggler__bar navbar-toggler__bar--middle"></i>
+            <i class="navbar-toggler__bar navbar-toggler__bar--bottom"></i>
+          </button> <!-- Navbar Toggle Button -->
 
-              <div class="exampleblock third">
-                <h4 class="text-muted">Advanced</h4>
-                <ul class="list-unstyled mb-3">
-                <li class="d-flex mb-1" data-powertip="Match the beginning of a word with an exclamation mark.">
-                  <div class="key">Word Endings</div><a href="#">personal injur!</a></li>
-                <li class="d-flex mb-1" data-powertip="Find cases with specific money amounts simply by specifying the amount range. Specify exact dollars ($1250-4200) or use abbreviations ($100k-1B).">
-                  <div class="key">Dollar Amount</div><a href="#">verdict $100k-$5M</a></li>
-                <li class="d-flex mb-1" data-powertip="The &quot;w/&quot; search operator (which stands for &quot;within&quot;) helps find nearby words. The example query finds documents with the word &quot;claim&quot; within 3 words of the word &quot;construction&quot;.">
-                  <div class="key">Nearby Words</div><a href="#">claim w/3 construction</a></li>
-                <li class="d-flex mb-1" data-powertip="Easily combine queries together using the within operator, &quot;and&quot;, and &quot;or&quot;.">
-                  <div class="key">Combinations</div><a href="#">(grant or deny) w/4 copyright</a></li>
+
+
+          <div class="offcanvas-collapse ml-auto" id="navbarsExampleDefault">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="./index.html">Home</a>
+              </li>
+
+              <li class="nav-item nav--has-sub-menu" data-toggle="hover">
+                <a class="nav-link" href="#" data-toggle="dropdown">More...</a>
+
+                <ul class="nav-sub-menu dropdown-menu rounded-lg shadow dropdown-menu-right">
+                  <li class="nav-item">
+                    <a href="./about.html" class="nav-link">About Us</a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="./coverage.html" class="nav-link">Coverage</a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="./team.html" class="nav-link">Team</a>
+                  </li>
+
                 </ul>
+              </li>
+
+
+            </ul>
+          </div>
+
+        </div>
+      </nav> <!-- END Navbar -->
+
+    </header>
+
+    <main class="main">
+      <section class="search-listing-section bg-white py-0">
+        <div class="row no-gutters position-relative">
+          <div class="posts__wrapper col-lg-9 mb-5 mb-lg-0 order-lg-2 bg-gray">
+            <div class="search-top-bar mb-0 bg-white">
+              <div class="text-center filter-togle d-block d-lg-none"><a class="" href="#0"><i class="fas fa-filter mr-1"></i> <span class="filter-text">Show Filter</span> </a></div>
+              <nav class="">
+                <div class="listing-tabs owl-carousel list-unstyled mb-0">
+                  <div class=""><a class="active" href="#0">Judgment</a></div>
+                  <div class=""><a href="#0">Treaties</a></div>
+                  <div class=""><a href="#0">Constitution Assembly Debates</a></div>
+                  <div class=""><a href="#0">Bills in Parliaments</a></div>
+                  <div class=""><a href="#0">Reports of commissions and comimittees</a></div>
+                  <div class=""><a href="#0">Law commissions Reports</a></div>
+                  <div class=""><a href="#0">Notifications</a></div>
+                </div>
+              </nav>
+
             </div>
 
-            <hr>
-            <div class="text-center">
-              <a href="#" class="d-block"> <strong>Full Search Documentation</strong> </a>
-              <small>Learn all of our search options.</small>
-            </div>
-              </div>
+            <div class="bg-white border-bottom">
+              <div class=" px-4 py-3">
 
-            </div>
-
-            <div class="query_builder card p-0 position-absolute text-left shadow">
-              <div class="card-body">
-                <div class="d-flex mb-4">
-                  <h5 class="mb-0">Search Query Builder</h5>
-                  <div class="close_btn ml-auto"><a href="#">✖</a></div>
+                <div class="filter-item d-inline-flex align-items-center mr-2">
+                  <span>AIR 1939 All</span>
+                  <a href="#" class="remove-selected">×</a>
                 </div>
 
-                <div class="form-group mb-2 d-flex align-items-center">
-                    <label class="mr-2 mb-0">All of these words</label>
-                    <div class="flex-fill">
-                      <input type="text" class="form-control p-1 h-auto">
-                    </div>
-                  </div>
+                <div class="filter-item d-inline-flex align-items-center  mr-2">
+                    <span>Pancham singh</span>
+                    <a href="#" class="remove-selected">×</a>
+                </div>
 
-                  <div class="form-group mb-2 d-flex align-items-center">
-                    <label class="mr-2 mb-0">Any of these words</label>
-                    <div class="flex-fill">
-                      <input type="text" class="form-control p-1 h-auto">
-                    </div>
-                  </div>
-
-                  <div class="form-group mb-2 d-flex align-items-center">
-                    <label class="mr-2 mb-0">Exactly this phrase</label>
-                    <div class="flex-fill">
-                      <input type="text" class="form-control p-1 h-auto">
-                    </div>
-                  </div>
-
-                  <div class="form-group mb-2 d-flex align-items-center">
-                    <label class="mr-2 mb-0">None of these words</label>
-                    <div class="flex-fill">
-                      <input type="text" class="form-control p-1 h-auto">
-                    </div>
-                  </div>
-
-                  <div class="form-group mb-2 d-flex align-items-center">
-                    <label class="mr-2 mb-0">This word</label>
-                    <div class="row">
-                      <div class="col-md-4">
-                        <input type="text" class="form-control p-1 h-auto">
-                      </div>
-                      <div class="col-md-4">
-                          <select class="form-control p-1 h-auto">
-                            <option value="w/2">within 2 words of</option>
-                            <option value="w/5">within 5 words of</option>
-                            <option value="w/15">within 15 words of</option>
-                            <option value="w/50">within 50 words of</option>
-                            <option value="t/2">followed, within 2 words, by</option>
-                            <option value="t/10">followed, within 10 words, by</option>
-                          </select>
-                      </div>
-                      <div class="col-md-4">
-                        <input type="text" class="form-control p-1 h-auto ">
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="form-group mb-2 d-flex align-items-center">
-                    <label class="mr-2 mb-0">Filter by</label>
-                    <div class="row flex-fill">
-                      <div class="col-md-6">
-                        <select class="form-control p-1 h-auto">
-                          <option value="judge">Judge</option>
-                          <option value="attorney">Attorney</option>
-                          <option value="court">Court</option>
-                          <option value="docket">Docket</option>
-                          <option value="firm">Firm</option>
-                                <option value="nos">Nature of Suit</option>
-                          <option value="type">Case Type</option>
-                                <option value="status">Status</option>
-                          <option value="outcome">Outcome</option>
-                          <option value="party">Party</option>
-                          <option value="title">Title</option>
-                          <option value="mark">Trademark</option>
-                                <option value="documenttitle">Document Title</option>
-                          <option value="from">Start Date</option>
-                          <option value="to">End Date</option>
-                        </select>
-                      </div>
-                      <div class="col-md-6">
-                          <input type="text" class="form-control p-1 h-auto ">
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="form-group mb-2 d-flex align-items-center">
-                    <label class="mr-2 mb-0">Filter by</label>
-                    <div class="row flex-fill">
-                      <div class="col-md-6">
-                        <select class="form-control p-1 h-auto">
-                          <option value="type">Case Type</option>
-                          <option value="attorney">Attorney</option>
-                          <option value="court">Court</option>
-                          <option value="docket">Docket</option>
-                          <option value="firm">Firm</option>
-                          <option value="judge">Judge</option>
-                                <option value="nos">Nature of Suit</option>
-                                <option value="status">Status</option>
-                          <option value="outcome">Outcome</option>
-                          <option value="party">Party</option>
-                          <option value="title">Title</option>
-                          <option value="mark">Trademark</option>
-                                <option value="documenttitle">Document Title</option>
-                          <option value="from">Start Date</option>
-                          <option value="to">End Date</option>
-                        </select>
-                      </div>
-                      <div class="col-md-6">
-                          <input type="text" class="form-control p-1 h-auto ">
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="form-group mb-2 d-flex align-items-center">
-                    <label class="mr-2 mb-0">Party’s name</label>
-                    <div class="flex-fill">
-                      <input type="text" class="form-control p-1 h-auto">
-                    </div>
-                  </div>
-
-                  <div class="form-group mb-2 d-flex align-items-center">
-                    <label class="mr-2 mb-0">Has at least</label>
-                    <div class="flex-fill">
-                      <select class="form-control p-1 h-auto">
-                        <option value=""></option>
-                        <option value="num_party:[10,]">10 Parties</option>
-                        <option value="num_party:[50,]">50 Parties</option>
-                        <option value="num_attorney:[10,]">10 Attorneys on the Case</option>
-                        <option value="num_attorney:[50,]">50 Attorneys on the Case</option>
-                        <option value="party:(firm:(num_female:[1,]))">1 Female Attorney</option>
-                        <option value="party:(firm:(num_female:[1,])) and not party:(firm:(num_male:[1,]))">Only Female Attorneys</option>
-                        <option value="party:(firm:(num_male:[1,])) and not party:(firm:(num_female:[1,]))">Only Male Attorneys</option>
-                        <option value="num_pages:[10,]">10 Pages (documents only)</option>
-                        <option value="num_pages:[50,]">50 Pages (documents only)</option>
-                    </select>
-                    </div>
-                  </div>
-
-                  <div class="form-group mb-2 d-flex align-items-center">
-                    <label class="mr-2 mb-0">Filed</label>
-                    <div class="flex-fill">
-                      <select class="form-control p-1 h-auto">
-                          <option value=""></option>
-                          <option value="last:7days">In the last 7 days</option>
-                          <option value="last:30days">In the last 30 days</option>
-                          <option value="from:2020">This year</option>
-                          <option value="last:1year">In the last year</option>
-                          <option value="last:5years">In the last 5 years</option>
-                    </select>
-                    </div>
-                  </div>
-
-                  <button type="button" class="btn btn-primary btn-block btn-sm">
-                    Search
-                  </button>
-
+                <div class="filter-item d-inline-flex align-items-center  mr-2">
+                    <span>403 (FB)</span>
+                    <a href="#" class="remove-selected">×</a>
+                </div>
               </div>
             </div>
 
-          </div>
-        <button class="navbar-toggler border-0" type="button" data-toggle="offcanvas">
-          <i class="navbar-toggler__bar navbar-toggler__bar--top"></i>
-          <i class="navbar-toggler__bar navbar-toggler__bar--middle"></i>
-          <i class="navbar-toggler__bar navbar-toggler__bar--bottom"></i>
-        </button> <!-- Navbar Toggle Button -->
-
-
-
-        <div class="offcanvas-collapse ml-auto" id="navbarsExampleDefault">
-          <ul class="navbar-nav">
-            <li class="nav-item">
-              <a class="nav-link" href="./index.html">Home</a>
-            </li>
-
-            <li class="nav-item nav--has-sub-menu" data-toggle="hover">
-              <a class="nav-link" href="#" data-toggle="dropdown">More...</a>
-
-              <ul class="nav-sub-menu dropdown-menu rounded-lg shadow dropdown-menu-right">
-                <li class="nav-item">
-                  <a href="./about.html" class="nav-link">About Us</a>
-                </li>
-                <li class="nav-item">
-                  <a href="./coverage.html" class="nav-link">Coverage</a>
-                </li>
-                <li class="nav-item">
-                  <a href="./team.html" class="nav-link">Team</a>
-                </li>
-
-              </ul>
-            </li>
-
-
-          </ul>
-        </div>
-
-      </div>
-    </nav> <!-- END Navbar -->
-
-  </header>
-
-  <main class="main">
-    <section class="search-listing-section bg-white py-0">
-      <div class="row no-gutters position-relative">
-        <div class="posts__wrapper col-lg-9 mb-5 mb-lg-0 order-lg-2 bg-gray">
-          <div class="search-top-bar mb-0 bg-white">
-            <div class="text-center filter-togle d-block d-lg-none"><a class="" href="#0"><i class="fas fa-filter mr-1"></i> <span class="filter-text">Show Filter</span> </a></div>
-            <nav class="">
-              <div class="listing-tabs owl-carousel list-unstyled mb-0">
-                <div class=""><a class="active" href="#0">Judgment</a></div>
-                <div class=""><a href="#0">Treaties</a></div>
-                <div class=""><a href="#0">Constitution Assembly Debates</a></div>
-                <div class=""><a href="#0">Bills in Parliaments</a></div>
-                <div class=""><a href="#0">Reports of commissions and comimittees</a></div>
-                <div class=""><a href="#0">Law commissions Reports</a></div>
-                <div class=""><a href="#0">Notifications</a></div>
-              </div>
-            </nav>
-
-          </div>
-
-          <div class="bg-white mb-4 shadow-sm">
-            <div class=" px-4 py-3">
-
-              <div class="filter-item d-inline-flex align-items-center mr-2">
-                <span>AIR 1939 All</span>
-                <a href="#" class="remove-selected">×</a>
-              </div>
-
-              <div class="filter-item d-inline-flex align-items-center  mr-2">
-                  <span>Pancham singh</span>
-                  <a href="#" class="remove-selected">×</a>
-              </div>
-
-              <div class="filter-item d-inline-flex align-items-center  mr-2">
-                  <span>403 (FB)</span>
-                  <a href="#" class="remove-selected">×</a>
-              </div>
+            <div class="shadow-sm bg-white px-4 py-2">
+              <span class=""><strong>17312</strong> results found for query mamta</span>
             </div>
-          </div>
 
-          <div class="px-4 ">
-            <div id="resultStats" class="mb-4 ">
-              <span class=""><strong>17312</strong> results found sorted by</span>
-              <span class="text-muted"> </span>
-              <select class="sort-by">
-                <option value="order_rel">Relevance</option>
-                <option value="order_dec_date">Newest</option>
-                <option value="order_asc_date">Oldest</option>
-                <option value="order_random">Random</option>
-            </select>
-            </div>
-            <div class="row no-gutters">
-              <div class="col-md-12 mb-4">
-                <div class="post card h-100 p-0 border-0 bg-transparent">
-                  <div class="card-body p-0">
+            <div class="p-4 ">
+              <div id="resultStats" class="mb-4 ">
+                <span class="">Sorted by</span>
+                <span class="text-muted"> </span>
+                <select class="sort-by">
+                  <option value="order_rel">Relevance</option>
+                  <option value="order_dec_date">Newest</option>
+                  <option value="order_asc_date">Oldest</option>
+                  <option value="order_random">Random</option>
+              </select>
+              </div>
+              <div class="row no-gutters">
+                <div class="col-md-12 mb-4">
+                  <div class="post card h-100 p-0 border-0 bg-transparent">
+                    <div class="card-body p-0">
 
-                    <a href="./judgment-detail.html" class="h4 card-title d-block mb-0 text-primary">
-                      <u>Koshalya Rani Gopal Singh V. Gopal Singh Jhanda Singh</u>
-                      <img src="./images/caution.svg" class="ml-2" alt="" height="22px">
-                    </a>
-                    <p class="card-text text-success mb-1">
-                       High Court Of Punjab And Haryana | 31-10-1961
-                    </p>
-                    <p class="mb-1 detailed-text">
-                      <b>Judgment : </b>(1.) PURSUANT to a complaint made by Mst. Kaushiya Rani, <strong class="bg-light">Gopal Singh</strong> was committed to the court of. of a previous Full Bench in Durag Pal <strong class="bg-light">Singh</strong> v. Pancham <strong class="bg-light">singh</strong>, AIR 1939 All 403 (FB), to the effect. meaning of Section 29. A Division Bench of this Court consisting of Teja...
-                    </p>
+                      <a href="./judgment-detail.html" class="h4 card-title d-block mb-0 text-primary">
+                        <u>Koshalya Rani Gopal Singh V. Gopal Singh Jhanda Singh</u>
+                        <img src="./images/caution.svg" class="ml-2" alt="" height="22px">
+                      </a>
+                      <p class="card-text text-success mb-1">
+                         High Court Of Punjab And Haryana | 31-10-1961
+                      </p>
+                      <p class="mb-1 detailed-text">
+                        <b>Judgment : </b>(1.) PURSUANT to a complaint made by Mst. Kaushiya Rani, <strong class="bg-light">Gopal Singh</strong> was committed to the court of. of a previous Full Bench in Durag Pal <strong class="bg-light">Singh</strong> v. Pancham <strong class="bg-light">singh</strong>, AIR 1939 All 403 (FB), to the effect. meaning of Section 29. A Division Bench of this Court consisting of Teja...
+                      </p>
+                      <div class="search-action">
+                        <a href="#" class="popup-open search-link mr-3">
+                          <small><i class="fa fa-search" aria-hidden="true"></i> Search Within Case</small>
+                        </a>
+                        <a href="#" class="popup-open judges-link mr-3 ">
+                          <small><i class="fas fa-user-tie"></i> Judges</small>
+                        </a>
+                        <div class="popup-container">
+                          <div class="case-popup search-popup shadow-sm">
+                              <div class="header-popup d-flex align-items-center justify-content-between px-3 py-2">
+                                <span class="text-dark "><i class="fa fa-search" aria-hidden="true"></i> <span class="h6 mb-0 font-weight-bold">Search Within Case</span> </span>
+                                <a href="#" class="popup-close"><i class="fa fa-times" aria-hidden="true"></i></a>
+                              </div>
+
+                              <div class="popup-result popup-body p-3">
+                                <div class="case-search d-flex">
+                                    <input type="text" class="form-control form-control-sm" placeholder="Enter Keyword">
+                                    <button class="btn btn-primary btn-sm h-auto w-auto ml-2"><small>Search</small></button>
+                                    <button class="btn btn-primary  btn-sm  h-auto w-auto ml-2"><small>Previous</small></button>
+                                    <button class="btn btn-primary  btn-sm h-auto w-auto ml-2"><small>Next</small></button>
+                                </div>
+                              </div>
+                          </div>
+
+
+                              <div class="case-popup judges-popup shadow-sm">
+                                  <div class="header-popup d-flex align-items-center justify-content-between px-3 py-2">
+                                    <span class="text-dark "><i class="fa fa-users" aria-hidden="true"></i> <span class="h6 mb-0 font-weight-bold">Judges</span></span>
+                                    <a href="#" class="popup-close"><i class="fa fa-times" aria-hidden="true"></i></a>
+                                  </div>
+
+                                  <div class="popup-body p-3">
+                                    <div class="judges-list">
+                                      <span class="badge badge-pill py-1 px-3 font-weight-normal">HON'BLE DR. JUSTICE B.S. CHAUHAN</span>
+                                      <span  class="badge badge-pill py-1 px-3 font-weight-normal">HON'BLE MR. JUSTICE A.K. SIKRI</span>
+                                    </div>
+
+
+                                  </div>
+                              </div>
+                            </div>
+                      </div>
+
+
+                    </div>
+
+                    <div class="card-footer pb-4 bg-dark d-none">
+
+                    </div>
+                  </div> <!-- Card for a Post/Artile -->
+                </div>
+
+                <div class="col-md-12 mb-4">
+                  <div class="post card h-100 p-0 border-0 bg-transparent">
+                    <div class="card-body p-0">
+
+                      <a href="./judgment-detail.html" class="h4 card-title d-block mb-0 text-primary">
+                        <u>Koshalya Rani Gopal Singh V. Gopal Singh Jhanda Singh Koshalya Rani Gopal...</u>
+                        <img src="./images/positive.svg" class="ml-2" alt="" height="22px">
+                      </a>
+                        <p class="card-text text-success mb-1">
+                           High Court Of Punjab And Haryana | 31-10-1961
+                        </p>
+                        <p class="mb-1 detailed-text">
+                          <b>Judgment : </b>(1.) PURSUANT to a complaint made by Mst. Kaushiya Rani, <strong class="bg-light">Gopal Singh</strong> was committed to the court of. of a previous Full Bench in Durag Pal <strong class="bg-light">Singh</strong> v. Pancham <strong class="bg-light">singh</strong>, AIR 1939 All 403 (FB), to the effect. meaning of Section 29. A Division Bench of this Court consisting of Teja...
+                        </p>
+
+                        <div class="search-action">
+                          <a href="#" class="popup-open search-link mr-3">
+                            <small><i class="fa fa-search" aria-hidden="true"></i> Search Within Case</small>
+                          </a>
+                          <a href="#" class="popup-open judges-link mr-3 ">
+                            <small><i class="fas fa-user-tie"></i> Judges</small>
+                          </a>
+                          <div class="popup-container">
+                            <div class="case-popup search-popup shadow-sm">
+                                <div class="header-popup d-flex align-items-center justify-content-between px-3 py-2">
+                                  <span class="text-dark "><i class="fa fa-search" aria-hidden="true"></i> <span class="h6 mb-0 font-weight-bold">Search Within Case</span> </span>
+                                  <a href="#" class="popup-close"><i class="fa fa-times" aria-hidden="true"></i></a>
+                                </div>
+
+                                <div class="popup-result popup-body p-3">
+                                  <div class="case-search d-flex">
+                                      <input type="text" class="form-control form-control-sm" placeholder="Enter Keyword">
+                                      <button class="btn btn-primary btn-sm h-auto w-auto ml-2"><small>Search</small></button>
+                                      <button class="btn btn-primary  btn-sm  h-auto w-auto ml-2"><small>Previous</small></button>
+                                      <button class="btn btn-primary  btn-sm h-auto w-auto ml-2"><small>Next</small></button>
+                                  </div>
+                                </div>
+                            </div>
+
+
+                                <div class="case-popup judges-popup shadow-sm">
+                                    <div class="header-popup d-flex align-items-center justify-content-between px-3 py-2">
+                                      <span class="text-dark "><i class="fa fa-users" aria-hidden="true"></i> <span class="h6 mb-0 font-weight-bold">Judges</span></span>
+                                      <a href="#" class="popup-close"><i class="fa fa-times" aria-hidden="true"></i></a>
+                                    </div>
+
+                                    <div class="popup-body p-3">
+                                      <div class="judges-list">
+                                        <span class="badge badge-pill py-1 px-3 font-weight-normal">HON'BLE DR. JUSTICE B.S. CHAUHAN</span>
+                                        <span  class="badge badge-pill py-1 px-3 font-weight-normal">HON'BLE MR. JUSTICE A.K. SIKRI</span>
+                                      </div>
+
+
+                                    </div>
+                                </div>
+                              </div>
+                        </div>
+
+                    </div>
+
+                    <div class="card-footer pb-4 bg-dark d-none">
+
+                    </div>
+                  </div> <!-- Card for a Post/Artile -->
+                </div>
+
+                <div class="col-md-12 mb-4">
+                  <div class="post card h-100 p-0 border-0 bg-transparent">
+                    <div class="card-body p-0">
+
+                      <a href="./judgment-detail.html" class="h4 card-title d-block mb-0 text-primary">
+                        <u>Koshalya Rani Gopal Singh V. Gopal Singh Jhanda Singh</u>
+                        <img src="./images/referred.svg" class="ml-2" alt="" height="22px">
+                      </a>
+                        <p class="card-text text-success mb-1">
+                           High Court Of Punjab And Haryana | 31-10-1961
+                        </p>
+                        <p class="mb-1 detailed-text">
+                          <b>Judgment : </b>(1.) PURSUANT to a complaint made by Mst. Kaushiya Rani, <strong class="bg-light">Gopal Singh</strong> was committed to the court of. of a previous Full Bench in Durag Pal <strong class="bg-light">Singh</strong> v. Pancham <strong class="bg-light">singh</strong>, AIR 1939 All 403 (FB), to the effect. meaning of Section 29. A Division Bench of this Court consisting of Teja...
+                        </p>
+
+                        <div class="search-action">
+                          <a href="#" class="popup-open search-link mr-3">
+                            <small><i class="fa fa-search" aria-hidden="true"></i> Search Within Case</small>
+                          </a>
+                          <a href="#" class="popup-open judges-link mr-3 ">
+                            <small><i class="fas fa-user-tie"></i> Judges</small>
+                          </a>
+                          <div class="popup-container">
+                            <div class="case-popup search-popup shadow-sm">
+                                <div class="header-popup d-flex align-items-center justify-content-between px-3 py-2">
+                                  <span class="text-dark "><i class="fa fa-search" aria-hidden="true"></i> <span class="h6 mb-0 font-weight-bold">Search Within Case</span> </span>
+                                  <a href="#" class="popup-close"><i class="fa fa-times" aria-hidden="true"></i></a>
+                                </div>
+
+                                <div class="popup-result popup-body p-3">
+                                  <div class="case-search d-flex">
+                                      <input type="text" class="form-control form-control-sm" placeholder="Enter Keyword">
+                                      <button class="btn btn-primary btn-sm h-auto w-auto ml-2"><small>Search</small></button>
+                                      <button class="btn btn-primary  btn-sm  h-auto w-auto ml-2"><small>Previous</small></button>
+                                      <button class="btn btn-primary  btn-sm h-auto w-auto ml-2"><small>Next</small></button>
+                                  </div>
+                                </div>
+                            </div>
+
+
+                                <div class="case-popup judges-popup shadow-sm">
+                                    <div class="header-popup d-flex align-items-center justify-content-between px-3 py-2">
+                                      <span class="text-dark "><i class="fa fa-users" aria-hidden="true"></i> <span class="h6 mb-0 font-weight-bold">Judges</span></span>
+                                      <a href="#" class="popup-close"><i class="fa fa-times" aria-hidden="true"></i></a>
+                                    </div>
+
+                                    <div class="popup-body p-3">
+                                      <div class="judges-list">
+                                        <span class="badge badge-pill py-1 px-3 font-weight-normal">HON'BLE DR. JUSTICE B.S. CHAUHAN</span>
+                                        <span  class="badge badge-pill py-1 px-3 font-weight-normal">HON'BLE MR. JUSTICE A.K. SIKRI</span>
+                                      </div>
+
+
+                                    </div>
+                                </div>
+                              </div>
+                        </div>
+
+                    </div>
+
+                    <div class="card-footer pb-4 bg-dark d-none">
+
+                    </div>
+                  </div> <!-- Card for a Post/Artile -->
+                </div>
+
+                <div class="col-md-12 mb-4">
+                  <div class="post card h-100 p-0 border-0 bg-transparent">
+                    <div class="card-body p-0">
+
+                      <a href="./judgment-detail.html" class="h4 card-title d-block mb-0 text-primary">
+                        <u>Koshalya Rani Gopal Singh V. Gopal Singh Jhanda Singh</u>
+                        <img src="./images/warning.svg" class="ml-2" alt="" height="22px">
+                      </a>
+                        <p class="card-text text-success mb-1">
+                           High Court Of Punjab And Haryana | 31-10-1961
+                        </p>
+                        <p class="mb-1 detailed-text">
+                          <b>Judgment : </b>(1.) PURSUANT to a complaint made by Mst. Kaushiya Rani, <strong class="bg-light">Gopal Singh</strong> was committed to the court of. of a previous Full Bench in Durag Pal <strong class="bg-light">Singh</strong> v. Pancham <strong class="bg-light">singh</strong>, AIR 1939 All 403 (FB), to the effect. meaning of Section 29. A Division Bench of this Court consisting of Teja...
+                        </p>
+
+                        <div class="search-action">
+                          <a href="#" class="popup-open search-link mr-3">
+                            <small><i class="fa fa-search" aria-hidden="true"></i> Search Within Case</small>
+                          </a>
+                          <a href="#" class="popup-open judges-link mr-3 ">
+                            <small><i class="fas fa-user-tie"></i> Judges</small>
+                          </a>
+                          <div class="popup-container">
+                            <div class="case-popup search-popup shadow-sm">
+                                <div class="header-popup d-flex align-items-center justify-content-between px-3 py-2">
+                                  <span class="text-dark "><i class="fa fa-search" aria-hidden="true"></i> <span class="h6 mb-0 font-weight-bold">Search Within Case</span> </span>
+                                  <a href="#" class="popup-close"><i class="fa fa-times" aria-hidden="true"></i></a>
+                                </div>
+
+                                <div class="popup-result popup-body p-3">
+                                  <div class="case-search d-flex">
+                                      <input type="text" class="form-control form-control-sm" placeholder="Enter Keyword">
+                                      <button class="btn btn-primary btn-sm h-auto w-auto ml-2"><small>Search</small></button>
+                                      <button class="btn btn-primary  btn-sm  h-auto w-auto ml-2"><small>Previous</small></button>
+                                      <button class="btn btn-primary  btn-sm h-auto w-auto ml-2"><small>Next</small></button>
+                                  </div>
+                                </div>
+                            </div>
+
+
+                                <div class="case-popup judges-popup shadow-sm">
+                                    <div class="header-popup d-flex align-items-center justify-content-between px-3 py-2">
+                                      <span class="text-dark "><i class="fa fa-users" aria-hidden="true"></i> <span class="h6 mb-0 font-weight-bold">Judges</span></span>
+                                      <a href="#" class="popup-close"><i class="fa fa-times" aria-hidden="true"></i></a>
+                                    </div>
+
+                                    <div class="popup-body p-3">
+                                      <div class="judges-list">
+                                        <span class="badge badge-pill py-1 px-3 font-weight-normal">HON'BLE DR. JUSTICE B.S. CHAUHAN</span>
+                                        <span  class="badge badge-pill py-1 px-3 font-weight-normal">HON'BLE MR. JUSTICE A.K. SIKRI</span>
+                                      </div>
+
+
+                                    </div>
+                                </div>
+                              </div>
+                        </div>
+
+                    </div>
+
+                    <div class="card-footer pb-4 bg-dark d-none">
+
+                    </div>
+                  </div> <!-- Card for a Post/Artile -->
+                </div>
+
+                <div class="col-md-12 mb-4">
+                  <div class="post card h-100 p-0 border-0 bg-transparent">
+                    <div class="card-body p-0">
+
+                      <a href="./judgment-detail.html" class="h4 card-title d-block mb-0 text-primary">
+                        <u>Koshalya Rani Gopal Singh V. Gopal Singh Jhanda Singh</u>
+                        <img src="./images/cited.svg" class="ml-2" alt="" height="22px">
+                      </a>
+                        <p class="card-text text-success mb-1 ">
+                           High Court Of Punjab And Haryana | 31-10-1961
+                        </p>
+                        <p class="mb-1 detailed-text">
+                          <b>Judgment : </b>(1.) PURSUANT to a complaint made by Mst. Kaushiya Rani, <strong class="bg-light">Gopal Singh</strong> was committed to the court of. of a previous Full Bench in Durag Pal <strong class="bg-light">Singh</strong> v. Pancham <strong class="bg-light">singh</strong>, AIR 1939 All 403 (FB), to the effect. meaning of Section 29. A Division Bench of this Court consisting of Teja...
+                        </p>
+
+                        <div class="search-action">
+                          <a href="#" class="popup-open search-link mr-3">
+                            <small><i class="fa fa-search" aria-hidden="true"></i> Search Within Case</small>
+                          </a>
+                          <a href="#" class="popup-open judges-link mr-3 ">
+                            <small><i class="fas fa-user-tie"></i> Judges</small>
+                          </a>
+                          <div class="popup-container">
+                            <div class="case-popup search-popup shadow-sm">
+                                <div class="header-popup d-flex align-items-center justify-content-between px-3 py-2">
+                                  <span class="text-dark "><i class="fa fa-search" aria-hidden="true"></i> <span class="h6 mb-0 font-weight-bold">Search Within Case</span> </span>
+                                  <a href="#" class="popup-close"><i class="fa fa-times" aria-hidden="true"></i></a>
+                                </div>
+
+                                <div class="popup-result popup-body p-3">
+                                  <div class="case-search d-flex">
+                                      <input type="text" class="form-control form-control-sm" placeholder="Enter Keyword">
+                                      <button class="btn btn-primary btn-sm h-auto w-auto ml-2"><small>Search</small></button>
+                                      <button class="btn btn-primary  btn-sm  h-auto w-auto ml-2"><small>Previous</small></button>
+                                      <button class="btn btn-primary  btn-sm h-auto w-auto ml-2"><small>Next</small></button>
+                                  </div>
+                                </div>
+                            </div>
+
+
+                                <div class="case-popup judges-popup shadow-sm">
+                                    <div class="header-popup d-flex align-items-center justify-content-between px-3 py-2">
+                                      <span class="text-dark "><i class="fa fa-users" aria-hidden="true"></i> <span class="h6 mb-0 font-weight-bold">Judges</span></span>
+                                      <a href="#" class="popup-close"><i class="fa fa-times" aria-hidden="true"></i></a>
+                                    </div>
+
+                                    <div class="popup-body p-3">
+                                      <div class="judges-list">
+                                        <span class="badge badge-pill py-1 px-3 font-weight-normal">HON'BLE DR. JUSTICE B.S. CHAUHAN</span>
+                                        <span  class="badge badge-pill py-1 px-3 font-weight-normal">HON'BLE MR. JUSTICE A.K. SIKRI</span>
+                                      </div>
+
+
+                                    </div>
+                                </div>
+                              </div>
+                        </div>
+
+                    </div>
+
+                    <div class="card-footer pb-4 bg-dark d-none">
+
+                    </div>
+                  </div> <!-- Card for a Post/Artile -->
+                </div>
+
+                <div class="col-md-12">
+                  <div class="post card h-100 p-0 border-0 bg-transparent">
+                    <div class="card-body p-0">
+
+                      <a href="./judgment-detail.html" class="h4 card-title d-block mb-0 text-primary">
+                        <u>Koshalya Rani Gopal Singh V. Gopal Singh Jhanda Singh</u></a>
+                        <p class="card-text text-success mb-1">
+                           High Court Of Punjab And Haryana | 31-10-1961
+                        </p>
+                    <p class="mb-1 detailed-text"><b>Judgment : </b>(1.) PURSUANT to a complaint made by Mst. Kaushiya Rani, <strong>Gopal Singh</strong> was committed to the court of. of a previous Full Bench in Durag Pal <strong>Singh</strong> v. Pancham <strong>singh</strong>, AIR 1939 All 403 (FB), to the effect. meaning of Section 29. A Division Bench of this Court consisting of Teja <strong>Singh</strong> J. and Bhandari J. (as. he then was) in Harbans <strong>Singh</strong> v. Karam Chand, (1949) 51 Pun LR 50 : (AIR 1949 EP 299) had to decide.<br></p>
+
                     <div class="search-action">
                       <a href="#" class="popup-open search-link mr-3">
                         <small><i class="fa fa-search" aria-hidden="true"></i> Search Within Case</small>
@@ -472,613 +834,295 @@
                           </div>
                     </div>
 
+                    </div>
 
-                  </div>
+                    <div class="card-footer pb-4 bg-dark d-none">
 
-                  <div class="card-footer pb-4 bg-dark d-none">
+                    </div>
+                  </div> <!-- Card for a Post/Artile -->
+                </div>
 
-                  </div>
-                </div> <!-- Card for a Post/Artile -->
+              </div> <!-- inner nested row -->
+
+              <nav class="mt-4" aria-label="Page navigation">
+                <ul class="pagination justify-content-center">
+                  <li class="page-item disabled">
+                    <a class="page-link" href="#" aria-label="Previous">
+                      <small><i class="fas fa-chevron-left"></i></small>
+                    </a>
+                  </li>
+                  <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                  <li class="page-item"><a class="page-link" href="#">2</a></li>
+                  <li class="page-item"><a class="page-link" href="#">3</a></li>
+                  <li class="page-item disabled"><a class="page-link" href="#">...</a></li>
+                  <li class="page-item"><a class="page-link" href="#">17</a></li>
+                  <li class="page-item">
+                    <a class="page-link" href="#" aria-label="Next">
+                      <small><i class="fas fa-chevron-right"></i></small>
+                    </a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+
+          </div> <!-- END Posts Wrapper -->
+
+
+
+          <aside class="col-lg-3 order-lg-1 bg-white filter-sidebar">
+            <section class="widget rounded-lg h-100 px-4">
+              <div class="d-flex align-items-center">
+                <h2 class="widget-title mb-0 text-uppercase">
+                  <i class="fas fa-filter mr-1"></i> Search Filter</h2>
+                <a href="#" class="ml-auto"><i class="fa fa-undo f-12" aria-hidden="true"></i> Clear</a>
               </div>
 
-              <div class="col-md-12 mb-4">
-                <div class="post card h-100 p-0 border-0 bg-transparent">
-                  <div class="card-body p-0">
+              <hr>
 
-                    <a href="./judgment-detail.html" class="h4 card-title d-block mb-0 text-primary">
-                      <u>Koshalya Rani Gopal Singh V. Gopal Singh Jhanda Singh Koshalya Rani Gopal...</u>
-                      <img src="./images/positive.svg" class="ml-2" alt="" height="22px">
-                    </a>
-                      <p class="card-text text-success mb-1">
-                         High Court Of Punjab And Haryana | 31-10-1961
-                      </p>
-                      <p class="mb-1 detailed-text">
-                        <b>Judgment : </b>(1.) PURSUANT to a complaint made by Mst. Kaushiya Rani, <strong class="bg-light">Gopal Singh</strong> was committed to the court of. of a previous Full Bench in Durag Pal <strong class="bg-light">Singh</strong> v. Pancham <strong class="bg-light">singh</strong>, AIR 1939 All 403 (FB), to the effect. meaning of Section 29. A Division Bench of this Court consisting of Teja...
-                      </p>
-
-                      <div class="search-action">
-                        <a href="#" class="popup-open search-link mr-3">
-                          <small><i class="fa fa-search" aria-hidden="true"></i> Search Within Case</small>
-                        </a>
-                        <a href="#" class="popup-open judges-link mr-3 ">
-                          <small><i class="fas fa-user-tie"></i> Judges</small>
-                        </a>
-                        <div class="popup-container">
-                          <div class="case-popup search-popup shadow-sm">
-                              <div class="header-popup d-flex align-items-center justify-content-between px-3 py-2">
-                                <span class="text-dark "><i class="fa fa-search" aria-hidden="true"></i> <span class="h6 mb-0 font-weight-bold">Search Within Case</span> </span>
-                                <a href="#" class="popup-close"><i class="fa fa-times" aria-hidden="true"></i></a>
-                              </div>
-
-                              <div class="popup-result popup-body p-3">
-                                <div class="case-search d-flex">
-                                    <input type="text" class="form-control form-control-sm" placeholder="Enter Keyword">
-                                    <button class="btn btn-primary btn-sm h-auto w-auto ml-2"><small>Search</small></button>
-                                    <button class="btn btn-primary  btn-sm  h-auto w-auto ml-2"><small>Previous</small></button>
-                                    <button class="btn btn-primary  btn-sm h-auto w-auto ml-2"><small>Next</small></button>
-                                </div>
-                              </div>
-                          </div>
-
-
-                              <div class="case-popup judges-popup shadow-sm">
-                                  <div class="header-popup d-flex align-items-center justify-content-between px-3 py-2">
-                                    <span class="text-dark "><i class="fa fa-users" aria-hidden="true"></i> <span class="h6 mb-0 font-weight-bold">Judges</span></span>
-                                    <a href="#" class="popup-close"><i class="fa fa-times" aria-hidden="true"></i></a>
-                                  </div>
-
-                                  <div class="popup-body p-3">
-                                    <div class="judges-list">
-                                      <span class="badge badge-pill py-1 px-3 font-weight-normal">HON'BLE DR. JUSTICE B.S. CHAUHAN</span>
-                                      <span  class="badge badge-pill py-1 px-3 font-weight-normal">HON'BLE MR. JUSTICE A.K. SIKRI</span>
-                                    </div>
-
-
-                                  </div>
-                              </div>
-                            </div>
-                      </div>
-
-                  </div>
-
-                  <div class="card-footer pb-4 bg-dark d-none">
-
-                  </div>
-                </div> <!-- Card for a Post/Artile -->
-              </div>
-
-              <div class="col-md-12 mb-4">
-                <div class="post card h-100 p-0 border-0 bg-transparent">
-                  <div class="card-body p-0">
-
-                    <a href="./judgment-detail.html" class="h4 card-title d-block mb-0 text-primary">
-                      <u>Koshalya Rani Gopal Singh V. Gopal Singh Jhanda Singh</u>
-                      <img src="./images/referred.svg" class="ml-2" alt="" height="22px">
-                    </a>
-                      <p class="card-text text-success mb-1">
-                         High Court Of Punjab And Haryana | 31-10-1961
-                      </p>
-                      <p class="mb-1 detailed-text">
-                        <b>Judgment : </b>(1.) PURSUANT to a complaint made by Mst. Kaushiya Rani, <strong class="bg-light">Gopal Singh</strong> was committed to the court of. of a previous Full Bench in Durag Pal <strong class="bg-light">Singh</strong> v. Pancham <strong class="bg-light">singh</strong>, AIR 1939 All 403 (FB), to the effect. meaning of Section 29. A Division Bench of this Court consisting of Teja...
-                      </p>
-
-                      <div class="search-action">
-                        <a href="#" class="popup-open search-link mr-3">
-                          <small><i class="fa fa-search" aria-hidden="true"></i> Search Within Case</small>
-                        </a>
-                        <a href="#" class="popup-open judges-link mr-3 ">
-                          <small><i class="fas fa-user-tie"></i> Judges</small>
-                        </a>
-                        <div class="popup-container">
-                          <div class="case-popup search-popup shadow-sm">
-                              <div class="header-popup d-flex align-items-center justify-content-between px-3 py-2">
-                                <span class="text-dark "><i class="fa fa-search" aria-hidden="true"></i> <span class="h6 mb-0 font-weight-bold">Search Within Case</span> </span>
-                                <a href="#" class="popup-close"><i class="fa fa-times" aria-hidden="true"></i></a>
-                              </div>
-
-                              <div class="popup-result popup-body p-3">
-                                <div class="case-search d-flex">
-                                    <input type="text" class="form-control form-control-sm" placeholder="Enter Keyword">
-                                    <button class="btn btn-primary btn-sm h-auto w-auto ml-2"><small>Search</small></button>
-                                    <button class="btn btn-primary  btn-sm  h-auto w-auto ml-2"><small>Previous</small></button>
-                                    <button class="btn btn-primary  btn-sm h-auto w-auto ml-2"><small>Next</small></button>
-                                </div>
-                              </div>
-                          </div>
-
-
-                              <div class="case-popup judges-popup shadow-sm">
-                                  <div class="header-popup d-flex align-items-center justify-content-between px-3 py-2">
-                                    <span class="text-dark "><i class="fa fa-users" aria-hidden="true"></i> <span class="h6 mb-0 font-weight-bold">Judges</span></span>
-                                    <a href="#" class="popup-close"><i class="fa fa-times" aria-hidden="true"></i></a>
-                                  </div>
-
-                                  <div class="popup-body p-3">
-                                    <div class="judges-list">
-                                      <span class="badge badge-pill py-1 px-3 font-weight-normal">HON'BLE DR. JUSTICE B.S. CHAUHAN</span>
-                                      <span  class="badge badge-pill py-1 px-3 font-weight-normal">HON'BLE MR. JUSTICE A.K. SIKRI</span>
-                                    </div>
-
-
-                                  </div>
-                              </div>
-                            </div>
-                      </div>
-
-                  </div>
-
-                  <div class="card-footer pb-4 bg-dark d-none">
-
-                  </div>
-                </div> <!-- Card for a Post/Artile -->
-              </div>
-
-              <div class="col-md-12 mb-4">
-                <div class="post card h-100 p-0 border-0 bg-transparent">
-                  <div class="card-body p-0">
-
-                    <a href="./judgment-detail.html" class="h4 card-title d-block mb-0 text-primary">
-                      <u>Koshalya Rani Gopal Singh V. Gopal Singh Jhanda Singh</u>
-                      <img src="./images/warning.svg" class="ml-2" alt="" height="22px">
-                    </a>
-                      <p class="card-text text-success mb-1">
-                         High Court Of Punjab And Haryana | 31-10-1961
-                      </p>
-                      <p class="mb-1 detailed-text">
-                        <b>Judgment : </b>(1.) PURSUANT to a complaint made by Mst. Kaushiya Rani, <strong class="bg-light">Gopal Singh</strong> was committed to the court of. of a previous Full Bench in Durag Pal <strong class="bg-light">Singh</strong> v. Pancham <strong class="bg-light">singh</strong>, AIR 1939 All 403 (FB), to the effect. meaning of Section 29. A Division Bench of this Court consisting of Teja...
-                      </p>
-
-                      <div class="search-action">
-                        <a href="#" class="popup-open search-link mr-3">
-                          <small><i class="fa fa-search" aria-hidden="true"></i> Search Within Case</small>
-                        </a>
-                        <a href="#" class="popup-open judges-link mr-3 ">
-                          <small><i class="fas fa-user-tie"></i> Judges</small>
-                        </a>
-                        <div class="popup-container">
-                          <div class="case-popup search-popup shadow-sm">
-                              <div class="header-popup d-flex align-items-center justify-content-between px-3 py-2">
-                                <span class="text-dark "><i class="fa fa-search" aria-hidden="true"></i> <span class="h6 mb-0 font-weight-bold">Search Within Case</span> </span>
-                                <a href="#" class="popup-close"><i class="fa fa-times" aria-hidden="true"></i></a>
-                              </div>
-
-                              <div class="popup-result popup-body p-3">
-                                <div class="case-search d-flex">
-                                    <input type="text" class="form-control form-control-sm" placeholder="Enter Keyword">
-                                    <button class="btn btn-primary btn-sm h-auto w-auto ml-2"><small>Search</small></button>
-                                    <button class="btn btn-primary  btn-sm  h-auto w-auto ml-2"><small>Previous</small></button>
-                                    <button class="btn btn-primary  btn-sm h-auto w-auto ml-2"><small>Next</small></button>
-                                </div>
-                              </div>
-                          </div>
-
-
-                              <div class="case-popup judges-popup shadow-sm">
-                                  <div class="header-popup d-flex align-items-center justify-content-between px-3 py-2">
-                                    <span class="text-dark "><i class="fa fa-users" aria-hidden="true"></i> <span class="h6 mb-0 font-weight-bold">Judges</span></span>
-                                    <a href="#" class="popup-close"><i class="fa fa-times" aria-hidden="true"></i></a>
-                                  </div>
-
-                                  <div class="popup-body p-3">
-                                    <div class="judges-list">
-                                      <span class="badge badge-pill py-1 px-3 font-weight-normal">HON'BLE DR. JUSTICE B.S. CHAUHAN</span>
-                                      <span  class="badge badge-pill py-1 px-3 font-weight-normal">HON'BLE MR. JUSTICE A.K. SIKRI</span>
-                                    </div>
-
-
-                                  </div>
-                              </div>
-                            </div>
-                      </div>
-
-                  </div>
-
-                  <div class="card-footer pb-4 bg-dark d-none">
-
-                  </div>
-                </div> <!-- Card for a Post/Artile -->
-              </div>
-
-              <div class="col-md-12 mb-4">
-                <div class="post card h-100 p-0 border-0 bg-transparent">
-                  <div class="card-body p-0">
-
-                    <a href="./judgment-detail.html" class="h4 card-title d-block mb-0 text-primary">
-                      <u>Koshalya Rani Gopal Singh V. Gopal Singh Jhanda Singh</u>
-                      <img src="./images/cited.svg" class="ml-2" alt="" height="22px">
-                    </a>
-                      <p class="card-text text-success mb-1 ">
-                         High Court Of Punjab And Haryana | 31-10-1961
-                      </p>
-                      <p class="mb-1 detailed-text">
-                        <b>Judgment : </b>(1.) PURSUANT to a complaint made by Mst. Kaushiya Rani, <strong class="bg-light">Gopal Singh</strong> was committed to the court of. of a previous Full Bench in Durag Pal <strong class="bg-light">Singh</strong> v. Pancham <strong class="bg-light">singh</strong>, AIR 1939 All 403 (FB), to the effect. meaning of Section 29. A Division Bench of this Court consisting of Teja...
-                      </p>
-
-                      <div class="search-action">
-                        <a href="#" class="popup-open search-link mr-3">
-                          <small><i class="fa fa-search" aria-hidden="true"></i> Search Within Case</small>
-                        </a>
-                        <a href="#" class="popup-open judges-link mr-3 ">
-                          <small><i class="fas fa-user-tie"></i> Judges</small>
-                        </a>
-                        <div class="popup-container">
-                          <div class="case-popup search-popup shadow-sm">
-                              <div class="header-popup d-flex align-items-center justify-content-between px-3 py-2">
-                                <span class="text-dark "><i class="fa fa-search" aria-hidden="true"></i> <span class="h6 mb-0 font-weight-bold">Search Within Case</span> </span>
-                                <a href="#" class="popup-close"><i class="fa fa-times" aria-hidden="true"></i></a>
-                              </div>
-
-                              <div class="popup-result popup-body p-3">
-                                <div class="case-search d-flex">
-                                    <input type="text" class="form-control form-control-sm" placeholder="Enter Keyword">
-                                    <button class="btn btn-primary btn-sm h-auto w-auto ml-2"><small>Search</small></button>
-                                    <button class="btn btn-primary  btn-sm  h-auto w-auto ml-2"><small>Previous</small></button>
-                                    <button class="btn btn-primary  btn-sm h-auto w-auto ml-2"><small>Next</small></button>
-                                </div>
-                              </div>
-                          </div>
-
-
-                              <div class="case-popup judges-popup shadow-sm">
-                                  <div class="header-popup d-flex align-items-center justify-content-between px-3 py-2">
-                                    <span class="text-dark "><i class="fa fa-users" aria-hidden="true"></i> <span class="h6 mb-0 font-weight-bold">Judges</span></span>
-                                    <a href="#" class="popup-close"><i class="fa fa-times" aria-hidden="true"></i></a>
-                                  </div>
-
-                                  <div class="popup-body p-3">
-                                    <div class="judges-list">
-                                      <span class="badge badge-pill py-1 px-3 font-weight-normal">HON'BLE DR. JUSTICE B.S. CHAUHAN</span>
-                                      <span  class="badge badge-pill py-1 px-3 font-weight-normal">HON'BLE MR. JUSTICE A.K. SIKRI</span>
-                                    </div>
-
-
-                                  </div>
-                              </div>
-                            </div>
-                      </div>
-
-                  </div>
-
-                  <div class="card-footer pb-4 bg-dark d-none">
-
-                  </div>
-                </div> <!-- Card for a Post/Artile -->
-              </div>
-
-              <div class="col-md-12">
-                <div class="post card h-100 p-0 border-0 bg-transparent">
-                  <div class="card-body p-0">
-
-                    <a href="./judgment-detail.html" class="h4 card-title d-block mb-0 text-primary">
-                      <u>Koshalya Rani Gopal Singh V. Gopal Singh Jhanda Singh</u></a>
-                      <p class="card-text text-success mb-1">
-                         High Court Of Punjab And Haryana | 31-10-1961
-                      </p>
-                  <p class="mb-1 detailed-text"><b>Judgment : </b>(1.) PURSUANT to a complaint made by Mst. Kaushiya Rani, <strong>Gopal Singh</strong> was committed to the court of. of a previous Full Bench in Durag Pal <strong>Singh</strong> v. Pancham <strong>singh</strong>, AIR 1939 All 403 (FB), to the effect. meaning of Section 29. A Division Bench of this Court consisting of Teja <strong>Singh</strong> J. and Bhandari J. (as. he then was) in Harbans <strong>Singh</strong> v. Karam Chand, (1949) 51 Pun LR 50 : (AIR 1949 EP 299) had to decide.<br></p>
-
-                  <div class="search-action">
-                    <a href="#" class="popup-open search-link mr-3">
-                      <small><i class="fa fa-search" aria-hidden="true"></i> Search Within Case</small>
-                    </a>
-                    <a href="#" class="popup-open judges-link mr-3 ">
-                      <small><i class="fas fa-user-tie"></i> Judges</small>
-                    </a>
-                    <div class="popup-container">
-                      <div class="case-popup search-popup shadow-sm">
-                          <div class="header-popup d-flex align-items-center justify-content-between px-3 py-2">
-                            <span class="text-dark "><i class="fa fa-search" aria-hidden="true"></i> <span class="h6 mb-0 font-weight-bold">Search Within Case</span> </span>
-                            <a href="#" class="popup-close"><i class="fa fa-times" aria-hidden="true"></i></a>
-                          </div>
-
-                          <div class="popup-result popup-body p-3">
-                            <div class="case-search d-flex">
-                                <input type="text" class="form-control form-control-sm" placeholder="Enter Keyword">
-                                <button class="btn btn-primary btn-sm h-auto w-auto ml-2"><small>Search</small></button>
-                                <button class="btn btn-primary  btn-sm  h-auto w-auto ml-2"><small>Previous</small></button>
-                                <button class="btn btn-primary  btn-sm h-auto w-auto ml-2"><small>Next</small></button>
-                            </div>
-                          </div>
-                      </div>
-
-
-                          <div class="case-popup judges-popup shadow-sm">
-                              <div class="header-popup d-flex align-items-center justify-content-between px-3 py-2">
-                                <span class="text-dark "><i class="fa fa-users" aria-hidden="true"></i> <span class="h6 mb-0 font-weight-bold">Judges</span></span>
-                                <a href="#" class="popup-close"><i class="fa fa-times" aria-hidden="true"></i></a>
-                              </div>
-
-                              <div class="popup-body p-3">
-                                <div class="judges-list">
-                                  <span class="badge badge-pill py-1 px-3 font-weight-normal">HON'BLE DR. JUSTICE B.S. CHAUHAN</span>
-                                  <span  class="badge badge-pill py-1 px-3 font-weight-normal">HON'BLE MR. JUSTICE A.K. SIKRI</span>
-                                </div>
-
-
-                              </div>
-                          </div>
-                        </div>
-                  </div>
-
-                  </div>
-
-                  <div class="card-footer pb-4 bg-dark d-none">
-
-                  </div>
-                </div> <!-- Card for a Post/Artile -->
-              </div>
-
-            </div> <!-- inner nested row -->
-
-            <nav class="mt-4" aria-label="Page navigation">
-              <ul class="pagination justify-content-center">
-                <li class="page-item disabled">
-                  <a class="page-link" href="#" aria-label="Previous">
-                    <small><i class="fas fa-chevron-left"></i></small>
+                <div class="filter-within-search d-flex align-items-center bg-light2 px-3 mb-3 py-1">
+                  <a href="#0" class="btn btn-search-toggle btn-icon color--text">
+                    <i class="fas fa-search"></i>
                   </a>
+                  <input class="form-control border-0 p-0 bg-transparent h-auto py-2 px-2" type="text" placeholder="Filter Within Result" >
+                  <button type="button" class="btn btn-sm btn-link h-auto p-0">
+                    <i class="lni-cross-circle"></i>
+                  </button>
+                </div>
+                <div class="form-group mb-0">
+              <label class="mb-2 text-muted d-flex align-items-center" data-toggle="collapse" data-target="#discipline">
+                <div class="arrow-triangle mr-2"></div> Discipline
+              </label>
+              <ul class="filter-list mb-0 collapse show list-unstyled" id="discipline">
+                <li class="mb-1 pl-2">
+                  <div class="custom-checkbox">
+                    <label class="f-14 font-weight-normal d-flex">
+                      <input class="d-none" type="checkbox" name="maincourt" value="" checked="">
+                      <span class="">Supreme Court </span>
+                      <small class="ml-auto text-primary font-weight-bold">1,254</small>
+                    </label>
+                  </div>
                 </li>
-                <li class="page-item active"><a class="page-link" href="#">1</a></li>
-                <li class="page-item"><a class="page-link" href="#">2</a></li>
-                <li class="page-item"><a class="page-link" href="#">3</a></li>
-                <li class="page-item disabled"><a class="page-link" href="#">...</a></li>
-                <li class="page-item"><a class="page-link" href="#">17</a></li>
-                <li class="page-item">
-                  <a class="page-link" href="#" aria-label="Next">
-                    <small><i class="fas fa-chevron-right"></i></small>
-                  </a>
+                <li class="mb-1 pl-2">
+                  <div class="custom-checkbox">
+                    <label class="f-14 font-weight-normal d-flex">
+                      <input class="d-none" type="checkbox" name="maincourt" value="">
+                      <span class="">High Court </span>
+                      <small class="ml-auto text-primary font-weight-bold">14,716</small>
+                    </label>
+                  </div>
+                </li>
+                <li class="mb-1 pl-2">
+                  <div class="custom-checkbox">
+                    <label class="f-14 font-weight-normal d-flex">
+                      <input class="d-none" type="checkbox" name="maincourt" value="">
+                      <span class="">Tribunal </span>
+                      <small class="ml-auto text-primary font-weight-bold">1,341</small>
+                    </label>
+                  </div>
                 </li>
               </ul>
-            </nav>
-          </div>
-
-        </div> <!-- END Posts Wrapper -->
-
-
-
-        <aside class="col-lg-3 order-lg-1 bg-white filter-sidebar">
-          <section class="widget rounded-lg h-100 px-4">
-            <div class="d-flex align-items-center">
-              <h2 class="widget-title mb-0 text-uppercase">
-                <i class="fas fa-filter mr-1"></i> Search Filter</h2>
-              <a href="#" class="ml-auto"><i class="fa fa-undo f-12" aria-hidden="true"></i> Clear</a>
             </div>
 
-            <hr>
-
-              <div class="filter-within-search d-flex align-items-center bg-light2 px-3 mb-3 py-1">
-                <a href="#0" class="btn btn-search-toggle btn-icon color--text">
-                  <i class="fas fa-search"></i>
-                </a>
-                <input class="form-control border-0 p-0 bg-transparent h-auto py-2 px-2" type="text" placeholder="Filter Within Result" >
-                <button type="button" class="btn btn-sm btn-link h-auto p-0">
-                  <i class="lni-cross-circle"></i>
-                </button>
+            <div class="form-group mb-0">
+          <label class="mb-2 text-muted d-flex align-items-center collapsed" data-toggle="collapse" data-target="#by-bench">
+            <div class="arrow-triangle mr-2"></div> By Bench
+          </label>
+          <ul class="filter-list  mb-0 collapse list-unstyled" id="by-bench">
+            <li class="mb-1 pl-2">
+              <div class="custom-checkbox">
+                <label class="f-14 font-weight-normal d-flex">
+                  <input class="d-none" type="checkbox" name="benchfilter" value="" checked="">
+                  <span class="">1</span>
+                  <small class="ml-auto text-primary font-weight-bold">1,254</small>
+                </label>
               </div>
-              <div class="form-group mb-0">
-            <label class="mb-2 text-muted d-flex align-items-center" data-toggle="collapse" data-target="#discipline">
-              <div class="arrow-triangle mr-2"></div> Discipline
-            </label>
-            <ul class="filter-list mb-0 collapse show list-unstyled" id="discipline">
-              <li class="mb-1 pl-2">
-                <div class="custom-checkbox">
-                  <label class="f-14 font-weight-normal d-flex">
-                    <input class="d-none" type="checkbox" name="maincourt" value="" checked="">
-                    <span class="">Supreme Court </span>
-                    <small class="ml-auto text-primary font-weight-bold">1,254</small>
-                  </label>
-                </div>
-              </li>
-              <li class="mb-1 pl-2">
-                <div class="custom-checkbox">
-                  <label class="f-14 font-weight-normal d-flex">
-                    <input class="d-none" type="checkbox" name="maincourt" value="">
-                    <span class="">High Court </span>
-                    <small class="ml-auto text-primary font-weight-bold">14,716</small>
-                  </label>
-                </div>
-              </li>
-              <li class="mb-1 pl-2">
-                <div class="custom-checkbox">
-                  <label class="f-14 font-weight-normal d-flex">
-                    <input class="d-none" type="checkbox" name="maincourt" value="">
-                    <span class="">Tribunal </span>
-                    <small class="ml-auto text-primary font-weight-bold">1,341</small>
-                  </label>
-                </div>
-              </li>
-            </ul>
-          </div>
-
-          <div class="form-group mb-0">
-        <label class="mb-2 text-muted d-flex align-items-center collapsed" data-toggle="collapse" data-target="#by-bench">
-          <div class="arrow-triangle mr-2"></div> By Bench
-        </label>
-        <ul class="filter-list  mb-0 collapse list-unstyled" id="by-bench">
-          <li class="mb-1 pl-2">
-            <div class="custom-checkbox">
-              <label class="f-14 font-weight-normal d-flex">
-                <input class="d-none" type="checkbox" name="benchfilter" value="" checked="">
-                <span class="">1</span>
-                <small class="ml-auto text-primary font-weight-bold">1,254</small>
-              </label>
-            </div>
-          </li>
-          <li class="mb-1 pl-2">
-            <div class="custom-checkbox">
-              <label class="f-14 font-weight-normal d-flex">
-                <input class="d-none" type="checkbox" name="benchfilter" value="">
-                <span class="">2</span>
-                <small class="ml-auto text-primary font-weight-bold">14,716</small>
-              </label>
-            </div>
-          </li>
-          <li class="mb-1 pl-2">
-            <div class="custom-checkbox">
-              <label class="f-14 font-weight-normal d-flex">
-                <input class="d-none" type="checkbox" name="benchfilter" value="">
-                <span class="">3</span>
-                <small class="ml-auto text-primary font-weight-bold">1,341</small>
-              </label>
-            </div>
-          </li>
-          <li class="mb-1 pl-2">
-            <div class="custom-checkbox">
-              <label class="f-14 font-weight-normal d-flex">
-                <input class="d-none" type="checkbox" name="benchfilter" value="">
-                <span class="">4</span>
-                <small class="ml-auto text-primary font-weight-bold">1,254</small>
-              </label>
-            </div>
-          </li>
-          <li class="mb-1 pl-2">
-            <div class="custom-checkbox">
-              <label class="f-14 font-weight-normal d-flex">
-                <input class="d-none" type="checkbox" name="benchfilter" value="">
-                <span class="">5</span>
-                <small class="ml-auto text-primary font-weight-bold">14,716</small>
-              </label>
-            </div>
-          </li>
-          <li class="text-center pt-2">
-            <a href="#" class="btn btn-sm btn-light btn-block more-btn py-1">More by bench <i class="fas fa-chevron-down"></i></a>
-          </li>
-        </ul>
-      </div>
-
-      <div class="form-group mb-0">
-        <label class="mb-2 text-muted d-flex align-items-center collapsed" data-toggle="collapse" data-target="#disposition">
-          <div class="arrow-triangle mr-2"></div> Disposition
-        </label>
-        <ul class="filter-list mb-0 collapse list-unstyled" id="disposition">
-          <li class="mb-1 pl-2">
-            <div class="custom-radio">
-              <label class="f-14 font-weight-normal d-flex">
-                <input class="d-none" type="radio" name="disposition" value="" checked="">
-                <span class="">Allowed</span>
-                <small class="ml-auto text-primary font-weight-bold">1,254</small>
-              </label>
-            </div>
-          </li>
-          <li class="mb-1 pl-2">
-            <div class="custom-radio">
-              <label class="f-14 font-weight-normal d-flex">
-                <input class="d-none" type="radio" name="disposition" value="">
-                <span class="">Disallowed</span>
-                <small class="ml-auto text-primary font-weight-bold">14,716</small>
-              </label>
-            </div>
-          </li>
-          <li class="mb-1 pl-2">
-            <div class="custom-radio">
-              <label class="f-14 font-weight-normal d-flex">
-                <input class="d-none" type="radio" name="disposition" value="">
-                <span class="">Other</span>
-                <small class="ml-auto text-primary font-weight-bold">1,341</small>
-              </label>
-            </div>
-          </li>
-          <li class="mb-1 pl-2">
-            <div class="custom-radio">
-              <label class="f-14 font-weight-normal d-flex">
-                <input class="d-none" type="radio" name="disposition" value="">
-                <span class="">Remit</span>
-                <small class="ml-auto text-primary font-weight-bold">1,341</small>
-              </label>
-            </div>
-          </li>
-        </ul>
-      </div>
-
-          <div class="form-group mb-0">
-        <label class="mb-2 text-muted d-flex align-items-center collapsed" data-toggle="collapse" data-target="#by-year">
-          <div class="arrow-triangle mr-2"></div> Date Range
-        </label>
-        <ul class="filter-list  mb-0 collapse list-unstyled" id="by-year">
-          <li class="mb-1 pl-2">
-            <div class="form-group mb-0 date-range">
-              <div class="d-flex align-items-center">
-                <input type="text" name="daterange" class="form-control form-control-sm mr-1" id="" placeholder="year" value="01/01/2018 - 01/15/2018">
-                <button type="button" class="btn btn-primary btn-sm  py-1 px-3 ml-1 align-self-stretch">
-                  <i class="fas fa-search"></i>
-                </button>
+            </li>
+            <li class="mb-1 pl-2">
+              <div class="custom-checkbox">
+                <label class="f-14 font-weight-normal d-flex">
+                  <input class="d-none" type="checkbox" name="benchfilter" value="">
+                  <span class="">2</span>
+                  <small class="ml-auto text-primary font-weight-bold">14,716</small>
+                </label>
               </div>
-
-            </div>
-          </li>
-        </ul>
-      </div>
-
-      <hr>
-
-          <div class="filter-graph mt-4">
-            <img src="./images/graph.png" alt="" class="img-fluid">
-          </div>
-
-          </section> <!-- Widget Section -->
-
-
-        </aside> <!-- END Sidebar -->
-
-      </div> <!-- Nested row -->
-
-    </section> <!-- END Section Posts -->
-
-  </main>
-
-
-  <footer class="footer background--dark pt-0">
-    <div class="container">
-      <div class="row">
-
-        <div class="footer-content col-12 d-md-flex justify-content-between align-items-center my-5">
-          <div class="footer__brand">
-            <a class="footer-logo mb-0" href="index.html">
-              <img src="./images/lq-logo-dark.png" alt="legitquest" >
-            </a>
-          </div>
-
-          <div class="footer__menu">
-            <ul class="footer-nav nav">
-              <li class="nav-item">
-                <a class="nav-link" href="pricing.html">Pricing</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="about.html">About</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="blog-full-width.html">Blog</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="contact.html">Contact</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="login.html">Login</a>
-              </li>
-              <li class="nav-item nav-item--btn">
-                <a href="signup.html" class="btn btn-primary btn-sm btn--has-shadow mt-3 mt-md-0">Sign up</a>
-              </li>
-            </ul>
-          </div>
-        </div> <!-- Footer Content -->
-
-        <div class="col-12">
-          <div class="footer-copyright-column d-md-flex justify-content-between align-items-center">
-            <div class="copyright">
-              <p>©2019 - Legitquest. All rights reserved.</p>
-            </div>
-
-            <ul class="social-icons ml-auto mb-0">
-              <li><a href="#0"><i class="fab fa-facebook-f"></i></a></li>
-              <li><a href="#0"><i class="fab fa-twitter"></i></a></li>
-              <li><a href="#0"><i class="fab fa-instagram"></i></a></li>
-              <li><a href="#0"><i class="fab fa-youtube"></i></a></li>
-              <li><a href="#0"><i class="fab fa-pinterest-p"></i></a></li>
-            </ul>
-          </div>
+            </li>
+            <li class="mb-1 pl-2">
+              <div class="custom-checkbox">
+                <label class="f-14 font-weight-normal d-flex">
+                  <input class="d-none" type="checkbox" name="benchfilter" value="">
+                  <span class="">3</span>
+                  <small class="ml-auto text-primary font-weight-bold">1,341</small>
+                </label>
+              </div>
+            </li>
+            <li class="mb-1 pl-2">
+              <div class="custom-checkbox">
+                <label class="f-14 font-weight-normal d-flex">
+                  <input class="d-none" type="checkbox" name="benchfilter" value="">
+                  <span class="">4</span>
+                  <small class="ml-auto text-primary font-weight-bold">1,254</small>
+                </label>
+              </div>
+            </li>
+            <li class="mb-1 pl-2">
+              <div class="custom-checkbox">
+                <label class="f-14 font-weight-normal d-flex">
+                  <input class="d-none" type="checkbox" name="benchfilter" value="">
+                  <span class="">5</span>
+                  <small class="ml-auto text-primary font-weight-bold">14,716</small>
+                </label>
+              </div>
+            </li>
+            <li class="text-center pt-2">
+              <a href="#" class="btn btn-sm btn-light btn-block more-btn py-1">More by bench <i class="fas fa-chevron-down"></i></a>
+            </li>
+          </ul>
         </div>
 
+        <div class="form-group mb-0">
+          <label class="mb-2 text-muted d-flex align-items-center collapsed" data-toggle="collapse" data-target="#disposition">
+            <div class="arrow-triangle mr-2"></div> Disposition
+          </label>
+          <ul class="filter-list mb-0 collapse list-unstyled" id="disposition">
+            <li class="mb-1 pl-2">
+              <div class="custom-radio">
+                <label class="f-14 font-weight-normal d-flex">
+                  <input class="d-none" type="radio" name="disposition" value="" checked="">
+                  <span class="">Allowed</span>
+                  <small class="ml-auto text-primary font-weight-bold">1,254</small>
+                </label>
+              </div>
+            </li>
+            <li class="mb-1 pl-2">
+              <div class="custom-radio">
+                <label class="f-14 font-weight-normal d-flex">
+                  <input class="d-none" type="radio" name="disposition" value="">
+                  <span class="">Disallowed</span>
+                  <small class="ml-auto text-primary font-weight-bold">14,716</small>
+                </label>
+              </div>
+            </li>
+            <li class="mb-1 pl-2">
+              <div class="custom-radio">
+                <label class="f-14 font-weight-normal d-flex">
+                  <input class="d-none" type="radio" name="disposition" value="">
+                  <span class="">Other</span>
+                  <small class="ml-auto text-primary font-weight-bold">1,341</small>
+                </label>
+              </div>
+            </li>
+            <li class="mb-1 pl-2">
+              <div class="custom-radio">
+                <label class="f-14 font-weight-normal d-flex">
+                  <input class="d-none" type="radio" name="disposition" value="">
+                  <span class="">Remit</span>
+                  <small class="ml-auto text-primary font-weight-bold">1,341</small>
+                </label>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+            <div class="form-group mb-0">
+          <label class="mb-2 text-muted d-flex align-items-center collapsed" data-toggle="collapse" data-target="#by-year">
+            <div class="arrow-triangle mr-2"></div> Date Range
+          </label>
+          <ul class="filter-list  mb-0 collapse list-unstyled" id="by-year">
+            <li class="mb-1 pl-2">
+              <div class="form-group mb-0 date-range">
+                <div class="d-flex align-items-center">
+                  <input type="text" name="daterange" class="form-control form-control-sm mr-1" id="" placeholder="year" value="01/01/2018 - 01/15/2018">
+                  <button type="button" class="btn btn-primary btn-sm  py-1 px-3 ml-1 align-self-stretch">
+                    <i class="fas fa-search"></i>
+                  </button>
+                </div>
+
+              </div>
+            </li>
+          </ul>
+        </div>
+
+        <hr>
+
+            <div class="filter-graph mt-4">
+              <img src="./images/graph.png" alt="" class="img-fluid">
+            </div>
+
+            </section> <!-- Widget Section -->
+
+
+          </aside> <!-- END Sidebar -->
+
+        </div> <!-- Nested row -->
+
+      </section> <!-- END Section Posts -->
+
+    </main>
+  <div class="">
+    <a href="#" class="alert-modal-toggle position-fixed d-block  bg-white  shadow rounded-left d-flex align-items-center" data-toggle="modal" data-target="#alert-modal">
+      <img src="./images/bubble.svg" alt="" width="25px" >
+      <span class="ml-2">Save Search / Set Alert</span>
+    </a>
+  </div>
+
+
+
+    <footer class="footer background--dark pt-0">
+      <div class="container">
+        <div class="row">
+
+          <div class="footer-content col-12 d-md-flex justify-content-between align-items-center my-5">
+            <div class="footer__brand">
+              <a class="footer-logo mb-0" href="index.html">
+                <img src="./images/lq-logo-dark.png" alt="legitquest" >
+              </a>
+            </div>
+
+            <div class="footer__menu">
+              <ul class="footer-nav nav">
+                <li class="nav-item">
+                  <a class="nav-link" href="pricing.html">Pricing</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="about.html">About</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="blog-full-width.html">Blog</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="contact.html">Contact</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="login.html">Login</a>
+                </li>
+                <li class="nav-item nav-item--btn">
+                  <a href="signup.html" class="btn btn-primary btn-sm btn--has-shadow mt-3 mt-md-0">Sign up</a>
+                </li>
+              </ul>
+            </div>
+          </div> <!-- Footer Content -->
+
+          <div class="col-12">
+            <div class="footer-copyright-column d-md-flex justify-content-between align-items-center">
+              <div class="copyright">
+                <p>©2019 - Legitquest. All rights reserved.</p>
+              </div>
+
+              <ul class="social-icons ml-auto mb-0">
+                <li><a href="#0"><i class="fab fa-facebook-f"></i></a></li>
+                <li><a href="#0"><i class="fab fa-twitter"></i></a></li>
+                <li><a href="#0"><i class="fab fa-instagram"></i></a></li>
+                <li><a href="#0"><i class="fab fa-youtube"></i></a></li>
+                <li><a href="#0"><i class="fab fa-pinterest-p"></i></a></li>
+              </ul>
+            </div>
+          </div>
+
+        </div>
       </div>
-    </div>
-  </footer> <!-- END Footer -->
+    </footer> <!-- END Footer -->
+
+  </div>
 
   <div class="alert-notifications-wrapper">
 
@@ -1097,6 +1141,36 @@
     </div> <!-- Subscribe Error -->
 
   </div> <!-- END Alert Notifications Wrapper -->
+
+
+  <!-- Modal -->
+<div class="modal fade alert-modal" id="alert-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Set Alert</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="text-center my-4">
+          <img src="./images/undraw_push_notifications_im0o.svg" alt="" width="300">
+        </div>
+        <div class="text-center my-3">
+          <h3 class="font-weight-bold">Subscribe Us</h3>
+
+          <p class="mb-4"> You need to subscribe for the  <strong>premium features</strong> <br> to use this feature.</p>
+
+          <button type="button" name="button" class="btn btn-primary btn-sm">Subscribe Now</button>
+
+        </div>
+
+
+      </div>
+
+    </div>
+  </div>
 
   <!-- Global Required JS -->
   <script src="js\vendor\jquery-3.3.1.min.js"></script>
@@ -1188,6 +1262,76 @@ $(function() {
  $( ".owl-next").html('<i class="fa fa-chevron-right"></i>');
     });
 </script>
+<script type="text/javascript">
+$(document).ready(function() {
+$("input[name=search-radio]").on( "change", function() {
+     var test = $(this).val();
+     var sText = $(this).next().text();
+     $(".search-field").removeClass('show');
+     $("#"+test).addClass('show');
+     $(".select-btn").text(sText)
+} );
+
+$(".select-radio label span").on("click", function() {
+  $("#select-dropdown").removeClass("show");
+});
+
+$(document).on('click',function(e) {
+    e.stopPropagation();
+    var container = $("#select-dropdown");
+    //check if the clicked area is dropDown or not
+    if (container.has(e.target).length === 0) {
+        $('#select-dropdown').removeClass('show');
+    }
+});
+});
+</script>
+<script type="text/javascript">
+    $('.search-controls-containers  .search-input').focus(function (e) {
+      $('.search-dropdown').addClass('show');
+      $('.lq-search-fileds').addClass('index');
+      $('.search-dropdown-btn').addClass('active');
+      e.stopPropagation();
+    });
+
+
+
+    $('.select-btn').click(function() {
+      $('.search-dropdown').removeClass('show');
+      $('.lq-search-fileds').removeClass('index');
+      $('.search-dropdown-btn').removeClass('active');
+    });
+    $('.search-dropdown-btn').click(function(e) {
+      $('.search-dropdown').toggleClass('show');
+      $('.lq-search-fileds').toggleClass('index');
+      $('.search-dropdown-btn').toggleClass('active');
+      e.stopPropagation();
+    })
+    $('.search-controls-containers').click(function (e) {
+      e.stopPropagation();
+    });
+    $(document).click(function(e) {
+      $('.search-dropdown').removeClass('show');
+      $('.lq-search-fileds').removeClass('index');
+      $('.search-dropdown-btn').removeClass('active');
+    });
+
+    $('.search-controls-containers  .search-input').keyup(function() {
+        if($(this).val() == "")
+        {
+          $('.search-dropdown').addClass('show');
+          $('.lq-search-fileds').addClass('index');
+          $('.search-dropdown-btn').addClass('active');
+        }
+        else {
+          $('.search-dropdown').removeClass('show');
+          $('.lq-search-fileds').removeClass('index');
+          $('.search-dropdown-btn').removeClass('active');
+        }
+    });
+
+</script>
+
 </body>
 
 </html>

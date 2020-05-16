@@ -1064,6 +1064,7 @@ ol li{
 }
 .lq-search.search-bar-sm {
     max-width: 100% !important;
+    z-index: 100;
 }
 .lq-search.search-filed-box .search-field .form-control {
     border-radius: 8px;
@@ -1207,4 +1208,20 @@ ol li{
 }
 .plan-switch .plan-link.active {
     color: #4d5bed;
+}
+.alert-modal-toggle {
+    right: -155px;
+    top: 250px;
+    padding: 10px;
+    border: 1px solid #d3d7da;
+    border-right: 0px;
+    transition: all ease-in-out 300ms;
+}
+.alert-modal-toggle:hover{
+  right: 0px;
+}
+.alert-modal-toggle span {
+    font-size: 13px;
+    color: #101f41;
+    font-weight: 600;
 }

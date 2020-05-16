@@ -851,7 +851,7 @@ research</h2>
                           <div class="col-md-6">
                               <ul class="footer-nav nav flex-column align-items-start list-unstyled">
                                 <li class="nav-item mb-2">
-                                    <a class="nav-link p-0" href="./contact.html">Request Demo</a>
+                                    <a class="nav-link p-0" href="#" data-target="#request-demo-modal" data-toggle="modal">Request Demo</a>
                                 </li>
                                 <li class="nav-item mb-2">
                                     <a class="nav-link p-0" href="#" data-toggle="modal" data-target="#judgmentModal">Request a Judgment</a>
@@ -924,6 +924,43 @@ research</h2>
     </div> <!-- Subscribe Error -->
 
   </div> <!-- END Alert Notifications Wrapper -->
+
+
+  <!-- Modal -->
+<div class="modal fade request-demo-modal" id="request-demo-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Request a Demo</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="text-center mb-4">
+          <img src="./images/undraw_working_remotely_jh40.svg" alt="" width="300">
+        </div>
+
+
+        <div class="form-group">
+          <label>Name</label>
+          <input type="text" class="form-control  form-control-sm" placeholder="Enter Name">
+        </div>
+        <div class="form-group">
+          <label>Email</label>
+          <input type="email" class="form-control  form-control-sm" placeholder="Enter Email">
+        </div>
+        <div class="form-group">
+          <label>Phone</label>
+          <input type="text" class="form-control  form-control-sm" placeholder="Enter Phone no.">
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Submit</button>
+      </div>
+    </div>
+  </div>
 
   <!-- Global Required JS -->
   <script src="js\vendor\jquery-3.3.1.min.js"></script>
