@@ -368,7 +368,7 @@
                         <div class="select-radio">
                           <div class="select-radio-inner">
                             <span>Free text search</span>
-                            <label class="mb-0">
+                            <label class="mb-0" data-toggle="tooltip" data-placement="left" title="Free text Search with advance search options">
                               <input class="d-none" type="radio" name="search-radio" value="free-text-box" checked>
                               <span>All</span>
                             </label>
@@ -380,7 +380,7 @@
                         <div class="select-radio">
                           <div class="select-radio-inner">
                             <span>Name-Year-Vol-Page</span>
-                            <label class="mb-0">
+                            <label class="mb-0" data-toggle="tooltip" data-placement="left" title="Search through Alternate Citations ">
                               <input  class="d-none" type="radio" name="search-radio" value="citation-box">
                               <span>Citation</span>
                             </label>
@@ -392,7 +392,7 @@
                         <div class="select-radio">
                           <div class="select-radio-inner">
                               <span>Last name – first name</span>
-                              <label class="mb-0">
+                              <label class="mb-0" data-toggle="tooltip" data-placement="left" title="Search through First/Last name of the judge">
                                 <input class="d-none" type="radio" name="search-radio" value="judge-box">
                                 <span>Judge Name</span>
                               </label>
@@ -403,7 +403,7 @@
                         <div class="select-radio">
                           <div class="select-radio-inner">
                             <span>Petitioner - respondent</span>
-                            <label class="mb-0">
+                            <label class="mb-0" data-toggle="tooltip" data-placement="left" title="Search through First/Last name of the Party">
                               <input class="d-none" type="radio" name="search-radio" value="party-box">
                               <span>Party Name</span>
                             </label>
@@ -414,7 +414,7 @@
                         <div class="select-radio">
                           <div class="select-radio-inner">
                             <span>Act name- Section</span>
-                            <label class="mb-0">
+                            <label class="mb-0" data-toggle="tooltip" data-placement="left" title="Search through Act name and then put the section/Article">
                               <input class="d-none" type="radio" name="search-radio" value="act-box">
                               <span>Act Name</span>
                             </label>
@@ -431,7 +431,7 @@
                         <div class="select-radio">
                           <div class="select-radio-inner">
                             <span>Search bare Act</span>
-                            <label>
+                            <label data-toggle="tooltip" data-placement="left" title="Bare Act search through the name of the act and then select the act to open">
                               <input class="d-none" type="radio" name="search-radio" value="act-search-box">
                               <span>Act Name</span>
                             </label>
@@ -1234,6 +1234,11 @@
           }
       });
 
+  </script>
+  <script type="text/javascript">
+  $(function () {
+    $('[data-toggle="tooltip"]').tooltip()
+    })
   </script>
 </body>
 
