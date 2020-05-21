@@ -139,7 +139,7 @@
             <div class="position-relative flex-fill search-controls-containers">
               <div id="free-text-box" class="search-field flex-fill show">
                 <input id="basics" class="form-control search-input" placeholder="Search by title, case number, issue, ..." >
-                <div class="search-dropdown p-3">
+                <div class="search-dropdown p-3 shadow">
                   <ul class="list-unstyled" >
                       <li class="search-help-section-header text-muted">
                           <div  class=""><small class="text-uppercase">Search techniques</small></div>
@@ -207,7 +207,7 @@
               </div>
               <div id="citation-box" class="search-field flex-fill">
                 <input class="form-control journal-input search-input" placeholder="Search through Citation">
-                <div class="search-dropdown p-3">
+                <div class="search-dropdown p-3 shadow">
 
                     <div class="citation-list-container">
                       <h4 class="text-center">Please enter your Citation in this format </h4>
@@ -356,7 +356,7 @@
               </div>
             </div>
             <div class="search-select">
-              <button class="btn btn-primary select-btn px-3 " data-toggle="collapse" href="#select-dropdown" role="button" aria-expanded="false" aria-controls="select-dropdown" data-placement="bottom" data-content="Free text Search with advance search options">
+              <button class="btn btn-primary select-btn px-3 " data-toggle="collapse" href="#select-dropdown" role="button" aria-expanded="false" aria-controls="select-dropdown">
                 All
               </button>
               <div class="collapse" id="select-dropdown">
@@ -444,6 +444,14 @@
                 </div>
 
               </div>
+
+              <div class="search-tooltip shadow">
+                  <span>Free text Search with advance search options</span>
+                <a href="#" class="close-tooltip">
+                  <img src="./images/Close.svg" alt="" class="" width="15">
+                </a>
+              </div>
+
             </div>
           </div>
           <div class="ml-auto d-none d-lg-block" id="navbarsExampleDefault">
@@ -1083,7 +1091,8 @@
        $(".search-field").removeClass('show');
        $("#"+test).addClass('show');
        $(".select-btn").text(sText);
-       $(".select-btn").attr('data-content', popValue);
+       $(".search-tooltip span").text(popValue);
+       $('.search-tooltip').fadeIn();
   } );
 
   $(".select-radio label span").on("click", function() {
@@ -1154,6 +1163,11 @@
     $('.select-btn').popover({
       trigger: 'hover',
       container: '.search-select',
+    })
+  </script>
+  <script type="text/javascript">
+    $('.close-tooltip').on('click', function() {
+      $('.search-tooltip').fadeOut();
     })
   </script>
 </body>
