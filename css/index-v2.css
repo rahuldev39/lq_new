@@ -1,5 +1,5 @@
 .main-banner{
-  background-image: url(./../images/photo-of-man-wearing-eyeglasses-3184611.png);
+
   background-size: cover;
 }
 
@@ -102,7 +102,7 @@ body.menu-open{
     transform: translate3d(0,-16px,0) rotate(-90deg);
 }
 .carousel-control-next, .carousel-control-prev {
-    color: #101f41;
+    color: #fdfdfdf0;
     opacity: 1;
     font-size: 45px;
     width: 5%;
@@ -113,7 +113,7 @@ body.menu-open{
   .carousel-control-next:hover, .carousel-control-prev:hover,
   .carousel-control-next:focus, .carousel-control-prev:focus
    {
-    color: #4d5bed;
+    color: #ffffff;
   }
 
   .carousel-item {
@@ -203,4 +203,16 @@ filter:progid:DXImageTransform.Microsoft.Blur(PixelRadius='4');
 }
 .nav--has-sub-menu.show .dropdown-menu{
   display: block;
+}
+.search-select .popover{
+  transform: none !important;
+  right: 0px !important;
+  min-width: 240px;
+  left: auto !important;
+  top: 100% !important;
+  z-index: 1
+}
+.search-select .popover .arrow {
+    right: 8px !important;
+    left: auto !important;
 }

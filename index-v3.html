@@ -356,7 +356,7 @@
               </div>
             </div>
             <div class="search-select">
-              <button class="btn btn-primary select-btn px-3 " data-toggle="collapse" href="#select-dropdown" role="button" aria-expanded="false" aria-controls="select-dropdown">
+              <button class="btn btn-primary select-btn px-3 " data-toggle="collapse" href="#select-dropdown" role="button" aria-expanded="false" aria-controls="select-dropdown" data-placement="bottom" data-content="Free text Search with advance search options">
                 All
               </button>
               <div class="collapse" id="select-dropdown">
@@ -369,7 +369,7 @@
                           <div class="select-radio-inner">
                             <span>Free text search</span>
                             <label class="mb-0" data-toggle="tooltip" data-placement="left" title="Free text Search with advance search options">
-                              <input class="d-none" type="radio" name="search-radio" value="free-text-box" checked>
+                              <input class="d-none" type="radio" name="search-radio" value="free-text-box" data-value="Free text Search with advance search options" checked>
                               <span>All</span>
                             </label>
                           </div>
@@ -381,7 +381,7 @@
                           <div class="select-radio-inner">
                             <span>Name-Year-Vol-Page</span>
                             <label class="mb-0" data-toggle="tooltip" data-placement="left" title="Search through Alternate Citations ">
-                              <input  class="d-none" type="radio" name="search-radio" value="citation-box">
+                              <input  class="d-none" type="radio" name="search-radio" value="citation-box" data-value="Search through Alternate Citations ">
                               <span>Citation</span>
                             </label>
                           </div>
@@ -393,7 +393,7 @@
                           <div class="select-radio-inner">
                               <span>Last name – first name</span>
                               <label class="mb-0" data-toggle="tooltip" data-placement="left" title="Search through First/Last name of the judge">
-                                <input class="d-none" type="radio" name="search-radio" value="judge-box">
+                                <input class="d-none" type="radio" name="search-radio" value="judge-box" data-value="Search through First/Last name of the judge">
                                 <span>Judge Name</span>
                               </label>
                           </div>
@@ -404,7 +404,7 @@
                           <div class="select-radio-inner">
                             <span>Petitioner - respondent</span>
                             <label class="mb-0" data-toggle="tooltip" data-placement="left" title="Search through First/Last name of the Party">
-                              <input class="d-none" type="radio" name="search-radio" value="party-box">
+                              <input class="d-none" type="radio" name="search-radio" value="party-box" data-value="Search through First/Last name of the Party">
                               <span>Party Name</span>
                             </label>
                           </div>
@@ -415,7 +415,7 @@
                           <div class="select-radio-inner">
                             <span>Act name- Section</span>
                             <label class="mb-0" data-toggle="tooltip" data-placement="left" title="Search through Act name and then put the section/Article">
-                              <input class="d-none" type="radio" name="search-radio" value="act-box">
+                              <input class="d-none" type="radio" name="search-radio" value="act-box" data-value="Search through Act name and then put the section/Article">
                               <span>Act Name</span>
                             </label>
                           </div>
@@ -432,7 +432,7 @@
                           <div class="select-radio-inner">
                             <span>Search bare Act</span>
                             <label data-toggle="tooltip" data-placement="left" title="Bare Act search through the name of the act and then select the act to open">
-                              <input class="d-none" type="radio" name="search-radio" value="act-search-box">
+                              <input class="d-none" type="radio" name="search-radio" value="act-search-box" data-value="Bare Act search through the name of the act and then select the act to open">
                               <span>Act Name</span>
                             </label>
                           </div>
@@ -492,24 +492,18 @@
       <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
       <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
       <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-      <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
-      <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
-      <li data-target="#carouselExampleIndicators" data-slide-to="5"></li>
     </ol>
     <div class="carousel-inner">
       <div class="carousel-item active">
-        <section class="section-hero main-banner py-0 bg-gray">
+        <section class="section-hero main-banner py-0 bg-gray" style="background-image: url(./images/bg-header1.jpg);">
           <div class="container">
             <div class="row vh-100">
 
               <div class="col-md-8 offset-md-2 col-lg-6 offset-lg-0 mt-8  text-center text-lg-left">
-
-                <h2 class="mb-3 font-weight-bold">Fastest legal research</h2>
-
-                <p class="lead mb-5 mx-auto text-dark">A true replacement for other paid legal databases. Hednotes are passe, iDRAF is the new judgment insight medium of 2020.</p>
+                <h2 class="mb-3 font-weight-bold text-white">Legitquest is the true replacement.</h2>
+                <p class="lead mb-5 mx-auto  text-white">A true replacement for other paid legal databases. Hednotes are passe, iDRAF is the new judgment insight medium of 2020.</p>
 
                 <a href="#0" class="btn btn-primary btn--has-shadow">Get Started Now</a>
-
               </div>
 
 
@@ -519,57 +513,13 @@
         </section> <!-- END Section Hero -->
       </div>
       <div class="carousel-item">
-        <section class="section-hero main-banner py-0 bg-gray">
+        <section class="section-hero main-banner py-0 bg-gray"  style="background-image: url(./images/bg-header4.jpg);">
           <div class="container">
             <div class="row vh-100">
 
               <div class="col-md-8 offset-md-2 col-lg-6 offset-lg-0 mt-8  text-center text-lg-left">
-
-                <h2 class="mb-3 font-weight-bold">Government notification services</h2>
-
-                <p class="lead mb-5 mx-auto text-dark">A true replacement for other paid legal databases. Hednotes are passe, iDRAF is the new judgment insight medium of 2020.</p>
-
-                <a href="#0" class="btn btn-primary btn--has-shadow">Get Started Now</a>
-
-              </div>
-
-
-            </div>
-          </div>
-
-        </section> <!-- END Section Hero -->
-      </div>
-      <div class="carousel-item">
-        <section class="section-hero main-banner py-0 bg-gray">
-          <div class="container">
-            <div class="row vh-100">
-
-              <div class="col-md-8 offset-md-2 col-lg-6 offset-lg-0 mt-8  text-center text-lg-left">
-
-                <h2 class="mb-3 font-weight-bold">Translation services</h2>
-
-                <p class="lead mb-5 mx-auto text-dark">A true replacement for other paid legal databases. Hednotes are passe, iDRAF is the new judgment insight medium of 2020.</p>
-
-                <a href="#0" class="btn btn-primary btn--has-shadow">Get Started Now</a>
-
-              </div>
-
-
-            </div>
-          </div>
-
-        </section> <!-- END Section Hero -->
-      </div>
-      <div class="carousel-item">
-        <section class="section-hero main-banner py-0 bg-gray">
-          <div class="container">
-            <div class="row vh-100">
-
-              <div class="col-md-8 offset-md-2 col-lg-6 offset-lg-0 mt-8  text-center text-lg-left">
-
-                <h2 class="mb-3 font-weight-bold">Filing services</h2>
-
-                <p class="lead mb-5 mx-auto text-dark">A true replacement for other paid legal databases. Hednotes are passe, iDRAF is the new judgment insight medium of 2020.</p>
+                <h2 class="mb-3 font-weight-bold text-white">Not all Research Platform are Equal.</h2>
+                <p class="lead mb-5 mx-auto text-white">A true replacement for other paid legal databases. Hednotes are passe, iDRAF is the new judgment insight medium of 2020.</p>
 
                 <a href="#0" class="btn btn-primary btn--has-shadow">Get Started Now</a>
 
@@ -582,49 +532,7 @@
         </section> <!-- END Section Hero -->
       </div>
 
-      <div class="carousel-item">
-        <section class="section-hero main-banner py-0 bg-gray">
-          <div class="container">
-            <div class="row vh-100">
 
-              <div class="col-md-8 offset-md-2 col-lg-6 offset-lg-0 mt-8  text-center text-lg-left">
-
-                <h2 class="mb-3 font-weight-bold">Legal research Bot</h2>
-
-                <p class="lead mb-5 mx-auto text-dark">A true replacement for other paid legal databases. Hednotes are passe, iDRAF is the new judgment insight medium of 2020.</p>
-
-                <a href="#0" class="btn btn-primary btn--has-shadow">Get Started Now</a>
-
-              </div>
-
-
-            </div>
-          </div>
-
-        </section> <!-- END Section Hero -->
-      </div>
-
-      <div class="carousel-item">
-        <section class="section-hero main-banner py-0 bg-gray">
-          <div class="container">
-            <div class="row vh-100">
-
-              <div class="col-md-8 offset-md-2 col-lg-6 offset-lg-0 mt-8  text-center text-lg-left">
-
-                <h2 class="mb-3 font-weight-bold">Share your knowledge</h2>
-
-                <p class="lead mb-5 mx-auto text-dark">A true replacement for other paid legal databases. Hednotes are passe, iDRAF is the new judgment insight medium of 2020.</p>
-
-                <a href="#0" class="btn btn-primary btn--has-shadow">Get Started Now</a>
-
-              </div>
-
-
-            </div>
-          </div>
-
-        </section> <!-- END Section Hero -->
-      </div>
     </div>
 
     <button class="carousel-control-prev" data-target="#carouselExampleIndicators" role="button" data-slide="prev">
@@ -1171,9 +1079,11 @@
   $("input[name=search-radio]").on( "change", function() {
        var test = $(this).val();
        var sText = $(this).next().text();
+       var popValue = $(this).data('value')
        $(".search-field").removeClass('show');
        $("#"+test).addClass('show');
-       $(".select-btn").text(sText)
+       $(".select-btn").text(sText);
+       $(".select-btn").attr('data-content', popValue);
   } );
 
   $(".select-radio label span").on("click", function() {
@@ -1238,6 +1148,12 @@
   <script type="text/javascript">
   $(function () {
     $('[data-toggle="tooltip"]').tooltip()
+    })
+  </script>
+  <script type="text/javascript">
+    $('.select-btn').popover({
+      trigger: 'hover',
+      container: '.search-select',
     })
   </script>
 </body>

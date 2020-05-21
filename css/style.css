@@ -1143,6 +1143,7 @@ ol li{
 }
 .lq-search #select-dropdown {
     right: 0px;
+    z-index: 100;
 }
 /*#########-----Search v2 css End----##########*/
 .listing-tabs {
@@ -1224,4 +1225,19 @@ ol li{
     font-size: 13px;
     color: #101f41;
     font-weight: 600;
+}
+.banner-list li {
+    margin-bottom: 5px;
+    font-size: .8rem;
+    color: #101f41;
+    background-color: #ffffff73;
+    padding: 10px;
+    border-radius: 10px;
+}
+.banner-list li span {
+    font-weight: 600;
+    color: #101f41;
+    display: inline-block;
+    font-size: 1.03rem;
+    margin-bottom: 2px;
 }
