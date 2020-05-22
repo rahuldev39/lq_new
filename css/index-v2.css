@@ -207,30 +207,37 @@ filter:progid:DXImageTransform.Microsoft.Blur(PixelRadius='4');
 .search-tooltip {
     position: absolute;
     right: 0px;
-    min-width: 335px;
-    background-color: white;
+    min-width: 260px;
+    background-color: #4d5bed;
     padding: 15px 15px;
     border-radius: 6px;
-    border: 1px solid #e2e2e2;
     top: calc(100% + 3px);
     font-size: .9rem;
     margin-top: 9px;
     padding-right: 26px;
+    color: #ececec;
 }
 .search-tooltip::after {
     content: "";
     height: 15px;
     width: 15px;
-    background-color: white;
+    background-color: #4d5bed;
     position: absolute;
     right: 22px;
-    top: -8px;
-    transform: rotate(45deg);
-    border-left: 1px solid #e2e2e2;
-    border-top: 1px solid #e2e2e2;
+    top: -6px;
+    transform: rotate(45deg) skew(8deg, 8deg);
+}
+.search-tooltip span {
+    font-weight: 300;
+    font-size: 0.8rem;
+}
+.search-tooltip h5 {
+    font-weight: 600;
+    color: white;
 }
 .close-tooltip {
     position: absolute;
-    right: 5px;
-    top: 4px;
+    right: 11px;
+    top: 9px;
+    opacity: .7
 }
