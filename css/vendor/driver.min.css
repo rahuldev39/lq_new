@@ -13,14 +13,14 @@ div#driver-popover-item {
 }
 
 div#driver-popover-item .driver-popover-tip {
-  border: 5px solid #fff;
+  border: 8px solid #fff;
   content: "";
   position: absolute
 }
 
 div#driver-popover-item .driver-popover-tip.bottom {
-  bottom: -10px;
-  border-color: #4d5bed transparent transparent
+    bottom: -16px;
+    border-color: #4d5bed transparent transparent;
 }
 
 div#driver-popover-item .driver-popover-tip.bottom.position-center {
@@ -32,7 +32,7 @@ div#driver-popover-item .driver-popover-tip.bottom.position-right {
 }
 
 div#driver-popover-item .driver-popover-tip.left {
-  left: -10px;
+  left: -16px;
   top: 10px;
   border-color: transparent #4d5bed transparent transparent
 }
@@ -47,7 +47,7 @@ div#driver-popover-item .driver-popover-tip.left.position-bottom {
 }
 
 div#driver-popover-item .driver-popover-tip.right {
-  right: -10px;
+  right: -16px;
   top: 10px;
   border-color: transparent transparent transparent #4d5bed
 }
@@ -62,7 +62,7 @@ div#driver-popover-item .driver-popover-tip.right.position-bottom {
 }
 
 div#driver-popover-item .driver-popover-tip.top {
-    top: -10px;
+    top: -16px;
     border-color: transparent transparent #4d5bed;
 }
 
