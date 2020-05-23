@@ -1211,7 +1211,7 @@ ol li{
 .plan-switch .plan-link.active {
     color: #4d5bed;
 }
-.alert-modal-toggle {
+.alert-modal-toggle, .tour-link {
     right: -155px;
     top: 250px;
     padding: 10px;
@@ -1219,11 +1219,15 @@ ol li{
     border-right: 0px;
     transition: all ease-in-out 300ms;
 }
-.alert-modal-toggle:hover{
+.alert-modal-toggle:hover, .tour-link:hover{
   right: 0px;
 }
-.alert-modal-toggle span {
+.alert-modal-toggle span, .tour-link span {
     font-size: 13px;
     color: #101f41;
     font-weight: 600;
+}
+.tour-link {
+    top: 303px;
+    right: -78px;
 }
