@@ -156,7 +156,7 @@ div#driver-page-overlay {
   height: 100%;
   zoom: 1;
   filter: alpha(opacity=75);
-  opacity: .75;
+  opacity: .2 !important;
   z-index: 100002 !important;
   transition: all .3s
 }
@@ -172,7 +172,7 @@ div#driver-highlighted-element-stage {
   display: none;
   border-radius: 2px;
   transition: all .3s;
-
+  border: 2px solid #4d5bed;
 }
 
 .driver-highlighted-element {
