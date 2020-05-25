@@ -940,13 +940,28 @@ ol li{
   min-height: 130px;
 }
 }
-
-.center-plan-card {
+.pricing .pricing__card {
+    border-radius: .625rem !important;
+    width: 25%;
+    transform: scale(.97);
+}
+@media (max-width:1024px){
+  .pricing .pricing__card {
+      width: 50%;
+  }
+}
+@media (max-width:768px){
+  .pricing .pricing__card {
+      width: 100%;
+  }
+}
+.pricing .center-plan-card {
     background-color: #2939e900;
     border: 1px solid #2939e9;
+
 }
 .pricing__wrapper, .faq__wrapper{
-  max-width: 1100px;
+
 }
 .pricing__card .card-body h5 img {
     width: 23px;
