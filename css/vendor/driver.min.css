@@ -156,7 +156,6 @@ div#driver-page-overlay {
   height: 100%;
   zoom: 1;
   filter: alpha(opacity=75);
-  opacity: .2 !important;
   z-index: 100002 !important;
   transition: all .3s
 }
@@ -193,4 +192,21 @@ div#driver-highlighted-element-stage {
   transform-style: flat !important;
   transform-box: border-box !important;
   will-change: unset !important
+}
+.tour-start .judgment-section > div{
+  display: block;
+}
+.tour-start .judgment-section .sidebar {
+    float: left;
+    position: static !important;
+}
+.tour-start .judgment-section .judgment-main{
+  float: right;
+  width: calc(100% - 273px)
+}
+.tour-start #driver-highlighted-element-stage{
+  background-color: transparent !important
+}
+.tour-start{
+  overflow: hidden;
 }
