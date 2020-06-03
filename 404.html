@@ -11,6 +11,7 @@
   <link rel="stylesheet" href="css\vendor\bootstrap.min.css">
 
   <!-- Vendor/Plugins CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.9/dist/css/bootstrap-select.min.css">
   <link rel="stylesheet" href="css\vendor\fontawesome-all.min.css">
   <link rel="stylesheet" href="https://cdn.lineicons.com/1.0.1/LineIcons.min.css">
   <link rel="stylesheet" href="./css/vendor/dataTables.bootstrap4.min.css">
@@ -140,10 +141,13 @@
     <section class="section bg-gray  pt-5 pb-5 ">
       <div class="container-404 text-center mx-auto">
         <img class="img-fluid" src="./images/404.svg" alt="" width="400">
-        <h3 class="mt-5 font-weight-bold">OPPS! PAGE NOT BE FOUND</h3>
-        <p class="mb-5">Sorry but the page you are looking for does not exist, have been removed, name changed or is temporarity unavailable.</p>
+        <h3 class="mt-5 font-weight-bold">PAGE NOT FOUND.</h3>
+        <p class="mb-4">Sorry but the page you are looking for does not exist, have been removed, name changed or is temporarily unavailable.</p>
+        <div class="mb-3">
+          <small class="text-muted">Pl click here to report the issue</small>
+        </div>
 
-        <button type="button" class="btn btn-primary">Back to home page</button>
+        <button type="button" class="btn btn-primary" data-target="#report-problem-form" data-toggle="modal">Report a Issue</button>
       </div>
     </section> <!-- END Section Posts -->
 
@@ -253,6 +257,49 @@
     </div>
   </footer> <!-- END Footer -->
 
+  <!-- Modal -->
+<div class="modal fade report-problem-form" id="report-problem-form" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered " role="document">
+    <div class="modal-content">
+      <div class="modal-header bg-gray">
+        <h5 class="modal-title font-weight-bold" id="exampleModalLabel">Report a problem</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+
+      <div class="modal-body">
+
+        <form>
+            <div class="prblem-area form-group ">
+              <label for="">Problem Area</label>
+              <div class="">
+                <select class="selectpicker-modal form-control" multiple data-selected-text-format="count > 4" title="Select Problem Area">
+                  <option>Content</option>
+                  <option>Segregation</option>
+                  <option>Judge Name</option>
+                  <option>Court</option>
+                  <option>Citation</option>
+                  <option>Other</option>
+                </select>
+              </div>
+
+            </div>
+
+            <div class="form-group">
+                <label for="">Description</label>
+                <textarea class="form-control" value"" name="" rows="3" placeholder="Please enter information here"></textarea>
+            </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary btn-sm" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary btn-sm">Send</button>
+      </div>
+    </div>
+  </div>
+</div>
+
 
 
   <!-- Global Required JS -->
@@ -264,6 +311,7 @@
   <script src="js\vendor\jquery.ajaxchimp.min.js"></script>
   <script src="./js/vendor/datatable/jquery.dataTables.min.js"></script>
   <script src="./js/vendor/datatable/dataTables.bootstrap4.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.9/dist/js/bootstrap-select.min.js"></script>
   <script src="./js/vendor/datatable/dataTables.responsive.min.js"></script>
   <!-- Vendor/Plugins JS Init -->
   <script src="js\init\wb.ajaxchimp-init.js"></script>
@@ -271,11 +319,13 @@
   <!-- Fluxo Template JS -->
   <script src="js\min\main-min.js"></script>
 
-  <script type="text/javascript">
-    $(document).ready(function() {
-      $("#datatable").DataTable()
-    });
-  </script>
+
+  <section>
+    <script type="text/javascript">
+    $('.selectpicker').selectpicker('setStyle', 'h4 font-weight-bold mb-0 p-0 border-0 bg-transparent');
+      $('.selectpicker-modal').selectpicker('setStyle', 'mb-0 form-control');
+    </script>
+  </section>
 </body>
 
 </html>
