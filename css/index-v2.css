@@ -104,12 +104,12 @@ body.menu-open{
 .carousel-control-next, .carousel-control-prev {
     color: #fdfdfdf0;
     opacity: 1;
-    font-size: 45px;
+    font-size: 34px;
     width: 5%;
     background-color: transparent;
     border: 0px;
     padding: 0px;
-  }
+}
   .carousel-control-next:hover, .carousel-control-prev:hover,
   .carousel-control-next:focus, .carousel-control-prev:focus
    {
@@ -240,4 +240,10 @@ filter:progid:DXImageTransform.Microsoft.Blur(PixelRadius='4');
     right: 11px;
     top: 9px;
     opacity: .7
+}
+.carousel-indicators {
+    margin-bottom: 0px;
+}
+.main-banner img{
+  pointer-events: none
 }
