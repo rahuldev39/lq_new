@@ -468,7 +468,10 @@ font-size: .9rem
 }
 .news-section .card.post {
     border: 1px solid #e0e0e0 !important;
-    box-shadow: 4px 4px 0px 2px #c8cdf7 !important;
+    overflow: hidden;
+}
+.news-section .card.post .card-text {
+    color: #fdfdfdb5;
 }
 .job-detail h6 {
     margin-bottom: 1rem;
