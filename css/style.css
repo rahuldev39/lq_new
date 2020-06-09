@@ -1235,7 +1235,7 @@ ol li{
 }
 .alert-modal-toggle, .tour-link {
     right: -155px;
-    top: 250px;
+    top: 275px;
     padding: 10px;
     border: 1px solid #d3d7da;
     border-right: 0px;
@@ -1250,9 +1250,23 @@ ol li{
     font-weight: 600;
 }
 .tour-link {
-    top: 303px;
+    top: 325px;
     right: -78px;
 }
 .container-404 {
     max-width: 580px;
+}
+.filter-head {
+  padding: 1.17rem 0px;
+}
+.reasult-header{
+  padding-top: 1.1rem;
+  padding-bottom: 1.1rem;
+}
+
+.filter-sidebar{
+  min-width: 300px;
+}
+.posts__wrapper{
+  width: calc(100% - 300px);
 }
