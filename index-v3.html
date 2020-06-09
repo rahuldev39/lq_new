@@ -30,36 +30,9 @@
   <meta name="theme-color" content="#ffffff">
 </head>
 
-<body class="overflow-hidden">
+<body class="">
 
-  <div class="curtains position-fixed w-100 h-100" style="
-    background-image: url(images/curtains/curtains-bg.png);
-    background-size: cover;
-    left: 0;
-    bottom: 0;
-    z-index: 100000;
-    transition: all ease-in-out 300ms;
-    ">
-    <div class="curtain-inner h-100" style="
-    background-image: url(images/curtains/curtains.png);
-    background-size: contain;
-    background-repeat: no-repeat;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: white;
-    ">
-      <div class="text-center">
-        <h1 class="text-white font-weight-light mb-5">Welcome to <span class="font-weight-bold"> Legitquest</span></h1>
-        <button class="btn curtain-raiser" style="
-        background-color: #962edc;
-        color: white;
-        ">Curtain Raiser</button>
-      </div>
-      
-    </div>
-  </div>
-
+  
   <nav class="sidebar-menu shadow">
 
     <div class="sidebar-menu-header d-flex justify-content-between align-items-center px-3 py-4">
@@ -1165,12 +1138,7 @@
     })
   </script>
 
-  <script>
-    $('.curtain-raiser').on('click',function(){
-      $('.curtains').css({"bottom": "100%"});
-      $('body').removeClass('overflow-hidden')
-    });
-  </script>
+  
 </body>
 
 </html>
