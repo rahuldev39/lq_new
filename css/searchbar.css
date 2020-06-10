@@ -1,5 +1,6 @@
 .search-field:not(.open-dropdown) .search-input {
-    box-shadow: 0px 0px 0px 2px #dbdee8 inset;
+    box-shadow: none;
+    border-color: #a5abea !important;
 }
 .section-hero .search-engine-form{
   max-width: 1080px
@@ -88,7 +89,8 @@
     font-size: 1.6rem;
 }
 .search-field input.form-control:focus {
-    box-shadow: 0px 0px 0px 2px #4d5bed inset !important;
+  box-shadow: none !important;
+  border-color: #4d5bed !important;
 }
 .search-helper{
   top: 100%;
