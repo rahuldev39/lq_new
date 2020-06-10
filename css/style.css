@@ -86,12 +86,10 @@ ul.green-checks-list .h4, ul.green-checks-list h4 {
   margin-bottom: .5rem;
   color: #4d5bed
 }
-.section-hero p.lead{
-  max-width: 800px
+.section-hero p.lead {
+  max-width: 500px;
 }
-.main-banner{
 
-}
 .bordered-input{
   border-color: #4d5bed !important;
 }
@@ -1302,3 +1300,19 @@ ol li{
   width: calc(100% - 300px);
 }
 
+.main-banner .separator{
+  height: 5px;
+  width: 100px;
+}
+
+.banner-screenshot {
+  position: absolute;
+  bottom: 0px;
+  height: 90%;
+}
+.main-banner .row{
+  min-height: calc(100vh - 84px);
+}
+.main-banner .btn{
+  border-width:2px ;
+}

@@ -244,7 +244,4 @@ filter:progid:DXImageTransform.Microsoft.Blur(PixelRadius='4');
 .carousel-indicators {
     margin-bottom: 0px;
 }
-.main-banner img{
-  pointer-events: none;
-  width: 100%
-}
+

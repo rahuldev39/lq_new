@@ -48,6 +48,16 @@ aside.filter-sidebar.show{
   padding-left: 1rem;
   padding-right: 1rem
 }
+.main-banner {
+  background-position: left !important;
+  padding-right: 5rem;
+}
+.main-banner h1 {
+  font-size: 2.3em;
+}
+.section-hero p.lead {
+  font-size: 1.2rem;
+}
 }
 @media (max-width:768px){
   .notes-controls .notes{
@@ -104,6 +114,12 @@ aside.filter-sidebar.show{
 }
 .tour-link{
   display: none !important
+}
+.main-banner h1 {
+  font-size: 2.4rem;
+}
+.section-hero p.lead {
+  font-size: 1rem;
 }
 }
 
