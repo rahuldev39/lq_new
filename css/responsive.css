@@ -58,6 +58,10 @@ aside.filter-sidebar.show{
 .section-hero p.lead {
   font-size: 1.2rem;
 }
+.search-dropdown ul li .col-desc span {
+  width: 7em;
+  flex: 0 0 12em;
+}
 }
 @media (max-width:768px){
   .notes-controls .notes{
@@ -121,8 +125,25 @@ aside.filter-sidebar.show{
 .section-hero p.lead {
   font-size: 1rem;
 }
+.search-dropdown ul li .col-desc span {
+  width: 7em;
+  flex: 0 0 17em;
 }
+}
+@media (max-width:520px){
+  .search-dropdown ul li .col-desc span {
+    width: 7em;
+    flex: 0 0 11em;
+}
+.case-popup .case-search{
+  flex-wrap: wrap;
 
+}
+.case-popup .case-search .form-control{
+  width: 100%;
+  margin-bottom: 10px;
+}
+}
 @media (max-width:480px){
   .judgment-detail-header h1 {
     font-size: 2rem;
