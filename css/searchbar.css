@@ -14,12 +14,7 @@
 .search-btn a {
     line-height: inherit
 }
-.search-field {
-    flex: 1;
-    position: relative;
-    align-items: center;
-    display: flex;
-}
+
 .cort-btn .btn {
     border-radius: 20px;
     margin-left: 11px;

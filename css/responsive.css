@@ -14,7 +14,7 @@
   .judgment-section .sidebar {
       min-width: 180px;
   }
-  .notes-open .sidebar{
+  .notes-open .sidebar,.close-idraf .sidebar{
     margin-left: -180px
   }
   aside.filter-sidebar {
@@ -79,6 +79,32 @@ aside.filter-sidebar.show{
   padding-left: .9rem;
   padding-right: .9rem
 }
+.navbar .search-filed-box {
+  width: 100%;
+  margin-top: .5rem;
+}
+.navbar-brand img{
+  width: 170px;
+}
+.navbar-brand {
+  order: -1;
+  margin: 0px;
+}
+.feature-img{
+  order: -1;
+}
+.search-dropdown.show{
+  width: calc(100% + 100px);
+}
+.search-tooltip{
+  display: none
+}
+.alert-modal-toggle {
+  top: 331px;
+}
+.tour-link{
+  display: none !important
+}
 }
 
 @media (max-width:480px){
@@ -100,9 +126,7 @@ aside.filter-sidebar.show{
 .dropdown-menu.popup-tag {
   display: none !important;
 }
-.filter-text{
-  display: none;
-}
+
 .posts__categories-list>li.post-category {
     margin-right: .3rem;
 }

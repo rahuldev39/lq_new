@@ -33,7 +33,7 @@
     <div class="judgment-wrapper anim">
       <header class="header">
         <nav class="navbar navbar-expand-lg navbar-sm position-static bg-white">
-          <div class="container-fluid position-relative">
+          <div class="container-fluid position-relative px-2 px-md-4">
 
             <a class="navbar-brand" href="index.html">
               <img src="./images/lq-logo.png" alt="legitquest" class="mr-3"></a>
@@ -282,7 +282,7 @@
                 </nav>
               </div>
 
-              <div class="px-4 mx-4  position-relative tab-content">
+              <div class="px-4 mx-md-4  position-relative tab-content">
 
 
                 <div id="judgement" class="flex-fill pt-4 mt-2 tab-pane fade show active"  role="tabpanel">
@@ -1181,6 +1181,25 @@ popover: {
     $(document).ready(function() {
       driver.start();
 
+    });
+
+    //function for screen resize
+ function screen_resize() {
+        var h = parseInt(window.innerHeight);
+        var w = parseInt(window.innerWidth);
+
+        if(w <= 768) {
+            driver.reset();
+        } 
+
+    }
+
+    $(window).resize(function(e) {
+        screen_resize();
+    });
+
+    $(document).ready(function(e) {
+        screen_resize();
     });
 
   </script>

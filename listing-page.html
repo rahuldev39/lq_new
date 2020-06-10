@@ -123,19 +123,19 @@
   <div class="modal-blur main-wrapper">
     <header class="header shadow">
       <nav class="navbar navbar-expand-lg  bg-white position-static navbar-sm ">
-        <div class="container-fluid position-relative px-4 py-1">
-          <a class="nav-link menu-icon px-2 py-1 mr-4  d-block" href="#">
+        <div class="container-fluid position-relative px-2 px-md-4 py-1">
+          <a class="nav-link menu-icon px-2 py-1   mr-md-4 d-block" href="#">
             <span class="hamburger">
               <span class="hamburger-box">
                 <span class="hamburger-inner"></span>
               </span>
             </span>
           </a>
-          <a class="navbar-brand mr-4 py-3" href="index.html">
+          <a class="navbar-brand mr-0 mr-md-4 py-2 py-md-3" href="index.html">
             <img class="" src="./images/lq-logo.png" alt="legitquest">
           </a>
 
-          <div class="search-filed-box lq-search bg-white  d-flex align-items-center search-bar-sm   flex-fill">
+          <div class="search-filed-box lq-search bg-white  d-flex align-items-center search-bar-sm   flex-fill mb-2 mb-md-0">
 
             <div class="position-relative flex-fill search-controls-containers">
               <div id="free-text-box" class="search-field flex-fill show">
@@ -446,7 +446,13 @@
 
               </div>
 
-             
+              <div class="search-tooltip shadow">
+                  <h5>All</h5>
+                  <span>Free text Search with advance search options</span>
+                  <a href="#" class="close-tooltip">
+                    <img src="./images/Close.svg" alt="" class="" width="15">
+                  </a>
+              </div>
 
             </div>
           </div>
@@ -455,15 +461,8 @@
               <li class="nav-item nav-item--btn">
               <a href="#" class="btn btn-outline-primary btn-sm btn--has-shadow mt-3 mt-lg-0">LQ Publish</a>
             </li>
-
-
-
             </ul>
           </div>
-
-
-
-
         </div>
       </nav> <!-- END Navbar -->
     </header>
@@ -513,7 +512,7 @@
                   <strong>17312</strong> results found for query mamta
                 </span>
                 <div id="resultStats" class="">
-                  <span class="">Sorted by</span>
+                  <span class="d-none d-md-block">Sorted by</span>
                   <span class="text-muted"> </span>
                   <select class="sort-by">
                     <option value="order_rel">Relevance</option>
@@ -1567,7 +1566,35 @@ $('body').removeClass('tour-start');
   $(document).ready(function() {
     driver.start();
   })
+
+  //function for screen resize
+ function screen_resize() {
+        var h = parseInt(window.innerHeight);
+        var w = parseInt(window.innerWidth);
+
+        if(w <= 768) {
+            driver.reset();
+        } 
+
+    }
+
+    $(window).resize(function(e) {
+        screen_resize();
+    });
+
+    $(document).ready(function(e) {
+        screen_resize();
+    });
 </script>
+
+<script type="text/javascript">
+  $('.close-tooltip').on('click', function() {
+    $('.search-tooltip').fadeOut();
+  })
+</script>
+
+
+
 
 </body>
 
