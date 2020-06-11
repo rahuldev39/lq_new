@@ -1332,3 +1332,29 @@ ol li{
   border-right: 1px solid #0202020f;
   padding-right: 16px;
 }
+
+.registration-container{
+  max-width: 1000px;
+}
+.registration-container .or {
+  position: absolute;
+  left: -100px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 25px;
+}
+.registration-container .or span {
+  background-color: #f1f5fa;
+  position: relative;
+  z-index: 1;
+  padding: 2px 0px;
+}
+.registration-container .or::after {
+  content: "";
+  height: 100%;
+  position: absolute;
+  width: 1px;
+  background-color: #c5bfbf;
+}
