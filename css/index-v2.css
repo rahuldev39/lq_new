@@ -105,15 +105,16 @@ body.menu-open{
     color: #fdfdfdf0;
     opacity: 1;
     font-size: 34px;
-    width: 5%;
+    width: 8%;
     background-color: transparent;
     border: 0px;
-    padding: 0px;
+    padding: 0px 10px;
 }
   .carousel-control-next:hover, .carousel-control-prev:hover,
   .carousel-control-next:focus, .carousel-control-prev:focus
    {
     color: #ffffff;
+    opacity: 1;
   }
 
   .carousel-item {
@@ -244,4 +245,18 @@ filter:progid:DXImageTransform.Microsoft.Blur(PixelRadius='4');
 .carousel-indicators {
     margin-bottom: 0px;
 }
+.carousel-control-next{
+    background-image: linear-gradient(to right,
+     #00000000 0%,
+     #00000045 60%, #00000094 100%) !important;
 
+      justify-content: flex-end;
+
+}
+.carousel-control-prev{
+    background-image: linear-gradient( to left, 
+    #00000000 0%, 
+    #00000045 60%, #00000094 100%
+    );
+    justify-content: flex-start;
+}
