@@ -1317,44 +1317,28 @@ ol li{
   border-width:2px ;
 }
 
-.social-login .btn{
+.social-login .btn {
   position: relative;
+  font-size: .9rem;
+  padding: 0px;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 15px;
 }
 
 .social-login .btn i {
-  position: absolute;
-  left: 22px;
-  font-size: 22px;
-  top: 0px;
-  height: 100%;
-  display: flex;
-  align-items: center;
-  border-right: 1px solid #0202020f;
-  padding-right: 16px;
+  font-size: 18px;
 }
 
-.registration-container{
-  max-width: 1000px;
+.login-bg{
+  background-image: url(../images/login-bg.jpg);
 }
-.registration-container .or {
-  position: absolute;
-  left: -100px;
-  height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 25px;
-}
-.registration-container .or span {
-  background-color: #f1f5fa;
-  position: relative;
-  z-index: 1;
-  padding: 2px 0px;
-}
-.registration-container .or::after {
-  content: "";
-  height: 100%;
-  position: absolute;
-  width: 1px;
-  background-color: #c5bfbf;
+.login-bg ul li strong {
+  opacity: .8;
+  font-weight: 100 !important;
+  font-size: .9rem;
 }
