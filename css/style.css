@@ -430,10 +430,10 @@ font-size: .9rem
     padding-left: 2.2rem;
 }
 .pricing__feature-list li {
-    margin-bottom: .4rem;
-    position: relative;
-    padding-left: 16px;
-    font-size: .84rem;
+  margin-bottom: .4rem;
+  position: relative;
+  padding-left: 16px;
+  font-size: .81rem;
 }
 .pricing__feature-list li::before {
     content: '\E94C';
@@ -942,9 +942,9 @@ ol li{
 }
 }
 .pricing .pricing__card {
-    border-radius: .625rem !important;
-    width: 25%;
-    transform: scale(.97);
+  border-radius: 0rem !important;
+  width: 25%;
+  padding: 1rem;
 }
 @media (max-width:1024px){
   .pricing .pricing__card {
@@ -961,17 +961,17 @@ ol li{
     border: 1px solid #2939e9;
 
 }
-.pricing__wrapper, .faq__wrapper{
-
+.pricing__wrapper, .faq__wrapper {
+  max-width: 1111px;
 }
 .pricing__card .card-body h5 img {
     width: 23px;
     margin-right: .7rem;
 }
 .pricing__card .card-body h5 {
-    margin-bottom: .7rem;
-    font-size: .9rem !important;
-    color: #363f54;
+  margin-bottom: .7rem;
+  font-size: .9rem !important;
+  color: #0f1f47;
 }
 .currency-icon {
     font-size: 2rem;
@@ -1342,4 +1342,7 @@ ol li{
   opacity: .8;
   font-weight: 100 !important;
   font-size: .9rem;
+}
+.pricing__card .btn {
+  font-size: .87rem;
 }
