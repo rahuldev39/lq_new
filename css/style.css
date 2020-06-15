@@ -1000,13 +1000,14 @@ ol li{
   font-size: 72%;
 }
 .case-popup {
-    transition: all 300ms ease-in-out;
-    height: 0;
-    overflow: hidden;
-    opacity: 0;
-    background-color: #ffffff;
-    display: none;
-    border-radius: 6px;
+  transition: all 300ms ease-in-out;
+  height: 0;
+  overflow: hidden;
+  opacity: 0;
+  background-color: #F1F5FA;
+  display: none;
+  border-radius: 6px;
+  border: 1px solid #d1d5d8;
 }
 .case-popup.active {
     height: auto;
@@ -1171,8 +1172,8 @@ ol li{
 }
 /*#########-----Search v2 css End----##########*/
 .listing-tabs {
-    padding: 15px 24px;
-    position: relative;
+  padding: .9rem 24px;
+  position: relative;
 }
 .listing-tabs .owl-item a {
     font-size: 13px;
