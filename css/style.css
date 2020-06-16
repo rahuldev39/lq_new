@@ -1346,3 +1346,6 @@ ol li{
 .pricing__card .btn {
   font-size: .87rem;
 }
+.border-bottom {
+  border-bottom: 1px solid #d6dcf7!important;
+}
