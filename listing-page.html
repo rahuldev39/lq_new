@@ -1594,7 +1594,12 @@ $('body').removeClass('tour-start');
 </script>
 
 
-
+<script type="text/javascript">
+  $('.sidebar-nav .nav-link').on('click', function() {
+    $(this).parent('.nav-item.nav--has-sub-menu').siblings().removeClass('show');
+    $(this).parent('.nav-item.nav--has-sub-menu').toggleClass('show')
+  })
+</script>
 
 </body>
 

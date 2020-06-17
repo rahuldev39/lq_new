@@ -8,6 +8,20 @@
 }
 
 @media (max-width:992px)  {
+  .offcanvas-collapse.open {
+    padding: 1rem 1.5rem!important;
+}
+.navbar-sm .navbar-nav > .nav-item {
+  margin-left: 0px;
+}
+.right-nav{
+  order: -1;
+}
+.user-navlink {
+  order: -1;
+  margin: 12px 0px;
+  border-bottom: 1px solid #e0e4e8;
+}
   .judgment-section .sidebar ul li a.idraf-link span{
     display: none;
   }
