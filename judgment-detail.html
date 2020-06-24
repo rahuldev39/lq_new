@@ -228,6 +228,10 @@
             <div class="flex-fill judgment-main">
               <div class="judgement-topbar shadow-sm bg-white">
 
+                <div class="idraf-toogle text-center border-bottom py-2 d-block d-md-none">
+                  <i class="fas fa-gem text-warning"></i> <span class="h4 font-weight-bold mx-2 mb-0">Open iDraf</span>
+                </div>
+
                 <div class="container-fluid d-flex align-items-center mt-2 mb-1">
                   <div class="back-to-result">
                     <a href="#" class="d-block rounded py-1 px-1 font-semibold">
@@ -1189,8 +1193,8 @@ popover: {
         var w = parseInt(window.innerWidth);
 
         if(w <= 768) {
-            driver.reset();
-        } 
+            driver.reset();        
+    } 
 
     }
 
@@ -1203,6 +1207,13 @@ popover: {
     });
 
   </script>
+
+
+<script>
+  $('.idraf-toogle, .sidebar ul li a.idraf-link').on('click',function(){
+    $('#idraf-premium').toggleClass('open-idraf')
+  });
+</script>
 
 
 

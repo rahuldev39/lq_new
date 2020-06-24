@@ -97,9 +97,23 @@ aside.filter-sidebar.show{
   .notes-controls .notes{
     display: none;
   }
-  .judgment-section .sidebar{
-    margin-left: -180px;
+  .idraf-toogle{
+    cursor: pointer;
   }
+  .judgment-section .sidebar {
+    position: absolute;
+    height: 100%;
+    z-index: 10;
+    left: -180px;
+    transition: all ease-in-out 300ms;
+}
+.judgment-section .sidebar.open-idraf{
+  left: 0px;
+}
+.judgment-section .sidebar ul {
+  position: sticky;
+  top: 0;
+}
   .back-to-result{
     display: none;
   }
