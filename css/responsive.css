@@ -8,14 +8,25 @@
 }
 
 @media (max-width:992px)  {
+  .navbar-toggler:focus{
+    outline: none;
+  }
   .offcanvas-collapse.open {
     padding: 1rem 1.5rem!important;
 }
 .navbar-sm .navbar-nav > .nav-item {
   margin-left: 0px;
 }
-.right-nav{
+.right-nav {
   order: -1;
+  flex-direction: row;
+}
+.right-nav .nav-item{
+  flex: 1;
+  margin: 0px 4px;
+}
+.right-nav .nav-item .btn{
+  width: 100%; 
 }
 .user-navlink {
   order: -1;
@@ -92,6 +103,7 @@ aside.filter-sidebar.show{
 .registration-container .or span {
   padding: 0px 20px;
 }
+
 }
 @media (max-width:768px){
   .notes-controls .notes{
