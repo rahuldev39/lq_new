@@ -1358,3 +1358,16 @@ ol li{
   display: flex !important;
   align-items: center;
 }
+
+.add-note-toogle {
+  display: block;
+  height: 1.5rem;
+  width: 1.5rem;
+  border: .0625rem solid #f3a73b;
+  background-color: #ffea00;
+  float: right;
+  clear: right;
+  margin-top: .125rem;
+  cursor: pointer;
+  margin-right: -1.5rem;
+}

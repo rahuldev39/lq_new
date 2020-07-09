@@ -105,7 +105,24 @@ aside.filter-sidebar.show{
 }
 
 }
+
+@media (min-width:992px){
+#judgement{
+  max-width: 66%;
+}
+
+}
+
+@media (min-width:768px){
+  #judgement{
+    max-width: 86%;
+  }
+  
+  }
 @media (max-width:768px){
+  #judgement{
+    max-width: 90%;
+  }
   .notes-controls .notes{
     display: none;
   }
