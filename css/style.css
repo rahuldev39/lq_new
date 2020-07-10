@@ -1370,4 +1370,23 @@ ol li{
   margin-top: .125rem;
   cursor: pointer;
   margin-right: -1.5rem;
+  position: relative;
+}
+
+.add-note-popup textarea {
+  height: 150px;
+  width: 150px;
+  border: .0625rem solid #f3a73b;
+  background-color: #ffea00;
+  font-size: 12px;
+  line-height: 23px;
+}
+.add-note-popup {
+  position: absolute;
+  right: calc(100% - 23px);
+  top: -2px;
+  display: none;
+}
+.open-note .add-note-popup{
+  display: block;
 }

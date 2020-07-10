@@ -345,7 +345,13 @@
                         (hereinafter referred to as Act 1860). If a civil court had granted the relief by mistake or the plaintiff therein succeeded in getting a collusive decree, which is contrary to law, its benefit cannot be extended to other
                         similarly situated persons for the reason that Article 14 of the Constitution is not meant to perpetuate an illegality. Thus, the appeal is liable to be dismissed.</span><br><br>5. We have considered
                       the rival 
-                      <div class="add-note-toogle" data-toggle="tooltip" data-placement="right" title="your Notes"></div>
+                      <div class="add-note-container">
+                        <div class="add-note-toogle" data-toggle="tooltip" data-placement="right" title="your Notes">
+                          <div class="add-note-popup  position-absolute">
+                            <textarea name="" id=""  rows="5"></textarea>
+                          </div>
+                        </div>
+                      </div>
                       <mark>  submissions made by learned counsel for the parties and perused the record.<br><br>6. Before we proceed further, it may be pertinent to mention here that appellant after retirement had approached the High Court by
                       filing the Writ 
                     </mark> 
@@ -360,7 +366,15 @@
                         of his services as per the provisions of Punjab Civil Services Rules, Volume-II, Rule 3.16, where the Govt. pleader for the defendant/State argued that the plaintiff cannot claim benefit of service rendered by him prior to
                         1.6.1998 as services rendered by him in Fish Farmer Development Agency from 20.5.1980 to 31.5.1998 was rendered by him in a society registered under the societies Act and regarding this fact a categorical findings has been
                         recorded by the Hon’ble Punjab and Haryana High Court in Civil Writ Petition No.1501 of 2001 between the parties and the copy of order is Ex.D3 perusal of the order of Hon’ble Punjab &amp; 
-                        <div class="add-note-toogle" data-toggle="tooltip" data-placement="right" title="your Notes"></div>
+                        <div class="add-note-container">
+                          <div class="add-note-toogle" data-toggle="tooltip" data-placement="right" title="your Notes">
+                            <div class="add-note-popup  position-absolute">
+                              <textarea name="" id=""  rows="5"></textarea>
+                            </div>
+                          </div>
+                        </div>
+                       
+                        
                         <mark> 
                           Haryana High Court in Civil Writ
                           Petition No.1501 titled ‘Chaman Lal v. State of Punjab &amp; Ors. shows that in that case also the question involved was that whether services rendered by the plaintiff in Fish Farm Development Agency, Amritsar can be considered
@@ -988,6 +1002,9 @@
 
   </div>
 </div>
+</div>
+
+
 
   <!-- Global Required JS -->
   <script src="js\vendor\jquery-3.3.1.min.js"></script>
@@ -1225,6 +1242,26 @@ popover: {
   $('.idraf-toogle, .sidebar ul li a.idraf-link').on('click',function(){
     $('#idraf-premium').toggleClass('open-idraf')
   });
+</script>
+
+
+<script>
+  $('.add-note-toogle').on('click', function(){
+    $(this).addClass('open-note');
+  })
+
+
+
+  $(document).on('click', function(e){
+   
+
+      var container = $(".add-note-container");
+    //check if the clicked area is dropDown or not
+    if (!container.is(e.target) && container.has(e.target).length === 0) {
+      $('.add-note-toogle').removeClass('open-note')
+    }
+    })
+
 </script>
 
 
