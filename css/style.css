@@ -1390,3 +1390,12 @@ ol li{
 .open-note .add-note-popup{
   display: block;
 }
+.actual-price span {
+  font-size: 1rem !important;
+  text-decoration: line-through;
+  color: #112042b0 !important;
+  font-weight: 400 !important;
+}
+.actual-price + div span{
+  font-size: 1.6rem !important;
+}
