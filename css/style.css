@@ -1399,3 +1399,16 @@ ol li{
 .actual-price + div span{
   font-size: 1.6rem !important;
 }
+@media (min-width: 576px)
+{
+  .login-modal  .modal-dialog {
+    max-width: 580px;
+    margin: 1.75rem auto;
+}
+.login-modal .modal-dialog .modal-body p {
+  max-width: 455px;
+  margin: 0 auto;
+  font-size: .9rem;
+}
+}
+

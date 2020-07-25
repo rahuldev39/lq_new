@@ -183,6 +183,32 @@
     </div>
   </div>
 
+
+  <!-- Modal -->
+<div class="modal fade login-modal" data-backdrop="static" id="login-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered ">
+    <div class="modal-content">
+     
+      <div class="modal-body">
+        <div class="text-center my-4">
+          <img src="./images/authentication.svg" alt="" width="300">
+        </div>
+        <div class="text-center my-3">
+          <h3 class="font-weight-bold mb-3">Welcome to Legitquest</h3>
+  
+          <p class="mb-4"> Hi, <strong class="text-dark">Deepesh Yadav</strong> Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum doloribus modi, minus est, eum quia voluptatibus.</p>
+          <hr class="mb-4">
+          <button type="button" name="button" class="btn btn-primary mx-1">Login With IP</button>
+          <button type="button" name="button" class="btn btn-dark mx-1">Other User</button>
+        </div>
+  
+  
+      </div>
+  
+    </div>
+  </div>
+  </div>
+
   <!-- Global Required JS -->
   <script src="js\vendor\jquery-3.3.1.slim.min.js"></script>
   <script src="js\vendor\popper.min.js"></script>
@@ -194,6 +220,12 @@
 
   <!-- Template JS -->
   <script src="js\min\main-min.js"></script>
+
+  <script>
+    $(document).ready(
+      $('#login-modal').modal('show')
+    )
+  </script>
 </body>
 
 </html>
