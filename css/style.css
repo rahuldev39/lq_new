@@ -1176,19 +1176,24 @@ ol li{
   position: relative;
 }
 .listing-tabs .owl-item a {
-    font-size: 13px;
-    border: 1px solid #4d5bed;
-    padding: 4px 12px;
-    display: block;
-    border-radius: 50px;
-    color: #4d5bed;
+  font-size: 14.5px;
+  border: 1px solid #0d1f5061;
+  padding: 6px 19px;
+  display: block;
+  border-radius: 50px;
+  color: #0d2050;
+  background-color: white;
+  box-shadow: 1px 1px 2px #0d1f5036;
+  margin: 3px 0px;
+  font-weight: 500;
 }
 .listing-tabs .owl-item a.active {
-    color: #ffffff !important;
-    background-color: #4d5bed !important;
+  color: #ffffff !important;
+  background-color: #0d2050 !important;
 }
 .listing-tabs .owl-item a:hover {
-    background-color: #e7e8fc8a;
+  background-color: #0d1f50;
+  color: white;
 }
 .listing-tabs .owl-nav{
   position: absolute;
@@ -1199,12 +1204,12 @@ ol li{
     z-index: -1;
 }
 .listing-tabs .owl-nav button {
-    position: absolute;
-    font-size: 16px !important;
-    top: 50%;
-    color: #4d5bed !important;
-    transform: translateY(-50%);
-    outline: none;
+  position: absolute;
+  font-size: 16px !important;
+  top: 50%;
+  color: #0d1f50 !important;
+  transform: translateY(-50%);
+  outline: none;
 }
 .listing-tabs .owl-nav button.disabled{
   opacity: .2;
