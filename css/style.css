@@ -1423,3 +1423,19 @@ ol li{
     padding: 11px 15px;
 }
 }
+
+
+.latest-case-tab {
+  top: 0;
+  z-index: 10;
+}
+
+.latest-case-tab .posts__categories-list>li.post-category>a {
+  color: #ffffffb0;
+  font-size: .9rem;
+}
+.latest-case-tab .posts__categories-list>li.post-category>a.active, 
+.latest-case-tab .posts__categories-list>li.post-category>a:hover {
+  color: white;
+  box-shadow: inset 0px -3px 0 0 #586fed;
+}

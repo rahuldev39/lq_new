@@ -25,7 +25,7 @@
 </head>
 
 <body>
-  <header class="header header-sticky">
+  <header class="header">
 
     <nav class="navbar navbar-expand-lg bg-white shadow-sm position-static  navbar-sm ">
       <div class="container-fluid position-relative px-4 py-3 py-lg-0">
@@ -130,20 +130,44 @@
 
   </header>
 
+
+  <div class="position-sticky bg-dark latest-case-tab">
+    <div class="container">
+      <ul class="nav nav-tabs posts__categories-list justify-content-start  flex-row mb-0 border-0" role="tablist">
+        <li class="post-category nav-item  ">
+          <a class="active" href="#0" data-toggle="tab" role="tab" aria-selected="false">Supreme Court  <small> (17)</small></a>
+        </li>
+        <li class="post-category">
+          <a class="" href="#0" data-toggle="tab" role="tab" aria-selected="true">High Court <small> (24)</small></a>
+        </li>
+        <li class="post-category">
+          <a class="" href="#0" data-toggle="tab" role="tab">Tribunal  <small> (13)</small></a>
+        </li>
+      </ul>
+    </div>
+  </div>
+
   <main class="main">
+    
     <section class="pt-3 pb-9 bg-gray">
       <div class="container">
-        <ul class="nav nav-tabs posts__categories-list justify-content-start  flex-row mb-4" role="tablist">
-          <li class="post-category nav-item  ">
-            <a class="active" href="#0" data-toggle="tab" role="tab" aria-selected="false">Supreme Court</a>
-          </li>
-          <li class="post-category">
-            <a class="" href="#0" data-toggle="tab" role="tab" aria-selected="true">High Court</a>
-          </li>
-          <li class="post-category">
-            <a class="" href="#0" data-toggle="tab" role="tab">Tribunal</a>
-          </li>
-        </ul>
+        <div class="d-md-flex mb-3">
+          <h4 class="font-weight-bold mb-3 mb-md-0">Latest Supreme Court Judgments</h4>
+
+        <div id="resultStats mb-0" class="ml-auto">
+          <span class="d-none d-md-inline-block">Sorted by</span>
+          <span class="text-muted"> </span>
+          <select class="sort-by">
+            <option value="order_rel">Relevance</option>
+            <option value="order_dec_date">Newest</option>
+            <option value="order_asc_date">Oldest</option>
+            <option value="order_random">Random</option>
+        </select>
+        </div>
+        </div>
+        
+
+        <hr>
         
         <div class="row no-gutters">
           <div class="col-md-12 mb-3">
@@ -153,18 +177,19 @@
             <div class="ost card p-0 border-0 bg-white shadow-sm">
               <div class="card-body p-4">
   
-                <a href="./judgment-detail.html" class="h4 card-title d-block mb-0 text-primary">
-                  <u>Koshalya Rani Gopal Singh V. Gopal Singh Jhanda Singh</u>
-                  <img id="presecriptive" src="./images/caution.svg" class="ml-2" alt="" height="22px">
+                <a href="./judgment-detail.html" class="h4 card-title d-block mb-2 text-primary">
+                  <u>	Wg. Cdr. Arifur Rahman Khan and Aleya Sultana Vs. DLF Southern Homes Pvt. Ltd. (now known as BEGUR OMR Homes Pvt. Ltd.)</u>
+                 
                 </a>
-                <p class="card-text text-success mb-1">
-                   High Court Of Punjab And Haryana | 31-10-1961
+                <p class="card-text text-success mb-2">
+                   Supreme Court Of Punjab And Haryana |  <small class="ml-1"><i class="fas fa-clock"></i> 24/08/20</small>
+                   
                 </p>
                 <p class="mb-1 detailed-text">
                   <b>Judgment : </b>(1.) PURSUANT to a complaint made by Mst. Kaushiya Rani, <strong class="bg-light">Gopal Singh</strong> was committed to the court of. of a previous Full Bench in Durag Pal <strong class="bg-light">Singh</strong> v. Pancham <strong class="bg-light">singh</strong>, AIR 1939 All 403 (FB), to the effect. meaning of Section 29. A Division Bench of this Court consisting of Teja...
                 </p>
-               
-  
+   
+                
   
               </div>
   
@@ -178,13 +203,14 @@
             <div class="post card p-0 border-0 bg-white shadow-sm">
               <div class="card-body p-4">
   
-                <a href="./judgment-detail.html" class="h4 card-title d-block mb-0 text-primary">
-                  <u>Koshalya Rani Gopal Singh V. Gopal Singh Jhanda Singh Koshalya Rani Gopal...</u>
-                  <img src="./images/positive.svg" class="ml-2" alt="" height="22px">
+                <a href="./judgment-detail.html" class="h4 card-title d-block mb-2 text-primary">
+                  <u>Sri V.N. Krishna Murthy Vs. Sri Ravikumar</u>
+                  
                 </a>
-                  <p class="card-text text-success mb-1">
-                     High Court Of Punjab And Haryana | 31-10-1961
-                  </p>
+                <p class="card-text text-success mb-2">
+                  Supreme Court Of Punjab And Haryana |  <small class="ml-1"><i class="fas fa-clock"></i> 24/08/20</small>
+                  
+               </p>
                   <p class="mb-1 detailed-text">
                     <b>Judgment : </b>(1.) PURSUANT to a complaint made by Mst. Kaushiya Rani, <strong class="bg-light">Gopal Singh</strong> was committed to the court of. of a previous Full Bench in Durag Pal <strong class="bg-light">Singh</strong> v. Pancham <strong class="bg-light">singh</strong>, AIR 1939 All 403 (FB), to the effect. meaning of Section 29. A Division Bench of this Court consisting of Teja...
                   </p>
@@ -202,13 +228,14 @@
             <div class="ost card p-0 border-0 bg-white shadow-sm">
               <div class="card-body p-4">
   
-                <a href="./judgment-detail.html" class="h4 card-title d-block mb-0 text-primary">
-                  <u>Koshalya Rani Gopal Singh V. Gopal Singh Jhanda Singh</u>
-                  <img src="./images/referred.svg" class="ml-2" alt="" height="22px">
+                <a href="./judgment-detail.html" class="h4 card-title d-block mb-2 text-primary">
+                  <u>Sardar Bahginder Singh Vs. Sardar Manjieeth Singh Jagan Singh</u>
+                  
                 </a>
-                  <p class="card-text text-success mb-1">
-                     High Court Of Punjab And Haryana | 31-10-1961
-                  </p>
+                <p class="card-text text-success mb-2">
+                  Supreme Court Of Punjab And Haryana |  <small class="ml-1"><i class="fas fa-clock"></i> 24/08/20</small>
+                  
+               </p>
                   <p class="mb-1 detailed-text">
                     <b>Judgment : </b>(1.) PURSUANT to a complaint made by Mst. Kaushiya Rani, <strong class="bg-light">Gopal Singh</strong> was committed to the court of. of a previous Full Bench in Durag Pal <strong class="bg-light">Singh</strong> v. Pancham <strong class="bg-light">singh</strong>, AIR 1939 All 403 (FB), to the effect. meaning of Section 29. A Division Bench of this Court consisting of Teja...
                   </p>
@@ -226,13 +253,14 @@
             <div class="post card p-0 border-0 bg-white shadow-sm">
               <div class="card-body p-4">
   
-                <a href="./judgment-detail.html" class="h4 card-title d-block mb-0 text-primary">
-                  <u>Koshalya Rani Gopal Singh V. Gopal Singh Jhanda Singh</u>
-                  <img src="./images/warning.svg" class="ml-2" alt="" height="22px">
+                <a href="./judgment-detail.html" class="h4 card-title d-block mb-2 text-primary">
+                  <u>Avitel Post Studioz Limited Vs. HSBC PI Holdings (Mauritius) Limited</u>
+                  
                 </a>
-                  <p class="card-text text-success mb-1">
-                     High Court Of Punjab And Haryana | 31-10-1961
-                  </p>
+                <p class="card-text text-success mb-2">
+                  Supreme Court Of Punjab And Haryana |  <small class="ml-1"><i class="fas fa-clock"></i> 24/08/20</small>
+                  
+               </p>
                   <p class="mb-1 detailed-text">
                     <b>Judgment : </b>(1.) PURSUANT to a complaint made by Mst. Kaushiya Rani, <strong class="bg-light">Gopal Singh</strong> was committed to the court of. of a previous Full Bench in Durag Pal <strong class="bg-light">Singh</strong> v. Pancham <strong class="bg-light">singh</strong>, AIR 1939 All 403 (FB), to the effect. meaning of Section 29. A Division Bench of this Court consisting of Teja...
                   </p>
@@ -250,13 +278,14 @@
             <div class="post card p-0 border-0 bg-white shadow-sm">
               <div class="card-body p-4">
   
-                <a href="./judgment-detail.html" class="h4 card-title d-block mb-0 text-primary">
-                  <u>Koshalya Rani Gopal Singh V. Gopal Singh Jhanda Singh</u>
-                  <img src="./images/cited.svg" class="ml-2" alt="" height="22px">
+                <a href="./judgment-detail.html" class="h4 card-title d-block mb-2 text-primary">
+                  <u>The Commissioner of Central Excise, Customs and Service Tax, Calicut Vs. M/s. Cera Boards and Doors, Kannur Kerala</u>
+                  
                 </a>
-                  <p class="card-text text-success mb-1 ">
-                     High Court Of Punjab And Haryana | 31-10-1961
-                  </p>
+                <p class="card-text text-success mb-2">
+                  Supreme Court Of Punjab And Haryana |  <small class="ml-1"><i class="fas fa-clock"></i> 24/08/20</small>
+                  
+               </p>
                   <p class="mb-1 detailed-text">
                     <b>Judgment : </b>(1.) PURSUANT to a complaint made by Mst. Kaushiya Rani, <strong class="bg-light">Gopal Singh</strong> was committed to the court of. of a previous Full Bench in Durag Pal <strong class="bg-light">Singh</strong> v. Pancham <strong class="bg-light">singh</strong>, AIR 1939 All 403 (FB), to the effect. meaning of Section 29. A Division Bench of this Court consisting of Teja...
                   </p>
@@ -274,11 +303,12 @@
             <div class="ost card p-0 border-0 bg-white shadow-sm">
               <div class="card-body p-4">
   
-                <a href="./judgment-detail.html" class="h4 card-title d-block mb-0 text-primary">
-                  <u>Koshalya Rani Gopal Singh V. Gopal Singh Jhanda Singh</u></a>
-                  <p class="card-text text-success mb-1">
-                     High Court Of Punjab And Haryana | 31-10-1961
-                  </p>
+                <a href="./judgment-detail.html" class="h4 card-title d-block mb-2 text-primary">
+                  <u>Deccan Paper Mills Co. Ltd. Vs. Regency Mahavir Properties</u></a>
+                  <p class="card-text text-success mb-2">
+                    Supreme Court Of Punjab And Haryana |  <small class="ml-1"><i class="fas fa-clock"></i> 24/08/20</small>
+                    
+                 </p>
               <p class="mb-1 detailed-text"><b>Judgment : </b>(1.) PURSUANT to a complaint made by Mst. Kaushiya Rani, <strong>Gopal Singh</strong> was committed to the court of. of a previous Full Bench in Durag Pal <strong>Singh</strong> v. Pancham <strong>singh</strong>, AIR 1939 All 403 (FB), to the effect. meaning of Section 29. A Division Bench of this Court consisting of Teja <strong>Singh</strong> J. and Bhandari J. (as. he then was) in Harbans <strong>Singh</strong> v. Karam Chand, (1949) 51 Pun LR 50 : (AIR 1949 EP 299) had to decide.<br></p>
   
   
