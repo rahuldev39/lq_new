@@ -1427,7 +1427,7 @@ ol li{
 
 .latest-case-tab {
   top: 0;
-  z-index: 10;
+  z-index: 1;
 }
 
 .latest-case-tab .posts__categories-list>li.post-category>a {
