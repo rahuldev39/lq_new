@@ -1,0 +1,1172 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css\vendor\bootstrap.min.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato:100,300,400,400i,700,700i,900,900i&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.lineicons.com/1.0.1/LineIcons.min.css"
+    />
+    <!-- Vendor/Plugins CSS -->
+    <link rel="stylesheet" href="css\vendor\fontawesome-all.min.css" />
+    <link rel="stylesheet" href="./css/vendor/dataTables.bootstrap4.min.css" />
+    <link rel="stylesheet" href="./css/vendor/buttons.bootstrap4.min.css" />
+    <link rel="stylesheet" href="./css/vendor/responsive.bootstrap4.min.css" />
+    <link rel="stylesheet" href="css\main.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>legitquest | Journals page</title>
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="images\favicon\favicon-32x32.png"
+    />
+    <meta name="msapplication-TileColor" content="#ffffff" />
+    <meta
+      name="msapplication-TileImage"
+      content="images/favicon/ms-icon-144x144.png"
+    />
+    <meta name="theme-color" content="#ffffff" />
+  </head>
+
+  <body>
+    <header class="header header-sticky">
+      <nav class="navbar navbar-expand-lg navbar-sm">
+        <div class="container-fluid position-relative">
+          <a class="navbar-brand" href="index.html">
+            <img src="./images/lq-logo.png" alt="legitquest" class="mr-5"
+          /></a>
+          <button
+            class="navbar-toggler border-0"
+            type="button"
+            data-toggle="offcanvas"
+          >
+            <i class="navbar-toggler__bar navbar-toggler__bar--top"></i>
+            <i class="navbar-toggler__bar navbar-toggler__bar--middle"></i>
+            <i class="navbar-toggler__bar navbar-toggler__bar--bottom"></i>
+          </button>
+          <!-- Navbar Toggle Button -->
+
+          <div
+            class="offcanvas-collapse d-lg-flex flex-fill align-items-center"
+          >
+            <ul class="navbar-nav">
+              <li class="nav-item active">
+                <a class="nav-link" href="./index.html">Home</a>
+              </li>
+
+              <li class="nav-item nav--has-sub-menu" data-toggle="hover">
+                <a class="nav-link" href="#" data-toggle="dropdown">About</a>
+                <ul class="nav-sub-menu dropdown-menu rounded-lg shadow">
+                  <li class="nav-item">
+                    <a href="./about.html" class="nav-link">About Legitquest</a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="./team.html" class="nav-link">Our Team</a>
+                  </li>
+                </ul>
+              </li>
+
+              <li class="nav-item nav--has-sub-menu" data-toggle="hover">
+                <a class="nav-link" href="#" data-toggle="dropdown">Products</a>
+
+                <ul class="nav-sub-menu dropdown-menu rounded-lg shadow">
+                  <li class="nav-item">
+                    <a href="./research-request.html" class="nav-link"
+                      >Research</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a href="#" class="nav-link">Services</a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#" class="nav-link">Publish</a>
+                  </li>
+                </ul>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="./careers.html">Career</a>
+              </li>
+            </ul>
+            <ul class="navbar-nav ml-auto align-items-lg-center">
+              <li class="nav-item">
+                <a class="nav-link text-primary" href="./login.html">Sign In</a>
+              </li>
+              <li class="nav-item nav-item--btn">
+                <a
+                  href="./pricing.html"
+                  class="btn btn-primary btn-sm btn--has-shadow mt-3 mt-lg-0"
+                  >Sign Up</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <!-- END Navbar -->
+    </header>
+
+    <main class="main">
+      <section class="section section-hero py-0 gradient-light--lean-right">
+        <div class="container">
+          <figure
+            class="figure highlight-background highlight-background--lean-right"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+              width="1291px"
+              height="480px"
+            >
+              <defs>
+                <linearGradient id="PSgrad_0" x1="0%" x2="0%" y1="100%" y2="0%">
+                  <stop
+                    offset="28%"
+                    stop-color="rgb(244,245,250)"
+                    stop-opacity="1"
+                  ></stop>
+                  <stop
+                    offset="100%"
+                    stop-color="rgb(252,253,255)"
+                    stop-opacity="1"
+                  ></stop>
+                </linearGradient>
+              </defs>
+              <path
+                fill-rule="evenodd"
+                opacity="0.1"
+                fill="rgb(0, 0, 0)"
+                d="M480.084,0.001 L1290.991,0.001 L810.906,831.000 L-0.000,831.000 L480.084,0.001 Z"
+              ></path>
+              <path
+                fill="url(#PSgrad_0)"
+                d="M480.084,0.001 L1290.991,0.001 L810.906,831.000 L-0.000,831.000 L480.084,0.001 Z"
+              ></path>
+            </svg>
+          </figure>
+          <div class="pt-8 pb-5">
+            <div class="card border-0 shadow py-3">
+              <div class="card-body">
+                <h3 class="mb-3 font-weight-bold">List of Journals</h3>
+                <hr />
+                <div
+                  class="table-responsive mb-0"
+                  data-pattern="priority-columns"
+                >
+                  <table class="table">
+                    <thead class="bg-dark text-white">
+                      <tr class="tableizer-firstrow">
+                        <th width="70">Sr No</th>
+                        <th>Court</th>
+                        <th>Journals</th>
+                        <th>Journals Name</th>
+                        <th>Citation Formatt</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>1</td>
+                        <td><strong class="h5 font-weight-bold">Supreme Court</strong></td>
+                        <td>AIR(SC)</td>
+                        <td>All India Reporter</td>
+                        <td>AIR 2002 SC 506</td>
+                      </tr>
+                      <tr>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>SCC</td>
+                        <td>Supreme Court Cases</td>
+                        <td>(2010) 15 SCC 735</td>
+                      </tr>
+                      <tr>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>Scale</td>
+                        <td>Supreme court Almanac</td>
+                        <td>1995 (6) SCALE 744</td>
+                      </tr>
+                      <tr>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>SCR</td>
+                        <td>Supreme Court Reporter</td>
+                        <td>(1998) 3 SCR 916</td>
+                      </tr>
+                      <tr>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>JT</td>
+                        <td>Judgment Today</td>
+                        <td>JT 2009 (3) SC 323</td>
+                      </tr>
+                      <tr>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>AIR (SCW)</td>
+                        <td>All India Reporter Suprem Court Weekly</td>
+                        <td>AIR 2008 SCW 225</td>
+                      </tr>
+                      <tr>
+                        <td>2</td>
+                        <td><strong class="h5 font-weight-bold">Delhi</strong></td>
+                        <td>AIR Delhi</td>
+                        <td>All india Reporter</td>
+                        <td>AIR 1993 DEL 201</td>
+                      </tr>
+                      <tr>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>DLT</td>
+                        <td>Delhi Law Times</td>
+                        <td>(2005) 122 DLT 601</td>
+                      </tr>
+                      <tr>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>DRJ</td>
+                        <td>Delhi Reported Judgment</td>
+                        <td>(2005) 83 DRJ 241</td>
+                      </tr>
+                      <tr>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>AD</td>
+                        <td>Apex Decision</td>
+                        <td>2000 IIAD (DEL) 225</td>
+                      </tr>
+                      <tr>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>RajLR</td>
+                        <td>Rajdhani Law Report</td>
+                        <td>&nbsp;</td>
+                      </tr>
+                      <tr>
+                        <td>2</td>
+                        <td><strong class="h5 font-weight-bold">Bombay</strong></td>
+                        <td>AIR (Bombay)</td>
+                        <td>All India Reporter</td>
+                        <td>AIR 1980 BOM 231</td>
+                      </tr>
+                      <tr>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>BomCR</td>
+                        <td>Bombay Cases Reporter</td>
+                        <td>(2020) 1 BOM CR 803</td>
+                      </tr>
+                      <tr>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>BomLR</td>
+                        <td>Bombay Law Reporter</td>
+                        <td>(1982) 84 BOM LR 67</td>
+                      </tr>
+                      <tr>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>ALLMR</td>
+                        <td>All Maharashtra Law Reporter</td>
+                        <td>2008 (1) ALLMR 676</td>
+                      </tr>
+                      <tr>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>MhLJ</td>
+                        <td>Maharashtra Law Journal</td>
+                        <td>(2020) 1 MHLJ 957</td>
+                      </tr>
+                      <tr>
+                        <td>3</td>
+                        <td><strong class="h5 font-weight-bold">Madras</strong></td>
+                        <td>AIR (Madras)</td>
+                        <td>All India Reporter</td>
+                        <td>AIR 1923 MAD 324</td>
+                      </tr>
+                      <tr>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>MLJ</td>
+                        <td>Madras Law Journal</td>
+                        <td>1923 (44) MLJ 56</td>
+                      </tr>
+                      <tr>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>MLJ(Criminal)</td>
+                        <td>Madras Law Journal</td>
+                        <td>2018 (4) MLJ (CRL) 564</td>
+                      </tr>
+                      <tr>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>CTC</td>
+                        <td>Current Tamilnadu Cases</td>
+                        <td>(2018) 4 CTC 276</td>
+                      </tr>
+                      <tr>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>ILR (Madras)</td>
+                        <td>Indian Law Reports</td>
+                        <td>ILR (1923) 46 MAD 162</td>
+                      </tr>
+                      <tr>
+                        <td>4</td>
+                        <td><strong class="h5 font-weight-bold">Karnataka</strong></td>
+                        <td>AIR (Karnataka)</td>
+                        <td>All India Reporter</td>
+                        <td>AIR 2015 KAR 842</td>
+                      </tr>
+                      <tr>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>KCCR</td>
+                        <td>Karnataka Civil And Criminal Reporter</td>
+                        <td>(2010) 1 KCCR 660</td>
+                      </tr>
+                      <tr>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>KarLJ</td>
+                        <td>Karnataka Law Journal</td>
+                        <td>(2010) 3 KAR LJ 88</td>
+                      </tr>
+                      <tr>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>ILR (Karnataka)</td>
+                        <td>Indian Law Reports</td>
+                        <td>ILR (2009) KAR 3456</td>
+                      </tr>
+                      <tr>
+                        <td>5</td>
+                        <td><strong class="h5 font-weight-bold">Calcutta</strong></td>
+                        <td>AIR (Calcutta)</td>
+                        <td>All India Reporter</td>
+                        <td>AIR 2017 CAL 196</td>
+                      </tr>
+                      <tr>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>WBLR</td>
+                        <td>The West Bengal Law Reporter</td>
+                        <td>2017 (5) WBLR 397</td>
+                      </tr>
+                      <tr>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>CHN</td>
+                        <td>Calcutta High Court Notes</td>
+                        <td>(2017) 5 CHN (CAL) 65</td>
+                      </tr>
+                      <tr>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>CWN</td>
+                        <td>Calcutta Weekly Notes</td>
+                        <td>(2017) 5 CHN (CAL) 11</td>
+                      </tr>
+                      <tr>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>CLJ</td>
+                        <td>Calcutta Law Journal</td>
+                        <td>2013 (1) CLJ (CAL) 313</td>
+                      </tr>
+                      <tr>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>CalLT</td>
+                        <td>Calcutta Law Times</td>
+                        <td>(2001) 1 CAL LT 370</td>
+                      </tr>
+                      <tr>
+                        <td>6</td>
+                        <td><strong class="h5 font-weight-bold">Punjab And Haryana</strong></td>
+                        <td>AIR (Punjab and Haryana)</td>
+                        <td>All India Reporter</td>
+                        <td>AIR 1993 P&H 100</td>
+                      </tr>
+                      <tr>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>RCR (Civil)</td>
+                        <td>Recent Civil Reports</td>
+                        <td>(2008) 3 RCR (Civil) 706</td>
+                      </tr>
+                      <tr>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>RCR (Criminal)</td>
+                        <td>Recent Criminal Report</td>
+                        <td>(2000) 3 RCR (Criminal) 170</td>
+                      </tr>
+                      <tr>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>RCR (Rent)</td>
+                        <td>Rent Control Reporter</td>
+                        <td>(2018) 2 RCR (Rent) 96</td>
+                      </tr>
+                      <tr>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>PLR</td>
+                        <td>Punjab Law Reporter</td>
+                        <td>PLR (2018) 189 370</td>
+                      </tr>
+                      <tr>
+                        <td>7</td>
+                        <td><strong class="h5 font-weight-bold">Patna</strong></td>
+                        <td>AIR (Patna)</td>
+                        <td>All India Reporter</td>
+                        <td>AIR 1951 Pat 199</td>
+                      </tr>
+                      <tr>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>PLJR</td>
+                        <td>Patna Law Journal Reports</td>
+                        <td>(1968) 1 PLJR 1</td>
+                      </tr>
+                      <tr>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>BLJR</td>
+                        <td>Bihar Law Journal Report</td>
+                        <td>(1953) 1 BLJR 102</td>
+                      </tr>
+                      <tr>
+                        <td>8</td>
+                        <td><strong class="h5 font-weight-bold">Kerala</strong></td>
+                        <td>AIR (Kerala)</td>
+                        <td>All India Reporter</td>
+                        <td>AIR 1950 KER 83</td>
+                      </tr>
+                      <tr>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>KHC</td>
+                        <td>Kerala High Court</td>
+                        <td>2017 (4) KHC 876</td>
+                      </tr>
+                      <tr>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>KLJ</td>
+                        <td>Kerala Law Journal</td>
+                        <td>(1957) 1 KLJ 445</td>
+                      </tr>
+                      <tr>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>KLT</td>
+                        <td>Kerala Law Times</td>
+                        <td>(1982) 2 KLT 141</td>
+                      </tr>
+                      <tr>
+                        <td>9</td>
+                        <td><strong class="h5 font-weight-bold">Allahabad</strong></td>
+                        <td>AIR (Allahabad)</td>
+                        <td>All India Reporter</td>
+                        <td>AIR 2019 ALL 16</td>
+                      </tr>
+                      <tr>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>ADJ</td>
+                        <td>Allahabad Daily Judgments</td>
+                        <td>(2019) 7 ADJ 757</td>
+                      </tr>
+                      <tr>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>ACR</td>
+                        <td>Allahabad Criminl Rulings</td>
+                        <td>2012 (3) ACR 3053</td>
+                      </tr>
+                      <tr>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>ALJ</td>
+                        <td>Allahabad Law Journal</td>
+                        <td>2018 5 ALJ 683</td>
+                      </tr>
+                      <tr>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>Allahabad Criminal Cases</td>
+                        <td>Allahabad Criminal Cases</td>
+                        <td>&nbsp;</td>
+                      </tr>
+                      <tr>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>UPLBEC</td>
+                        <td>U.P. Local Bodies & Educational Cases</td>
+                        <td>(2014) 4 UPLBEC 2665</td>
+                      </tr>
+                      <tr>
+                        <td>10</td>
+                        <td><strong class="h5 font-weight-bold">Rajasthan</strong></td>
+                        <td>AIR (Rajasthan)</td>
+                        <td>All India Reporter</td>
+                        <td>AIR 2019 RAJ 150</td>
+                      </tr>
+                      <tr>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>WLC</td>
+                        <td>Western Law Cases</td>
+                        <td>(1995) 3 WLC 237</td>
+                      </tr>
+                      <tr>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>WLN</td>
+                        <td>Weekly Law Notes</td>
+                        <td>(1991) 2 WLN 567</td>
+                      </tr>
+                      <tr>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>RLR</td>
+                        <td>Rajasthan Law Reporter</td>
+                        <td>(2002) 3 RLR 696</td>
+                      </tr>
+                      <tr>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>RLW</td>
+                        <td>Rajasthan Law Weekly</td>
+                        <td>(2020) 1 RLW 876 (RAJ)</td>
+                      </tr>
+                      <tr>
+                        <td>11</td>
+                        <td><strong class="h5 font-weight-bold">Madhya Pradesh</strong></td>
+                        <td>AIR (Madhya Pradesh)</td>
+                        <td>All India Reporter</td>
+                        <td>AIR 2014 MP 23</td>
+                      </tr>
+                      <tr>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>MPLJ</td>
+                        <td>M.P.Law Journal</td>
+                        <td>(2014) 4 MP LJ 458</td>
+                      </tr>
+                      <tr>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>MPHT</td>
+                        <td>MP High court Today</td>
+                        <td>2014 (1) MPHT 344</td>
+                      </tr>
+                      <tr>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>MPJR</td>
+                        <td>M.P.Judicial Reporter</td>
+                        <td>2014 (1) MPJR 144</td>
+                      </tr>
+                      <tr>
+                        <td>12</td>
+                        <td><strong class="h5 font-weight-bold">Andhra Pradesh</strong></td>
+                        <td>AIR (Andhra Pradesh)</td>
+                        <td>All India Reporter</td>
+                        <td>AIR 2016 AP 170</td>
+                      </tr>
+                      <tr>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>ALD</td>
+                        <td>Andhra Legal Decisions</td>
+                        <td>(2017) 1 ALD 531</td>
+                      </tr>
+                      <tr>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>ALT</td>
+                        <td>Andhra Law Times</td>
+                        <td>(2016) 5 ALT 609</td>
+                      </tr>
+                      <tr>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>An.W.R</td>
+                        <td>Andhra Weekly Reporter</td>
+                        <td>(2016) 1 AN WR 701 (AP)</td>
+                      </tr>
+                      <tr>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>APLJ</td>
+                        <td>Andhra Pradesh Law Journal</td>
+                        <td>(1974) 2 AP LJ (HC) 302</td>
+                      </tr>
+                      <tr>
+                        <td>13</td>
+                        <td><strong class="h5 font-weight-bold">Gujarat</strong></td>
+                        <td>AIR (Gujarat)</td>
+                        <td>All India Reporter</td>
+                        <td>AIR 2014 GUJ 112</td>
+                      </tr>
+                      <tr>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>GLH</td>
+                        <td>Gujarat Law Herald</td>
+                        <td>(2012) 2 GLH 517</td>
+                      </tr>
+                      <tr>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>GLD</td>
+                        <td>Gujarat Law Decision</td>
+                        <td>2015 (2) GLD 333 (Gau)</td>
+                      </tr>
+                      <tr>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>Gujarat Law Reporter</td>
+                        <td>Gujarat Law Reporter</td>
+                        <td>&nbsp;</td>
+                      </tr>
+                      <tr>
+                        <td>14</td>
+                        <td><strong class="h5 font-weight-bold">Gauhati</strong></td>
+                        <td>AIR (Gauhati)</td>
+                        <td>All India Reporter</td>
+                        <td>&nbsp;</td>
+                      </tr>
+                      <tr>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>Gauhati Law Reports</td>
+                        <td>Gauhati Law Reports</td>
+                        <td>&nbsp;</td>
+                      </tr>
+                      <tr>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>GLT</td>
+                        <td>Gauhati Law times</td>
+                        <td>2017 (1) GLT 16</td>
+                      </tr>
+                      <tr>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>GLD</td>
+                        <td>Gauhati Law Decisions</td>
+                        <td>2015 (2) GLD 333 (Gau)</td>
+                      </tr>
+                      <tr>
+                        <td>15</td>
+                        <td><strong class="h5 font-weight-bold">Chattisgarh</strong></td>
+                        <td>AIR (Chhattisgarh)</td>
+                        <td>All India Reporter</td>
+                        <td>AIR 2013 Chh 176</td>
+                      </tr>
+                      <tr>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>CG.L.R.W</td>
+                        <td>The Chhattisgarh Law Report</td>
+                        <td>2013 (3) CG.L.R.W. 119</td>
+                      </tr>
+                      <tr>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>CGBCLJ</td>
+                        <td>Chhatiisgarh Bar Council Law Journal</td>
+                        <td>2013 (1) CGBCLJ 379</td>
+                      </tr>
+                      <tr>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>CGLJ</td>
+                        <td>Chhatisgarh Law Journal</td>
+                        <td>(2013) 4 CGLJ 166</td>
+                      </tr>
+                      <tr>
+                        <td>16</td>
+                        <td><strong class="h5 font-weight-bold">Jharkhand High Court</strong></td>
+                        <td>AIR (Jharkhand)</td>
+                        <td>All India Reporter</td>
+                        <td>AIR 2009 JHAR 136</td>
+                      </tr>
+                      <tr>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>JCR</td>
+                        <td>Jharkhand Cases Reporter</td>
+                        <td>(2003) 4 JCR 682 (JHAR)</td>
+                      </tr>
+                      <tr>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>JLJR</td>
+                        <td>Jharkhand Law Journal Repprts</td>
+                        <td>(2019) 3 JLJR 414</td>
+                      </tr>
+                      <tr>
+                        <td>17</td>
+                        <td><strong class="h5 font-weight-bold">Jammu & Kashmir High Court</strong></td>
+                        <td>AIR (Jammu & Kashmir)</td>
+                        <td>All India Reporter</td>
+                        <td>AIR 1991 J&K 30</td>
+                      </tr>
+                      <tr>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>JKJ</td>
+                        <td>JK Judgments</td>
+                        <td>(2015) 2 JKJ 748</td>
+                      </tr>
+                      <tr>
+                        <td>18</td>
+                        <td><strong class="h5 font-weight-bold">Manipur High Court</strong></td>
+                        <td>GLT</td>
+                        <td>Gauhati Law Times</td>
+                        <td>2017 (1) GLT 16</td>
+                      </tr>
+                      <tr>
+                        <td>19</td>
+                        <td><strong class="h5 font-weight-bold">Meghalya High Court</strong></td>
+                        <td>AIR (Meghalaya)</td>
+                        <td>All India Reporter</td>
+                        <td>&nbsp;</td>
+                      </tr>
+                      <tr>
+                        <td>20</td>
+                        <td><strong class="h5 font-weight-bold">Orissa High court</strong></td>
+                        <td>AIR (Orissa)</td>
+                        <td>All India Reporter</td>
+                        <td>AIR 2018 ORI 37</td>
+                      </tr>
+                      <tr>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>CLR</td>
+                        <td>Cuttack Law Report</td>
+                        <td>2009 (1) CLR 912</td>
+                      </tr>
+                      <tr>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>CLT</td>
+                        <td>Cuttack Law Times</td>
+                        <td>(2016) 122 CLT 782</td>
+                      </tr>
+                      <tr>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>OCR</td>
+                        <td>Orissa Criminal Reporter</td>
+                        <td>2009 (42) OCR 82</td>
+                      </tr>
+                      <tr>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>OLR</td>
+                        <td>Orissa Law Reviews</td>
+                        <td>2018 (1) OLR 831</td>
+                      </tr>
+                      <tr>
+                        <td>21</td>
+                        <td><strong class="h5 font-weight-bold">Sikkim High Court</strong></td>
+                        <td>AIR (Sikkim)</td>
+                        <td>All India Reporter</td>
+                        <td>&nbsp;</td>
+                      </tr>
+                      <tr>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>Sikkim Law Reports</td>
+                        <td>Sikkim Law Reports</td>
+                        <td>&nbsp;</td>
+                      </tr>
+                      <tr>
+                        <td>22</td>
+                        <td><strong class="h5 font-weight-bold">Telangana High Court</strong></td>
+                        <td>ALD</td>
+                        <td>Andhra Legal Decisions</td>
+                        <td>(2017) 1 ALD 531</td>
+                      </tr>
+                      <tr>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>ALT</td>
+                        <td>Andhra Law Times</td>
+                        <td>(2016) 5 ALT 609</td>
+                      </tr>
+                      <tr>
+                        <td>23</td>
+                        <td><strong class="h5 font-weight-bold">Uttarakhand High Court</strong></td>
+                        <td>AIR (Uttarakhand)</td>
+                        <td>All India Reporter</td>
+                        <td>AIR 2016 UTTRA 42</td>
+                      </tr>
+                      <tr>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>UC</td>
+                        <td>Uttaranchal Cases</td>
+                        <td>(2013) 3 UC 2250</td>
+                      </tr>
+                      <tr>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>UD</td>
+                        <td>Uttaranchal Decisions</td>
+                        <td>(2009) 2 UD 481</td>
+                      </tr>
+                      <tr>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>NCC</td>
+                        <td>Nainital criminal Cases</td>
+                        <td>(2016) 1 NCC 20</td>
+                      </tr>
+                      <tr>
+                        <td>24</td>
+                        <td><strong class="h5 font-weight-bold">Tripura High Court</strong></td>
+                        <td>AIR (Tripura)</td>
+                        <td>All India Reporter</td>
+                        <td>AIR 2014 Tripura 54</td>
+                      </tr>
+                      <tr>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>TLR</td>
+                        <td>Tripura Law Reports</td>
+                        <td>2016 (1) TLR 1052</td>
+                      </tr>
+                      <tr>
+                        <td>25</td>
+                        <td><strong class="h5 font-weight-bold">Himachal Pradesh High Court</strong></td>
+                        <td>AIR (Himachal Pradesh)</td>
+                        <td>All India Reporter</td>
+                        <td>AIR 1956 HP 35</td>
+                      </tr>
+                      <tr>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>ShimLC</td>
+                        <td>Shimla Law Cases</td>
+                        <td>2018 (2) SHIMLC 743</td>
+                      </tr>
+                      <tr>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                      </tr>
+                      <tr class="bg-dark text-white">
+                        <td>&nbsp;</td>
+                        <td><strong class="h5 font-weight-bold text-white">Vertical Journals</strong></td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                      </tr>
+                      <tr>
+                        <td>1</td>
+                        <td><strong class="h5 font-weight-bold">ACJ</strong></td>
+                        <td>Accidents Claims Journal</td>
+                        <td>&nbsp;</td>
+                        <td>2002 ACJ 337</td>
+                      </tr>
+                      <tr>
+                        <td>2</td>
+                        <td><strong class="h5 font-weight-bold">ArbLR</strong></td>
+                        <td>Arbitration Law Reporter</td>
+                        <td>&nbsp;</td>
+                        <td>2017 (6) ARBLR 407 (SC)</td>
+                      </tr>
+                      <tr>
+                        <td>3</td>
+                        <td><strong class="h5 font-weight-bold">BC</strong></td>
+                        <td>Banking Cases</td>
+                        <td>&nbsp;</td>
+                        <td>(2012) 4 BC 252</td>
+                      </tr>
+                      <tr>
+                        <td>4</td>
+                        <td><strong class="h5 font-weight-bold">CompLJ</strong></td>
+                        <td>Company Law Journal</td>
+                        <td>&nbsp;</td>
+                        <td>2001 (2) COMPLJ 397</td>
+                      </tr>
+                      <tr>
+                        <td>5</td>
+                        <td><strong class="h5 font-weight-bold">CompLR</strong></td>
+                        <td>Competition Law Reports</td>
+                        <td>&nbsp;</td>
+                        <td>2017 COMPLR 965 (BOM)</td>
+                      </tr>
+                      <tr>
+                        <td>6</td>
+                        <td><strong class="h5 font-weight-bold">CPJ</strong></td>
+                        <td>Consumer Protection Judgment</td>
+                        <td>&nbsp;</td>
+                        <td>2019 (3) CPJ 102</td>
+                      </tr>
+                      <tr>
+                        <td>7</td>
+                        <td><strong class="h5 font-weight-bold">CriLJ</strong></td>
+                        <td>Criminal Law Journal</td>
+                        <td>&nbsp;</td>
+                        <td>(2015) CRILJ 4231</td>
+                      </tr>
+                      <tr>
+                        <td>8</td>
+                        <td><strong class="h5 font-weight-bold">DMC</strong></td>
+                        <td>Divorce And Matrimonial Cases</td>
+                        <td>&nbsp;</td>
+                        <td>2014 (1) DMC 516 (JHAR)</td>
+                      </tr>
+                      <tr>
+                        <td>9</td>
+                        <td><strong class="h5 font-weight-bold">ELT</strong></td>
+                        <td>Excise Law Times</td>
+                        <td>&nbsp;</td>
+                        <td>(2011) 270 ELT 43 (JHAR)</td>
+                      </tr>
+                      <tr>
+                        <td>10</td>
+                        <td><strong class="h5 font-weight-bold">FLR</strong></td>
+                        <td>Factory Law Reporter</td>
+                        <td>&nbsp;</td>
+                        <td>(2005) 106 FLR 337</td>
+                      </tr>
+                      <tr>
+                        <td>11</td>
+                        <td><strong class="h5 font-weight-bold">GST</strong></td>
+                        <td>Goods And Services Tax Cases</td>
+                        <td>&nbsp;</td>
+                        <td>(2015) 52 GST 206</td>
+                      </tr>
+                      <tr>
+                        <td>12</td>
+                        <td><strong class="h5 font-weight-bold">LLJ</strong></td>
+                        <td>Labour Law Journal</td>
+                        <td>&nbsp;</td>
+                        <td>(2020) 1 LLJ 462 (ALL)</td>
+                      </tr>
+                      <tr>
+                        <td>13</td>
+                        <td><strong class="h5 font-weight-bold">PTC</strong></td>
+                        <td>Patent and Trade marks Cases</td>
+                        <td>&nbsp;</td>
+                        <td>(2009) 41 PTC 165 (ALL)</td>
+                      </tr>
+                      <tr>
+                        <td>14</td>
+                        <td><strong class="h5 font-weight-bold">TAXMAN</strong></td>
+                        <td>TAXMAN</td>
+                        <td>&nbsp;</td>
+                        <td>(2018) 257 TAXMAN 338</td>
+                      </tr>
+                      <tr>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td></td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- END Section Hero -->
+    </main>
+
+    <footer class="footer background--dark pt-0">
+      <div class="container">
+        <div class="row">
+          <div
+            class="footer-content col-12 d-md-flex justify-content-between align-items-center my-5"
+          >
+            <div class="footer__brand">
+              <a class="footer-logo mb-0" href="index.html">
+                <img src="./images/lq-logo-dark.png" alt="legitquest" />
+              </a>
+            </div>
+
+            <div class="footer__menu">
+              <ul class="footer-nav nav">
+                <li class="nav-item">
+                  <a class="nav-link" href="pricing.html">Pricing</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="about.html">About</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="blog-full-width.html">Blog</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="contact.html">Contact</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="login.html">Login</a>
+                </li>
+                <li class="nav-item nav-item--btn">
+                  <a
+                    href="signup.html"
+                    class="btn btn-primary btn-sm btn--has-shadow mt-3 mt-md-0"
+                    >Sign up</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+          <!-- Footer Content -->
+
+          <div class="col-12">
+            <div
+              class="footer-copyright-column d-md-flex justify-content-between align-items-center"
+            >
+              <div class="copyright">
+                <p>©2019 - Legitquest. All rights reserved.</p>
+              </div>
+
+              <ul class="social-icons ml-auto mb-0">
+                <li>
+                  <a href="#0"><i class="fab fa-facebook-f"></i></a>
+                </li>
+                <li>
+                  <a href="#0"><i class="fab fa-twitter"></i></a>
+                </li>
+                <li>
+                  <a href="#0"><i class="fab fa-instagram"></i></a>
+                </li>
+                <li>
+                  <a href="#0"><i class="fab fa-youtube"></i></a>
+                </li>
+                <li>
+                  <a href="#0"><i class="fab fa-pinterest-p"></i></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- END Footer -->
+
+    <div class="alert-notifications-wrapper">
+      <div
+        id="subscribe-success-notification"
+        class="alert alert-validation alert-success alert-dismissible fade"
+        role="alert"
+      >
+        Thank you for subscribing! Please check your inbox to opt-in.
+        <button
+          type="button"
+          class="close"
+          data-dismiss="alert"
+          aria-label="Close"
+        >
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <!-- Subscribe Success -->
+
+      <div
+        id="subscribe-error-notification"
+        class="alert alert-validation alert-danger alert-dismissible fade"
+        role="alert"
+      >
+        Oh no, error happened! Please check the email address and/or try again.
+        <button
+          type="button"
+          class="close"
+          data-dismiss="alert"
+          aria-label="Close"
+        >
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <!-- Subscribe Error -->
+    </div>
+    <!-- END Alert Notifications Wrapper -->
+
+    <!-- Global Required JS -->
+    <script src="js\vendor\jquery-3.3.1.min.js"></script>
+    <script src="js\vendor\popper.min.js"></script>
+    <script src="js\vendor\bootstrap.min.js"></script>
+
+    <!-- Vendor/Plugins JS -->
+    <script src="js\vendor\jquery.ajaxchimp.min.js"></script>
+
+    <!-- Vendor/Datatable -->
+    <script src="./js/vendor/datatable/jquery.dataTables.min.js"></script>
+    <script src="./js/vendor/datatable/dataTables.bootstrap4.min.js"></script>
+    <!-- Buttons examples -->
+    <script src="./js/vendor/datatable/dataTables.buttons.min.js"></script>
+    <script src="./js/vendor/datatable/jszip.min.js"></script>
+    <script src="./js/vendor/datatable/pdfmake.min.js"></script>
+    <script src="./js/vendor/datatable/vfs_fonts.js"></script>
+    <script src="./js/vendor/datatable/buttons.html5.min.js"></script>
+    <script src="./js/vendor/datatable/buttons.print.min.js"></script>
+    <script src="./js/vendor/datatable/buttons.colVis.min.js"></script>
+    <!-- Responsive examples -->
+    <script src="./js/vendor/datatable/dataTables.responsive.min.js"></script>
+
+    <!-- Vendor/Plugins JS Init -->
+    <script src="js\init\wb.ajaxchimp-init.js"></script>
+
+    <script src="js\min\main-min.js"></script>
+
+    <script type="text/javascript">
+      $(document).ready(function () {
+        $("#datatable").DataTable(),
+          $("#datatable-buttons")
+            .DataTable({
+              lengthChange: !1,
+              buttons: [
+                {
+                  extend: "copy",
+                  className: "btn btn-primary w-auto btn-sm px-3",
+                  text: '<i class="far fa-copy"></i> Copy',
+                },
+
+                {
+                  extend: "excel",
+                  className: "btn btn-primary w-auto btn-sm px-3",
+                  text: '<i class="far fa-file-excel"></i> Excel',
+                },
+
+                {
+                  extend: "pdf",
+                  className: "btn btn-primary w-auto btn-sm px-3",
+                  text: '<i class="far fa-file-pdf"></i> Pdf',
+                },
+              ],
+            })
+            .buttons()
+            .container()
+            .appendTo("#datatable-buttons_wrapper .col-md-6:eq(0)");
+      });
+    </script>
+  </body>
+</html>
