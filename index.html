@@ -13,7 +13,7 @@
   <link href="https://fonts.googleapis.com/css?family=Gelasio:400,400i,500,500i,600,600i,700,700i&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css\vendor\swiper.min.css">
-  <link rel="stylesheet" href="./css/vendor/jquery.tree-multiselect.css">
+  <link rel="stylesheet" href="./css/vendor/jquery.fancybox.min.css">
   <link rel="stylesheet" href="./css/vendor/animate.css">
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <link rel="stylesheet" href="https://cdn.lineicons.com/1.0.1/LineIcons.min.css">
@@ -840,6 +840,80 @@
         </section> <!-- END Section Posts -->
         </div>
 
+
+
+        <section class="section section-video bg-dark">
+          <div class="container py-5">
+         
+            <div class="row">
+              <div class="col-lg-3 col-md-6 mb-lg-0 mb-4">
+                  <div class="video-demo-block">
+                      <div class="feature-img rounded overflow-hidden position-relative mb-3">
+                        <a data-fancybox="" href="https://www.youtube.com/watch?v=oik6qiQNrXg" class="video-link d-block">
+                          <img src="./images/video-isearch.jpg" alt="" class="img-fluid">
+                        </a>
+                      </div>
+                      <div class="feature-name">
+                          <h4 class="feature-tittle font-weight-bold text-white">iSearch</h4>
+                          <span class="feature-tittle subtittle">Not all legal search engines are created equal - Information retrieval made easy</span>
+                        </div>
+                        <div class="read-more-link">
+                          <a href="#">Learn More</a>
+                        </div>
+                  </div>
+              </div>
+              <div class="col-lg-3 col-md-6 mb-lg-0 mb-4">
+                  <div class="video-demo-block">
+                      <div class="feature-img rounded overflow-hidden position-relative  mb-3">
+                        <a data-fancybox="" href="https://www.youtube.com/embed/WqWaGMT1T0A" class="video-link d-block">
+                          <img src="./images/video-igraphics.jpg" alt="" class="img-fluid">
+                        </a>
+                      </div>
+                      <div class="feature-name">
+                          <h4 class="feature-tittle font-weight-bold text-white">iGraphics</h4>
+                          <span class="feature-tittle subtittle">A picture is intelligence made visible</span>
+                        </div>
+                        <div class="read-more-link">
+                          <a href="#">Learn More</a>
+                        </div>
+                  </div>
+              </div>
+              <div class="col-lg-3 col-md-6 mb-lg-0 mb-4">
+                  <div class="video-demo-block">
+                      <div class="feature-img rounded  overflow-hidden position-relative  mb-3">
+                        <a data-fancybox="" href="https://www.youtube.com/embed/KQXOAMTZLqY" class="video-link d-block">
+                          <img src="./images/video-idraf.jpg" alt="" class="img-fluid">
+                        </a>
+                      </div>
+                      <div class="feature-name">
+                          <h4 class="feature-tittle font-weight-bold text-white">iDRAF</h4>
+                          <span class="feature-tittle subtittle">Deliver beyond expectations</span>
+                        </div>
+                        <div class="read-more-link">
+                          <a href="#">Learn More</a>
+                        </div>
+                  </div>
+              </div>
+              <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
+                <div class="video-demo-block">
+                    <div class="feature-img rounded border-dark overflow-hidden position-relative  mb-3">
+                      <a data-fancybox="" href="https://www.youtube.com/embed/KQXOAMTZLqY" class="video-link d-block">
+                        <img src="./images/video-complete.jpg" alt="" class="img-fluid">
+                      </a>
+                    </div>
+                    <div class="feature-name">
+                        <h4 class="feature-tittle font-weight-bold text-white">Complete Demo</h4>
+                        <span class="feature-tittle subtittle">Deliver beyond expectations</span>
+                      </div>
+                      <div class="read-more-link">
+                        <a href="#">Learn More</a>
+                      </div>
+                </div>
+            </div>
+          </div>
+          </div>
+        </section>
+
       <section class="section section-testimonials bg-gray">
 
 
@@ -1068,6 +1142,7 @@
 
   <!-- Vendor/Plugins JS -->
   <script src="js\vendor\swiper.min.js"></script>
+  <script src="./js/vendor/jquery.fancybox.min.js"></script>
   <script src="js\vendor\jquery.ajaxchimp.min.js"></script>
 
   <!-- Vendor/Plugins JS Init -->
@@ -1220,7 +1295,11 @@
     })
   </script>
 
-  
+<script>
+  $('[data-fancybox="gallery"]').fancybox({
+  // Options will go here
+});
+</script>
 </body>
 
 </html>

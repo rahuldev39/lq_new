@@ -1463,3 +1463,40 @@ ol li{
 .journal-input {
   padding-right: 153px !important;
 }
+
+.video-link::after {
+  content: "\f04b";
+  display: inline-block;
+  font-family: 'Font Awesome 5 Free';
+  font-size: 15px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-left: 4px;
+  color: #ffffff;
+  background-color: #4d5bed;
+  box-shadow: 1px 1px 2px #0613364a;
+  font-weight: 600;
+  opacity: .8;
+}
+.section-video{
+  background-image: url(../images/video-bg.jpg) !important;
+  background-size: cover !important;
+}
+.feature-img:hover .video-link::after {
+    opacity: 1;
+}
+.video-demo-block{
+  transition: all ease-in-out 100ms;
+}
+.video-demo-block:hover{
+  transform: scale(1.05);
+}
