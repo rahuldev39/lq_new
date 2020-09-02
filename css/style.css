@@ -1500,3 +1500,8 @@ ol li{
 .video-demo-block:hover{
   transform: scale(1.05);
 }
+.main-banner a.btn {
+  font-size: 14px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
