@@ -1316,7 +1316,7 @@ ol li{
   bottom: 0px;
   height: 90%;
 }
-.main-banner .row{
+.main-banner > .row{
   min-height: calc(100vh - 84px);
 }
 .main-banner .btn{
