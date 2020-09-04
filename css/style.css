@@ -1505,3 +1505,25 @@ ol li{
   padding-top: 10px;
   padding-bottom: 10px;
 }
+.demo-links {
+  width: 100%;
+  height: 40px;
+  background-color: #0c2150;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.demo-links a {
+  font-size: 13px;
+  color: #ffffffa8;
+  border-left: 1px solid #fefefe33;
+  padding-left: 12px;
+  margin-right: 12px;
+}
+.demo-links a:hover{
+  color: white;
+}
+.demo-links a:first-child{
+  border-left: 0px;
+  padding-left: 0px;
+}
