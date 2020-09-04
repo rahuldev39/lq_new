@@ -1241,12 +1241,12 @@ ol li{
     color: #4d5bed;
 }
 .alert-modal-toggle, .tour-link {
-    right: -155px;
-    top: 275px;
-    padding: 10px;
-    border: 1px solid #d3d7da;
-    border-right: 0px;
-    transition: all ease-in-out 300ms;
+  right: -89px;
+  top: 275px;
+  padding: 10px;
+  border: 1px solid #d3d7da;
+  border-right: 0px;
+  transition: all ease-in-out 300ms;
 }
 .alert-modal-toggle:hover, .tour-link:hover{
   right: 0px;
