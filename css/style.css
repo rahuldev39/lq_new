@@ -1527,3 +1527,7 @@ ol li{
   border-left: 0px;
   padding-left: 0px;
 }
+.btn-danger {
+  background-color: #eb1f3a;
+  border-color: #eb1f3a;
+}
