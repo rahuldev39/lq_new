@@ -1430,12 +1430,16 @@ ol li{
   z-index: 1;
 }
 
-.latest-case-tab .posts__categories-list>li.post-category>a {
+.latest-case-tab .posts__categories-list>li.post-category>a,
+.blog__top-bar .posts__categories-list>li.post-category>a
+ {
   color: #ffffffb0;
   font-size: .9rem;
 }
 .latest-case-tab .posts__categories-list>li.post-category>a.active, 
-.latest-case-tab .posts__categories-list>li.post-category>a:hover {
+.latest-case-tab .posts__categories-list>li.post-category>a:hover,
+.blog__top-bar .posts__categories-list>li.post-category>a.active, 
+.blog__top-bar .posts__categories-list>li.post-category>a:hover {
   color: white;
   box-shadow: inset 0px -3px 0 0 #586fed;
 }
@@ -1530,4 +1534,88 @@ ol li{
 .btn-danger {
   background-color: #eb1f3a;
   border-color: #eb1f3a;
+}
+.btn-search-toggle:hover {
+  color: #586fed !important;
+}
+
+.tag-list a {
+  display: inline-block;
+  background-color: #f6f7fd;
+  padding: 3px 13px;
+  color: #1c294b;
+  margin: 3px 0px;
+  margin-right: 6px;
+  border-radius: 4px;
+  border: 1px solid #7c84962b;
+  font-size: .87rem;
+}
+.tag-list a:hover {
+  color: white;
+  background-color: #4d5bed;
+}
+
+.post .card-img-top{
+  height: 280px;
+  object-fit: cover;
+}
+.post-date {
+  position: absolute;
+  left: 32px;
+  text-align: center;
+  background-color: #4d5bed;
+  color: white;
+  padding: 12px 21px;
+  border-radius: 5px;
+  top: -61px;
+}
+.post-date span {
+  display: block;
+  text-transform: uppercase;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 28px;
+}
+.post-date strong {
+  font-size: 14px;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+.blog-info-link li a {
+ 
+  font-size: .9rem;
+}
+.blog-info-link li i, .blog-info-link li span {
+  font-size: 13px;
+  margin-right: 5px;
+  color: #0c2150;
+}
+.blog-info-link li::after {
+  content: "|";
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.blog-info-link li:last-child::after{
+  display: none;
+}
+.comment-list .user .thumb img{
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+  object-position: top;
+}
+.comment-list .reply-btn a {
+  font-size: 0.86rem;
+}
+.comment-list .date {
+  font-size: .9rem;
+}
+.post-footer{
+  font-size: .9rem;
+}
+.post-footer i{
+  font-size: 13px;
+  margin-right: 5px;
+  color: #0c2150;
 }

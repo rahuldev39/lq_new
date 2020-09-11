@@ -23,14 +23,14 @@ $(function() {
       }))
     }
   });
-//  var n = $(".btn-search-toggle"),
-//    o = $(".search-bar"),
+var n = $(".btn-search-toggle"),
+ o = $(".search-bar"),
     a;
-//  n.click(function() {
-//    o.animate({
-//      width: "toggle"
-//    })
-//  })
+ n.click(function() {
+ o.animate({
+   width: "toggle"
+  })
+ })
 });
 
 
