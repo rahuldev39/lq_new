@@ -1622,8 +1622,9 @@ ol li{
 
 .blog-list .container {
   margin-top: -200px;
+  z-index: 100;
+  position: relative;
 }
-
 .blog-banner{
   background-image: url(../images/blog/bg-parallax-5.jpg);
   background-size: cover;
@@ -1646,4 +1647,47 @@ ol li{
 .blog-banner p {
   max-width: 500px;
   margin: 0 auto;
+}
+.court-btn {
+  padding: 3px 8px;
+  display: flex;
+  align-items: center;
+  font-size: 12px;
+}
+.court-btn i {
+  font-size: 11px;
+  margin-left: 7px;
+}
+.court-list li {
+  margin: 4px 0px;
+  padding: 4px 9px;
+  border: 1px solid #4350df;
+  margin-right: 9px;
+  border-radius: 5px;
+  background-color: #4d5bed0d;
+}
+.court-list li label {
+  font-size: 13px;
+  padding-left: 18px;
+}
+.custom-checkbox label input[type="checkbox"] + span::before {
+  font-size: 15px;
+}
+.date-tag{
+
+}
+.date-tag span {
+  display: inline-block;
+  padding: 5px 17px;
+  border: 1px solid #0c2150;
+  border-radius: 23px;
+  font-size: 13px;
+  font-weight: 500;
+  color: #ffffff;
+  background-color: #0c2150;
+}
+@media(max-width :992px){
+  .case-header h4{
+    width: 100%;
+  }
 }

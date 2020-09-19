@@ -151,10 +151,23 @@
     
     <section class="pt-3 pb-9 bg-gray">
       <div class="container">
-        <div class="d-md-flex mb-3">
-          <h4 class="font-weight-bold mb-3 mb-md-0">Latest Supreme Court Judgments</h4>
-
-        <div id="resultStats mb-0" class="ml-auto">
+        <div class="d-flex mb-3 flex-wrap case-header">
+          <h4 class="font-weight-bold mb-3 mb-lg-0 mr-2 ">Latest Supreme Court Judgments</h4>
+          <button class="court-btn btn btn-outline-primary btn-sm mr-auto"  data-toggle="collapse" data-target="#courts-card" >
+           Select Courts
+            <i class="fas fa-chevron-down"></i>
+          </button>
+          <div id="resultStats mb-0">
+            <span class="d-none d-md-inline-block">Date</span>
+            <span class="text-muted"> </span>
+            <select class="sort-by">
+              <option value="7">7 Days</option>
+              <option value="15">15 Days</option>
+              <option value="30">30 Days</option>
+              <option value="60">60 Days</option>
+            </select>
+          </div>
+        <div id="resultStats mb-0" class="ml-4">
           <span class="d-none d-md-inline-block">Sorted by</span>
           <span class="text-muted"> </span>
           <select class="sort-by">
@@ -168,13 +181,111 @@
         
 
         <hr>
+
         
-        <div class="row no-gutters">
-          <div class="col-md-12 mb-3">
 
-            
+        <div id="courts-card" class="card   border-0 shadow-sm border-0 p-0 collapse">
+          <div  class="card-body">
+            <h5 class="font-weight-bold mb-3">Select court from Hight Court list</h5>
+            <ul class="list-unstyled court-list d-flex align-items-center flex-wrap mb-0">
+              <li>
+                <div class="custom-checkbox">
+                  <label class="f-14 font-weight-normal d-flex">
+                    <input class="d-none" type="checkbox" name="maincourt" value="" checked>
+                    <span class="">High Court 1</span>
+                  </label>
+                </div>
+              </li>
+              <li>
+                <div class="custom-checkbox">
+                  <label class="f-14 font-weight-normal d-flex">
+                    <input class="d-none" type="checkbox" name="maincourt" value="" checked>
+                    <span class="">High Court 2</span>
+                  </label>
+                </div>
+              </li>
+              <li>
+                <div class="custom-checkbox">
+                  <label class="f-14 font-weight-normal d-flex">
+                    <input class="d-none" type="checkbox" name="maincourt" value="">
+                    <span class="">High Court 3</span>
+                  </label>
+                </div>
+              </li>
+              <li>
+                <div class="custom-checkbox">
+                  <label class="f-14 font-weight-normal d-flex">
+                    <input class="d-none" type="checkbox" name="maincourt" value="">
+                    <span class="">High Court 4</span>
+                  </label>
+                </div>
+              </li>
+              <li>
+                <div class="custom-checkbox">
+                  <label class="f-14 font-weight-normal d-flex">
+                    <input class="d-none" type="checkbox" name="maincourt" value="">
+                    <span class="">High Court 5</span>
+                  </label>
+                </div>
+              </li>
+              <li>
+                <div class="custom-checkbox">
+                  <label class="f-14 font-weight-normal d-flex">
+                    <input class="d-none" type="checkbox" name="maincourt" value="">
+                    <span class="">High Court 6</span>
+                  </label>
+                </div>
+              </li>
+              <li>
+                <div class="custom-checkbox">
+                  <label class="f-14 font-weight-normal d-flex">
+                    <input class="d-none" type="checkbox" name="maincourt" value="">
+                    <span class="">High Court 7</span>
+                  </label>
+                </div>
+              </li>
+              <li>
+                <div class="custom-checkbox">
+                  <label class="f-14 font-weight-normal d-flex">
+                    <input class="d-none" type="checkbox" name="maincourt" value="">
+                    <span class="">High Court 8</span>
+                  </label>
+                </div>
+              </li>
+              <li>
+                <div class="custom-checkbox">
+                  <label class="f-14 font-weight-normal d-flex">
+                    <input class="d-none" type="checkbox" name="maincourt" value="">
+                    <span class="">High Court 9</span>
+                  </label>
+                </div>
+              </li>
+              <li>
+                <div class="custom-checkbox">
+                  <label class="f-14 font-weight-normal d-flex">
+                    <input class="d-none" type="checkbox" name="maincourt" value="">
+                    <span class="">High Court 10</span>
+                  </label>
+                </div>
+              </li>
+              <li>
+                <div class="custom-checkbox">
+                  <label class="f-14 font-weight-normal d-flex">
+                    <input class="d-none" type="checkbox" name="maincourt" value="">
+                    <span class="">High Court 11</span>
+                  </label>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
 
-            <div class="ost card p-0 border-0 bg-white shadow-sm">
+        <div class="date-tag pt-3 pb-4 text-center">
+          <span>16 Sep, 2020</span>
+        </div>
+        
+       
+            <div class="card p-0 border-0 bg-white shadow-sm mb-3">
               <div class="card-body p-4">
   
                 <a href="./judgment-detail.html" class="h4 card-title d-block mb-2 text-primary">
@@ -197,10 +308,8 @@
   
               </div>
             </div> <!-- Card for a Post/Artile -->
-          </div>
-  
-          <div class="col-md-12 mb-3">
-            <div class="post card p-0 border-0 bg-white shadow-sm">
+          
+            <div class="card p-0 border-0 bg-white shadow-sm mb-3">
               <div class="card-body p-4">
   
                 <a href="./judgment-detail.html" class="h4 card-title d-block mb-2 text-primary">
@@ -222,10 +331,8 @@
   
               </div>
             </div> <!-- Card for a Post/Artile -->
-          </div>
-  
-          <div class="col-md-12 mb-3">
-            <div class="ost card p-0 border-0 bg-white shadow-sm">
+       
+            <div class="card p-0 border-0 bg-white shadow-sm mb-3">
               <div class="card-body p-4">
   
                 <a href="./judgment-detail.html" class="h4 card-title d-block mb-2 text-primary">
@@ -247,14 +354,17 @@
   
               </div>
             </div> <!-- Card for a Post/Artile -->
-          </div>
-  
-          <div class="col-md-12 mb-3">
-            <div class="post card p-0 border-0 bg-white shadow-sm">
+
+            <div class="date-tag pt-3 pb-4 text-center">
+              <span>16 Sep, 2020</span>
+            </div>
+            
+          
+            <div class="card p-0 border-0 bg-white shadow-sm mb-3">
               <div class="card-body p-4">
   
                 <a href="./judgment-detail.html" class="h4 card-title d-block mb-2 text-primary">
-                  <u>Avitel Post Studioz Limited Vs. HSBC PI Holdings (Mauritius) Limited</u>
+                  <u>Avitel PStudioz Limited Vs. HSBC PI Holdings (Mauritius) Limited</u>
                   
                 </a>
                 <p class="card-text text-success mb-2">
@@ -272,10 +382,8 @@
   
               </div>
             </div> <!-- Card for a Post/Artile -->
-          </div>
-  
-          <div class="col-md-12 mb-3">
-            <div class="post card p-0 border-0 bg-white shadow-sm">
+          
+            <div class="card p-0 border-0 bg-white shadow-sm mb-3">
               <div class="card-body p-4">
   
                 <a href="./judgment-detail.html" class="h4 card-title d-block mb-2 text-primary">
@@ -297,10 +405,110 @@
   
               </div>
             </div> <!-- Card for a Post/Artile -->
-          </div>
+       
+            <div class="card p-0 border-0 bg-white shadow-sm mb-3">
+              <div class="card-body p-4">
   
-          <div class="col-md-12">
-            <div class="ost card p-0 border-0 bg-white shadow-sm">
+                <a href="./judgment-detail.html" class="h4 card-title d-block mb-2 text-primary">
+                  <u>Deccan Paper Mills Co. Ltd. Vs. Regency Mahavir Properties</u></a>
+                  <p class="card-text text-success mb-2">
+                    Supreme Court Of Punjab And Haryana |  <small class="ml-1"><i class="fas fa-clock"></i> 24/08/20</small>
+                    
+                 </p>
+              <p class="mb-1 detailed-text"><b>Judgment : </b>(1.) PURSUANT to a complaint made by Mst. Kaushiya Rani, <strong>Gopal Singh</strong> was committed to the court of. of a previous Full Bench in Durag Pal <strong>Singh</strong> v. Pancham <strong>singh</strong>, AIR 1939 All 403 (FB), to the effect. meaning of Section 29. A Division Bench of this Court consisting of Teja <strong>Singh</strong> J. and Bhandari J. (as. he then was) in Harbans <strong>Singh</strong> v. Karam Chand, (1949) 51 Pun LR 50 : (AIR 1949 EP 299) had to decide.<br></p>
+  
+  
+              </div>
+  
+              <div class="card-footer pb-4 bg-dark d-none">
+  
+              </div>
+            </div> <!-- Card for a Post/Artile -->
+
+            <div class="date-tag pt-3 pb-4 text-center">
+              <span>16 Sep, 2020</span>
+            </div>
+
+            <div class="card p-0 border-0 bg-white shadow-sm mb-3">
+              <div class="card-body p-4">
+  
+                <a href="./judgment-detail.html" class="h4 card-title d-block mb-2 text-primary">
+                  <u>Deccan Paper Mills Co. Ltd. Vs. Regency Mahavir Properties</u></a>
+                  <p class="card-text text-success mb-2">
+                    Supreme Court Of Punjab And Haryana |  <small class="ml-1"><i class="fas fa-clock"></i> 24/08/20</small>
+                    
+                 </p>
+              <p class="mb-1 detailed-text"><b>Judgment : </b>(1.) PURSUANT to a complaint made by Mst. Kaushiya Rani, <strong>Gopal Singh</strong> was committed to the court of. of a previous Full Bench in Durag Pal <strong>Singh</strong> v. Pancham <strong>singh</strong>, AIR 1939 All 403 (FB), to the effect. meaning of Section 29. A Division Bench of this Court consisting of Teja <strong>Singh</strong> J. and Bhandari J. (as. he then was) in Harbans <strong>Singh</strong> v. Karam Chand, (1949) 51 Pun LR 50 : (AIR 1949 EP 299) had to decide.<br></p>
+  
+  
+              </div>
+  
+              <div class="card-footer pb-4 bg-dark d-none">
+  
+              </div>
+            </div> <!-- Card for a Post/Artile -->
+            <div class="card p-0 border-0 bg-white shadow-sm mb-3">
+              <div class="card-body p-4">
+  
+                <a href="./judgment-detail.html" class="h4 card-title d-block mb-2 text-primary">
+                  <u>Deccan Paper Mills Co. Ltd. Vs. Regency Mahavir Properties</u></a>
+                  <p class="card-text text-success mb-2">
+                    Supreme Court Of Punjab And Haryana |  <small class="ml-1"><i class="fas fa-clock"></i> 24/08/20</small>
+                    
+                 </p>
+              <p class="mb-1 detailed-text"><b>Judgment : </b>(1.) PURSUANT to a complaint made by Mst. Kaushiya Rani, <strong>Gopal Singh</strong> was committed to the court of. of a previous Full Bench in Durag Pal <strong>Singh</strong> v. Pancham <strong>singh</strong>, AIR 1939 All 403 (FB), to the effect. meaning of Section 29. A Division Bench of this Court consisting of Teja <strong>Singh</strong> J. and Bhandari J. (as. he then was) in Harbans <strong>Singh</strong> v. Karam Chand, (1949) 51 Pun LR 50 : (AIR 1949 EP 299) had to decide.<br></p>
+  
+  
+              </div>
+  
+              <div class="card-footer pb-4 bg-dark d-none">
+  
+              </div>
+            </div> <!-- Card for a Post/Artile -->
+
+            <div class="date-tag pt-3 pb-4 text-center">
+              <span>16 Sep, 2020</span>
+            </div>
+
+            <div class="card p-0 border-0 bg-white shadow-sm mb-3">
+              <div class="card-body p-4">
+  
+                <a href="./judgment-detail.html" class="h4 card-title d-block mb-2 text-primary">
+                  <u>Deccan Paper Mills Co. Ltd. Vs. Regency Mahavir Properties</u></a>
+                  <p class="card-text text-success mb-2">
+                    Supreme Court Of Punjab And Haryana |  <small class="ml-1"><i class="fas fa-clock"></i> 24/08/20</small>
+                    
+                 </p>
+              <p class="mb-1 detailed-text"><b>Judgment : </b>(1.) PURSUANT to a complaint made by Mst. Kaushiya Rani, <strong>Gopal Singh</strong> was committed to the court of. of a previous Full Bench in Durag Pal <strong>Singh</strong> v. Pancham <strong>singh</strong>, AIR 1939 All 403 (FB), to the effect. meaning of Section 29. A Division Bench of this Court consisting of Teja <strong>Singh</strong> J. and Bhandari J. (as. he then was) in Harbans <strong>Singh</strong> v. Karam Chand, (1949) 51 Pun LR 50 : (AIR 1949 EP 299) had to decide.<br></p>
+  
+  
+              </div>
+  
+              <div class="card-footer pb-4 bg-dark d-none">
+  
+              </div>
+            </div> <!-- Card for a Post/Artile -->
+
+            <div class="card p-0 border-0 bg-white shadow-sm mb-3">
+              <div class="card-body p-4">
+  
+                <a href="./judgment-detail.html" class="h4 card-title d-block mb-2 text-primary">
+                  <u>Deccan Paper Mills Co. Ltd. Vs. Regency Mahavir Properties</u></a>
+                  <p class="card-text text-success mb-2">
+                    Supreme Court Of Punjab And Haryana |  <small class="ml-1"><i class="fas fa-clock"></i> 24/08/20</small>
+                    
+                 </p>
+              <p class="mb-1 detailed-text"><b>Judgment : </b>(1.) PURSUANT to a complaint made by Mst. Kaushiya Rani, <strong>Gopal Singh</strong> was committed to the court of. of a previous Full Bench in Durag Pal <strong>Singh</strong> v. Pancham <strong>singh</strong>, AIR 1939 All 403 (FB), to the effect. meaning of Section 29. A Division Bench of this Court consisting of Teja <strong>Singh</strong> J. and Bhandari J. (as. he then was) in Harbans <strong>Singh</strong> v. Karam Chand, (1949) 51 Pun LR 50 : (AIR 1949 EP 299) had to decide.<br></p>
+  
+  
+              </div>
+  
+              <div class="card-footer pb-4 bg-dark d-none">
+  
+              </div>
+            </div> <!-- Card for a Post/Artile -->
+
+            <div class="card p-0 border-0 bg-white shadow-sm mb-3">
               <div class="card-body p-4">
   
                 <a href="./judgment-detail.html" class="h4 card-title d-block mb-2 text-primary">
