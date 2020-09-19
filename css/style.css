@@ -1631,7 +1631,7 @@ ol li{
   position: relative;
 }
 .blog-banner .position-relative{
-  z-index: 10;
+
 }
 .blog-banner::after {
     content: "";
