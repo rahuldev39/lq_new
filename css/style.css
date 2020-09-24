@@ -1240,25 +1240,33 @@ ol li{
 .plan-switch .plan-link.active {
     color: #4d5bed;
 }
-.alert-modal-toggle, .tour-link {
-  right: -89px;
-  top: 275px;
+.slide-link {
+  
   padding: 10px;
   border: 1px solid #d3d7da;
   border-right: 0px;
   transition: all ease-in-out 300ms;
+  z-index: 100;
 }
-.alert-modal-toggle:hover, .tour-link:hover{
+.slide-link:hover{
   right: 0px;
 }
-.alert-modal-toggle span, .tour-link span {
+.slide-link span{
     font-size: 13px;
     color: #101f41;
     font-weight: 600;
 }
+.latest-case-btn{
+  right: -89px;
+  top: 275px;
+}
+.alert-modal-toggle{
+  top: 325px;
+    right: -90px;
+}
 .tour-link {
-    top: 325px;
-    right: -78px;
+  top: 376px;
+  right: -78px;   
 }
 .container-404 {
     max-width: 580px;
