@@ -1705,12 +1705,13 @@ ol li{
   z-index: 3;
   right: 20px;
   top: 0px;
-  font-size: 12px;
-  padding: 8px 16px;
+  font-size: 14px;
+  padding: 9px 20px 11px 20px;
   border: 0px;
-  background-color: #4d5bed;
+  background-color: #ed7e1f;
   border-radius: 0px 0px 6px 6px;
   box-shadow: 0px 9px 6px #0c215147;
+  color: #f9f9f9;
 }
 .latest-case-link i {
   font-size: 10px;
