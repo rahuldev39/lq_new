@@ -1705,8 +1705,8 @@ ol li{
   z-index: 3;
   right: 20px;
   top: 0px;
-  font-size: 14px;
-  padding: 9px 20px 11px 20px;
+  font-size: 17px;
+  padding: 9px 46px 11px 46px;
   border: 0px;
   background-color: #ed7e1f;
   border-radius: 0px 0px 6px 6px;
@@ -1716,4 +1716,7 @@ ol li{
 .latest-case-link i {
   font-size: 10px;
   margin-left: 7px;
+}
+.popup-container{
+  width: calc(100% - 60px);
 }
