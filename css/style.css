@@ -1720,3 +1720,17 @@ ol li{
 .popup-container{
   width: calc(100% - 60px);
 }
+#legalpowerlist-banner .close {
+  text-shadow: none;
+  height: 30px;
+  width: 30px;
+  right: -30px;
+  top: 0px;
+  background-color: #e7015e;
+  opacity: 1;
+  font-size: 19px;
+  padding: 0px;
+  line-height: 30px;
+  color: #f9f9f9;
+  outline: none;
+}

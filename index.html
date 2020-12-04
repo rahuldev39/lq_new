@@ -1143,6 +1143,22 @@
 
   </div> <!-- END Alert Notifications Wrapper -->
 
+
+  <!-- Modal -->
+<div class="modal legalpowerlist-banner fade" id="legalpowerlist-banner" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-body p-0">
+        <button type="button" class="close position-absolute" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+        <img src="./images/legalpowerlist-website-popup.png" class="img-fluid w-100" alt="">
+      </div>
+   
+    </div>
+  </div>
+</div>
+
   <!-- Global Required JS -->
   <script src="js\vendor\jquery-3.3.1.min.js"></script>
   <script src="js\vendor\popper.min.js"></script>
@@ -1169,23 +1185,23 @@
 
   <script>
     AOS.init({
-  // Global settings:
-  disable: false, // accepts following values: 'phone', 'tablet', 'mobile', boolean, expression or function
-  startEvent: 'DOMContentLoaded', // name of the event dispatched on the document, that AOS should initialize on
-  initClassName: 'aos-init', // class applied after initialization
-  animatedClassName: 'aos-animate', // class applied on animation
-  useClassNames: false, // if true, will add content of `data-aos` as classes on scroll
-  disableMutationObserver: false, // disables automatic mutations' detections (advanced)
-  // Settings that can be overridden on per-element basis, by `data-aos-*` attributes:
-  offset: 300, // offset (in px) from the original trigger point
-  delay: 0, // values from 0 to 3000, with step 50ms
-  duration: 1000, // values from 0 to 3000, with step 50ms
-  easing: 'ease', // default easing for AOS animations
-  once: true, // whether animation should happen only once - while scrolling down
-  mirror: false, // whether elements should animate out while scrolling past them
-  anchorPlacement: 'top-center', // defines which position of the element regarding to window should trigger the animation
+      // Global settings:
+      disable: false, // accepts following values: 'phone', 'tablet', 'mobile', boolean, expression or function
+      startEvent: 'DOMContentLoaded', // name of the event dispatched on the document, that AOS should initialize on
+      initClassName: 'aos-init', // class applied after initialization
+      animatedClassName: 'aos-animate', // class applied on animation
+      useClassNames: false, // if true, will add content of `data-aos` as classes on scroll
+      disableMutationObserver: false, // disables automatic mutations' detections (advanced)
+      // Settings that can be overridden on per-element basis, by `data-aos-*` attributes:
+      offset: 300, // offset (in px) from the original trigger point
+      delay: 0, // values from 0 to 3000, with step 50ms
+      duration: 1000, // values from 0 to 3000, with step 50ms
+      easing: 'ease', // default easing for AOS animations
+      once: true, // whether animation should happen only once - while scrolling down
+      mirror: false, // whether elements should animate out while scrolling past them
+      anchorPlacement: 'top-center', // defines which position of the element regarding to window should trigger the animation
 
-});
+    });
   </script>
 
   <script type="text/javascript">
@@ -1307,6 +1323,12 @@
   $('[data-fancybox="gallery"]').fancybox({
   // Options will go here
 });
+</script>
+
+<script type="text/javascript">
+  $(window).on('load',function(){
+      $('#legalpowerlist-banner').modal('show');
+  });
 </script>
 </body>
 
