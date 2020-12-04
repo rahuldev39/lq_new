@@ -1331,6 +1331,14 @@
   $(window).on('load',function(){
       $('#legalpowerlist-banner').modal('show');
   });
+
+  $('#legalpowerlist-banner').on('shown.bs.modal', function (e) {
+    $('body').addClass('legalpowelist-open');
+  });
+
+  $('#legalpowerlist-banner').on('hidden.bs.modal', function (e) {
+   $('#myCustomElement').removeClass('legalpowelist-open');
+})
 </script>
 </body>
 

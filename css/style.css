@@ -1734,3 +1734,7 @@ ol li{
   color: #f9f9f9;
   outline: none;
 }
+.legalpowelist-open .modal-backdrop {
+  background-color: #ffffff;
+  opacity: .8;
+}
