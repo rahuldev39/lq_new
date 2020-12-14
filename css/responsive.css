@@ -8,6 +8,11 @@
 }
 
 @media (max-width:992px)  {
+  #legalpowerlist-banner .close {
+    right: -7px;
+    top: -7px;
+    border-radius: 5px;
+}
   .navbar-toggler:focus{
     outline: none;
   }
