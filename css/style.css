@@ -1738,3 +1738,36 @@ ol li{
   background-color: #ffffff;
   opacity: .8;
 }
+.law-item{
+  min-height: 200px;
+  background: #040a48;
+}
+
+.law-item span {
+  display: inline-flex;
+  background-color: white;
+  color: black;
+  font-size: 12px;
+  padding: 3px 8px;
+  border-radius: 2px;
+  align-items: center;
+}
+
+
+.law-item i {
+  font-size: 11px;
+  margin-right: 7px;
+  color: #636363;
+  border-right: 1px solid #adabab;
+  padding-right: 7px;
+}
+.law-item img{
+  object-fit: cover;
+  left: 0;
+  top: 0;
+  opacity: .35;
+}
+
+.bg-law-category::after {
+  background-image: -webkit-linear-gradient(45deg, #19206d 0%, #0b114c 40%, #0c2050 100%);
+}
