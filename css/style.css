@@ -1766,8 +1766,26 @@ ol li{
   left: 0;
   top: 0;
   opacity: .35;
+  transition: all ease-in-out 300ms;
 }
-
+.law-item:hover img{
+  transform: scale(1.2) rotate(2deg);
+}
 .bg-law-category::after {
   background-image: -webkit-linear-gradient(45deg, #19206d 0%, #0b114c 40%, #0c2050 100%);
+}
+
+.select-acts .btn {
+  display: flex;
+  align-items: center;
+  padding: 10px 14px;
+  font-size: 15px;
+}
+.select-acts .btn:hover, 
+.select-acts .btn:focus, 
+.select-acts .btn-outline-dark:not(:disabled):not(.disabled):active, 
+.select-acts .show>.btn-outline-dark.dropdown-toggle{
+    background-color: #ffffff;
+    border-color: #4d5bed;
+    color: #000;
 }
