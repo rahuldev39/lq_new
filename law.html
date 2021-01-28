@@ -152,7 +152,7 @@
         <div class="law-list">
           <div class="row">
             <div class="col-md-6 col-lg-4  mb-4">
-              <a href="#"  class="d-flex law-item overflow-hidden position-relative rounded shadow p-4 d-flex align-items-center justify-content-center " data-target="#act-modal" data-toggle="modal" data-target="#act-modal" data-toggle="modal">
+              <a href="#"  class="d-flex law-item overflow-hidden position-relative rounded shadow p-4 d-flex align-items-center justify-content-center " data-target="#act-modal"  data-toggle="modal" data-target="#act-modal" data-toggle="modal">
                   <img src="./images/law/acquisition.jpg" class="position-absolute h-100 w-100" alt="">
                   <div class="law-item-inner text-center position-relative">
                     <h4 class="position-relative text-white mb-2">Acquisition, Transfer Of Undertakings & Nationalisation Laws</h4>
@@ -172,7 +172,7 @@
               </a>
             </div>
             <div class="col-md-6 col-lg-4  mb-4">
-              <a href="#"  class="d-flex law-item overflow-hidden position-relative rounded shadow p-4 d-flex align-items-center justify-content-center " data-target="#act-modal" data-toggle="modal">
+              <a href="#"  class="d-flex law-item overflow-hidden position-relative rounded shadow p-4 d-flex align-items-center justify-content-center " data-target="#act-modal" data-toggle="modal" data-act="arbitration">
                   <img src="./images/law/arbitration.jpg" class="position-absolute h-100 w-100" alt="">
                   <div class="law-item-inner text-center position-relative">
                     <h4 class="position-relative text-white mb-2">Arbitration Laws</h4>
@@ -238,7 +238,7 @@
             </div>
 
             <div class="col-md-6 col-lg-4  mb-4">
-              <a href="#"  class="d-flex law-item overflow-hidden position-relative rounded shadow p-4 d-flex align-items-center justify-content-center " data-target="#act-modal" data-toggle="modal">
+              <a href="#"  class="d-flex law-item overflow-hidden position-relative rounded shadow p-4 d-flex align-items-center justify-content-center " data-target="#act-modal" data-toggle="modal" data-act="commercial">
                   <img src="./images/law/commercial.jpg" class="position-absolute h-100 w-100" alt="">
                   <div class="law-item-inner text-center position-relative">
                     <h4 class="position-relative text-white mb-2">Commercial & Business Laws</h4>
@@ -271,7 +271,7 @@
             </div>
 
             <div class="col-md-6 col-lg-4  mb-4">
-              <a href="#"  class="d-flex law-item overflow-hidden position-relative rounded shadow p-4 d-flex align-items-center justify-content-center " data-target="#act-modal" data-toggle="modal">
+              <a href="#"  class="d-flex law-item overflow-hidden position-relative rounded shadow p-4 d-flex align-items-center justify-content-center " data-target="#act-modal" data-toggle="modal" data-act="criminal">
                   <img src="./images/law/criminal.jpg" class="position-absolute h-100 w-100" alt="">
                   <div class="law-item-inner text-center position-relative">
                     <h4 class="position-relative text-white mb-2">Criminal & Preventive Laws</h4>
@@ -348,7 +348,7 @@
             </div>
 
             <div class="col-md-6 col-lg-4  mb-4">
-              <a href="#"  class="d-flex law-item overflow-hidden position-relative rounded shadow p-4 d-flex align-items-center justify-content-center " data-target="#act-modal" data-toggle="modal">
+              <a href="#"  class="d-flex law-item overflow-hidden position-relative rounded shadow p-4 d-flex align-items-center justify-content-center " data-target="#act-modal" data-toggle="modal" data-act="intellectual">
                   <img src="./images/law/intellectual-property.jpg" class="position-absolute h-100 w-100" alt="">
                   <div class="law-item-inner text-center position-relative">
                     <h4 class="position-relative text-white mb-2">Intellectual Property Laws</h4>
@@ -469,7 +469,7 @@
             </div>
 
             <div class="col-md-6 col-lg-4  mb-4">
-              <a href="#"  class="d-flex law-item overflow-hidden position-relative rounded shadow p-4 d-flex align-items-center justify-content-center " data-target="#act-modal" data-toggle="modal">
+              <a href="#"  class="d-flex law-item overflow-hidden position-relative rounded shadow p-4 d-flex align-items-center justify-content-center " data-target="#act-modal" data-toggle="modal" data-act="taxation">
                   <img src="./images/law/taxation.jpg" class="position-absolute h-100 w-100" alt="">
                   <div class="law-item-inner text-center position-relative">
                     <h4 class="position-relative text-white mb-2">Taxation Laws</h4>
@@ -636,17 +636,137 @@
         </button>
       </div>
       <div class="modal-body">
-        <div class="select-acts">
+        <div class="form-group">
           <label class="font-weight-bold mb-1" for="">Select Acts</label>
-          <select data-selected-text-format="count > 3" class="selectpicker form-control" show-menu-arrow multiple data-width="100%" data-style="btn-outline-dark">
-            <option>Act1</option>
-            <option>Act2</option>
-            <option>Act3</option>
-            <option>Act4</option>
-            <option>Act5</option>
-            <option>Act6</option>
-            <option>Act7</option>
-          </select>
+
+          <div class="select-acts" id="forall" style="display: none;">
+            <select data-selected-text-format="count > 3" data-live-search="true" data-actions-box="true" class="selectpicker form-control" show-menu-arrow multiple data-width="100%" data-style="btn-outline-dark">
+              <option>Abkari (Amendment) Act, 1969</option>
+              <option>Abkari (Amendment) Act, 1973</option>
+              <option>Abkari (Amendment) Act, 1975</option>
+              <option>Abkari (Amendment) Act, 1995</option>
+              <option>Abkari (Amendment) Act, 1996</option>
+              <option>Abkari (Amendment) Act, 1997</option>
+              <option>Abkari (Amendment) Act, 2003</option>
+              <option>Abkari (Second Amendment) Act, 1975</option>
+              <option>Agricultural Produce Marketing (Development And Regulation) Act, 2007</option>
+              <option>Andhra Pradesh (Agricultural Produce And Livestock) Markets Act, 1966</option>
+              <option>Andhra Pradesh (Andhra Area) Cotton (Trade Stocks) Census Act, 1949</option>
+              <option>Andhra Pradesh (Andhra Area) Cotton Control Act, 1952</option>
+              <option>Andhra Pradesh (Andhra Area) Jute Goods Control Act, 1949</option>
+              <option>Andhra Pradesh (Andhra Area) Ware-Houses Act, 1951</option>
+              <option>Andhra Pradesh (Regulation Of Wholesale Trade And Distribution And Retail Trade In Indian Liquor, Foreign Liquor, Wine And Beer) Act, 1993</option>
+
+
+            </select>
+          </div>
+
+          <div class="select-acts" id="criminal" style="display: none;">
+            <select data-selected-text-format="count > 3" data-live-search="true" data-actions-box="true" class="selectpicker form-control" show-menu-arrow multiple data-width="100%" data-style="btn-outline-dark">
+              <option>Admiralty Offences (Colonial) Act, 1849</option>
+              <option>Amendment To Code Of Criminal Procedure, 1973</option>
+              <option>Andhra Pradesh (Andhra Area) Coffee-Stealing Prevention Act, 1878</option>
+              <option>Andhra Pradesh (Andhra Area) Restriction Of Habitual Offenders Act, 1948</option>
+              <option>Andhra Pradesh Abolition Of Posts Of Village Assistants Act, 1991</option>
+              <option>Andhra Pradesh Animals And Birds Sacrifices Prohibition Act, 1950</option>
+              <option>Andhra Pradesh Contingency Fund Act, 1957</option>
+              <option>Andhra Pradesh Control Of Organised Crime Act, 2001</option>
+              <option>Andhra Pradesh Gift Goods (Prevention Of Unlawful Possession) Act, 1965</option>
+              <option>Andhra Pradesh Habitual Offenders Act, 1962</option>
+              <option>Andhra Pradesh Prevention Of Begging Act, 1977</option>
+              <option>Andhra Pradesh Prevention Of Couching Act, 1964</option>
+              <option>Andhra Pradesh Prevention Of Dangerous Activities Of Boot Leggers, Dacoits, Drug Offenders, Goondas, Immoral Traffic Offenders And Land Grabbers Act, 1986</option>
+              <option>Andhra Pradesh Prevention Of Disfigurement Of Open Places And Prohibition Of Obscene And Objectionable Posters And Advertisements, Act, 1997</option>
+              <option>Andhra Pradesh Preventive Detention Act, 1970</option>
+            </select>
+          </div>
+
+          <div class="select-acts" id="intellectual" style="display: none;">
+            <select data-selected-text-format="count > 3" data-live-search="true" data-actions-box="true" class="selectpicker form-control" show-menu-arrow multiple data-width="100%" data-style="btn-outline-dark">
+              <option>Copyright (Amendment) Act, 2012</option>
+              <option>Copyright Act, 1957</option>
+              <option>Copyright Rules, 1958</option>
+              <option>Depositories Act, 1996</option>
+              <option>Designs Act, 1911</option>
+              <option>Designs Act, 2000</option>
+              <option>Geographical Indications Of Goods (Registration And Protection) Act, 1999</option>
+              <option>Geographical Indications Of Goods (Registration And Protection) Rules, 2002</option>
+              <option>Indian Patents And Designs Act, 1911</option>
+              <option>Patents Act, 1970</option>
+              <option>Pondicherry Patente (Abolition) Act, 1970</option>
+              <option>Semiconductor Integrated Circuits Layout-Design Act, 2000</option>
+              <option>The Copyright Act, 1957</option>
+              <option>The Copyright Rules, 1958</option>
+              <option>The Deposit Insurance Corporation (Amendment And Miscellaneousprovisions) Act,   1978</option>
+
+            </select>
+          </div>
+
+          <div class="select-acts" id="commercial" style="display: none;">
+            <select data-selected-text-format="count > 3" data-live-search="true" data-actions-box="true" class="selectpicker form-control" show-menu-arrow multiple data-width="100%" data-style="btn-outline-dark">
+              <option>Abkari (Amendment) Act, 1969</option>
+              <option>Abkari (Amendment) Act, 1973</option>
+              <option>Abkari (Amendment) Act, 1975</option>
+              <option>Abkari (Amendment) Act, 1995</option>
+              <option>Abkari (Amendment) Act, 1996</option>
+              <option>Abkari (Amendment) Act, 1997</option>
+              <option>Abkari (Amendment) Act, 2003</option>
+              <option>Abkari (Second Amendment) Act, 1975</option>
+              <option>Agricultural Produce Marketing (Development And Regulation) Act, 2007</option>
+              <option>Andhra Pradesh (Agricultural Produce And Livestock) Markets Act, 1966</option>
+              <option>Andhra Pradesh (Andhra Area) Cotton (Trade Stocks) Census Act, 1949</option>
+              <option>Andhra Pradesh (Andhra Area) Cotton Control Act, 1952</option>
+              <option>Andhra Pradesh (Andhra Area) Jute Goods Control Act, 1949</option>
+              <option>Andhra Pradesh (Andhra Area) Ware-Houses Act, 1951</option>
+              <option>Andhra Pradesh (Regulation Of Wholesale Trade And Distribution And Retail Trade In Indian Liquor, Foreign Liquor, Wine And Beer) Act, 1993</option>
+
+
+            </select>
+          </div>
+
+          <div class="select-acts" id="arbitration" style="display: none;">
+            <select data-selected-text-format="count > 3" data-live-search="true" data-actions-box="true" class="selectpicker form-control" show-menu-arrow multiple data-width="100%" data-style="btn-outline-dark">
+              <option>Arbitration (Extension To Nagaiand) Act, 1978</option>
+              <option>Arbitration (International Investment Disputes) Act, 1966</option>
+              <option>Arbitration (Protocol And Convention) Act, 1937</option>
+              <option>Arbitration (Protocol And Convention) Act,1937</option>
+              <option>Arbitration Act, 1940</option>
+              <option>Arbitration Act, 1940</option>
+              <option>Arbitration And Conciliation (Amendment) Act, 2015</option>
+              <option>Arbitration And Conciliation Act, 1996</option>
+              <option>Arbitration And Conciliation Act, 1996</option>
+              <option>Goa, Daman And Diu (Extension Of Code Of Civil Procedure And Arbitration Act) Act, 1965</option>
+              <option>Goa, Daman And Diu (Extension Of Code Of Civil Procedure And Arbitration) Act, 1965</option>
+              <option>Gujarat Public Works Contracts Disputes Arbitration Tribunal Act, 1992</option>
+              <option>Jammu And Kashmir Arbitration And Conciliation (Amendment) Act, 2004</option>
+              <option>Jammu And Kashmir Arbitration And Conciliation (Amendment) Act, 2010</option>
+              <option>Jammu And Kashmir Conciliation & Arbitration Act, 1997</option>
+              <option>Rules Under Arbitration Act, 1940</option>
+            </select>
+          </div>
+
+          <div class="select-acts" id="taxation" style="display: none;">
+            <select data-selected-text-format="count > 3" data-live-search="true" data-actions-box="true" class="selectpicker form-control" show-menu-arrow multiple data-width="100%" data-style="btn-outline-dark">
+              <option>[Punjab Commercial Crops Cess Rules, 1974]</option>
+              <option>Additional Duties Of Excise (Goods Of Special Importance) Act, 1957.</option>
+              <option>Additional Duties Of Excise (Textiles And Textile Articles) Act, 1978</option>
+              <option>Agricultural And Processed Food Products Export Cess Act, 1985</option>
+              <option>Agricultural And Processed Food Products Export Cess Act, 1986</option>
+              <option>Agricultural Income -Tax (Amendment) Act, 1971</option>
+              <option>Agricultural Income Tax (Amendment) Act, 1983</option>
+              <option>Agricultural Income -Tax (Second) Amendment) Act, 1971</option>
+              <option>Agricultural Produce Cess Act, 1940</option>
+              <option>Agricultural Produce Cess Act, 1940.</option>
+              <option>Agricultural Produce Cess Act, 1940.</option>
+              <option>Ambala District Board Tax Validating Act, 1956</option>
+              <option>Andhra Pradesh (Andhra Area) Betting Tax Act, 1935</option>
+              <option>Andhra Pradesh (Andhra Area) Irrigation (Voluntary Cess) Act, 1942</option>
+              <option>Andhra Pradesh (Andhra Area) Irrigation Cess Act, 1865</option>
+              <option>Andhra Pradesh (Andhra Area) Irrigation Works (Levy Of Compulsory Water Cess) Act, 1955</option>
+
+            </select>
+          </div>
+         
         </div>
        
       

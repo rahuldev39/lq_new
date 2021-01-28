@@ -46,3 +46,18 @@ if (scroll >= 1) {
     $(".header-sticky").removeClass("position-sticky");
 }
 });
+
+
+$('.law-item').on('click', function(){
+  if($(this).data('act')){
+    var link = $(this).data('act');
+    var actSelect =  document.getElementById(`${link}`);
+    $('#act-modal .select-acts').hide();
+    actSelect.style.display = "block"
+  }
+  else{
+    $('#act-modal .select-acts').hide();  
+    document.getElementById('forall').style.display = "block"
+  }
+
+});

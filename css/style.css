@@ -1789,3 +1789,73 @@ ol li{
     border-color: #4d5bed;
     color: #000;
 }
+.select-acts .bs-searchbox .form-control {
+  padding: 5px 8px;
+  height: auto;
+  margin-bottom: 4px;
+  font-size: 14px;
+}
+.select-acts .dropdown-menu li.selected a.selected {
+  background-color: #f3f3f3;
+  color: #4d5bed;
+  position: relative;
+}
+.select-acts .dropdown-menu li a.dropdown-item::before{
+  position: absolute;
+  content: "";
+  width: 0px;
+  background-color: #4d5bed;
+  height: 100%;
+  left: 0;
+  top: 0;
+  transition: all ease-out 300ms;
+}
+.select-acts .dropdown-menu li.selected a.dropdown-item.selected::before{
+    width: 5px;
+}
+.select-acts .dropdown-menu li.selected a.selected span{
+  font-weight:700;
+}
+.select-acts .bs-actionsbox .btn-light {
+  color: #4d5bed;
+  background-color: #ffffff;
+  border-color: #414dc7;
+  font-size: 12px !important;
+  justify-content: center;
+  padding: 6px 8px !important;
+}
+.select-acts .dropdown-menu {
+  max-width: 480px;
+  min-width: auto !important;
+  width: 100%;
+}
+.select-acts .dropdown-item {
+  white-space: normal;
+  border-bottom: 1px solid #01031736;
+}
+
+.select-acts .dropdown-menu .inner{
+  scrollbar-color:#0c2050 #f1f1f1;
+  scrollbar-width: thin;
+}
+
+/* width */
+.select-acts .dropdown-menu .inner::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+.select-acts .dropdown-menu .inner::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+.select-acts .dropdown-menu .inner::-webkit-scrollbar-thumb {
+  background:#0c2050;
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+.select-acts .dropdown-menu .inner::-webkit-scrollbar-thumb:hover {
+  background: #0c2050;
+}
