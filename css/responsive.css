@@ -42,8 +42,8 @@
     display: none;
   }
   .judgment-section .sidebar {
-      min-width: 180px;
-  }
+    min-width: 270px;
+}
   .notes-open .sidebar,.close-idraf .sidebar{
     margin-left: -180px
   }
@@ -138,7 +138,7 @@ aside.filter-sidebar.show{
     position: absolute;
     height: 100%;
     z-index: 10;
-    left: -180px;
+    left: -300px;
     transition: all ease-in-out 300ms;
 }
 .judgment-section .sidebar.open-idraf{
