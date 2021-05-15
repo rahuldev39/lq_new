@@ -1880,3 +1880,19 @@ ol li{
 .section-content ol li ol {
   list-style-type: lower-alpha;
 }
+.alert {
+  font-size: 14px;
+}
+.alert-dismissible .close {
+  padding: 0px !important;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 14px;
+  font-size: 22px;
+}
+
+.upgrade-btn {
+  padding: 6px 15px;
+  font-size: 12px;
+  width: auto !important;
+}
