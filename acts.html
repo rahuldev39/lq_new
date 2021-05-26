@@ -485,7 +485,7 @@
   <script>
 
     $('select.act-filter').on('change', function() {
-      if(this.value == 'center'){
+      if(this.value == 'center' || this.value == 'state'){
         $('#state-filter').show();
       }
       else{
