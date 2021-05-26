@@ -283,7 +283,29 @@
 
 
                 <div  class="mx-auto flex-fill pt-4 mt-2 tab-pane fade show active"  role="tabpanel">
-                  
+
+                  <div class="acts-input d-md-flex align-items-center  mb-3 ">
+                    <div class="d-flex align-items-center mb-3 mb-md-0 mr-0 mr-md-3">
+                      <label class="mr-2 font-semibold text-nowrap">Type of Changes:</label>  
+                      <select class="form-control form-control-sm">
+                          <option value="">Select changes type</option>
+                          <option value="">Inserted</option>
+                          <option value="">Substituted</option>
+                          <option value="">Amended</option>
+                          <option value="">Replaced</option>
+                        </select>
+                    </div>
+                      <div class="d-flex align-items-center mr-0 mr-md-auto"> 
+                        <label class="mr-2 font-semibold text-nowrap">Changes Date:</label>
+                        <input class="form-control form-control-sm " type="Date" name="" placeholder="Changes Date">
+                      </div>
+
+                      <button class="btn btn-sm btn-primary ">
+                        Update
+                      </button>
+                      
+                  </div>
+
 
                   <nav class="section-tab">
                     <div class="nav nav-tabs" id="nav-tab" role="tablist">
@@ -451,7 +473,9 @@
                     </div>
                   </div>
 
-                  
+                  <div class="text-center py-4">
+                    <button class="btn btn-primary px-5">Update</button>
+                  </div>
 
                 </div>
               </div>

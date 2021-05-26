@@ -1896,3 +1896,18 @@ ol li{
   font-size: 12px;
   width: auto !important;
 }
+.acts-input .form-control {
+  max-width: 200px;
+  height: 35px !important;
+  border: 1px solid #4d5bed;
+}
+.acts-input{
+  background-color: white;
+  padding: 8px;
+  border: 1px solid #dee2e6;
+  border-radius: 4px;
+}
+.action-btn {
+  padding: 2px 9px;
+  font-size: 13px;
+}
