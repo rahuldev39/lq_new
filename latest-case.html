@@ -131,425 +131,525 @@
   </header>
 
 
-  <div class="position-sticky bg-dark latest-case-tab">
-    <div class="container">
-      <ul class="nav nav-tabs posts__categories-list justify-content-start  flex-row mb-0 border-0" role="tablist">
-        <li class="post-category nav-item  ">
-          <a class="active" href="#0" data-toggle="tab" role="tab" aria-selected="false">Supreme Court  <small> (17)</small></a>
-        </li>
-        <li class="post-category">
-          <a class="" href="#0" data-toggle="tab" role="tab" aria-selected="true">High Court <small> (24)</small></a>
-        </li>
-        <li class="post-category">
-          <a class="" href="#0" data-toggle="tab" role="tab">Tribunal  <small> (13)</small></a>
-        </li>
-      </ul>
-    </div>
-  </div>
+  
 
   <main class="main">
     
-    <section class="pt-3 pb-9 bg-gray">
-      <div class="container">
-        <div class="d-flex mb-3 flex-wrap case-header">
-          <h4 class="font-weight-bold mb-3 mb-lg-0 mr-2 ">Latest Supreme Court Judgments</h4>
-          <button class="court-btn btn btn-outline-primary btn-sm mr-auto"  data-toggle="collapse" data-target="#courts-card" >
-           Select Courts
-            <i class="fas fa-chevron-down"></i>
-          </button>
-          <div id="resultStats mb-0">
-            <span class="d-none d-md-inline-block">Date</span>
+    <section class="search-listing-section bg-gray py-0">
+      <div class="d-flex position-relative">
+        <div class="posts__wrapper flex-fill  mb-5 mb-lg-0 order-lg-2">
+          <div class="text-center filter-togle d-block d-lg-none">
+            <a class="" href="#0"><i class="fas fa-list mr-1"></i>
+              <span class="filter-text">Show Court list</span> </a>
+            </div>
+          <div class="bg-dark latest-case-tab">
+            <div class="container">
+              <a href=""></a>
+              <ul class="nav nav-tabs posts__categories-list justify-content-start  flex-row mb-0 border-0" role="tablist">
+                <li class="post-category nav-item  ">
+                  <a class="active" href="#0" data-toggle="tab" role="tab" aria-selected="false">Supreme Court  <small> (17)</small></a>
+                </li>
+                <li class="post-category">
+                  <a class="" href="#0" data-toggle="tab" role="tab" aria-selected="true">High Court <small> (24)</small></a>
+                </li>
+                <li class="post-category">
+                  <a class="" href="#0" data-toggle="tab" role="tab">Tribunal  <small> (13)</small></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="d-flex p-3 flex-wrap case-header">
+            <h4 class="font-weight-bold mb-3 mb-lg-0 mr-2 ">Latest Supreme Court Judgments</h4>
+            <button class="court-btn btn btn-outline-primary btn-sm mr-auto"  data-toggle="collapse" data-target="#courts-card" >
+             Select Courts
+              <i class="fas fa-chevron-down"></i>
+            </button>
+            <div id="resultStats mb-0">
+              <span class="d-none d-md-inline-block">Date</span>
+              <span class="text-muted"> </span>
+              <select class="sort-by">
+                <option value="7">7 Days</option>
+                <option value="15">15 Days</option>
+                <option value="30">30 Days</option>
+                <option value="60">60 Days</option>
+              </select>
+            </div>
+          <div id="resultStats mb-0" class="ml-4">
+            <span class="d-none d-md-inline-block">Sorted by</span>
             <span class="text-muted"> </span>
             <select class="sort-by">
-              <option value="7">7 Days</option>
-              <option value="15">15 Days</option>
-              <option value="30">30 Days</option>
-              <option value="60">60 Days</option>
-            </select>
+              <option value="order_rel">Relevance</option>
+              <option value="order_dec_date">Newest</option>
+              <option value="order_asc_date">Oldest</option>
+              <option value="order_random">Random</option>
+          </select>
           </div>
-        <div id="resultStats mb-0" class="ml-4">
-          <span class="d-none d-md-inline-block">Sorted by</span>
-          <span class="text-muted"> </span>
-          <select class="sort-by">
-            <option value="order_rel">Relevance</option>
-            <option value="order_dec_date">Newest</option>
-            <option value="order_asc_date">Oldest</option>
-            <option value="order_random">Random</option>
-        </select>
-        </div>
-        </div>
-        
-
-        <hr>
-
-        
-
-        <div id="courts-card" class="card   border-0 shadow-sm border-0 p-0 collapse">
-          <div  class="card-body">
-            <h5 class="font-weight-bold mb-3">Select court from Hight Court list</h5>
-            <ul class="list-unstyled court-list d-flex align-items-center flex-wrap mb-0">
-              <li>
-                <div class="custom-checkbox">
-                  <label class="f-14 font-weight-normal d-flex">
-                    <input class="d-none" type="checkbox" name="maincourt" value="" checked>
-                    <span class="">High Court 1</span>
-                  </label>
-                </div>
-              </li>
-              <li>
-                <div class="custom-checkbox">
-                  <label class="f-14 font-weight-normal d-flex">
-                    <input class="d-none" type="checkbox" name="maincourt" value="" checked>
-                    <span class="">High Court 2</span>
-                  </label>
-                </div>
-              </li>
-              <li>
-                <div class="custom-checkbox">
-                  <label class="f-14 font-weight-normal d-flex">
-                    <input class="d-none" type="checkbox" name="maincourt" value="">
-                    <span class="">High Court 3</span>
-                  </label>
-                </div>
-              </li>
-              <li>
-                <div class="custom-checkbox">
-                  <label class="f-14 font-weight-normal d-flex">
-                    <input class="d-none" type="checkbox" name="maincourt" value="">
-                    <span class="">High Court 4</span>
-                  </label>
-                </div>
-              </li>
-              <li>
-                <div class="custom-checkbox">
-                  <label class="f-14 font-weight-normal d-flex">
-                    <input class="d-none" type="checkbox" name="maincourt" value="">
-                    <span class="">High Court 5</span>
-                  </label>
-                </div>
-              </li>
-              <li>
-                <div class="custom-checkbox">
-                  <label class="f-14 font-weight-normal d-flex">
-                    <input class="d-none" type="checkbox" name="maincourt" value="">
-                    <span class="">High Court 6</span>
-                  </label>
-                </div>
-              </li>
-              <li>
-                <div class="custom-checkbox">
-                  <label class="f-14 font-weight-normal d-flex">
-                    <input class="d-none" type="checkbox" name="maincourt" value="">
-                    <span class="">High Court 7</span>
-                  </label>
-                </div>
-              </li>
-              <li>
-                <div class="custom-checkbox">
-                  <label class="f-14 font-weight-normal d-flex">
-                    <input class="d-none" type="checkbox" name="maincourt" value="">
-                    <span class="">High Court 8</span>
-                  </label>
-                </div>
-              </li>
-              <li>
-                <div class="custom-checkbox">
-                  <label class="f-14 font-weight-normal d-flex">
-                    <input class="d-none" type="checkbox" name="maincourt" value="">
-                    <span class="">High Court 9</span>
-                  </label>
-                </div>
-              </li>
-              <li>
-                <div class="custom-checkbox">
-                  <label class="f-14 font-weight-normal d-flex">
-                    <input class="d-none" type="checkbox" name="maincourt" value="">
-                    <span class="">High Court 10</span>
-                  </label>
-                </div>
-              </li>
-              <li>
-                <div class="custom-checkbox">
-                  <label class="f-14 font-weight-normal d-flex">
-                    <input class="d-none" type="checkbox" name="maincourt" value="">
-                    <span class="">High Court 11</span>
-                  </label>
-                </div>
-              </li>
-            </ul>
           </div>
-        </div>
+          <hr class="m-0">
 
-        <div class="date-tag pt-3 pb-4 text-center">
-          <span>16 Sep, 2020</span>
-        </div>
-        
-       
-            <div class="card p-0 border-0 bg-white shadow-sm mb-3">
-              <div class="card-body p-4">
-  
-                <a href="./judgment-detail.html" class="h4 card-title d-block mb-2 text-primary">
-                  <u>	Wg. Cdr. Arifur Rahman Khan and Aleya Sultana Vs. DLF Southern Homes Pvt. Ltd. (now known as BEGUR OMR Homes Pvt. Ltd.)</u>
-                 
-                </a>
-                <p class="card-text text-success mb-2">
-                   Supreme Court Of Punjab And Haryana |  <small class="ml-1"><i class="fas fa-clock"></i> 24/08/20</small>
-                   
-                </p>
-                <p class="mb-1 detailed-text">
-                  <b>Judgment : </b>(1.) PURSUANT to a complaint made by Mst. Kaushiya Rani, <strong class="bg-light">Gopal Singh</strong> was committed to the court of. of a previous Full Bench in Durag Pal <strong class="bg-light">Singh</strong> v. Pancham <strong class="bg-light">singh</strong>, AIR 1939 All 403 (FB), to the effect. meaning of Section 29. A Division Bench of this Court consisting of Teja...
-                </p>
-   
-                
-  
-              </div>
-  
-              <div class="card-footer pb-4 bg-dark d-none">
-  
-              </div>
-            </div> <!-- Card for a Post/Artile -->
-          
-            <div class="card p-0 border-0 bg-white shadow-sm mb-3">
-              <div class="card-body p-4">
-  
-                <a href="./judgment-detail.html" class="h4 card-title d-block mb-2 text-primary">
-                  <u>Sri V.N. Krishna Murthy Vs. Sri Ravikumar</u>
-                  
-                </a>
-                <p class="card-text text-success mb-2">
-                  Supreme Court Of Punjab And Haryana |  <small class="ml-1"><i class="fas fa-clock"></i> 24/08/20</small>
-                  
-               </p>
-                  <p class="mb-1 detailed-text">
-                    <b>Judgment : </b>(1.) PURSUANT to a complaint made by Mst. Kaushiya Rani, <strong class="bg-light">Gopal Singh</strong> was committed to the court of. of a previous Full Bench in Durag Pal <strong class="bg-light">Singh</strong> v. Pancham <strong class="bg-light">singh</strong>, AIR 1939 All 403 (FB), to the effect. meaning of Section 29. A Division Bench of this Court consisting of Teja...
-                  </p>
+          <div id="courts-card" class="card   border-0 shadow-sm border-0 p-0 collapse">
+            <div  class="card-body">
+              <h5 class="font-weight-bold mb-3">Select court from Hight Court list</h5>
+              <ul class="list-unstyled court-list d-flex align-items-center flex-wrap mb-0">
+                <li>
+                  <div class="custom-checkbox">
+                    <label class="f-14 font-weight-normal d-flex">
+                      <input class="d-none" type="checkbox" name="maincourt" value="" checked>
+                      <span class="">High Court 1</span>
+                    </label>
+                  </div>
+                </li>
+                <li>
+                  <div class="custom-checkbox">
+                    <label class="f-14 font-weight-normal d-flex">
+                      <input class="d-none" type="checkbox" name="maincourt" value="" checked>
+                      <span class="">High Court 2</span>
+                    </label>
+                  </div>
+                </li>
+                <li>
+                  <div class="custom-checkbox">
+                    <label class="f-14 font-weight-normal d-flex">
+                      <input class="d-none" type="checkbox" name="maincourt" value="">
+                      <span class="">High Court 3</span>
+                    </label>
+                  </div>
+                </li>
+                <li>
+                  <div class="custom-checkbox">
+                    <label class="f-14 font-weight-normal d-flex">
+                      <input class="d-none" type="checkbox" name="maincourt" value="">
+                      <span class="">High Court 4</span>
+                    </label>
+                  </div>
+                </li>
+                <li>
+                  <div class="custom-checkbox">
+                    <label class="f-14 font-weight-normal d-flex">
+                      <input class="d-none" type="checkbox" name="maincourt" value="">
+                      <span class="">High Court 5</span>
+                    </label>
+                  </div>
+                </li>
+                <li>
+                  <div class="custom-checkbox">
+                    <label class="f-14 font-weight-normal d-flex">
+                      <input class="d-none" type="checkbox" name="maincourt" value="">
+                      <span class="">High Court 6</span>
+                    </label>
+                  </div>
+                </li>
+                <li>
+                  <div class="custom-checkbox">
+                    <label class="f-14 font-weight-normal d-flex">
+                      <input class="d-none" type="checkbox" name="maincourt" value="">
+                      <span class="">High Court 7</span>
+                    </label>
+                  </div>
+                </li>
+                <li>
+                  <div class="custom-checkbox">
+                    <label class="f-14 font-weight-normal d-flex">
+                      <input class="d-none" type="checkbox" name="maincourt" value="">
+                      <span class="">High Court 8</span>
+                    </label>
+                  </div>
+                </li>
+                <li>
+                  <div class="custom-checkbox">
+                    <label class="f-14 font-weight-normal d-flex">
+                      <input class="d-none" type="checkbox" name="maincourt" value="">
+                      <span class="">High Court 9</span>
+                    </label>
+                  </div>
+                </li>
+                <li>
+                  <div class="custom-checkbox">
+                    <label class="f-14 font-weight-normal d-flex">
+                      <input class="d-none" type="checkbox" name="maincourt" value="">
+                      <span class="">High Court 10</span>
+                    </label>
+                  </div>
+                </li>
+                <li>
+                  <div class="custom-checkbox">
+                    <label class="f-14 font-weight-normal d-flex">
+                      <input class="d-none" type="checkbox" name="maincourt" value="">
+                      <span class="">High Court 11</span>
+                    </label>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
 
-  
-              </div>
-  
-              <div class="card-footer pb-4 bg-dark d-none">
-  
-              </div>
-            </div> <!-- Card for a Post/Artile -->
-       
-            <div class="card p-0 border-0 bg-white shadow-sm mb-3">
-              <div class="card-body p-4">
-  
-                <a href="./judgment-detail.html" class="h4 card-title d-block mb-2 text-primary">
-                  <u>Sardar Bahginder Singh Vs. Sardar Manjieeth Singh Jagan Singh</u>
-                  
-                </a>
-                <p class="card-text text-success mb-2">
-                  Supreme Court Of Punjab And Haryana |  <small class="ml-1"><i class="fas fa-clock"></i> 24/08/20</small>
-                  
-               </p>
-                  <p class="mb-1 detailed-text">
-                    <b>Judgment : </b>(1.) PURSUANT to a complaint made by Mst. Kaushiya Rani, <strong class="bg-light">Gopal Singh</strong> was committed to the court of. of a previous Full Bench in Durag Pal <strong class="bg-light">Singh</strong> v. Pancham <strong class="bg-light">singh</strong>, AIR 1939 All 403 (FB), to the effect. meaning of Section 29. A Division Bench of this Court consisting of Teja...
-                  </p>
-  
-  
-              </div>
-  
-              <div class="card-footer pb-4 bg-dark d-none">
-  
-              </div>
-            </div> <!-- Card for a Post/Artile -->
 
+          <div class="px-3 pb-4">
+            
+    
             <div class="date-tag pt-3 pb-4 text-center">
               <span>16 Sep, 2020</span>
             </div>
             
-          
-            <div class="card p-0 border-0 bg-white shadow-sm mb-3">
-              <div class="card-body p-4">
-  
-                <a href="./judgment-detail.html" class="h4 card-title d-block mb-2 text-primary">
-                  <u>Avitel PStudioz Limited Vs. HSBC PI Holdings (Mauritius) Limited</u>
-                  
-                </a>
-                <p class="card-text text-success mb-2">
-                  Supreme Court Of Punjab And Haryana |  <small class="ml-1"><i class="fas fa-clock"></i> 24/08/20</small>
-                  
-               </p>
-                  <p class="mb-1 detailed-text">
-                    <b>Judgment : </b>(1.) PURSUANT to a complaint made by Mst. Kaushiya Rani, <strong class="bg-light">Gopal Singh</strong> was committed to the court of. of a previous Full Bench in Durag Pal <strong class="bg-light">Singh</strong> v. Pancham <strong class="bg-light">singh</strong>, AIR 1939 All 403 (FB), to the effect. meaning of Section 29. A Division Bench of this Court consisting of Teja...
-                  </p>
-  
-  
-              </div>
-  
-              <div class="card-footer pb-4 bg-dark d-none">
-  
-              </div>
-            </div> <!-- Card for a Post/Artile -->
-          
-            <div class="card p-0 border-0 bg-white shadow-sm mb-3">
-              <div class="card-body p-4">
-  
-                <a href="./judgment-detail.html" class="h4 card-title d-block mb-2 text-primary">
-                  <u>The Commissioner of Central Excise, Customs and Service Tax, Calicut Vs. M/s. Cera Boards and Doors, Kannur Kerala</u>
-                  
-                </a>
-                <p class="card-text text-success mb-2">
-                  Supreme Court Of Punjab And Haryana |  <small class="ml-1"><i class="fas fa-clock"></i> 24/08/20</small>
-                  
-               </p>
-                  <p class="mb-1 detailed-text">
-                    <b>Judgment : </b>(1.) PURSUANT to a complaint made by Mst. Kaushiya Rani, <strong class="bg-light">Gopal Singh</strong> was committed to the court of. of a previous Full Bench in Durag Pal <strong class="bg-light">Singh</strong> v. Pancham <strong class="bg-light">singh</strong>, AIR 1939 All 403 (FB), to the effect. meaning of Section 29. A Division Bench of this Court consisting of Teja...
-                  </p>
-  
-  
-              </div>
-  
-              <div class="card-footer pb-4 bg-dark d-none">
-  
-              </div>
-            </div> <!-- Card for a Post/Artile -->
+           
+                <div class="card p-0 border-0 bg-white shadow-sm mb-3">
+                  <div class="card-body p-4">
+      
+                    <a href="./judgment-detail.html" class="h4 card-title d-block mb-2 text-primary">
+                      <u>	Wg. Cdr. Arifur Rahman Khan and Aleya Sultana Vs. DLF Southern Homes Pvt. Ltd. (now known as BEGUR OMR Homes Pvt. Ltd.)</u>
+                     
+                    </a>
+                    <p class="card-text text-success mb-2">
+                       Supreme Court Of Punjab And Haryana |  <small class="ml-1"><i class="fas fa-clock"></i> 24/08/20</small>
+                       
+                    </p>
+                    <p class="mb-1 detailed-text">
+                      <b>Judgment : </b>(1.) PURSUANT to a complaint made by Mst. Kaushiya Rani, <strong class="bg-light">Gopal Singh</strong> was committed to the court of. of a previous Full Bench in Durag Pal <strong class="bg-light">Singh</strong> v. Pancham <strong class="bg-light">singh</strong>, AIR 1939 All 403 (FB), to the effect. meaning of Section 29. A Division Bench of this Court consisting of Teja...
+                    </p>
        
-            <div class="card p-0 border-0 bg-white shadow-sm mb-3">
-              <div class="card-body p-4">
-  
-                <a href="./judgment-detail.html" class="h4 card-title d-block mb-2 text-primary">
-                  <u>Deccan Paper Mills Co. Ltd. Vs. Regency Mahavir Properties</u></a>
-                  <p class="card-text text-success mb-2">
-                    Supreme Court Of Punjab And Haryana |  <small class="ml-1"><i class="fas fa-clock"></i> 24/08/20</small>
                     
-                 </p>
-              <p class="mb-1 detailed-text"><b>Judgment : </b>(1.) PURSUANT to a complaint made by Mst. Kaushiya Rani, <strong>Gopal Singh</strong> was committed to the court of. of a previous Full Bench in Durag Pal <strong>Singh</strong> v. Pancham <strong>singh</strong>, AIR 1939 All 403 (FB), to the effect. meaning of Section 29. A Division Bench of this Court consisting of Teja <strong>Singh</strong> J. and Bhandari J. (as. he then was) in Harbans <strong>Singh</strong> v. Karam Chand, (1949) 51 Pun LR 50 : (AIR 1949 EP 299) had to decide.<br></p>
-  
-  
-              </div>
-  
-              <div class="card-footer pb-4 bg-dark d-none">
-  
-              </div>
-            </div> <!-- Card for a Post/Artile -->
+      
+                  </div>
+      
+                  <div class="card-footer pb-4 bg-dark d-none">
+      
+                  </div>
+                </div> <!-- Card for a Post/Artile -->
+              
+                <div class="card p-0 border-0 bg-white shadow-sm mb-3">
+                  <div class="card-body p-4">
+      
+                    <a href="./judgment-detail.html" class="h4 card-title d-block mb-2 text-primary">
+                      <u>Sri V.N. Krishna Murthy Vs. Sri Ravikumar</u>
+                      
+                    </a>
+                    <p class="card-text text-success mb-2">
+                      Supreme Court Of Punjab And Haryana |  <small class="ml-1"><i class="fas fa-clock"></i> 24/08/20</small>
+                      
+                   </p>
+                      <p class="mb-1 detailed-text">
+                        <b>Judgment : </b>(1.) PURSUANT to a complaint made by Mst. Kaushiya Rani, <strong class="bg-light">Gopal Singh</strong> was committed to the court of. of a previous Full Bench in Durag Pal <strong class="bg-light">Singh</strong> v. Pancham <strong class="bg-light">singh</strong>, AIR 1939 All 403 (FB), to the effect. meaning of Section 29. A Division Bench of this Court consisting of Teja...
+                      </p>
+    
+      
+                  </div>
+      
+                  <div class="card-footer pb-4 bg-dark d-none">
+      
+                  </div>
+                </div> <!-- Card for a Post/Artile -->
+           
+                <div class="card p-0 border-0 bg-white shadow-sm mb-3">
+                  <div class="card-body p-4">
+      
+                    <a href="./judgment-detail.html" class="h4 card-title d-block mb-2 text-primary">
+                      <u>Sardar Bahginder Singh Vs. Sardar Manjieeth Singh Jagan Singh</u>
+                      
+                    </a>
+                    <p class="card-text text-success mb-2">
+                      Supreme Court Of Punjab And Haryana |  <small class="ml-1"><i class="fas fa-clock"></i> 24/08/20</small>
+                      
+                   </p>
+                      <p class="mb-1 detailed-text">
+                        <b>Judgment : </b>(1.) PURSUANT to a complaint made by Mst. Kaushiya Rani, <strong class="bg-light">Gopal Singh</strong> was committed to the court of. of a previous Full Bench in Durag Pal <strong class="bg-light">Singh</strong> v. Pancham <strong class="bg-light">singh</strong>, AIR 1939 All 403 (FB), to the effect. meaning of Section 29. A Division Bench of this Court consisting of Teja...
+                      </p>
+      
+      
+                  </div>
+      
+                  <div class="card-footer pb-4 bg-dark d-none">
+      
+                  </div>
+                </div> <!-- Card for a Post/Artile -->
+    
+                <div class="date-tag pt-3 pb-4 text-center">
+                  <span>16 Sep, 2020</span>
+                </div>
+                
+              
+                <div class="card p-0 border-0 bg-white shadow-sm mb-3">
+                  <div class="card-body p-4">
+      
+                    <a href="./judgment-detail.html" class="h4 card-title d-block mb-2 text-primary">
+                      <u>Avitel PStudioz Limited Vs. HSBC PI Holdings (Mauritius) Limited</u>
+                      
+                    </a>
+                    <p class="card-text text-success mb-2">
+                      Supreme Court Of Punjab And Haryana |  <small class="ml-1"><i class="fas fa-clock"></i> 24/08/20</small>
+                      
+                   </p>
+                      <p class="mb-1 detailed-text">
+                        <b>Judgment : </b>(1.) PURSUANT to a complaint made by Mst. Kaushiya Rani, <strong class="bg-light">Gopal Singh</strong> was committed to the court of. of a previous Full Bench in Durag Pal <strong class="bg-light">Singh</strong> v. Pancham <strong class="bg-light">singh</strong>, AIR 1939 All 403 (FB), to the effect. meaning of Section 29. A Division Bench of this Court consisting of Teja...
+                      </p>
+      
+      
+                  </div>
+      
+                  <div class="card-footer pb-4 bg-dark d-none">
+      
+                  </div>
+                </div> <!-- Card for a Post/Artile -->
+              
+                <div class="card p-0 border-0 bg-white shadow-sm mb-3">
+                  <div class="card-body p-4">
+      
+                    <a href="./judgment-detail.html" class="h4 card-title d-block mb-2 text-primary">
+                      <u>The Commissioner of Central Excise, Customs and Service Tax, Calicut Vs. M/s. Cera Boards and Doors, Kannur Kerala</u>
+                      
+                    </a>
+                    <p class="card-text text-success mb-2">
+                      Supreme Court Of Punjab And Haryana |  <small class="ml-1"><i class="fas fa-clock"></i> 24/08/20</small>
+                      
+                   </p>
+                      <p class="mb-1 detailed-text">
+                        <b>Judgment : </b>(1.) PURSUANT to a complaint made by Mst. Kaushiya Rani, <strong class="bg-light">Gopal Singh</strong> was committed to the court of. of a previous Full Bench in Durag Pal <strong class="bg-light">Singh</strong> v. Pancham <strong class="bg-light">singh</strong>, AIR 1939 All 403 (FB), to the effect. meaning of Section 29. A Division Bench of this Court consisting of Teja...
+                      </p>
+      
+      
+                  </div>
+      
+                  <div class="card-footer pb-4 bg-dark d-none">
+      
+                  </div>
+                </div> <!-- Card for a Post/Artile -->
+           
+                <div class="card p-0 border-0 bg-white shadow-sm mb-3">
+                  <div class="card-body p-4">
+      
+                    <a href="./judgment-detail.html" class="h4 card-title d-block mb-2 text-primary">
+                      <u>Deccan Paper Mills Co. Ltd. Vs. Regency Mahavir Properties</u></a>
+                      <p class="card-text text-success mb-2">
+                        Supreme Court Of Punjab And Haryana |  <small class="ml-1"><i class="fas fa-clock"></i> 24/08/20</small>
+                        
+                     </p>
+                  <p class="mb-1 detailed-text"><b>Judgment : </b>(1.) PURSUANT to a complaint made by Mst. Kaushiya Rani, <strong>Gopal Singh</strong> was committed to the court of. of a previous Full Bench in Durag Pal <strong>Singh</strong> v. Pancham <strong>singh</strong>, AIR 1939 All 403 (FB), to the effect. meaning of Section 29. A Division Bench of this Court consisting of Teja <strong>Singh</strong> J. and Bhandari J. (as. he then was) in Harbans <strong>Singh</strong> v. Karam Chand, (1949) 51 Pun LR 50 : (AIR 1949 EP 299) had to decide.<br></p>
+      
+      
+                  </div>
+      
+                  <div class="card-footer pb-4 bg-dark d-none">
+      
+                  </div>
+                </div> <!-- Card for a Post/Artile -->
+    
+                <div class="date-tag pt-3 pb-4 text-center">
+                  <span>16 Sep, 2020</span>
+                </div>
+    
+                <div class="card p-0 border-0 bg-white shadow-sm mb-3">
+                  <div class="card-body p-4">
+      
+                    <a href="./judgment-detail.html" class="h4 card-title d-block mb-2 text-primary">
+                      <u>Deccan Paper Mills Co. Ltd. Vs. Regency Mahavir Properties</u></a>
+                      <p class="card-text text-success mb-2">
+                        Supreme Court Of Punjab And Haryana |  <small class="ml-1"><i class="fas fa-clock"></i> 24/08/20</small>
+                        
+                     </p>
+                  <p class="mb-1 detailed-text"><b>Judgment : </b>(1.) PURSUANT to a complaint made by Mst. Kaushiya Rani, <strong>Gopal Singh</strong> was committed to the court of. of a previous Full Bench in Durag Pal <strong>Singh</strong> v. Pancham <strong>singh</strong>, AIR 1939 All 403 (FB), to the effect. meaning of Section 29. A Division Bench of this Court consisting of Teja <strong>Singh</strong> J. and Bhandari J. (as. he then was) in Harbans <strong>Singh</strong> v. Karam Chand, (1949) 51 Pun LR 50 : (AIR 1949 EP 299) had to decide.<br></p>
+      
+      
+                  </div>
+      
+                  <div class="card-footer pb-4 bg-dark d-none">
+      
+                  </div>
+                </div> <!-- Card for a Post/Artile -->
+                <div class="card p-0 border-0 bg-white shadow-sm mb-3">
+                  <div class="card-body p-4">
+      
+                    <a href="./judgment-detail.html" class="h4 card-title d-block mb-2 text-primary">
+                      <u>Deccan Paper Mills Co. Ltd. Vs. Regency Mahavir Properties</u></a>
+                      <p class="card-text text-success mb-2">
+                        Supreme Court Of Punjab And Haryana |  <small class="ml-1"><i class="fas fa-clock"></i> 24/08/20</small>
+                        
+                     </p>
+                  <p class="mb-1 detailed-text"><b>Judgment : </b>(1.) PURSUANT to a complaint made by Mst. Kaushiya Rani, <strong>Gopal Singh</strong> was committed to the court of. of a previous Full Bench in Durag Pal <strong>Singh</strong> v. Pancham <strong>singh</strong>, AIR 1939 All 403 (FB), to the effect. meaning of Section 29. A Division Bench of this Court consisting of Teja <strong>Singh</strong> J. and Bhandari J. (as. he then was) in Harbans <strong>Singh</strong> v. Karam Chand, (1949) 51 Pun LR 50 : (AIR 1949 EP 299) had to decide.<br></p>
+      
+      
+                  </div>
+      
+                  <div class="card-footer pb-4 bg-dark d-none">
+      
+                  </div>
+                </div> <!-- Card for a Post/Artile -->
+    
+                <div class="date-tag pt-3 pb-4 text-center">
+                  <span>16 Sep, 2020</span>
+                </div>
+    
+                <div class="card p-0 border-0 bg-white shadow-sm mb-3">
+                  <div class="card-body p-4">
+      
+                    <a href="./judgment-detail.html" class="h4 card-title d-block mb-2 text-primary">
+                      <u>Deccan Paper Mills Co. Ltd. Vs. Regency Mahavir Properties</u></a>
+                      <p class="card-text text-success mb-2">
+                        Supreme Court Of Punjab And Haryana |  <small class="ml-1"><i class="fas fa-clock"></i> 24/08/20</small>
+                        
+                     </p>
+                  <p class="mb-1 detailed-text"><b>Judgment : </b>(1.) PURSUANT to a complaint made by Mst. Kaushiya Rani, <strong>Gopal Singh</strong> was committed to the court of. of a previous Full Bench in Durag Pal <strong>Singh</strong> v. Pancham <strong>singh</strong>, AIR 1939 All 403 (FB), to the effect. meaning of Section 29. A Division Bench of this Court consisting of Teja <strong>Singh</strong> J. and Bhandari J. (as. he then was) in Harbans <strong>Singh</strong> v. Karam Chand, (1949) 51 Pun LR 50 : (AIR 1949 EP 299) had to decide.<br></p>
+      
+      
+                  </div>
+      
+                  <div class="card-footer pb-4 bg-dark d-none">
+      
+                  </div>
+                </div> <!-- Card for a Post/Artile -->
+    
+                <div class="card p-0 border-0 bg-white shadow-sm mb-3">
+                  <div class="card-body p-4">
+      
+                    <a href="./judgment-detail.html" class="h4 card-title d-block mb-2 text-primary">
+                      <u>Deccan Paper Mills Co. Ltd. Vs. Regency Mahavir Properties</u></a>
+                      <p class="card-text text-success mb-2">
+                        Supreme Court Of Punjab And Haryana |  <small class="ml-1"><i class="fas fa-clock"></i> 24/08/20</small>
+                        
+                     </p>
+                  <p class="mb-1 detailed-text"><b>Judgment : </b>(1.) PURSUANT to a complaint made by Mst. Kaushiya Rani, <strong>Gopal Singh</strong> was committed to the court of. of a previous Full Bench in Durag Pal <strong>Singh</strong> v. Pancham <strong>singh</strong>, AIR 1939 All 403 (FB), to the effect. meaning of Section 29. A Division Bench of this Court consisting of Teja <strong>Singh</strong> J. and Bhandari J. (as. he then was) in Harbans <strong>Singh</strong> v. Karam Chand, (1949) 51 Pun LR 50 : (AIR 1949 EP 299) had to decide.<br></p>
+      
+      
+                  </div>
+      
+                  <div class="card-footer pb-4 bg-dark d-none">
+      
+                  </div>
+                </div> <!-- Card for a Post/Artile -->
+    
+                <div class="card p-0 border-0 bg-white shadow-sm mb-3">
+                  <div class="card-body p-4">
+      
+                    <a href="./judgment-detail.html" class="h4 card-title d-block mb-2 text-primary">
+                      <u>Deccan Paper Mills Co. Ltd. Vs. Regency Mahavir Properties</u></a>
+                      <p class="card-text text-success mb-2">
+                        Supreme Court Of Punjab And Haryana |  <small class="ml-1"><i class="fas fa-clock"></i> 24/08/20</small>
+                        
+                     </p>
+                  <p class="mb-1 detailed-text"><b>Judgment : </b>(1.) PURSUANT to a complaint made by Mst. Kaushiya Rani, <strong>Gopal Singh</strong> was committed to the court of. of a previous Full Bench in Durag Pal <strong>Singh</strong> v. Pancham <strong>singh</strong>, AIR 1939 All 403 (FB), to the effect. meaning of Section 29. A Division Bench of this Court consisting of Teja <strong>Singh</strong> J. and Bhandari J. (as. he then was) in Harbans <strong>Singh</strong> v. Karam Chand, (1949) 51 Pun LR 50 : (AIR 1949 EP 299) had to decide.<br></p>
+      
+      
+                  </div>
+      
+                  <div class="card-footer pb-4 bg-dark d-none">
+      
+                  </div>
+                </div>
 
-            <div class="date-tag pt-3 pb-4 text-center">
-              <span>16 Sep, 2020</span>
+                <nav class=" my-5" aria-label="Page navigation">
+                  <ul class="pagination justify-content-center">
+                    <li class="page-item disabled">
+                      <a class="page-link" href="#" aria-label="Previous">
+                        <small><i class="fas fa-chevron-left"></i></small>
+                      </a>
+                    </li>
+                    <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                    <li class="page-item"><a class="page-link" href="#">2</a></li>
+                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                    <li class="page-item disabled"><a class="page-link" href="#">...</a></li>
+                    <li class="page-item"><a class="page-link" href="#">17</a></li>
+                    <li class="page-item">
+                      <a class="page-link" href="#" aria-label="Next">
+                        <small><i class="fas fa-chevron-right"></i></small>
+                      </a>
+                    </li>
+                  </ul>
+                </nav>
+
+          </div>
+  
+           
+
+              
+        </div>
+
+
+        <aside class="order-lg-1 bg-gray filter-sidebar court-sidebar">
+          <section class="widget bg-gray  rounded-lg h-100 p-0">
+            <div class="d-flex align-items-center px-4 filter-head">
+              <h2 class="widget-title mb-0 text-uppercase">
+                <i class="fas fa-gavel m-1"></i> Select Court</h2>
+              
             </div>
 
-            <div class="card p-0 border-0 bg-white shadow-sm mb-3">
-              <div class="card-body p-4">
-  
-                <a href="./judgment-detail.html" class="h4 card-title d-block mb-2 text-primary">
-                  <u>Deccan Paper Mills Co. Ltd. Vs. Regency Mahavir Properties</u></a>
-                  <p class="card-text text-success mb-2">
-                    Supreme Court Of Punjab And Haryana |  <small class="ml-1"><i class="fas fa-clock"></i> 24/08/20</small>
-                    
-                 </p>
-              <p class="mb-1 detailed-text"><b>Judgment : </b>(1.) PURSUANT to a complaint made by Mst. Kaushiya Rani, <strong>Gopal Singh</strong> was committed to the court of. of a previous Full Bench in Durag Pal <strong>Singh</strong> v. Pancham <strong>singh</strong>, AIR 1939 All 403 (FB), to the effect. meaning of Section 29. A Division Bench of this Court consisting of Teja <strong>Singh</strong> J. and Bhandari J. (as. he then was) in Harbans <strong>Singh</strong> v. Karam Chand, (1949) 51 Pun LR 50 : (AIR 1949 EP 299) had to decide.<br></p>
-  
-  
-              </div>
-  
-              <div class="card-footer pb-4 bg-dark d-none">
-  
-              </div>
-            </div> <!-- Card for a Post/Artile -->
-            <div class="card p-0 border-0 bg-white shadow-sm mb-3">
-              <div class="card-body p-4">
-  
-                <a href="./judgment-detail.html" class="h4 card-title d-block mb-2 text-primary">
-                  <u>Deccan Paper Mills Co. Ltd. Vs. Regency Mahavir Properties</u></a>
-                  <p class="card-text text-success mb-2">
-                    Supreme Court Of Punjab And Haryana |  <small class="ml-1"><i class="fas fa-clock"></i> 24/08/20</small>
-                    
-                 </p>
-              <p class="mb-1 detailed-text"><b>Judgment : </b>(1.) PURSUANT to a complaint made by Mst. Kaushiya Rani, <strong>Gopal Singh</strong> was committed to the court of. of a previous Full Bench in Durag Pal <strong>Singh</strong> v. Pancham <strong>singh</strong>, AIR 1939 All 403 (FB), to the effect. meaning of Section 29. A Division Bench of this Court consisting of Teja <strong>Singh</strong> J. and Bhandari J. (as. he then was) in Harbans <strong>Singh</strong> v. Karam Chand, (1949) 51 Pun LR 50 : (AIR 1949 EP 299) had to decide.<br></p>
-  
-  
-              </div>
-  
-              <div class="card-footer pb-4 bg-dark d-none">
-  
-              </div>
-            </div> <!-- Card for a Post/Artile -->
+            <hr class="mt-0">
+            
 
-            <div class="date-tag pt-3 pb-4 text-center">
-              <span>16 Sep, 2020</span>
-            </div>
+              <div class="slimScroll px-4">
+                
+                <a class="sc-link d-flex collapsed align-items-center" href=""><div class="arrow-triangle mr-2"></div> Supreme Court</a>
+                <hr>
+                <div class="form-group mb-0">
+                  <label class="court-label mb-2 text-muted d-flex align-items-center collapsed" data-toggle="collapse" data-target="#hc">
+                    <div class="arrow-triangle mr-2"></div> Hight Court
+                  </label>
+                  <ul class="court-side-list mb-0 collapse list-unstyled" id="hc">
+                    <li class="mb-1 pl-2">
+                      <a class="court-link" href="">Delhi HC</a>
+                    </li>
+                    <li class="mb-1 pl-2">
+                      <a class="court-link" href="">Punjab HC</a>
+                    </li>
+                    <li class="mb-1 pl-2">
+                      <a class="court-link" href="">Gujrat HC</a>
+                    </li>
+                    <li class="mb-1 pl-2">
+                      <a class="court-link" href="">Mumbai HC</a>
+                    </li>
+                    <li class="mb-1 pl-2">
+                      <a class="court-link" href="">Madras HC</a>
+                    </li>
+                    <li class="mb-1 pl-2">
+                      <a class="court-link" href="">MP HC</a>
+                    </li>
+                    <li class="mb-1 pl-2">
+                      <a class="court-link" href="">UP HC</a>
+                    </li>
+                 
+                  </ul>
+                </div>
+                <hr>
+                <div class="form-group mb-0">
+                  <label class="court-label mb-2 text-muted d-flex align-items-center collapsed" data-toggle="collapse" data-target="#tribunal">
+                    <div class="arrow-triangle mr-2"></div> Tribunal Court
+                  </label>
+                  <ul class="court-side-list mb-0 collapse list-unstyled" id="tribunal">
+                    <li class="mb-1 pl-2">
+                      <a class="court-link" href="">Delhi HC</a>
+                    </li>
+                    <li class="mb-1 pl-2">
+                      <a class="court-link" href="">Punjab HC</a>
+                    </li>
+                    <li class="mb-1 pl-2">
+                      <a class="court-link" href="">Gujrat HC</a>
+                    </li>
+                    <li class="mb-1 pl-2">
+                      <a class="court-link" href="">Mumbai HC</a>
+                    </li>
+                    <li class="mb-1 pl-2">
+                      <a class="court-link" href="">Madras HC</a>
+                    </li>
+                    <li class="mb-1 pl-2">
+                      <a class="court-link" href="">MP HC</a>
+                    </li>
+                    <li class="mb-1 pl-2">
+                      <a class="court-link" href="">UP HC</a>
+                    </li>
+                 
+                  </ul>
+                </div>
 
-            <div class="card p-0 border-0 bg-white shadow-sm mb-3">
-              <div class="card-body p-4">
-  
-                <a href="./judgment-detail.html" class="h4 card-title d-block mb-2 text-primary">
-                  <u>Deccan Paper Mills Co. Ltd. Vs. Regency Mahavir Properties</u></a>
-                  <p class="card-text text-success mb-2">
-                    Supreme Court Of Punjab And Haryana |  <small class="ml-1"><i class="fas fa-clock"></i> 24/08/20</small>
-                    
-                 </p>
-              <p class="mb-1 detailed-text"><b>Judgment : </b>(1.) PURSUANT to a complaint made by Mst. Kaushiya Rani, <strong>Gopal Singh</strong> was committed to the court of. of a previous Full Bench in Durag Pal <strong>Singh</strong> v. Pancham <strong>singh</strong>, AIR 1939 All 403 (FB), to the effect. meaning of Section 29. A Division Bench of this Court consisting of Teja <strong>Singh</strong> J. and Bhandari J. (as. he then was) in Harbans <strong>Singh</strong> v. Karam Chand, (1949) 51 Pun LR 50 : (AIR 1949 EP 299) had to decide.<br></p>
-  
-  
               </div>
-  
-              <div class="card-footer pb-4 bg-dark d-none">
-  
-              </div>
-            </div> <!-- Card for a Post/Artile -->
 
-            <div class="card p-0 border-0 bg-white shadow-sm mb-3">
-              <div class="card-body p-4">
-  
-                <a href="./judgment-detail.html" class="h4 card-title d-block mb-2 text-primary">
-                  <u>Deccan Paper Mills Co. Ltd. Vs. Regency Mahavir Properties</u></a>
-                  <p class="card-text text-success mb-2">
-                    Supreme Court Of Punjab And Haryana |  <small class="ml-1"><i class="fas fa-clock"></i> 24/08/20</small>
-                    
-                 </p>
-              <p class="mb-1 detailed-text"><b>Judgment : </b>(1.) PURSUANT to a complaint made by Mst. Kaushiya Rani, <strong>Gopal Singh</strong> was committed to the court of. of a previous Full Bench in Durag Pal <strong>Singh</strong> v. Pancham <strong>singh</strong>, AIR 1939 All 403 (FB), to the effect. meaning of Section 29. A Division Bench of this Court consisting of Teja <strong>Singh</strong> J. and Bhandari J. (as. he then was) in Harbans <strong>Singh</strong> v. Karam Chand, (1949) 51 Pun LR 50 : (AIR 1949 EP 299) had to decide.<br></p>
-  
-  
-              </div>
-  
-              <div class="card-footer pb-4 bg-dark d-none">
-  
-              </div>
-            </div> <!-- Card for a Post/Artile -->
+          
+          </section> <!-- Widget Section -->
 
-            <div class="card p-0 border-0 bg-white shadow-sm mb-3">
-              <div class="card-body p-4">
-  
-                <a href="./judgment-detail.html" class="h4 card-title d-block mb-2 text-primary">
-                  <u>Deccan Paper Mills Co. Ltd. Vs. Regency Mahavir Properties</u></a>
-                  <p class="card-text text-success mb-2">
-                    Supreme Court Of Punjab And Haryana |  <small class="ml-1"><i class="fas fa-clock"></i> 24/08/20</small>
-                    
-                 </p>
-              <p class="mb-1 detailed-text"><b>Judgment : </b>(1.) PURSUANT to a complaint made by Mst. Kaushiya Rani, <strong>Gopal Singh</strong> was committed to the court of. of a previous Full Bench in Durag Pal <strong>Singh</strong> v. Pancham <strong>singh</strong>, AIR 1939 All 403 (FB), to the effect. meaning of Section 29. A Division Bench of this Court consisting of Teja <strong>Singh</strong> J. and Bhandari J. (as. he then was) in Harbans <strong>Singh</strong> v. Karam Chand, (1949) 51 Pun LR 50 : (AIR 1949 EP 299) had to decide.<br></p>
-  
-  
-              </div>
-  
-              <div class="card-footer pb-4 bg-dark d-none">
-  
-              </div>
-            </div> <!-- Card for a Post/Artile -->
+
+        </aside> <!-- END Sidebar -->
+        <!-- Card for a Post/Artile -->
           </div>
   
         </div> <!-- inner nested row -->
 
 
-        <nav class="mt-4" aria-label="Page navigation">
-          <ul class="pagination justify-content-center">
-            <li class="page-item disabled">
-              <a class="page-link" href="#" aria-label="Previous">
-                <small><i class="fas fa-chevron-left"></i></small>
-              </a>
-            </li>
-            <li class="page-item active"><a class="page-link" href="#">1</a></li>
-            <li class="page-item"><a class="page-link" href="#">2</a></li>
-            <li class="page-item"><a class="page-link" href="#">3</a></li>
-            <li class="page-item disabled"><a class="page-link" href="#">...</a></li>
-            <li class="page-item"><a class="page-link" href="#">17</a></li>
-            <li class="page-item">
-              <a class="page-link" href="#" aria-label="Next">
-                <small><i class="fas fa-chevron-right"></i></small>
-              </a>
-            </li>
-          </ul>
-        </nav>
 
 
       </div>
@@ -561,28 +661,10 @@
   </main>
 
 
-  <footer class="footer background--dark">
+  <footer class="footer background--dark pt-5">
     <div class="container">
       <div class="row">
-
-        <div class="cta-block__wrapper col">
-          <div class="cta-block gradient-brand-color py-5">
-            <div class="row">
-              <div class="col-10 offset-1 d-md-flex justify-content-between align-items-center">
-                <div class="cta__contet color--white">
-                  <h2 class="color--white">Priced to suit your business</h2>
-                  <p>Simple plans, no contract, no setup and hidden fees</p>
-                </div>
-
-                <div class="cta__button">
-                  <a href="./pricing.html" class="btn btn-secondary">View Pricing Plans</a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div> <!-- CTA Block Wrapper -->
-
-        <div class="footer-content mb-5 col-12 ">
+        <div class="footer-content mt-5 mb-5 col-12 ">
           <div class="footer-row row ">
             <div class="col-md-7">
                 <div class="row px-md-4">
@@ -715,6 +797,22 @@
   <script src="js\init\wb.ajaxchimp-init.js"></script>
   <!--Template JS -->
   <script src="js\min\main-min.js"></script>
+  <script src="js\vendor\jquery.slimscroll.min.js"></script>
+
+
+  <script>
+    $(function() {
+      $('.filter-sidebar .slimScroll').slimScroll({
+        height: '600',
+      });
+    });
+  </script>
+
+<script type="text/javascript">
+  $('.filter-togle a').on('click',function() {
+    $('.filter-sidebar').toggleClass('show')
+  })
+</script>
 
 </body>
 
