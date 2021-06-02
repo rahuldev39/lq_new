@@ -1167,21 +1167,67 @@
 
 
   <!-- Modal -->
-<!-- <div class="modal legalpowerlist-banner fade" id="legalpowerlist-banner" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal subscribe-modal fade" id="subscribe-modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog modal-dialog-centered">
-    <div class="modal-content">
-      <div class="modal-body p-0">
+    <div class="modal-content border-0 bg-transparent">
+      <div class="modal-body text-white p-0">
         <button type="button" class="close position-absolute" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
+          <span aria-hidden="true"></span>&times;</span>
         </button>
-        <a href="https://www.legalpowerlists.com/" target="_blank">
-          <img src="./images/legalpowerlist-website-popup.png" class="img-fluid w-100" alt="">
-        </a>
+        
+        <div class=" p-4">
+            <h3 class="heading text-white mb-0">Subscribe Now</h3>
+            <span class="sub-heading f-12 d-block">you need to subscribe to premium plan to access all features</span>
+        </div>
+
+        <div class="text-center premimum-title">
+          <h4>Premium Feature</h4>
+        </div>
+        <div class="p-4">
+          <div class="row">
+            <div class="col-md-6"> 
+              <div class="feature-item">
+                iDRAF
+              </div>
+            </div>
+            <div class="col-md-6"> 
+              <div class="feature-item">
+                QuestNotes
+              </div>
+            </div>
+            <div class="col-md-6"> 
+              <div class="feature-item">
+                Print <small>(column printout)</small>
+              </div>
+            </div>
+            <div class="col-md-6"> 
+              <div class="feature-item">
+                Notification
+              </div>
+            </div>
+            <div class="col-md-6"> 
+              <div class="feature-item">
+                Personalised Bot assistant
+              </div>
+            </div>
+            <div class="col-md-6"> 
+              <div class="feature-item">
+                IP Access
+              </div>
+            </div>
+          </div>
+  
+          <div class="text-center mt-4">
+            <button type="button" name="button" class="btn btn-primary btn-sm">Subscribe Now</button>
+          </div>
+        </div>
+        
+
       </div>
    
     </div>
   </div>
-</div> -->
+</div>
 
   <!-- Global Required JS -->
   <script src="js\vendor\jquery-3.3.1.min.js"></script>
@@ -1351,15 +1397,16 @@
 
 <script type="text/javascript">
   $(window).on('load',function(){
-      $('#legalpowerlist-banner').modal('show');
+      $('#subscribe-modal').modal('show');
+      $('body').addClass('subscribe-open');
   });
 
-  $('#legalpowerlist-banner').on('shown.bs.modal', function (e) {
-    $('body').addClass('legalpowelist-open');
+  $('#subscribe-modal').on('shown.bs.modal', function (e) {
+    $('body').addClass('subscribe-open');
   });
 
-  $('#legalpowerlist-banner').on('hidden.bs.modal', function (e) {
-   $('#myCustomElement').removeClass('legalpowelist-open');
+  $('#subscribe-modal').on('hidden.bs.modal', function (e) {
+   $('body').removeClass('subscribe-open');
 })
 </script>
 </body>
