@@ -2006,3 +2006,50 @@ ol li{
   padding: 8px 0px;
   border: 1px solid white;
 }
+
+.profile-link-boxes {
+  flex-wrap: wrap;
+}
+.profile-link-boxes .profile-link-box {
+  width:calc(20% - 20px) ;
+  text-align: center;
+  min-height: 114px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  border: 1px solid #3646eb;
+  margin: 10px;
+  border-radius: 7px;
+  color: #101f41;
+  font-weight: 600;
+  font-size: 14px;
+  transition: all ease-in-out 300ms;
+  
+}
+.profile-link-boxes .profile-link-box i {
+  font-size: 26px;
+  margin-bottom: 10px;
+  color: #3646eb;
+}
+.profile-link-boxes .profile-link-box:hover {
+  transform: scale(1.05);
+  background-color: #3646eb;
+  color: white;
+}
+.profile-link-boxes .profile-link-box:hover i {
+  color: #bbc1fa;
+}
+
+
+@media(max-width:768px) {
+  .profile-link-boxes .profile-link-box {
+    margin: 8px;
+    width: calc(33.3% - 16px) 
+}
+}
+@media(max-width:576px) {
+  .profile-link-boxes .profile-link-box {
+    width: calc(50% - 16px) 
+}
+}
