@@ -2081,3 +2081,10 @@ background-image: url(../images/pattren.png);
 .download-btn .dropdown-menu .dropdown-item:last-child{
   border-bottom: 0px;
 }
+.app-btn {
+  max-width: 302px;
+  margin: 0 auto;
+}
+.app-btn .btn i {
+  font-size: 23px;
+}
