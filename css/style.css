@@ -2088,3 +2088,65 @@ background-image: url(../images/pattren.png);
 .app-btn .btn i {
   font-size: 23px;
 }
+
+.table.table-padded tbody tr {
+  border-radius: 4px;
+  -webkit-transition: all 0.1s ease;
+  transition: all 0.1s ease;
+}
+.table.table-padded tbody td:first-child {
+  border-radius: 4px 0px 0px 4px;
+}
+.table.table-padded tbody td {
+  padding: 0.9rem 1.1rem;
+  background-color: #fff;
+  border: none;
+  border-right: 1px solid rgba(0,0,0,0.03);
+}
+.table.table-padded tbody td:last-child {
+  border-radius: 0px 4px 4px 0px;
+  border-right: none;
+}
+.table.table-padded {
+  border-collapse: separate;
+  border-spacing: 0 10px;
+}
+.table.table-padded tbody tr:hover {
+  -webkit-box-shadow: 0px 2px 5px rgba(69,101,173,0.1);
+  box-shadow: 0px 2px 5px rgba(69,101,173,0.1);
+  -webkit-transform: translateY(-1px) scale(1.01);
+  transform: translateY(-1px) scale(1.01);
+}
+.row-actions .download-btn {
+  display: flex;
+  align-items: center;
+  padding: 4px 10px;
+  font-size: 12px;
+  border-radius: 2px;
+}
+.bare-act-container{
+  max-width: 900px;
+}
+.bare-act-container td{
+  vertical-align: middle;
+}
+.bare-act-container td a.act-link{
+  color: #00123c;
+}
+.letters-btn-groups .btn {
+  /* border: 1px solid #4d5bed; */
+  color: #0c2050;
+  margin: 4px 3px !important;
+  border-radius: 4px !important;
+  background-color: white;
+  box-shadow: 0px 1px 2px #07122c3b;
+  flex: initial;
+}
+.letters-btn-groups .btn.active {
+  background-color: #586fed;
+  color: white;
+}
+.letters-btn-groups .btn.disabled, .letters-btn-groups .btn:disabled {
+  opacity: .3;
+  cursor: not-allowed;
+}
