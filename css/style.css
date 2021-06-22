@@ -2183,3 +2183,8 @@ background-image: url(../images/pattren.png);
 .app-btn-box.ubuntu-btn{
   background-color: #0c2050 ;
 }
+
+.block-content{
+  background-image: url(../images/block-bg.png);
+  background-size: cover;
+}
