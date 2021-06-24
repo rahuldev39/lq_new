@@ -2188,3 +2188,6 @@ background-image: url(../images/pattren.png);
   background-image: url(../images/block-bg.png);
   background-size: cover;
 }
+.blockquote .mark{
+  display: inline;
+}
