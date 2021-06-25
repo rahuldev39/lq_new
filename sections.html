@@ -184,7 +184,7 @@
                 <li class="preminum-tag d-flex align-items-center justify-content-between px-3 py-4">
                   <div class="d-flex align-items-center">
                     <i class="fas fa-gem"></i>
-                    <span class="h4 font-weight-bold mx-2 mb-0">iDraf</span>
+                    <span class="h4 font-weight-bold mx-2 mb-0">Sections</span>
 
                   </div>
                   <div class="updown-links d-flex">
@@ -232,81 +232,69 @@
                   <i class="fas fa-gem text-warning"></i> <span class="h4 font-weight-bold mx-2 mb-0">Open iDraf</span>
                 </div>
 
-                <div class="container-fluid d-lg-flex align-items-center mt-2 mb-1">
-                  <div class="back-to-result d-none">
-                    <a href="#" class="d-block rounded py-1 px-1 font-semibold">
-                      <i class="fas fa-angle-left mr-2"></i> <span>Back</span> <span class="d-none d-lg-inline-block">to Results</span>
-                    </a>
-                  </div>
+                <div class="section-topbar">
+                  
                 
-                  <div class="text-md-center mr-auto">
+                  <div class="text-md-center mr-auto py-2 px-4">
                     <!-- <p id="progress_image" style="display: none; margin-top: -30px;"><img src="https://www.legitquest.com/images/progressbar.gif"></p> -->
-                    <h4 class="d-inline font-weight-bold mb-0" id="secondaryTitle">INDIAN PENAL CODE, 1860</h1>
+                    <h5 class="d-inline font-weight-bold mb-0" id="secondaryTitle">INDIAN PENAL CODE, 1860</h1>
                   </div>
 
-                  <div class="d-flex align-items-center mt-3 mt-lg-0">
-                                        <span class="d-none d-md-inline-block mr-2">State Amendments:</span>
-                  
-                    <select class="sort-by" name="amendment" id="amendment" onchange="getAmendment(this.value)">
-                        <option value="7438">SELECT AMENDMENT</option>
-                                                     <option value="30664">ANDHRA PRADESH</option>
-                                                     <option value="30665">MANIPUR</option>
-                                                     <option value="30666">ORRISA</option>
-                                                     <option value="30667">KARNATAKA</option>
-                                                     <option value="30668">MAHARASHTRA</option>
-                                                     <option value="30669">HARYANA</option>
-                                                     <option value="30670">GUJARAT</option>
-                                                     <option value="30671">ASSAM</option>
-                                                     <option value="30672">UTTAR PRADESH</option>
-                                                     <option value="30673">HIMACHAL PRADESH</option>
-                                                     <option value="30674">WEST BENGAL</option>
-                                                     <option value="30675">TAMIL NADU</option>
-                                                     <option value="30676">RAJASTHAN</option>
-                                                     <option value="30677">MEGHALAYA</option>
-                                                     <option value="30678">CHHATISGARH</option>
-                                                     <option value="30679">MADHYA PRADESH</option>
-                                                     <option value="31768">LADAKH</option>
-                                                     <option value="31769">JAMMU &amp; KASHMIR</option>
-                            
-                    </select>
-                  
-
-                   <button class="btn btn-primary btn-sm btn--has-shadow ml-auto ml-lg-4 nav-item--btn pdf-btn" onclick="getSecondaryMaterialActPDF(7438);"><i class="fa fa-file-pdf" aria-hidden="true"></i> PDF</button> 
-
-                  </div>
-
-                </div>
-                
-              </div>
-
-              <div class="px-4 mx-md-4  position-relative tab-content">
-
-
-                <div  class="mx-auto flex-fill pt-4 mt-2 tab-pane fade show active"  role="tabpanel">
-
-                  <div class="acts-input d-md-flex align-items-center  mb-3 ">
-                    <div class="d-flex align-items-center mb-3 mb-md-0 mr-0 mr-md-3">
-                      <label class="mr-2 font-semibold text-nowrap">Type of Changes:</label>  
+                  <div class="border-top d-flex align-items-center px-4 py-2">
+                    <div class="d-flex align-items-center  mr-0 mr-md-4">
+                      <label class="d-none mb-0 d-md-inline-block mr-2 font-semibold text-nowrap">Type of Changes:</label>  
                       <select class="form-control form-control-sm">
-                          <option value="">Select changes type</option>
+                          <option value="">Changes type</option>
                           <option value="">Inserted</option>
                           <option value="">Substituted</option>
                           <option value="">Amended</option>
                           <option value="">Replaced</option>
                         </select>
                     </div>
-                      <div class="d-flex align-items-center mr-0 mr-md-auto"> 
-                        <label class="mr-2 font-semibold text-nowrap">Changes Date:</label>
-                        <input class="form-control form-control-sm " type="Date" name="" placeholder="Changes Date">
-                      </div>
 
-                      <button class="btn btn-sm btn-primary ">
-                        Update
-                      </button>
+                    <div class="d-flex align-items-center  mr-0 mr-md-auto">
+                      <label class="d-none d-md-inline-block mr-2 text-nowrap mb-0">State Amendments:</label>
+                      <select class="form-control form-control-sm" name="amendment" id="amendment" onchange="getAmendment(this.value)">
+                          <option value="7438">Select Amendments</option>
+                          <option value="30664">ANDHRA PRADESH</option>
+                          <option value="30665">MANIPUR</option>
+                          <option value="30666">ORRISA</option>
+                          <option value="30667">KARNATAKA</option>
+                          <option value="30668">MAHARASHTRA</option>
+                          <option value="30669">HARYANA</option>
+                          <option value="30670">GUJARAT</option>
+                          <option value="30671">ASSAM</option>
+                          <option value="30672">UTTAR PRADESH</option>
+                          <option value="30673">HIMACHAL PRADESH</option>
+                          <option value="30674">WEST BENGAL</option>
+                          <option value="30675">TAMIL NADU</option>
+                          <option value="30676">RAJASTHAN</option>
+                          <option value="30677">MEGHALAYA</option>
+                          <option value="30678">CHHATISGARH</option>
+                          <option value="30679">MADHYA PRADESH</option>
+                          <option value="31768">LADAKH</option>
+                          <option value="31769">JAMMU &amp; KASHMIR</option>   
+                      </select>
+                    </div>
                       
+                    
+      
+                     <button class="btn btn-primary btn-sm btn--has-shadow ml-auto ml-lg-4 nav-item--btn pdf-btn text-nowrap">
+                      <i class="fa fa-file-pdf mr-2" aria-hidden="true"></i> PDF
+                    </button> 
                   </div>
 
+                </div>
+                
+              </div>
 
+             
+
+              <div class="px-0 mx-md-4  position-relative tab-content">
+
+
+                <div  class="mx-auto flex-fill pt-4 mt-2 tab-pane fade show active"  role="tabpanel">
+                
                   <nav class="section-tab">
                     <div class="nav nav-tabs" id="nav-tab" role="tablist">
                       <button class="nav-link active" id="nav-home-tab" data-toggle="tab" data-target="#tab1" role="tab">Section 103</button>
@@ -471,10 +459,6 @@
                         </table>
                       </div>
                     </div>
-                  </div>
-
-                  <div class="text-center py-4">
-                    <button class="btn btn-primary px-5">Update</button>
                   </div>
 
                 </div>

@@ -2197,3 +2197,13 @@ blockquote {
     border-left: 5px solid #ddd;
     margin: 12px;
 }
+ 
+.section-topbar .form-control-sm {
+  padding: 5px 6px !important;
+  height: auto !important;
+}
+
+.section-topbar .btn-sm {
+  font-size: 13px;
+  padding: 5px 13px;
+}
