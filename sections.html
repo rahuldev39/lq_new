@@ -235,14 +235,18 @@
                 <div class="section-topbar">
                   
                 
-                  <div class="text-md-center mr-auto py-2 px-4">
+                  <div class="text-md-center d-flex mr-auto py-2 px-4">
                     <!-- <p id="progress_image" style="display: none; margin-top: -30px;"><img src="https://www.legitquest.com/images/progressbar.gif"></p> -->
-                    <h5 class="d-inline font-weight-bold mb-0" id="secondaryTitle">INDIAN PENAL CODE, 1860</h1>
+                    <h5 class="d-inline font-weight-bold mb-0 mx-auto" id="secondaryTitle">INDIAN PENAL CODE, 1860</h1>
+                    
+                    <button type="button" class="btn btn-default p-0 mr-2" >
+                      <i class="fa fa-file-pdf" data-toggle="tooltip" data-placement="left" title="" data-original-title="Download pdf"></i> <small> PDF</small>
+                    </button>
                   </div>
 
-                  <div class="border-top d-flex align-items-center px-4 py-2">
-                    <div class="d-flex align-items-center  mr-0 mr-md-4">
-                      <label class="d-none mb-0 d-md-inline-block mr-2 font-semibold text-nowrap">Type of Changes:</label>  
+                  <div class="d-flex align-items-center justify-content-center px-4 pb-3">
+                    <div class="d-flex align-items-center">
+                      <label class="d-none mb-0 d-md-inline-block mr-2 font-semibold text-nowrap text-warning">Type of Changes:</label>  
                       <select class="form-control form-control-sm">
                           <option value="">Changes type</option>
                           <option value="">Inserted</option>
@@ -251,9 +255,9 @@
                           <option value="">Replaced</option>
                         </select>
                     </div>
-
-                    <div class="d-flex align-items-center  mr-0 mr-md-auto">
-                      <label class="d-none d-md-inline-block mr-2 text-nowrap mb-0">State Amendments:</label>
+                    <span class="mx-3 text-muted text-warning">|</span>
+                    <div class="d-flex align-items-center  ">
+                      <label class="d-none d-md-inline-block mr-2 text-nowrap mb-0 text-warning">State Amendments:</label>
                       <select class="form-control form-control-sm" name="amendment" id="amendment" onchange="getAmendment(this.value)">
                           <option value="7438">Select Amendments</option>
                           <option value="30664">ANDHRA PRADESH</option>
@@ -279,9 +283,7 @@
                       
                     
       
-                     <button class="btn btn-primary btn-sm btn--has-shadow ml-auto ml-lg-4 nav-item--btn pdf-btn text-nowrap">
-                      <i class="fa fa-file-pdf mr-2" aria-hidden="true"></i> PDF
-                    </button> 
+                    
                   </div>
 
                 </div>
@@ -293,18 +295,18 @@
               <div class="px-0 mx-md-4  position-relative tab-content">
 
 
-                <div  class="mx-auto flex-fill pt-4 mt-2 tab-pane fade show active"  role="tabpanel">
+                <div  class="mx-auto flex-fill pt-3  tab-pane fade show active"  role="tabpanel">
                 
                   <nav class="section-tab">
-                    <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                    <div class="nav nav-tabs justify-content-center" id="nav-tab" role="tablist">
                       <button class="nav-link active" id="nav-home-tab" data-toggle="tab" data-target="#tab1" role="tab">Section 103</button>
                       <button class="nav-link" id="nav-profile-tab" data-toggle="tab" data-target="#tab2" role="tab" >2015</button>
                       <button class="nav-link" id="nav-contact-tab" data-toggle="tab" data-target="#tab3" role="tab" >2018</button>
                       <button class="nav-link" id="nav-contact-tab" data-toggle="tab" data-target="#tab4" role="tab" >2020</button>
                     </div>
                   </nav>
-                  <div class="tab-content section-content bg-white" id="nav-tabContent">
-                    <div class="tab-pane fade show active p-3" id="tab1" role="tabpanel" >
+                  <div class="tab-content section-content border-0 pt-4" id="nav-tabContent">
+                    <div class="tab-pane fade show active " id="tab1" role="tabpanel" >
                       <h3 class="font-weight-bold mb-3">Section 103 - When the right of private defence of property extends to causing death</h3>
                       <p>The right of private defence of property extends, under the restrictions mentioned in section 99, to the voluntary causing of death or of any other harm to the wrong-doer, if the offence, the committing of which, or the attempting to commit which, occasions the exercise of the right, be an offence of any of the descriptions hereinafter enumerated, namely:--</p>
                       <p>First.--Robbery;</p>  
@@ -312,7 +314,7 @@
                       <p>Thirdly.--Mischief by fire committed on any building, lent or vessel, which building, tent or vessel is used as a human dwelling, or as a place for the custody of property;</p>
                       <p>Fourthly.-- Theft, mischief, or house-trespass, under such circumstances as may reasonably cause apprehension that death or grievous hurt will be the consequence, if such right of private defence is not exercised.</p>
                     </div>
-                    <div class="tab-pane fade p-3" id="tab2" role="tabpanel">
+                    <div class="tab-pane fade " id="tab2" role="tabpanel">
                         <div class="table-responsive">
                           <table class="table table-bordered">
                             <thead>
@@ -349,7 +351,7 @@
                           </table>
                         </div>
                     </div>
-                    <div class="tab-pane fade p-3" id="tab3" role="tabpanel" >
+                    <div class="tab-pane fade " id="tab3" role="tabpanel" >
                       <div class="table-responsive">
                         <table class="table table-bordered">
                           <thead>
