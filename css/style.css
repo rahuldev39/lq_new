@@ -1847,31 +1847,19 @@ ol li{
 }
 
 .section-tab .nav-link {
-  background-color: transparent;
-  color: white;
+  background-color: #4d5bed;
+  color: #ffffff;
   margin-right: 5px;
-  padding: 10px 15px;
+  padding: 11px 18px;
   outline: none;
-  color: #ed7e1f;
   font-weight: 600;
-  font-size: 14px;
+  font-size: 15px;
 }
 
 .section-tab .nav-link.active {
-  border: 0px;
-  background-color: transparent;
-  color: #ed7e1f;
-  position: relative;
+  margin-bottom: -1px;
 }
-.section-tab .nav-link.active::after{
-  width: 100%;
-  height: 2px;
-  background-color: #ed7e1f;
-  content: "";
-  position: absolute;
-  bottom: 0px;
-  left: 0px;
-}
+
 .section-content{
   border: 1px solid #dee2e6;
   border-top: 0px;
