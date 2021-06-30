@@ -2233,3 +2233,44 @@ blockquote {
   color: #ed7e1f;
   font-weight: 500;
 }
+
+.full-secreen.expand{
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  left: 0px;
+  top: 0px;
+  background-color: #F1F5FA;
+  z-index: 1000;
+  overflow: auto;
+}
+
+.full-secreen.expand .full-secreen-inner {
+  max-width: 800px;
+  margin: 0 auto;
+  background-color: white;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0px 1px 4px #1825350f;
+}
+
+.full-secreen-inner h2 {
+  font-weight: 600;
+  margin-bottom: 22px;
+}
+
+.full-secreen .close-btn {
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  font-size: 17px;
+  display: flex;
+  align-items: center;
+  background-color: #e91e63;
+  border-radius: 0px;
+  width: auto;
+  padding: 8px 16px 10px 21px;
+  color: white;
+  border-radius: 0px 0px 0px 21px;
+  text-decoration: none;
+}
