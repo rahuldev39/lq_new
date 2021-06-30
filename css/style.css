@@ -2217,3 +2217,19 @@ blockquote {
 .text-warning{
   color: #ed7e1f !important;
 }
+.section-tab-action-bar {
+  border-bottom: 1px solid #e5e5e5;
+  padding-bottom: 13px;
+  margin-bottom: 5px;
+  padding-top: 13px;
+  box-shadow: 0px 2px 4px #f0f0f0;
+}
+.section-tab-action-bar .action-links a {
+  font-size: 12px;
+  display: inline-table;
+  padding: 2px 10px;
+  border: 1px solid #ed7e1f;
+  border-radius: 5px;
+  color: #ed7e1f;
+  font-weight: 500;
+}
