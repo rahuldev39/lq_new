@@ -2274,3 +2274,6 @@ blockquote {
   border-radius: 0px 0px 0px 21px;
   text-decoration: none;
 }
+.object-cover{
+  object-fit: cover;
+}
