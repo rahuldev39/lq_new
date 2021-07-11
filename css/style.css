@@ -2277,3 +2277,6 @@ blockquote {
 .object-cover{
   object-fit: cover;
 }
+.bg-yellow {
+  background-color: #ffeb3b;
+}
