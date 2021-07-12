@@ -2284,11 +2284,13 @@ blockquote {
   padding: 8px 15px !important;
   height: auto !important;
 }
-.search-input + a {
+.search-input + .search-icon {
   right: 13px;
   top: 50%;
   transform: translateY(-50%);
+  color: #586fed;
+  font-size: 14px;
 }
 .border-primary {
-  border-color: #4d5bed73!important;
+  border-color: #586fed!important;
 }
