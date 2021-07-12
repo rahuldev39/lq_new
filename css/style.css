@@ -2280,3 +2280,15 @@ blockquote {
 .bg-yellow {
   background-color: #ffeb3b;
 }
+.search-input {
+  padding: 8px 15px !important;
+  height: auto !important;
+}
+.search-input + a {
+  right: 13px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.border-primary {
+  border-color: #4d5bed73!important;
+}
