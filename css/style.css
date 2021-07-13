@@ -2294,3 +2294,6 @@ blockquote {
 .border-primary {
   border-color: #586fed!important;
 }
+.share-block a{
+  font-size: 18px;
+}
